@@ -1,16 +1,26 @@
-# 🗺️ Polyglot Map · Creative & Growth Marketing Hub (Visual & Dinámico)
+# 🗺️ Polyglot Map · Creative & Growth Marketing Hub (Calendario 2026+ & Excel/Drive Sync)
 
 > **Ecosistema Visual de Marketing, Publicidad y Operaciones Creativas de Polyglot Map.**
 > **Pilares de Marca: Idiomas Acelerados + Inteligencia Artificial + Empleabilidad Remota en USD.**
 
 ---
 
-## 🌸 Formato Visual & Sin Fechas Fijas
+## 🗓️ Nuevo Widget de Calendario Mensual (2026 - 2030+)
 
-El dashboard ha sido rediseñado en un formato **mucho más visual, amigable y cute pastel**:
-- **Bento Grid interactivo:** Tarjetas limpias con badges y mini-etiquetas visuales sin bloques densos de texto.
-- **Cadencia Semanal Continua (Sin fechas fijas):** Flujo de trabajo recurrente enfocado en calidad y conversión sin presión de fechas cerradas.
-- **Volumen Total Semanal:** **22 piezas gráficas de alto impacto** + **4 videos/reels 9:16** + **Comunidad de WhatsApp activa**.
+El dashboard incorpora un **calendario mensual interactivo multi-año**:
+- **Navegación completa 2026, 2027, 2028, 2029 y 2030+:** Selector de mes y año con botones ágiles de avance y retroceso.
+- **Programación interactiva por día:** Haz clic en cualquier casilla de día para abrir el modal, agregar piezas (responsable, formato, canal, estado, título) o consultar los entregables programados.
+- **Guardado continuo (Persistencia local):** La información se almacena automáticamente en el navegador (`localStorage`), preservando los datos al recargar.
+
+---
+
+## 📊 Sincronización con Excel y Google Drive
+
+Herramientas directas integradas en la barra superior del calendario:
+1. **📥 Descargar Excel (.CSV UTF-8):** Exporta de inmediato la grilla con codificación oficial para Microsoft Excel con columnas (`Fecha`, `Responsable`, `Formato`, `Canal`, `Estado`, `Título`).
+2. **📋 Copiar para Google Sheets:** Copia los datos formateados en tabla (`TSV`) para que con solo presionar `Ctrl+V` o `Cmd+V` se pegue todo el cronograma en cualquier hoja de cálculo de Google Drive.
+3. **📤 Subir / Importar CSV:** Carga cronogramas externos o respaldos de Excel directamente al calendario visual.
+4. **☁️ Acceso a Google Drive:** Enlace directo para abrir tu unidad en la nube.
 
 ---
 
@@ -26,20 +36,7 @@ El dashboard ha sido rediseñado en un formato **mucho más visual, amigable y c
 
 ---
 
-## ⚡ Generador Inteligente de Contenido (Dinámico & Aleatorio)
+## ⚡ Generador Inteligente de Contenido (Dinámico en Cada Clic)
 
-El módulo interactivo genera **nuevas propuestas frescas cada vez que se presiona el botón**:
-- Ganchos (Hooks) de alto impacto para retener el scroll.
-- Instrucciones visuales de diseño listas para Canva o Adobe.
-- Copywriting persuasivo completo con llamadas a la acción (CTAs) directas a WhatsApp.
-- Botón para copiar al portapapeles con un solo toque.
-
----
-
-## 📅 Cronograma Semanal Recurrente
-
-- **Lunes:** Britani (4 piezas: Post, Carrusel, Anuncio) + Allison (2 piezas: Ofertas laborales & Tendencias para WA) + Adriana (Aprobación).
-- **Martes:** Daniela (4 piezas: Post, Carrusel, Anuncio + Sube a WA) + Scarlet (Video 1 Reel/TikTok) + Britani (WA diario).
-- **Miércoles:** Britani (4 piezas: Post, Carrusel, Anuncio) + Allison (2 piezas: Ofertas laborales & Tendencias para WA) + Scarlet (Video 2).
-- **Jueves:** Daniela (4 piezas: Post, Carrusel, Anuncio + Sube a WA) + Scarlet (Video 3) + Britani (WA diario).
-- **Viernes:** Allison (2 piezas: Ofertas laborales & Tendencias para WA - Completa sus 6 piezas) + Scarlet (Video 4) + Adriana y Allison (Banco DAM y carpetas).
+- Genera propuestas frescas de posts, carruseles, guiones de video 9:16 y anuncios en cada clic.
+- Hooks de 3 segundos, briefs de diseño visual pastel y copies listos para copiar y pegar.
