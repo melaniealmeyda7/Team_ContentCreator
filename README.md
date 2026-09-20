@@ -1,66 +1,65 @@
-# 🗺️ Polyglot Map · Creative & Marketing Operations Hub
+# 🗺️ Polyglot Map · Creative & Growth Marketing Hub (Modo Experto)
 
-> **Plataforma colaborativa de gestión, cronograma, control de calidad y credenciales profesionales del equipo de Marketing y Publicidad de Polyglot Map.**
-
----
-
-## 🌸 Introducción
-
-Este repositorio contiene el **Dashboard Colaborativo de Marketing y Publicidad** para el equipo de **Polyglot Map**, diseñado con una estética **cute pastel pero altamente profesional**. Centraliza la distribución operativa de trabajo, las cuotas semanales de contenido, la matriz de canales, el flujo de aprobación técnica y las hojas de vida (CVs) de cada integrante.
-
-- **Objetivo Estratégico:** Generar contenido informativo de alto impacto que fortalezca el posicionamiento de marca de Polyglot Map y acelere la conversión de ventas / captación de leads.
-- **Modalidad Operativa:** Sprint continuo de alto rendimiento (cadencia semanal recurrente, sin fecha fija de corte).
-- **Volumen Semanal:** **42 a 47 piezas gráficas** + **4 videos 9:16 (Reels/TikTok)** + **Comunidad de WhatsApp activa a diario** distribuidos en 6 canales digitales.
+> **Ecosistema de Marketing, Publicidad y Operaciones Creativas de Polyglot Map.**
+> **Pilares Estratégicos: Idiomas Acelerados + Inteligencia Artificial + Empleabilidad Remota Global.**
 
 ---
 
-## 👥 Equipo y Roles Estratégicos
+## 🌸 Propuesta de Valor & Posicionamiento
 
-| Integrante | Rol en Polyglot Map | Ritmo Operativo | Credencial & Background |
+Polyglot Map transforma el perfil profesional de sus estudiantes mediante **Inteligencia Artificial aplicada al aprendizaje ágil de idiomas**, desbloqueando **oportunidades laborales remotas y salarios en dólares ($1,500 - $3,500 USD/mes)** en mercados internacionales (EE.UU., Canadá, Europa).
+
+Toda la producción de contenido está sistematizada bajo la matriz de embudo:
+- **TOFU (Top of Funnel):** Atracción y viralidad masiva (Reels de Scarlet, carruseles de IA de Britani y Daniela).
+- **MOFU (Middle of Funnel):** Autoridad, confianza y educación (Masterclasses, encuestas en stories, infografías de valor en LinkedIn).
+- **BOFU (Bottom of Funnel):** Conversión y venta (Ofertas laborales exclusivas de Allison, interacción diaria en WhatsApp por Britani y Daniela, campañas y anuncios digitales).
+
+---
+
+## ⚡ Autogenerador de Contenido Brand Polyglot Map (Integrado)
+
+El dashboard cuenta con un módulo interactivo de generación de contenido publicitario que entrega briefs listos para producción:
+1. **Selección por Pilar:** Idiomas + IA, Empleabilidad Remota, Vacantes Reales, Hacks de Fluidez, Campañas de Venta.
+2. **Selección de Formato:** Carrusel de 5 láminas, Guion de Reel 9:16 con hook de 3 segundos, Story interactiva, Anuncio digital (Ad), Flyer o Broadcast WhatsApp.
+3. **Brief Completo:** Hook de alto impacto, instrucciones de diseño para las creadoras, copy completo con emojis y llamada a la acción (CTA) directa al embudo de ventas.
+
+---
+
+## 👥 Equipo Especializado & Nuevos Entregables
+
+| Integrante | Rol Especializado | Cuota & Foco Operativo | Aporte Clave |
 | :--- | :--- | :--- | :--- |
-| **Adriana Chávez** | **Directora Creativa y Audiovisual (Lead)** | Lunes a Viernes · Gatekeeper | 10mo ciclo Comunicación Audiovisual y Medios Interactivos (UPC). Dirección transmedia (*Pijamada Cinéfila*, *Whiplash*, cortometrajes). Suite Adobe, After Effects, Blender 3D, Canva, CapCut. Aprobación técnica y organización de carpetas. |
-| **Britani Mallqui** | **Content Creator de Piezas Gráficas** | Lunes & Miércoles (8+8) · WA Diario | 8vo ciclo Comunicaciones Audiovisuales (UPN). Experiencia en Sodimac, Natura y Ripley. Canva avanzado, CapCut, guion y storytelling visual. |
-| **Daniela Bonilla** | **Content Creator & Community WhatsApp** | Martes & Jueves (8+8) · Subida WA | Técnico en Marketing Digital y Lic. en Enseñanza del Español (UISIL). Experiencia en Solar Battery Center (9 perfiles, Meta Business Suite, WA Business, IA). |
-| **Scarlet Vega** | **Content & Copywriting Specialist** | Continuo · 4 videos/sem + copies 100% | Doble Grado en Comunicación Audiovisual y Publicidad (U. Europea de Madrid & UPC). DaVinci Resolve, Premiere Pro, Illustrator, InDesign, Inglés Británico avanzado. |
-| **Allison Rivas** | **Asistente de Dirección & Content Strategist** | Sábado & Domingo | Especialista en Content Strategy, métricas de posicionamiento digital, propuestas comerciales B2B y 10-15 piezas de ofertas laborales para WhatsApp. Apoyo a Adriana en grilla. |
+| **Adriana Chávez** | **Directora Creativa & Audiovisual (Lead)** | Lunes a Viernes · Gatekeeper | Define lineamientos de marca. **Gatekeeper técnico:** aprueba el 100% de piezas antes de salir. Co-organiza el **Banco de Material Audiovisual (DAM)** con Allison y ordena carpetas por red social. |
+| **Allison Rivas** | **Asistente de Dirección & Content Strategist** | Sábado & Domingo · Estrategia | **Investiga tendencias de IA y propone ideas creativas**. Co-organiza el **Banco DAM** con Adriana. Diseña **10 a 15 piezas de ofertas laborales** para WhatsApp. Revisa métricas y formula propuestas comerciales. |
+| **Scarlet Vega** | **Content, Copywriting & Video Specialist** | Continuo · 4 Videos / Sem | Produce **4 videos semanales (Reels/TikTok)** con ganchos y edición pro. Redacta el **copywriting de todas las piezas**. **Apoya directamente a Adriana en la estructuración de la grilla de contenido**. |
+| **Britani Mallqui** | **Content Creator de Piezas Gráficas** | Lunes & Miércoles | Diseña **4 piezas gráficas por día** entre posts, stories, flyers, banners, anuncios digitales y piezas para campañas. Interacción diaria en la comunidad de WhatsApp. |
+| **Daniela Bonilla** | **Content Creator & Community WhatsApp** | Martes & Jueves | Diseña **4 piezas gráficas por día** (posts, stories, flyers, banners, anuncios y campañas). Encargada oficial de **subir y distribuir el contenido del equipo a la comunidad de WhatsApp**. |
 
 ---
 
-## 📅 Cronograma Semanal Operativo (Lunes a Domingo)
+## 🗄️ Banco de Material Audiovisual (DAM) Co-Gestionado por Adriana & Allison
 
-- **Lunes:** Britani (8 gráficas) + Scarlet (Copywriting grilla semanal) + Adriana (Revisión técnica de piezas y carpetas) + Britani (Interacción WA).
-- **Martes:** Daniela (8 gráficas + subida de contenidos a WA) + Scarlet (Video 1 Reel/TikTok) + Adriana (Supervisión de narrativa).
-- **Miércoles:** Britani (8 gráficas - meta de 16 completada) + Scarlet (Video 2 Reel/TikTok) + Adriana (Aprobación y carpetas) + Britani (Interacción WA).
-- **Jueves:** Daniela (8 gráficas - meta de 16 completada + subida a WA) + Scarlet (Video 3 Reel/TikTok) + Adriana (Consistencia visual).
-- **Viernes:** Scarlet (Video 4 Reel/TikTok + cierre de copies) + Adriana (Aprobación técnica integral y preparación de carpetas para programaciones).
-- **Sábado:** Allison (5 a 8 piezas de ofertas laborales para WA + propuestas comerciales B2B) + Britani (Atención fin de semana WA).
-- **Domingo:** Allison (Completar meta de 10-15 piezas de ofertas laborales + análisis semanal de métricas de posicionamiento + co-organización con Adriana de la grilla de la siguiente semana).
+Estructura centralizada de recursos en la nube para garantizar abastecimiento continuo:
+1. **B-Roll & Clips de Idiomas + IA:** Videos 9:16 de profesionales trabajando en remoto, pantallas con prompts de IA y videollamadas.
+2. **Plantillas Editables en Canva / Illustrator:** Paleta pastel oficial, tipografías y formatos estándar (Feed 1080x1350, Stories/Reels 1080x1920).
+3. **Curaduría de Ofertas Laborales (Allison):** Repositorio de vacantes remotas en USD de empresas verificadas.
+4. **Biblioteca de Audios & SFX:** Efectos sonoros y canciones en tendencia libres de derechos para CapCut y Premiere.
 
 ---
 
-## 🌐 Matriz de Canales
+## 📅 Cronograma Semanal Sistemático
 
-1. **Comunidad de WhatsApp:** Canal vital de conversión. Dinamizado a diario por Britani, abastecido los martes y jueves por Daniela, y potenciado los fines de semana por Allison con 10 a 15 ofertas laborales exclusivas.
-2. **Instagram:** Carruseles informativos de valor, Reels dinámicos y Stories para dirigir tráfico hacia la comunidad.
-3. **TikTok:** 4 videos semanales (Scarlet) aprovechando tendencias culturales y lingüísticas con alta retención.
-4. **LinkedIn:** Posicionamiento profesional B2B, valor salarial bilingüe y propuestas de alianzas estratégicas.
-5. **Facebook:** Difusión en comunidades y grupos de idiomas (Daniela) con copies persuasivos y llamadas al chat.
-6. **YouTube:** Shorts y formatos de contenido transmedia impulsados por la visión narrativa de Adriana.
-
----
-
-## 📋 Pipeline de Aprobación Técnica
-
-1. **Grilla & Temas:** Sincronización semanal entre Adriana, Allison y Scarlet.
-2. **Copywriting:** Redacción persuasiva por Scarlet para todas las piezas y guiones de video.
-3. **Diseño & Producción:** Britani (Lun/Mié), Daniela (Mar/Jue), Allison (Sáb/Dom) y Scarlet (Videos).
-4. **Control Técnico de Calidad (Gatekeeper):** Aprobación obligatoria por Adriana Chávez (paleta cromática, ortografía, resolución, encuadres y CTA).
-5. **Carpetas & Publicación:** Adriana almacena el arte en el repositorio digital por red social; Daniela sube a WhatsApp; Britani interactúa; Allison evalúa métricas.
+- **Lunes:** Britani (4 piezas gráficas: Post, Story, Flyer, Anuncio) + Scarlet y Adriana (Sincronización de grilla y copies) + Adriana (Aprobación y archivo) + Britani (WA diario).
+- **Martes:** Daniela (4 piezas: Post, Story, Banner, Pieza campaña + Subida a WA) + Scarlet (Video 1 Reel/TikTok) + Britani (WA).
+- **Miércoles:** Britani (4 piezas: Carrusel, 2 Stories, Banner LinkedIn) + Scarlet (Video 2 Reel/TikTok) + Adriana (Aprobación técnica).
+- **Jueves:** Daniela (4 piezas: Flyer taller, Anuncio digital, Story, Banner + Subida a WA) + Scarlet (Video 3) + Britani (WA).
+- **Viernes:** Scarlet (Video 4 Reel/TikTok + cierre de copies) + Adriana y Allison (Revisión de carpetas y orden del DAM) + Britani (WA).
+- **Sábado:** Allison (Investiga tendencias de IA, diseña 5-8 piezas de ofertas laborales para WA, propuestas comerciales) + Britani (WA fin de semana).
+- **Domingo:** Allison (Completa 10-15 piezas de ofertas de trabajo) + Adriana, Allison y Scarlet (Revisión de métricas, grilla de la siguiente semana y actualización del DAM).
 
 ---
 
-## 🚀 Cómo visualizar el Dashboard
+## 🚀 Despliegue y Visualización
 
-El archivo principal es `index.html`:
-- **Opción 1:** Abrir directamente `index.html` en cualquier navegador web (Chrome, Safari, Firefox, Edge).
-- **Opción 2:** Desplegar en **GitHub Pages** (desde `Settings` > `Pages` > `Deploy from a branch` > `main` / `root`) para tener una URL web compartible con todo el equipo.
+- **Local:** Abre `index.html` en tu navegador para interactuar con el autogenerador, el calendario, los modales de CV y el DAM.
+- **GitHub Pages:** Activado desde `Settings > Pages` en la rama `main` de este repositorio.

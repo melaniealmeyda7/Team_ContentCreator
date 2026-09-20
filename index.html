@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polyglot Map | Creative & Marketing Operations Hub</title>
+  <title>Polyglot Map | Creative & Growth Marketing Hub</title>
   <!-- Tailwind CSS provided via approved internal gstatic CDN -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
@@ -17,7 +17,7 @@
     body {
       font-family: var(--font-body);
       background-color: #FAF8FD;
-      color: #332941;
+      color: #2D2638;
     }
 
     .font-cute {
@@ -41,13 +41,13 @@
       background: #C084FC;
     }
 
-    /* Soft pastel gradients & glass effects */
+    /* Soft pastel glass cards */
     .glass-card {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(243, 232, 255, 0.9);
-      box-shadow: 0 10px 30px -10px rgba(186, 150, 230, 0.15);
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(243, 232, 255, 0.95);
+      box-shadow: 0 10px 30px -10px rgba(186, 150, 230, 0.12);
     }
 
     .glass-card-hover {
@@ -55,11 +55,7 @@
     }
     .glass-card-hover:hover {
       transform: translateY(-3px);
-      box-shadow: 0 16px 36px -12px rgba(186, 150, 230, 0.25);
-    }
-
-    .pastel-pill {
-      box-shadow: inset 0 1px 1px rgba(255,255,255,0.7), 0 2px 6px rgba(0,0,0,0.02);
+      box-shadow: 0 16px 36px -12px rgba(186, 150, 230, 0.22);
     }
 
     /* Print styles */
@@ -74,7 +70,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen text-slate-800 antialiased selection:bg-pink-200 selection:text-pink-900 pb-16">
+<body class="min-h-screen text-slate-800 antialiased selection:bg-pink-200 selection:text-pink-900 pb-20">
 
   <!-- Background decorative pastel circles -->
   <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10 opacity-70">
@@ -85,7 +81,7 @@
   </div>
 
   <!-- Top Announcement Bar -->
-  <header class="border-b border-purple-100 bg-white/70 backdrop-blur-md sticky top-0 z-30">
+  <header class="border-b border-purple-100 bg-white/75 backdrop-blur-md sticky top-0 z-30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
@@ -99,29 +95,26 @@
           <div>
             <div class="flex items-center gap-2">
               <h1 class="font-bold text-lg text-slate-800 tracking-tight font-cute">Polyglot Map</h1>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-pink-100 text-pink-700 border border-pink-200">
-                ✨ Marketing & Creative Hub
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-purple-100 text-purple-700 border border-purple-200">
+                ✨ Marketing & Publicidad Pro
               </span>
             </div>
-            <p class="text-xs text-slate-500 font-medium">Ciclo Continuo de Alto Rendimiento · Sprint Semanal Colaborativo</p>
+            <p class="text-xs text-slate-500 font-medium">Ecosistema Sistematizado · <strong class="text-purple-700 font-semibold">Idiomas + IA + Empleabilidad Global</strong></p>
           </div>
         </div>
 
-        <!-- Target KPI Mini-Badges & Actions -->
-        <div class="hidden md:flex items-center gap-2.5 text-xs font-semibold">
-          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
-            <span>🎨</span>
-            <span>42-47 gráficas / sem</span>
-          </div>
-          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
-            <span>🎬</span>
-            <span>4 Videos Reels/TikTok</span>
-          </div>
-          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
-            <span>💬</span>
-            <span>WhatsApp Community Diaria</span>
-          </div>
-          <button onclick="window.print()" class="no-print p-2 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition flex items-center gap-1 text-xs" title="Imprimir o Guardar PDF">
+        <!-- Pillar Mini-Badges -->
+        <div class="hidden md:flex items-center gap-2 text-xs font-semibold">
+          <span class="px-3 py-1.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1.5">
+            <span>🗣️</span> Idiomas Acelerados
+          </span>
+          <span class="px-3 py-1.5 rounded-full bg-pink-50 text-pink-700 border border-pink-200 flex items-center gap-1.5">
+            <span>🤖</span> Inteligencia Artificial
+          </span>
+          <span class="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1.5">
+            <span>💼</span> Empleabilidad Remota
+          </span>
+          <button onclick="window.print()" class="no-print p-2 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition flex items-center gap-1 text-xs" title="Imprimir o Exportar">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
             <span>PDF</span>
           </button>
@@ -132,9 +125,16 @@
 
     <!-- Navigation Tabs Bar -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-purple-50">
-      <nav class="flex space-x-1 sm:space-x-4 overflow-x-auto py-2.5 text-sm font-medium" id="tabNav">
-        <button onclick="switchTab('tab-resumen')" id="btn-tab-resumen" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-purple-600 text-white font-semibold shadow-sm transition">
-          <span>🌸 Resumen & Métricas</span>
+      <nav class="flex space-x-1 sm:space-x-3 overflow-x-auto py-2 text-sm font-medium" id="tabNav">
+        <button onclick="switchTab('tab-estrategia')" id="btn-tab-estrategia" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-purple-600 text-white font-semibold shadow-sm transition">
+          <span>🌸 Estrategia & Funnel</span>
+        </button>
+        <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+          </span>
+          <span>⚡ Autogenerador de Contenido IA</span>
         </button>
         <button onclick="switchTab('tab-equipo')" id="btn-tab-equipo" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
           <span>👥 Equipo & Credenciales CV</span>
@@ -143,13 +143,13 @@
           <span>📅 Cronograma Semanal (L-D)</span>
         </button>
         <button onclick="switchTab('tab-pipeline')" id="btn-tab-pipeline" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>📋 Pipeline & Aprobación Técnica</span>
+          <span>📋 Pipeline & Quality Gate</span>
+        </button>
+        <button onclick="switchTab('tab-dam')" id="btn-tab-dam" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>🗄️ Banco Audiovisual (DAM) & Carpetas</span>
         </button>
         <button onclick="switchTab('tab-canales')" id="btn-tab-canales" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>🌐 Estrategia de Canales (6 Redes)</span>
-        </button>
-        <button onclick="switchTab('tab-carpetas')" id="btn-tab-carpetas" class="tab-btn flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>📂 Estructura de Carpetas & Quality</span>
+          <span>🌐 Matriz de Canales</span>
         </button>
       </nav>
     </div>
@@ -159,290 +159,348 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
 
     <!-- ========================================== -->
-    <!-- TAB 1: RESUMEN EJECUTIVO & METRICAS        -->
+    <!-- TAB 1: ESTRATEGIA & FUNNEL SISTEMATIZADO   -->
     <!-- ========================================== -->
-    <div id="tab-resumen" class="tab-content space-y-6">
+    <div id="tab-estrategia" class="tab-content space-y-6">
       
-      <!-- Welcome Banner -->
-      <div class="relative overflow-hidden rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-purple-100/90 via-pink-100/80 to-amber-100/80 border border-purple-200/80 shadow-sm">
+      <!-- Expert Marketing Hero Banner -->
+      <div class="relative overflow-hidden rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-purple-100/90 via-pink-100/80 to-amber-100/80 border border-purple-200 shadow-sm">
         <div class="relative z-10 max-w-3xl">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-purple-200 text-xs font-bold text-purple-800 mb-3 shadow-xs font-cute">
-            <span>✨ Hub Operativo Oficial</span>
+            <span>🚀 Marketing & Advertising Framework</span>
             <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
-            <span>Polyglot Map 2026</span>
+            <span>Triángulo de Posicionamiento Polyglot Map</span>
           </div>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-cute">
-            Marketing, Contenido y Crecimiento Colaborativo
+            Sistematización de Marca: Idiomas + IA + Empleabilidad
           </h2>
           <p class="mt-2 text-sm sm:text-base text-slate-700 leading-relaxed">
-            Plataforma central de coordinación para <strong class="text-purple-900">Britani, Daniela, Allison, Scarlet y Adriana</strong>. Un engranaje sincronizado para producir contenido informativo de alto impacto que posicione la marca <strong>Polyglot Map</strong> y atraiga ventas recurrentes en 6 canales clave.
+            Polyglot Map no solo enseña idiomas: <strong>transforma el perfil profesional de sus estudiantes mediante Inteligencia Artificial para conectarlos con ofertas laborales remotas y salarios globales en USD/EUR</strong>. Toda pieza gráfica, video, copy o campaña debe anclarse en este valor diferencial.
           </p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-600">
-            <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-purple-100 flex items-center gap-1.5">
-              <span>🎯</span> <strong>Objetivo:</strong> Posicionamiento Orgánico + Leads de Venta
-            </span>
-            <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-purple-100 flex items-center gap-1.5">
-              <span>🔄</span> <strong>Modalidad:</strong> Sprint Recurrente (Sin fecha de cierre fijada)
-            </span>
-            <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-purple-100 flex items-center gap-1.5">
-              <span>🛡️</span> <strong>Aprobación:</strong> Revisión Técnica Obligatoria por Dirección Creativa
-            </span>
+
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-3 rounded-2xl bg-white/90 border border-purple-200/70 shadow-xs">
+              <div class="font-bold text-purple-900 text-xs flex items-center gap-1.5">
+                <span>🗣️</span> 1. Idiomas Sin Fronteras
+              </div>
+              <p class="text-[11px] text-slate-600 mt-1">Fluidez conversacional práctica, pronunciación y pérdida del miedo a hablar en entornos de trabajo.</p>
+            </div>
+            <div class="p-3 rounded-2xl bg-white/90 border border-pink-200/70 shadow-xs">
+              <div class="font-bold text-pink-900 text-xs flex items-center gap-1.5">
+                <span>🤖</span> 2. Potenciación con IA
+              </div>
+              <p class="text-[11px] text-slate-600 mt-1">Uso de ChatGPT, Claude, avatares y prompts para acelerar el aprendizaje 3x y automatizar tareas laborales.</p>
+            </div>
+            <div class="p-3 rounded-2xl bg-white/90 border border-emerald-200/70 shadow-xs">
+              <div class="font-bold text-emerald-900 text-xs flex items-center gap-1.5">
+                <span>💼</span> 3. Empleabilidad Global
+              </div>
+              <p class="text-[11px] text-slate-600 mt-1">Optimización de CVs en inglés, entrevistas laborales, LinkedIn internacional y vacantes remotas en USD.</p>
+            </div>
           </div>
-        </div>
-        <div class="hidden lg:block absolute -right-6 -bottom-8 opacity-40 select-none text-9xl">
-          🧁
         </div>
       </div>
 
-      <!-- Quick KPI Counters -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        
-        <div class="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border-l-4 border-l-pink-400">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Piezas Gráficas</span>
-            <span class="p-2 rounded-xl bg-pink-100 text-pink-600 text-base">🖼️</span>
+      <!-- Funnel Stage Architecture (TOFU - MOFU - BOFU) -->
+      <div class="glass-card rounded-3xl p-6 border border-purple-100">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2">
+              <span>🎯</span> Arquitectura del Embudo de Marketing (Full-Funnel Content Matrix)
+            </h3>
+            <p class="text-xs text-slate-500">Cómo convertimos usuarios extraños en estudiantes matriculados</p>
           </div>
-          <div class="mt-2 flex items-baseline gap-2">
-            <span class="text-3xl font-extrabold text-slate-800 font-cute">42 - 47</span>
-            <span class="text-xs text-slate-500">piezas / semana</span>
-          </div>
-          <p class="mt-1 text-xs text-slate-500">16 Britani + 16 Daniela + 10-15 Allison</p>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-purple-100 text-purple-800">
+            Estrategia de Conversión Continua
+          </span>
         </div>
 
-        <div class="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border-l-4 border-l-amber-400">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Videos Reels / TikTok</span>
-            <span class="p-2 rounded-xl bg-amber-100 text-amber-600 text-base">🎬</span>
-          </div>
-          <div class="mt-2 flex items-baseline gap-2">
-            <span class="text-3xl font-extrabold text-slate-800 font-cute">4</span>
-            <span class="text-xs text-slate-500">videos 9:16 / sem</span>
-          </div>
-          <p class="mt-1 text-xs text-slate-500">Scarlet (Narrativas & Edición Pro)</p>
-        </div>
-
-        <div class="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border-l-4 border-l-purple-400">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-purple-600">Canales Activos</span>
-            <span class="p-2 rounded-xl bg-purple-100 text-purple-600 text-base">🌐</span>
-          </div>
-          <div class="mt-2 flex items-baseline gap-2">
-            <span class="text-3xl font-extrabold text-slate-800 font-cute">6</span>
-            <span class="text-xs text-slate-500">plataformas</span>
-          </div>
-          <p class="mt-1 text-xs text-slate-500">IG, FB, TikTok, LinkedIn, YT, WhatsApp</p>
-        </div>
-
-        <div class="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border-l-4 border-l-emerald-400">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Comunidad WhatsApp</span>
-            <span class="p-2 rounded-xl bg-emerald-100 text-emerald-600 text-base">💬</span>
-          </div>
-          <div class="mt-2 flex items-baseline gap-2">
-            <span class="text-3xl font-extrabold text-slate-800 font-cute">Diaria</span>
-            <span class="text-xs text-slate-500">interacción viva</span>
-          </div>
-          <p class="mt-1 text-xs text-slate-500">Britani (diario), Daniela (sube), Allison (ofertas)</p>
-        </div>
-
-      </div>
-
-      <!-- Cadence Breakdown Card -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        <!-- Left 2 Cols: Production Rhythm -->
-        <div class="lg:col-span-2 glass-card rounded-3xl p-6">
-          <div class="flex items-center justify-between mb-4">
-            <div>
-              <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2">
-                <span>🗓️</span> Cadencia Operativa y Reparto de Responsabilidades
-              </h3>
-              <p class="text-xs text-slate-500">Estructura de entrega continua y roles estratégicos del equipo</p>
-            </div>
-            <button onclick="switchTab('tab-calendario')" class="text-xs font-semibold text-purple-600 hover:text-purple-800 flex items-center gap-1">
-              Ver Grilla Día por Día →
-            </button>
-          </div>
-
-          <div class="space-y-3">
-            
-            <!-- Adriana -->
-            <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-2xl bg-purple-200 text-purple-700 font-bold flex items-center justify-center font-cute text-sm">
-                  AC
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-slate-800 text-sm">Adriana Chávez</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-purple-200 text-purple-800">Dirección Creativa & Lead</span>
-                  </div>
-                  <p class="text-xs text-slate-600 mt-0.5">Define lineamientos de marca, aprueba técnicamente el 100% de piezas y organiza carpetas por red social.</p>
-                </div>
-              </div>
-              <div class="text-right sm:self-center">
-                <span class="inline-block px-2.5 py-1 rounded-xl bg-white text-purple-700 text-xs font-bold border border-purple-200">
-                  Lunes a Viernes · Gatekeeper
-                </span>
-              </div>
-            </div>
-
-            <!-- Britani -->
-            <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-2xl bg-pink-200 text-pink-700 font-bold flex items-center justify-center font-cute text-sm">
-                  BM
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-slate-800 text-sm">Britani Mallqui</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-pink-200 text-pink-800">Content Creator & Community</span>
-                  </div>
-                  <p class="text-xs text-slate-600 mt-0.5">Produce 8 gráficas/día (16 semanales) + Interacción y conversación diaria en la comunidad WhatsApp.</p>
-                </div>
-              </div>
-              <div class="text-right sm:self-center">
-                <span class="inline-block px-2.5 py-1 rounded-xl bg-white text-pink-700 text-xs font-bold border border-pink-200">
-                  Lun & Mié (8+8) · WA Diario
-                </span>
-              </div>
-            </div>
-
-            <!-- Daniela -->
-            <div class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-2xl bg-sky-200 text-sky-700 font-bold flex items-center justify-center font-cute text-sm">
-                  DB
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-slate-800 text-sm">Daniela Bonilla</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-200 text-sky-800">Content Creator & WA Community</span>
-                  </div>
-                  <p class="text-xs text-slate-600 mt-0.5">Crea 8 gráficas/día (16 semanales) y se encarga de publicar/subir todo el contenido a la comunidad de WhatsApp.</p>
-                </div>
-              </div>
-              <div class="text-right sm:self-center">
-                <span class="inline-block px-2.5 py-1 rounded-xl bg-white text-sky-700 text-xs font-bold border border-sky-200">
-                  Mar & Jue (8+8) · Sube a WA
-                </span>
-              </div>
-            </div>
-
-            <!-- Scarlet -->
-            <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-2xl bg-amber-200 text-amber-800 font-bold flex items-center justify-center font-cute text-sm">
-                  SV
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-slate-800 text-sm">Scarlet Vega</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-200 text-amber-800">Content & Copywriting</span>
-                  </div>
-                  <p class="text-xs text-slate-600 mt-0.5">Redacta el copy de todas las piezas, co-estructura la grilla y produce 4 videos (Reels/TikTok) semanales.</p>
-                </div>
-              </div>
-              <div class="text-right sm:self-center">
-                <span class="inline-block px-2.5 py-1 rounded-xl bg-white text-amber-700 text-xs font-bold border border-amber-200">
-                  4 Videos/sem · Copies 100%
-                </span>
-              </div>
-            </div>
-
-            <!-- Allison -->
-            <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-2xl bg-emerald-200 text-emerald-800 font-bold flex items-center justify-center font-cute text-sm">
-                  AR
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-slate-800 text-sm">Allison Rivas</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-200 text-emerald-800">Asistente Dirección & Strategist</span>
-                  </div>
-                  <p class="text-xs text-slate-600 mt-0.5">10-15 piezas de ofertas laborales para WA, analítica de posicionamiento, propuestas comerciales y apoyo en grilla.</p>
-                </div>
-              </div>
-              <div class="text-right sm:self-center">
-                <span class="inline-block px-2.5 py-1 rounded-xl bg-white text-emerald-700 text-xs font-bold border border-emerald-200">
-                  Sáb & Dom · 10-15 Piezas WA
-                </span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Right 1 Col: Key Strategic Principles -->
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           
-          <div class="glass-card rounded-3xl p-5 border border-purple-100">
-            <h4 class="text-sm font-bold text-purple-900 font-cute flex items-center gap-1.5 mb-2">
-              <span>✨</span> Regla de Oro: Control de Calidad
-            </h4>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Ninguna pieza gráfica o audiovisual se publica sin la <strong>aprobación técnica previa de Adriana</strong>. Esto asegura que la identidad visual, tipografías, colores de Polyglot Map y calidad de exportación se mantengan impecables en cada canal.
-            </p>
-            <div class="mt-3 p-2.5 rounded-xl bg-purple-50 text-[11px] text-purple-800 border border-purple-200">
-              📁 <strong>Carpetas Organizadas:</strong> Una vez aprobada, Adriana aloja la pieza en la carpeta correspondiente a su red social.
+          <!-- TOFU -->
+          <div class="p-4 rounded-2xl bg-purple-50/60 border border-purple-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-2 border-b border-purple-200">
+                <span class="font-bold text-xs uppercase tracking-wider text-purple-900 font-cute">TOFU · Atracción Masiva</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-200 text-purple-800">Top of Funnel</span>
+              </div>
+              <p class="text-xs text-slate-700 mt-2 font-medium">Capturar atención y viralidad con ganchos disruptivos.</p>
+              <ul class="mt-2.5 space-y-1.5 text-xs text-slate-600">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-purple-600 font-bold">•</span>
+                  <span><strong>Videos Reels/TikToks (Scarlet):</strong> Errores comunes en entrevistas en inglés, prompts virales de IA.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-purple-600 font-bold">•</span>
+                  <span><strong>Posts y Carruseles (Britani/Daniela):</strong> "5 herramientas de IA que te vuelven bilingüe en 2026".</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-purple-600 font-bold">•</span>
+                  <span><strong>Anuncios de Tráfico:</strong> Ganchos sobre sueldos en dólares para perfiles hispanos.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 pt-2 border-t border-purple-200 text-[10px] text-purple-800 font-semibold flex justify-between">
+              <span>Métrica: Alcance & Shares</span>
+              <span>Canales: IG, TikTok, FB</span>
             </div>
           </div>
 
-          <div class="glass-card rounded-3xl p-5 border border-pink-100">
-            <h4 class="text-sm font-bold text-pink-900 font-cute flex items-center gap-1.5 mb-2">
-              <span>💬</span> El Motor WhatsApp: Tráfico & Ventas
-            </h4>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              La comunidad de WhatsApp es el embudo de conversión final de Polyglot Map:
-            </p>
-            <ul class="mt-2 space-y-1.5 text-xs text-slate-600">
-              <li class="flex items-center gap-1.5">
-                <span class="text-pink-500 font-bold">•</span>
-                <strong>Britani:</strong> Interacción cálida y resolución diaria de dudas.
-              </li>
-              <li class="flex items-center gap-1.5">
-                <span class="text-sky-500 font-bold">•</span>
-                <strong>Daniela:</strong> Subida organizada de contenidos (Mar y Jue).
-              </li>
-              <li class="flex items-center gap-1.5">
-                <span class="text-emerald-500 font-bold">•</span>
-                <strong>Allison:</strong> 10-15 infografías semanales de ofertas laborales (Sáb y Dom).
-              </li>
-            </ul>
+          <!-- MOFU -->
+          <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-2 border-b border-amber-200">
+                <span class="font-bold text-xs uppercase tracking-wider text-amber-900 font-cute">MOFU · Autoridad & Educación</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-200 text-amber-800">Middle of Funnel</span>
+              </div>
+              <p class="text-xs text-slate-700 mt-2 font-medium">Demostrar por qué el método Polyglot Map es superior.</p>
+              <ul class="mt-2.5 space-y-1.5 text-xs text-slate-600">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-amber-600 font-bold">•</span>
+                  <span><strong>Stories Interactivas & Banners:</strong> Mini-tests de nivelación, encuestas de sueldo esperado.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-amber-600 font-bold">•</span>
+                  <span><strong>LinkedIn & YouTube:</strong> Casos de éxito de alumnos contratados en empresas de EE.UU.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-amber-600 font-bold">•</span>
+                  <span><strong>Flyers de Webinars / Masterclasses:</strong> Clases gratuitas de IA para el trabajo remoto.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 pt-2 border-t border-amber-200 text-[10px] text-amber-800 font-semibold flex justify-between">
+              <span>Métrica: Saves, Clicks & Leads</span>
+              <span>Canales: IG, LinkedIn, YT</span>
+            </div>
           </div>
 
-          <div class="glass-card rounded-3xl p-5 border border-amber-100">
-            <h4 class="text-sm font-bold text-amber-900 font-cute flex items-center gap-1.5 mb-2">
-              <span>📈</span> Sinergia Directiva: Adriana & Allison
-            </h4>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Allison actúa en soporte directo como Asistente de Dirección, recopilando analíticas de métricas los domingos y armando junto a Adriana la grilla estratégica de la semana entrante.
-            </p>
+          <!-- BOFU -->
+          <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-2 border-b border-emerald-200">
+                <span class="font-bold text-xs uppercase tracking-wider text-emerald-900 font-cute">BOFU · Conversión & Venta</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-200 text-emerald-800">Bottom of Funnel</span>
+              </div>
+              <p class="text-xs text-slate-700 mt-2 font-medium">Cierre directo en WhatsApp y llamadas de asesoría.</p>
+              <ul class="mt-2.5 space-y-1.5 text-xs text-slate-600">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold">•</span>
+                  <span><strong>Comunidad WhatsApp (Britani + Daniela):</strong> Conversación diaria y soporte en admisiones.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold">•</span>
+                  <span><strong>Ofertas Laborales (Allison):</strong> 10-15 piezas de vacantes exclusivas que demuestran la necesidad del idioma.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold">•</span>
+                  <span><strong>Piezas de Campaña & Anuncios:</strong> Descuentos por tiempo limitado, matrículas y becas.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 pt-2 border-t border-emerald-200 text-[10px] text-emerald-800 font-semibold flex justify-between">
+              <span>Métrica: Ventas & Matrículas</span>
+              <span>Canal Estrella: WhatsApp</span>
+            </div>
           </div>
 
         </div>
+      </div>
 
+      <!-- Quick Metrics Target -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-purple-500">
+          <span class="text-[11px] font-bold text-purple-700 uppercase">Producción Diaria</span>
+          <div class="text-2xl font-extrabold text-slate-800 font-cute mt-1">4 Piezas Clave</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Posts, Stories, Flyers, Banners, Ads</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-pink-500">
+          <span class="text-[11px] font-bold text-pink-700 uppercase">Videos & Reels</span>
+          <div class="text-2xl font-extrabold text-slate-800 font-cute mt-1">4 Videos / Sem</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Scarlet (Narrativas 9:16 virales)</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-emerald-500">
+          <span class="text-[11px] font-bold text-emerald-700 uppercase">Ofertas Laborales</span>
+          <div class="text-2xl font-extrabold text-slate-800 font-cute mt-1">10-15 Piezas / Sem</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Allison (Sábados & Domingos WA)</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-amber-500">
+          <span class="text-[11px] font-bold text-amber-700 uppercase">Banco DAM & Grilla</span>
+          <div class="text-2xl font-extrabold text-slate-800 font-cute mt-1">100% Sincronizado</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Adriana + Allison + Scarlet</p>
+        </div>
       </div>
 
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 2: EQUIPO & CREDENCIALES (CVs)        -->
+    <!-- TAB 2: AUTOGENERADOR DE CONTENIDO BRAND IA -->
+    <!-- ========================================== -->
+    <div id="tab-generador" class="tab-content hidden space-y-6">
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
+            <span>⚡</span> Generador Inteligente de Contenido · Polyglot Map
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500">
+            Crea al instante briefs creativos completos: Ganchos (Hooks), instrucciones visuales, copys persuasivos, CTAs y guiones para las creadoras.
+          </p>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold border border-pink-200 self-start sm:self-auto">
+          Especializado en Idiomas + IA + Empleabilidad
+        </span>
+      </div>
+
+      <!-- Generator Configuration Form -->
+      <div class="glass-card rounded-3xl p-6 border border-purple-200">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Pilar -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">1. Pilar Estratégico Polyglot:</label>
+            <select id="genPilar" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <option value="idiomas_ia">🤖 Idiomas Acelerados con Inteligencia Artificial</option>
+              <option value="empleabilidad">💼 Empleabilidad Remota & Salarios en Dólares</option>
+              <option value="ofertas_laborales">📢 Vacantes y Ofertas Laborales Reales</option>
+              <option value="tips_idiomas">🗣️ Hacks de Fluidez y Mentalidad Políglota</option>
+              <option value="campana_ventas">🎯 Campaña Promocional / Matrículas Abiertas</option>
+            </select>
+          </div>
+
+          <!-- Formato -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">2. Formato de la Pieza:</label>
+            <select id="genFormato" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <option value="post_carrusel">🖼️ Post / Carrusel de 5 Láminas (Feed)</option>
+              <option value="story_interactiva">📱 Story Interactiva (Encuesta / Quiz)</option>
+              <option value="video_reel">🎬 Video / Reel 9:16 (Guion con Hook de 3s)</option>
+              <option value="anuncio_digital">🚀 Anuncio Digital / Paid Ad de Conversión</option>
+              <option value="flyer_banner">🎨 Flyer / Banner para Webinar o Evento</option>
+              <option value="broadcast_wa">💬 Mensaje de Difusión para Comunidad WhatsApp</option>
+            </select>
+          </div>
+
+          <!-- Etapa del Funnel -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">3. Objetivo del Funnel:</label>
+            <select id="genFunnel" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <option value="tofu">Viralidad & Atracción Masiva (TOFU)</option>
+              <option value="mofu">Autoridad, Métricas & Confianza (MOFU)</option>
+              <option value="bofu">Venta Directa & Cierre en WhatsApp (BOFU)</option>
+            </select>
+          </div>
+
+          <!-- Creadora Asignada -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">4. Creadora Responsable:</label>
+            <select id="genCreadora" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <option value="britani">Britani Mallqui (Lunes/Miércoles - Piezas Gráficas)</option>
+              <option value="daniela">Daniela Bonilla (Martes/Jueves - Piezas Gráficas)</option>
+              <option value="scarlet">Scarlet Vega (Videos/Reels & Copies)</option>
+              <option value="allison">Allison Rivas (Sáb/Dom - Ofertas Laborales WA)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-5 flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-purple-100">
+          <div class="flex items-center gap-2 text-xs text-slate-500">
+            <span>💡</span> <strong>Tip:</strong> Puedes generar borradores infinitos y copiar el brief visual directo para Canva o el copy para Scarlet.
+          </div>
+          <button onclick="generarContenidoIA()" class="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:to-amber-600 text-white font-bold text-xs shadow-md shadow-pink-200 transition flex items-center gap-2">
+            <span>✨ Generar Propuesta de Contenido</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Generator Output Display -->
+      <div id="genResultContainer" class="glass-card rounded-3xl p-6 border-2 border-pink-200 relative">
+        <div class="flex items-center justify-between pb-4 border-b border-purple-100">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">📋</span>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-base" id="resTitulo">Brief Creativo Generado</h3>
+              <p class="text-xs text-slate-500" id="resSubtitulo">Listo para producción y control técnico por Adriana</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="copiarBrief()" class="px-3 py-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 font-bold text-xs transition flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              <span>Copiar Copy Completo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Generated Content Inner Cards -->
+        <div class="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-6" id="resContentGrid">
+          
+          <!-- Column 1: Hook & Visual Instruction (Para Creadoras) -->
+          <div class="space-y-3">
+            <div class="p-4 rounded-2xl bg-purple-50/80 border border-purple-200">
+              <span class="text-[10px] font-bold text-purple-800 uppercase tracking-wider block mb-1">🎯 Gancho / Hook Principal</span>
+              <div class="text-sm font-bold text-purple-950 font-cute" id="resHook">
+                "Si estás aprendiendo inglés como en el 2015, estás perdiendo empleos de $2,500 USD/mes..."
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-pink-50/80 border border-pink-200">
+              <span class="text-[10px] font-bold text-pink-800 uppercase tracking-wider block mb-1">🎨 Instrucción de Diseño (Para la Creadora)</span>
+              <p class="text-xs text-slate-700 leading-relaxed" id="resBriefVisual">
+                <strong>Estilo:</strong> Fondos pastel lavanda con contraste en texto púrpura oscuro. Incluir mockup de chat con IA en un smartphone y badge de oferta laboral remota en USD. Usar tipografía legible sin serifas.<br>
+                <strong>Formato de entrega:</strong> 1080x1350 px (Feed) o 1080x1920 px (Stories/Reels).
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Full Copywriting (Por Scarlet) -->
+          <div class="lg:col-span-2 space-y-3">
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1.5">✍️ Copywriting para Publicación (Scarlet Vega)</span>
+              <div class="text-xs text-slate-700 space-y-2 whitespace-pre-line leading-relaxed font-sans" id="resCopywriting">
+El error número 1 de quienes buscan trabajo remoto no es su falta de experiencia... es no saber comunicar su talento en inglés. 🌍💼
+
+Con la Inteligencia Artificial ya no necesitas pasar 4 años en un instituto tradicional memorizando gramática que nadie usa en una videollamada de Slack o Zoom.
+
+En Polyglot Map entrenamos a profesionales con IA aplicada:
+✅ Simula entrevistas de trabajo reales en inglés con prompts personalizados.
+✅ Aprende vocabulario técnico de tu industria en 3 semanas, no en 6 meses.
+✅ Postula a vacantes remotas que pagan entre $1,500 y $3,500 USD viviendo en Latinoamérica.
+
+📲 ¿Quieres ver las ofertas laborales de esta semana y entrenar tu inglés con IA?
+Comenta la palabra "POLÍGLOTA" o haz clic en el enlace de nuestra comunidad de WhatsApp en la biografía. 🚀
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between text-xs">
+              <span class="text-emerald-900 font-bold">Llamada a la acción (CTA):</span>
+              <span class="text-emerald-700 font-medium" id="resCTA">"Entra a nuestra comunidad de WhatsApp en el link de la bio."</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: EQUIPO & CREDENCIALES CV           -->
     <!-- ========================================== -->
     <div id="tab-equipo" class="tab-content hidden space-y-6">
       
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>👩‍💻</span> Equipo de Marketing & Publicidad · Credenciales Profesionales
+            <span>👥</span> Equipo Especializado de Marketing & Publicidad
           </h2>
           <p class="text-xs sm:text-sm text-slate-500">
-            Conoce los roles específicos en Polyglot Map y consulta el respaldo profesional de cada integrante con su CV oficial.
+            Roles redefinidos con cuotas precisas: diseño multiformato (4 piezas diarias), investigación de tendencias y co-organización del DAM.
           </p>
-        </div>
-        <div class="text-xs text-slate-500 bg-white px-3 py-1.5 rounded-full border border-purple-100 shadow-xs self-start sm:self-auto font-medium">
-          Haz clic en <strong>"Ver Credencial / CV Completo"</strong> para ver detalles académicos, experiencia y contactos.
         </div>
       </div>
 
@@ -476,189 +534,35 @@
 
             <div class="mt-4 pt-3 border-t border-purple-100 space-y-2 text-xs">
               <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-purple-600 font-bold">🎯</span>
-                <span><strong>Liderazgo General:</strong> Define lineamientos visuales y narrativas para IG, TikTok y YouTube.</span>
+                <span class="text-purple-600 font-bold">🛡️</span>
+                <span><strong>Quality Gatekeeper:</strong> Aprueba técnicamente cada una de las piezas antes de publicación.</span>
               </div>
               <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-purple-600 font-bold">🛡️</span>
-                <span><strong>Control Técnico:</strong> Aprobación final obligatoria de cada pieza antes de publicarla.</span>
+                <span class="text-purple-600 font-bold">🤝</span>
+                <span><strong>Coordinación con Allison:</strong> Define la grilla semanal y co-organiza el <strong>Banco de Material Audiovisual (DAM)</strong>.</span>
               </div>
               <div class="flex items-start gap-1.5 text-slate-700">
                 <span class="text-purple-600 font-bold">📂</span>
-                <span><strong>Gestión de Contenido:</strong> Clasificación y organización en carpetas por red social.</span>
+                <span><strong>Repositorio Cloud:</strong> Clasifica los artes en carpetas estandarizadas por red social.</span>
               </div>
             </div>
 
             <div class="mt-4 flex flex-wrap gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Premiere / AE</span>
+              <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Premiere Pro / AE</span>
               <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Illustrator / InDesign</span>
               <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Blender 3D</span>
-              <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Canva / CapCut Pro</span>
+              <span class="px-2 py-0.5 rounded-md bg-purple-50 text-[10px] font-semibold text-purple-700 border border-purple-200">Dirección de Arte</span>
             </div>
           </div>
 
           <div class="mt-6 pt-4 border-t border-purple-100">
             <button onclick="openCvModal('adriana')" class="w-full py-2.5 px-4 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-purple-200">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
               <span>Ver Credencial / CV Completo</span>
             </button>
           </div>
         </div>
 
-        <!-- CARD 2: Britani Mallqui -->
-        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-pink-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-start justify-between">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-pink-400 to-rose-300 p-0.5 shadow-md shadow-pink-200 flex items-center justify-center">
-                <div class="w-full h-full bg-pink-50 rounded-[14px] flex items-center justify-center text-pink-700 font-extrabold font-cute text-xl">
-                  BM
-                </div>
-              </div>
-              <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700 border border-pink-200">
-                Lunes & Miércoles
-              </span>
-            </div>
-
-            <div class="mt-4">
-              <h3 class="text-lg font-bold text-slate-900 font-cute">Britani Estrella Mallqui</h3>
-              <p class="text-xs font-semibold text-pink-700">Content Creator de Piezas Gráficas & WA</p>
-              <p class="text-xs text-slate-500 mt-0.5">UPN · Comunicaciones Audiovisuales (8vo ciclo)</p>
-            </div>
-
-            <div class="mt-4 pt-3 border-t border-pink-100 space-y-2 text-xs">
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-pink-600 font-bold">🎨</span>
-                <span><strong>Producción Gráfica:</strong> 8 piezas los lunes + 8 piezas los miércoles (16 piezas/sem).</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-pink-600 font-bold">💬</span>
-                <span><strong>Comunidad WhatsApp:</strong> Interacción activa y diaria con la audiencia y prospectos.</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-pink-600 font-bold">✨</span>
-                <span><strong>Storytelling & Atención:</strong> Alto sentido de dinamismo visual y servicio al usuario.</span>
-              </div>
-            </div>
-
-            <div class="mt-4 flex flex-wrap gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Canva Avanzado</span>
-              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">CapCut / Premiere</span>
-              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Fidelización & Retail</span>
-              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Guion Audiovisual</span>
-            </div>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-pink-100">
-            <button onclick="openCvModal('britani')" class="w-full py-2.5 px-4 rounded-xl bg-pink-500 hover:bg-pink-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-pink-200">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
-              <span>Ver Credencial / CV Completo</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- CARD 3: Daniela Bonilla -->
-        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-sky-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-start justify-between">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-400 to-cyan-300 p-0.5 shadow-md shadow-sky-200 flex items-center justify-center">
-                <div class="w-full h-full bg-sky-50 rounded-[14px] flex items-center justify-center text-sky-700 font-extrabold font-cute text-xl">
-                  DB
-                </div>
-              </div>
-              <span class="px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-700 border border-sky-200">
-                Martes & Jueves
-              </span>
-            </div>
-
-            <div class="mt-4">
-              <h3 class="text-lg font-bold text-slate-900 font-cute">Daniela Bonilla Montoya</h3>
-              <p class="text-xs font-semibold text-sky-700">Content Creator & Community WhatsApp</p>
-              <p class="text-xs text-slate-500 mt-0.5">UISIL · Técnico Marketing Digital & Lic. Español</p>
-            </div>
-
-            <div class="mt-4 pt-3 border-t border-sky-100 space-y-2 text-xs">
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-sky-600 font-bold">🎨</span>
-                <span><strong>Producción Gráfica:</strong> 8 piezas los martes + 8 piezas los jueves (16 piezas/sem).</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-sky-600 font-bold">🚀</span>
-                <span><strong>Publicación en WhatsApp:</strong> Encargada de subir el contenido del equipo a la comunidad.</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-sky-600 font-bold">🤖</span>
-                <span><strong>Optimización con IA:</strong> Flujos ágiles con ChatGPT, Gemini y Meta Business Suite.</span>
-              </div>
-            </div>
-
-            <div class="mt-4 flex flex-wrap gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">WhatsApp Business</span>
-              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Meta Business Suite</span>
-              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Canva / CapCut</span>
-              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Chatbots & Prompts IA</span>
-            </div>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-sky-100">
-            <button onclick="openCvModal('daniela')" class="w-full py-2.5 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-sky-200">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
-              <span>Ver Credencial / CV Completo</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- CARD 4: Scarlet Vega -->
-        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-amber-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-start justify-between">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-400 to-orange-300 p-0.5 shadow-md shadow-amber-200 flex items-center justify-center">
-                <div class="w-full h-full bg-amber-50 rounded-[14px] flex items-center justify-center text-amber-800 font-extrabold font-cute text-xl">
-                  SV
-                </div>
-              </div>
-              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
-                Copywriting & Video
-              </span>
-            </div>
-
-            <div class="mt-4">
-              <h3 class="text-lg font-bold text-slate-900 font-cute">Scarlet Melanie Vega</h3>
-              <p class="text-xs font-semibold text-amber-700">Content & Copywriting Specialist</p>
-              <p class="text-xs text-slate-500 mt-0.5">U. Europea de Madrid & UPC · Audiovisual & Publicidad</p>
-            </div>
-
-            <div class="mt-4 pt-3 border-t border-amber-100 space-y-2 text-xs">
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-amber-600 font-bold">✍️</span>
-                <span><strong>Copywriting Transversal:</strong> Redacta los textos de todas las piezas en todos los canales.</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-amber-600 font-bold">🎬</span>
-                <span><strong>Producción Audiovisual:</strong> Realiza 4 videos/semana formato Reels o TikTok.</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-amber-600 font-bold">📑</span>
-                <span><strong>Grilla de Contenido:</strong> Participa activamente en la creación y sincronización de temas.</span>
-              </div>
-            </div>
-
-            <div class="mt-4 flex flex-wrap gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">DaVinci Resolve Pro</span>
-              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Premiere / CapCut</span>
-              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Illustrator / Photoshop</span>
-              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Inglés Avanzado Británico</span>
-            </div>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-amber-100">
-            <button onclick="openCvModal('scarlet')" class="w-full py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-amber-200">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
-              <span>Ver Credencial / CV Completo</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- CARD 5: Allison Rivas -->
+        <!-- CARD 2: Allison Rivas -->
         <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-emerald-400 flex flex-col justify-between">
           <div>
             <div class="flex items-start justify-between">
@@ -668,72 +572,221 @@
                 </div>
               </div>
               <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
-                Sábado & Domingo
+                Tendencias & Estrategia
               </span>
             </div>
 
             <div class="mt-4">
               <h3 class="text-lg font-bold text-slate-900 font-cute">Allison Rivas</h3>
               <p class="text-xs font-semibold text-emerald-700">Asistente de Dirección & Content Strategist</p>
-              <p class="text-xs text-slate-500 mt-0.5">Especialista en Growth, Métricas & Propuestas Comerciales</p>
+              <p class="text-xs text-slate-500 mt-0.5">Especialista en Growth, Tendencias & Banco Audiovisual</p>
             </div>
 
             <div class="mt-4 pt-3 border-t border-emerald-100 space-y-2 text-xs">
               <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-emerald-600 font-bold">🔍</span>
+                <span><strong>Trend Hunting:</strong> Investiga tendencias de IA, idiomas y empleo remoto; propone ideas creativas.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-emerald-600 font-bold">🗄️</span>
+                <span><strong>Banco Audiovisual (DAM):</strong> Organiza junto con Adriana los clips, plantillas y assets.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
                 <span class="text-emerald-600 font-bold">💼</span>
-                <span><strong>Ofertas Laborales:</strong> 10 a 15 piezas gráficas de alto valor para WhatsApp (Sáb y Dom).</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-emerald-600 font-bold">📊</span>
-                <span><strong>Analítica Digital:</strong> Medición semanal de posicionamiento orgánico y atracción de leads.</span>
-              </div>
-              <div class="flex items-start gap-1.5 text-slate-700">
-                <span class="text-emerald-600 font-bold">🤝</span>
-                <span><strong>Soporte Directivo:</strong> Asiste a Adriana en la grilla y diseña propuestas comerciales.</span>
+                <span><strong>Ofertas Laborales:</strong> 10-15 piezas de vacantes los fines de semana para WhatsApp.</span>
               </div>
             </div>
 
             <div class="mt-4 flex flex-wrap gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Content Strategy</span>
-              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Métricas & KPIs</span>
+              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Investigación Tendencias</span>
+              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Banco de Materiales DAM</span>
               <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Propuestas Comerciales</span>
-              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Curaduría Empleo</span>
+              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[10px] font-semibold text-emerald-800 border border-emerald-200">Métricas & KPIs</span>
             </div>
           </div>
 
           <div class="mt-6 pt-4 border-t border-emerald-100">
             <button onclick="openCvModal('allison')" class="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-emerald-200">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
               <span>Ver Credencial / Perfil Completo</span>
             </button>
           </div>
         </div>
 
-        <!-- SUMMARY CARD: Synergy & Brand Hub -->
+        <!-- CARD 3: Scarlet Vega -->
+        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-amber-400 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-400 to-orange-300 p-0.5 shadow-md shadow-amber-200 flex items-center justify-center">
+                <div class="w-full h-full bg-amber-50 rounded-[14px] flex items-center justify-center text-amber-800 font-extrabold font-cute text-xl">
+                  SV
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                Videos & Grilla
+              </span>
+            </div>
+
+            <div class="mt-4">
+              <h3 class="text-lg font-bold text-slate-900 font-cute">Scarlet Melanie Vega</h3>
+              <p class="text-xs font-semibold text-amber-700">Content, Copywriting & Video Specialist</p>
+              <p class="text-xs text-slate-500 mt-0.5">U. Europea de Madrid & UPC · Audiovisual y Publicidad</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-amber-100 space-y-2 text-xs">
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-amber-600 font-bold">🎬</span>
+                <span><strong>Videos & Reels:</strong> Edición de 4 videos semanales (Reels/TikTok) con ritmo ágil y ganchos.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-amber-600 font-bold">✍️</span>
+                <span><strong>Copywriting Transversal:</strong> Redacción de copys persuasivos para todas las piezas y formatos.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-amber-600 font-bold">📑</span>
+                <span><strong>Soporte en Grilla:</strong> Apoya directamente a Adriana en la estructura y calendarización de contenido.</span>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">DaVinci Resolve Pro</span>
+              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Reels & TikToks</span>
+              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Co-organización Grilla</span>
+              <span class="px-2 py-0.5 rounded-md bg-amber-50 text-[10px] font-semibold text-amber-800 border border-amber-200">Inglés Británico Avanzado</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-amber-100">
+            <button onclick="openCvModal('scarlet')" class="w-full py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-amber-200">
+              <span>Ver Credencial / CV Completo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4: Britani Mallqui -->
+        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-pink-400 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-pink-400 to-rose-300 p-0.5 shadow-md shadow-pink-200 flex items-center justify-center">
+                <div class="w-full h-full bg-pink-50 rounded-[14px] flex items-center justify-center text-pink-700 font-extrabold font-cute text-xl">
+                  BM
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700 border border-pink-200">
+                Content Creator (Lun/Mié)
+              </span>
+            </div>
+
+            <div class="mt-4">
+              <h3 class="text-lg font-bold text-slate-900 font-cute">Britani Estrella Mallqui</h3>
+              <p class="text-xs font-semibold text-pink-700">Content Creator de Piezas Gráficas & WA</p>
+              <p class="text-xs text-slate-500 mt-0.5">UPN · Comunicaciones Audiovisuales en Medios Digitales</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-pink-100 space-y-2 text-xs">
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-pink-600 font-bold">🎨</span>
+                <span><strong>4 Piezas Gráficas por Día:</strong> Posts, stories, flyers, banners, anuncios digitales y piezas de campaña.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-pink-600 font-bold">💬</span>
+                <span><strong>Comunidad WhatsApp:</strong> Interacción diaria y dinamización con los prospectos.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-pink-600 font-bold">📅</span>
+                <span><strong>Días de Producción:</strong> Lunes y Miércoles (alta concentración creativa).</span>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Posts & Stories</span>
+              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Flyers & Banners</span>
+              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Anuncios Digitales</span>
+              <span class="px-2 py-0.5 rounded-md bg-pink-50 text-[10px] font-semibold text-pink-700 border border-pink-200">Canva / CapCut</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-pink-100">
+            <button onclick="openCvModal('britani')" class="w-full py-2.5 px-4 rounded-xl bg-pink-500 hover:bg-pink-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-pink-200">
+              <span>Ver Credencial / CV Completo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 5: Daniela Bonilla -->
+        <div class="glass-card glass-card-hover rounded-3xl p-6 border-t-4 border-t-sky-400 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-400 to-cyan-300 p-0.5 shadow-md shadow-sky-200 flex items-center justify-center">
+                <div class="w-full h-full bg-sky-50 rounded-[14px] flex items-center justify-center text-sky-700 font-extrabold font-cute text-xl">
+                  DB
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-700 border border-sky-200">
+                Content Creator (Mar/Jue)
+              </span>
+            </div>
+
+            <div class="mt-4">
+              <h3 class="text-lg font-bold text-slate-900 font-cute">Daniela Bonilla Montoya</h3>
+              <p class="text-xs font-semibold text-sky-700">Content Creator & Community en WhatsApp</p>
+              <p class="text-xs text-slate-500 mt-0.5">UISIL · Técnico Marketing Digital & Lic. Español</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-sky-100 space-y-2 text-xs">
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-sky-600 font-bold">🎨</span>
+                <span><strong>4 Piezas Gráficas por Día:</strong> Posts, stories, flyers, banners, anuncios y piezas de campaña.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-sky-600 font-bold">🚀</span>
+                <span><strong>Subida a WhatsApp:</strong> Encargada de publicar el contenido del equipo en la comunidad.</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <span class="text-sky-600 font-bold">📅</span>
+                <span><strong>Días de Producción:</strong> Martes y Jueves (ejecución y distribución).</span>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Posts & Stories</span>
+              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Banners & Campañas</span>
+              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">WhatsApp Business</span>
+              <span class="px-2 py-0.5 rounded-md bg-sky-50 text-[10px] font-semibold text-sky-700 border border-sky-200">Meta Business Suite</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-sky-100">
+            <button onclick="openCvModal('daniela')" class="w-full py-2.5 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm shadow-sky-200">
+              <span>Ver Credencial / CV Completo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- SUMMARY CARD: Direct Collaboration Hub -->
         <div class="glass-card rounded-3xl p-6 bg-gradient-to-br from-purple-100/50 via-pink-100/50 to-amber-100/50 border border-purple-200 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-2">
               <span class="text-2xl">✨</span>
-              <h3 class="text-base font-bold text-slate-800 font-cute">Sinergia del Equipo Polyglot</h3>
+              <h3 class="text-base font-bold text-slate-800 font-cute">Matriz de Trabajo Colaborativo</h3>
             </div>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Un flujo donde el talento de cada integrante complementa al de las demás:
+              Equipos de trabajo interconectados:
             </p>
             <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-white/80 border border-purple-100">
-                <strong>Diseño Gráfico Diario:</strong> Britani (Lun/Mié) + Daniela (Mar/Jue) + Allison (Sáb/Dom) cubren los 7 días sin sobrecarga.
+              <div class="p-2.5 rounded-xl bg-white/85 border border-purple-100">
+                <strong>Adriana & Allison:</strong> Planificación de grilla semanal, curaduría de tendencias y estructuración del Banco Audiovisual (DAM).
               </div>
-              <div class="p-2 rounded-xl bg-white/80 border border-purple-100">
-                <strong>Voz de Marca:</strong> Scarlet aporta consistencia en redacción y narrativa dinámica en video vertical.
+              <div class="p-2.5 rounded-xl bg-white/85 border border-purple-100">
+                <strong>Adriana & Scarlet:</strong> Sincronización de guiones de video 9:16 y copies persuasivos alineados a la grilla.
               </div>
-              <div class="p-2 rounded-xl bg-white/80 border border-purple-100">
-                <strong>Liderazgo & Calidad:</strong> Adriana garantiza el estándar estético y organizativo en todas las plataformas.
+              <div class="p-2.5 rounded-xl bg-white/85 border border-purple-100">
+                <strong>Britani & Daniela:</strong> Cobertura gráfica de posts, stories, flyers, banners y anuncios digitales de lunes a jueves.
               </div>
             </div>
           </div>
           <div class="mt-4 text-center">
             <span class="inline-block px-4 py-1.5 rounded-full bg-purple-600 text-white font-bold text-xs shadow-xs">
-              Equipo de Alto Rendimiento 🌟
+              Flujo Operativo Sistematizado 🌟
             </span>
           </div>
         </div>
@@ -743,21 +796,21 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 3: CRONOGRAMA SEMANAL (LUNES A DOMINGO)-->
+    <!-- TAB 4: CRONOGRAMA SEMANAL OPERATIVO        -->
     <!-- ========================================== -->
     <div id="tab-calendario" class="tab-content hidden space-y-6">
       
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>📅</span> Cronograma Semanal de Operaciones (Lunes a Domingo)
+            <span>📅</span> Cronograma Semanal Operativo (Lunes a Domingo)
           </h2>
           <p class="text-xs sm:text-sm text-slate-500">
-            Entrega continua sin baches de tiempo: distribución exacta de producción, revisión y canales por día.
+            Asignación exacta de entregables: 4 piezas gráficas diarias por creadora, videos de Scarlet y curaduría de fin de semana.
           </p>
         </div>
 
-        <!-- Filter days or view all -->
+        <!-- Filter days -->
         <div class="flex flex-wrap gap-1.5 bg-white p-1 rounded-2xl border border-purple-100 shadow-xs text-xs font-semibold">
           <button onclick="filterCalendarDay('all')" id="btn-day-all" class="cal-filter-btn px-3 py-1 rounded-xl bg-purple-600 text-white transition">Todos</button>
           <button onclick="filterCalendarDay('lunes')" id="btn-day-lunes" class="cal-filter-btn px-3 py-1 rounded-xl text-slate-600 hover:bg-purple-50 transition">Lun</button>
@@ -778,44 +831,34 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-pink-100">
               <span class="font-bold text-sm text-pink-900 font-cute">Lunes</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-700 font-bold">8 Gráficas</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-700 font-bold">4 Piezas</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/80 border border-pink-200">
-                <div class="flex items-center gap-1.5 font-bold text-pink-900">
+                <div class="flex items-center gap-1 font-bold text-pink-900">
                   <span class="w-2 h-2 rounded-full bg-pink-500"></span>
                   <span>Britani Mallqui</span>
                 </div>
-                <p class="text-slate-600 mt-1">Produce <strong>8 piezas gráficas</strong> para canales clave.</p>
-                <div class="mt-1.5 flex items-center justify-between text-[10px] text-pink-700 font-semibold">
-                  <span>💬 WA Interacción activa</span>
-                  <span>IG/FB/LinkedIn</span>
-                </div>
+                <p class="text-slate-600 mt-1">Diseña <strong>4 piezas gráficas</strong>: Post Feed + Story + Flyer evento + Anuncio digital.</p>
+                <div class="mt-1 text-[10px] text-pink-700 font-semibold">💬 WA Diaria viva</div>
               </div>
 
-              <!-- Scarlet -->
+              <!-- Scarlet & Adriana -->
               <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <div class="flex items-center gap-1.5 font-bold text-amber-900">
-                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>Scarlet Vega</span>
-                </div>
-                <p class="text-slate-600 mt-1">Redacción de copies para el bloque semanal y sincronización de grilla.</p>
+                <span class="font-bold text-amber-900">Scarlet + Adriana:</span>
+                <p class="text-slate-600 mt-0.5">Sincronización de grilla semanal y redacción de copies.</p>
               </div>
 
-              <!-- Adriana -->
-              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200">
-                <div class="flex items-center gap-1.5 font-bold text-purple-900">
-                  <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                  <span>Adriana Chávez</span>
-                </div>
-                <p class="text-slate-600 mt-1">Revisión técnica de las 8 piezas y archivado en carpetas de canal.</p>
+              <!-- Adriana Gatekeeper -->
+              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200 text-[11px]">
+                <strong class="text-purple-900">Adriana:</strong> Control técnico y archivo en carpetas de red.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Arranque de semana & Grilla
+            Arranque · Formatos Gráficos
           </div>
         </div>
 
@@ -824,39 +867,33 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-sky-100">
               <span class="font-bold text-sm text-sky-900 font-cute">Martes</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 font-bold">8 Gráficas</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 font-bold">4 Piezas</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Daniela -->
               <div class="p-2 rounded-xl bg-sky-50/80 border border-sky-200">
-                <div class="flex items-center gap-1.5 font-bold text-sky-900">
+                <div class="flex items-center gap-1 font-bold text-sky-900">
                   <span class="w-2 h-2 rounded-full bg-sky-500"></span>
                   <span>Daniela Bonilla</span>
                 </div>
-                <p class="text-slate-600 mt-1">Crea <strong>8 piezas gráficas</strong> y <strong>sube contenido a WhatsApp</strong>.</p>
-                <div class="mt-1.5 text-[10px] text-sky-700 font-semibold">
-                  📲 Distribución en Comunidad WA
-                </div>
+                <p class="text-slate-600 mt-1">Diseña <strong>4 piezas</strong> (Post, Story, Banner web, Pieza campaña) + <strong>subida a WhatsApp</strong>.</p>
               </div>
 
-              <!-- Scarlet -->
+              <!-- Scarlet Video 1 -->
               <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <div class="flex items-center gap-1.5 font-bold text-amber-900">
-                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>Scarlet Vega</span>
-                </div>
-                <p class="text-slate-600 mt-1">Edición y finalización de <strong>Video 1</strong> (Reel/TikTok educativo).</p>
+                <span class="font-bold text-amber-900">Scarlet:</span>
+                <p class="text-slate-600 mt-0.5">Edición de <strong>Video 1</strong> (Reel/TikTok de IA e Idiomas).</p>
               </div>
 
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/60 border border-pink-100 text-[11px]">
-                <strong class="text-pink-800">Britani:</strong> Interacción y atención a comunidad en WhatsApp.
+                <strong class="text-pink-800">Britani:</strong> Atención e interacción activa en WhatsApp.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Activación WhatsApp & Video 1
+            Subida WA & Video 1
           </div>
         </div>
 
@@ -865,43 +902,33 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-pink-100">
               <span class="font-bold text-sm text-pink-900 font-cute">Miércoles</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-700 font-bold">8 Gráficas</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-700 font-bold">4 Piezas</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/80 border border-pink-200">
-                <div class="flex items-center gap-1.5 font-bold text-pink-900">
+                <div class="flex items-center gap-1 font-bold text-pink-900">
                   <span class="w-2 h-2 rounded-full bg-pink-500"></span>
                   <span>Britani Mallqui</span>
                 </div>
-                <p class="text-slate-600 mt-1">Segunda tanda de <strong>8 piezas gráficas</strong> (completando 16 semanales).</p>
-                <div class="mt-1.5 text-[10px] text-pink-700 font-semibold">
-                  💬 Interacción diaria WA
-                </div>
+                <p class="text-slate-600 mt-1">Diseña <strong>4 piezas gráficas</strong>: Post carrusel + 2 Stories interactivas + Banner LinkedIn.</p>
               </div>
 
-              <!-- Scarlet -->
+              <!-- Scarlet Video 2 -->
               <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <div class="flex items-center gap-1.5 font-bold text-amber-900">
-                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>Scarlet Vega</span>
-                </div>
-                <p class="text-slate-600 mt-1">Producción de <strong>Video 2</strong> (Formato dinámico Polyglot Map).</p>
+                <span class="font-bold text-amber-900">Scarlet:</span>
+                <p class="text-slate-600 mt-0.5">Producción y corte de <strong>Video 2</strong>.</p>
               </div>
 
               <!-- Adriana -->
-              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200">
-                <div class="flex items-center gap-1.5 font-bold text-purple-900">
-                  <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                  <span>Adriana Chávez</span>
-                </div>
-                <p class="text-slate-600 mt-1">Control técnico de artes y distribución en carpetas digitales.</p>
+              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200 text-[11px]">
+                <strong class="text-purple-900">Adriana:</strong> Revisión técnica y almacenamiento en el DAM.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Entrega de mitad de semana
+            Mitad de Semana & Video 2
           </div>
         </div>
 
@@ -910,39 +937,33 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-sky-100">
               <span class="font-bold text-sm text-sky-900 font-cute">Jueves</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 font-bold">8 Gráficas</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 font-bold">4 Piezas</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Daniela -->
               <div class="p-2 rounded-xl bg-sky-50/80 border border-sky-200">
-                <div class="flex items-center gap-1.5 font-bold text-sky-900">
+                <div class="flex items-center gap-1 font-bold text-sky-900">
                   <span class="w-2 h-2 rounded-full bg-sky-500"></span>
                   <span>Daniela Bonilla</span>
                 </div>
-                <p class="text-slate-600 mt-1">Segunda tanda de <strong>8 piezas gráficas</strong> (completando 16 semanales).</p>
-                <div class="mt-1.5 text-[10px] text-sky-700 font-semibold">
-                  📲 Subida masiva a WhatsApp
-                </div>
+                <p class="text-slate-600 mt-1">Diseña <strong>4 piezas</strong> (Flyer taller, Anuncio conversión, Story, Banner) + <strong>subida a WhatsApp</strong>.</p>
               </div>
 
-              <!-- Scarlet -->
+              <!-- Scarlet Video 3 -->
               <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <div class="flex items-center gap-1.5 font-bold text-amber-900">
-                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>Scarlet Vega</span>
-                </div>
-                <p class="text-slate-600 mt-1">Edición y entrega de <strong>Video 3</strong> (Reel/TikTok tendencias).</p>
+                <span class="font-bold text-amber-900">Scarlet:</span>
+                <p class="text-slate-600 mt-0.5">Edición de <strong>Video 3</strong> (Reel/TikTok tendencias).</p>
               </div>
 
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/60 border border-pink-100 text-[11px]">
-                <strong class="text-pink-800">Britani:</strong> Interacción y dinamización en WhatsApp.
+                <strong class="text-pink-800">Britani:</strong> Interacción y atención con prospectos en WhatsApp.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Cierre visual entre semana
+            Subida WA & Video 3
           </div>
         </div>
 
@@ -951,36 +972,33 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-amber-100">
               <span class="font-bold text-sm text-amber-900 font-cute">Viernes</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold">Video 4 & Cierre</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold">Video 4</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
-              <!-- Scarlet -->
+              <!-- Scarlet Video 4 -->
               <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <div class="flex items-center gap-1.5 font-bold text-amber-900">
+                <div class="flex items-center gap-1 font-bold text-amber-900">
                   <span class="w-2 h-2 rounded-full bg-amber-500"></span>
                   <span>Scarlet Vega</span>
                 </div>
-                <p class="text-slate-600 mt-1">Entrega de <strong>Video 4</strong> (cierre de cuota de 4 videos semanales).</p>
+                <p class="text-slate-600 mt-1">Entrega final de <strong>Video 4</strong> + cierre de copies para la semana entrante.</p>
               </div>
 
-              <!-- Adriana -->
+              <!-- Adriana & Allison DAM -->
               <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200">
-                <div class="flex items-center gap-1.5 font-bold text-purple-900">
-                  <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                  <span>Adriana Chávez</span>
-                </div>
-                <p class="text-slate-600 mt-1">Aprobación técnica integral y ordenamiento de carpetas para programaciones.</p>
+                <span class="font-bold text-purple-900">Adriana & Allison:</span>
+                <p class="text-slate-600 mt-0.5">Revisión de carpetas, orden del Banco Audiovisual y auditoría de calidad.</p>
               </div>
 
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/60 border border-pink-100 text-[11px]">
-                <strong class="text-pink-800">Britani:</strong> Interacción diaria con la comunidad en WhatsApp.
+                <strong class="text-pink-800">Britani:</strong> Interacción continua en WhatsApp.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Control de calidad & Videos
+            Cierre Videos & DAM
           </div>
         </div>
 
@@ -989,36 +1007,31 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-emerald-100">
               <span class="font-bold text-sm text-emerald-900 font-cute">Sábado</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">Allison (Día 1)</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">Tendencias</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Allison -->
               <div class="p-2 rounded-xl bg-emerald-50/80 border border-emerald-200">
-                <div class="flex items-center gap-1.5 font-bold text-emerald-900">
+                <div class="flex items-center gap-1 font-bold text-emerald-900">
                   <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                   <span>Allison Rivas</span>
                 </div>
-                <p class="text-slate-600 mt-1">Elaboración de <strong>5 a 8 piezas gráficas</strong> de ofertas laborales para WhatsApp.</p>
-                <div class="mt-1.5 text-[10px] text-emerald-700 font-semibold">
-                  💼 Empleabilidad & Conversión
-                </div>
-              </div>
-
-              <!-- Commercial Proposals -->
-              <div class="p-2 rounded-xl bg-white border border-emerald-100">
-                <span class="font-bold text-slate-700">Propuestas Comerciales:</span>
-                <p class="text-slate-500 mt-0.5 text-[11px]">Desarrollo de propuestas B2B para partnerships con academias/empresas.</p>
+                <p class="text-slate-600 mt-1">
+                  1. Investiga <strong>tendencias</strong> de IA y propone ideas.<br>
+                  2. Diseña <strong>5 a 8 piezas de ofertas laborales</strong> para WhatsApp.<br>
+                  3. Elabora propuestas comerciales.
+                </p>
               </div>
 
               <!-- Britani -->
               <div class="p-2 rounded-xl bg-pink-50/60 border border-pink-100 text-[11px]">
-                <strong class="text-pink-800">Britani:</strong> Atención continua y dinamismo de fin de semana en WhatsApp.
+                <strong class="text-pink-800">Britani:</strong> Dinamización de fin de semana en WhatsApp.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Ofertas Laborales & Alianzas
+            Tendencias & Ofertas (1)
           </div>
         </div>
 
@@ -1027,239 +1040,108 @@
           <div>
             <div class="flex items-center justify-between pb-2 border-b border-emerald-100">
               <span class="font-bold text-sm text-emerald-900 font-cute">Domingo</span>
-              <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">Métricas & Grilla</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">Métricas & DAM</span>
             </div>
 
             <div class="mt-3 space-y-2.5 text-xs">
               <!-- Allison -->
               <div class="p-2 rounded-xl bg-emerald-50/80 border border-emerald-200">
-                <div class="flex items-center gap-1.5 font-bold text-emerald-900">
+                <div class="flex items-center gap-1 font-bold text-emerald-900">
                   <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                   <span>Allison Rivas</span>
                 </div>
-                <p class="text-slate-600 mt-1">Completa la meta de <strong>10-15 piezas de ofertas laborales</strong>.</p>
+                <p class="text-slate-600 mt-1">Completa la meta de <strong>10 a 15 piezas de ofertas laborales</strong> para WhatsApp.</p>
               </div>
 
-              <!-- Analytics & Assistant mode -->
+              <!-- Sinergia Triple -->
               <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200">
-                <div class="flex items-center gap-1.5 font-bold text-purple-900">
-                  <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                  <span>Sinergia: Allison + Adriana</span>
-                </div>
-                <p class="text-slate-600 mt-1">
-                  1. Revisión de métricas de posicionamiento digital.<br>
-                  2. Asistencia en organización y estructuración de la grilla de la siguiente semana.
+                <span class="font-bold text-purple-900">Adriana + Allison + Scarlet:</span>
+                <p class="text-slate-600 mt-0.5">
+                  • Revisión de métricas de posicionamiento.<br>
+                  • Armado de la grilla de la siguiente semana.<br>
+                  • Actualización del Banco DAM.
                 </p>
-              </div>
-
-              <!-- Britani -->
-              <div class="p-2 rounded-xl bg-pink-50/60 border border-pink-100 text-[11px]">
-                <strong class="text-pink-800">Britani:</strong> Interacción con usuarios en WhatsApp.
               </div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 text-center font-medium">
-            Foco: Métricas, Siguiente Grilla
+            Siguiente Grilla & Métricas
           </div>
         </div>
 
-      </div>
-
-      <!-- Weekly Volume Summary Footer -->
-      <div class="glass-card rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border border-purple-100">
-        <div class="flex items-center gap-3">
-          <div class="p-2.5 rounded-xl bg-purple-100 text-purple-700 text-xl">
-            📊
-          </div>
-          <div>
-            <h4 class="text-sm font-bold text-slate-800 font-cute">Resumen de Carga Semanal Balanceada</h4>
-            <p class="text-xs text-slate-500">Todos los días tienen asignación precisa y evitan cuellos de botella creativos.</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-2 text-xs font-bold">
-          <span class="px-3 py-1.5 rounded-xl bg-pink-50 text-pink-700 border border-pink-200">Britani: 16 gráficas</span>
-          <span class="px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 border border-sky-200">Daniela: 16 gráficas</span>
-          <span class="px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200">Allison: 10-15 ofertas</span>
-          <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-700 border border-amber-200">Scarlet: 4 videos + copies</span>
-          <span class="px-3 py-1.5 rounded-xl bg-purple-50 text-purple-700 border border-purple-200">Adriana: 100% aprobación</span>
-        </div>
       </div>
 
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 4: PIPELINE & APROBACIÓN TÉCNICA       -->
+    <!-- TAB 5: PIPELINE & QUALITY GATE             -->
     <!-- ========================================== -->
     <div id="tab-pipeline" class="tab-content hidden space-y-6">
       
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>📋</span> Pipeline de Trabajo Colaborativo & Aprobación Técnica
+            <span>📋</span> Pipeline de Producción & Control Técnico de Calidad
           </h2>
           <p class="text-xs sm:text-sm text-slate-500">
-            Flujo paso a paso desde la concepción estratégica hasta el guardado metódico en carpetas y difusión.
+            Filtro de calidad estricto: ninguna pieza se publica sin la verificación técnica previa de Adriana Chávez.
           </p>
         </div>
-        <div class="text-xs px-3 py-1.5 rounded-full bg-purple-100 text-purple-800 font-bold border border-purple-200 self-start sm:self-auto">
-          Gatekeeper: Adriana Chávez
-        </div>
+        <span class="px-3 py-1.5 rounded-full bg-purple-100 text-purple-800 font-bold text-xs border border-purple-200">
+          Gatekeeper Obligatorio
+        </span>
       </div>
 
-      <!-- Kanban Pipeline Columns -->
+      <!-- Pipeline Cards -->
       <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
         
-        <!-- STAGE 1: Ideación & Grilla -->
-        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-indigo-300 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-indigo-800 font-cute">1. Grilla & Temas</span>
-              <span class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-800 text-[10px] font-bold flex items-center justify-center">1</span>
-            </div>
-            <p class="text-[11px] text-slate-500 mb-3">Estructura semanal de temas según pilares: informativo, empleabilidad, idiomas y ventas.</p>
-
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-white border border-indigo-100 shadow-xs">
-                <div class="font-bold text-slate-800">Definición de Pilares</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Scarlet + Allison + Adriana</p>
-                <div class="mt-2 text-[10px] px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 font-semibold inline-block">
-                  Sincronizado cada domingo
-                </div>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-indigo-100 shadow-xs">
-                <div class="font-bold text-slate-800">Ofertas Laborales Polyglot</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Curaduría de Allison para WA</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-2 border-t border-slate-100 text-[10px] text-indigo-700 font-semibold">
-            Responsable: Adriana / Allison / Scarlet
+        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-indigo-400">
+          <span class="text-xs font-bold text-indigo-900 uppercase font-cute block mb-2">1. Investigación & Grilla</span>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Allison investiga tendencias de IA y empleo. Adriana, Allison y Scarlet estructuran la grilla con temas de alto valor.
+          </p>
+          <div class="mt-3 p-2 rounded-xl bg-indigo-50 text-[10px] text-indigo-700 font-semibold">
+            Responsables: Adriana, Allison, Scarlet
           </div>
         </div>
 
-        <!-- STAGE 2: Copywriting -->
-        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-amber-300 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-800 font-cute">2. Copywriting</span>
-              <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold flex items-center justify-center">2</span>
-            </div>
-            <p class="text-[11px] text-slate-500 mb-3">Redacción persuasiva, llamadas a la acción (CTAs) para venta y formato de lectura ágil.</p>
-
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-white border border-amber-100 shadow-xs">
-                <div class="font-bold text-slate-800">Copy de Piezas Gráficas</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">42-47 textos adaptados por canal</p>
-                <div class="mt-2 text-[10px] px-2 py-0.5 rounded bg-amber-50 text-amber-700 font-semibold inline-block">
-                  Tone of voice Polyglot
-                </div>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-amber-100 shadow-xs">
-                <div class="font-bold text-slate-800">Guiones de Videos 9:16</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Ganchos (hooks) para Reels/TikTok</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-2 border-t border-slate-100 text-[10px] text-amber-700 font-semibold">
+        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-amber-400">
+          <span class="text-xs font-bold text-amber-900 uppercase font-cute block mb-2">2. Copywriting & Guiones</span>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Scarlet redacta los copies persuasivos para posts, stories, banners y redacta los guiones de los 4 videos semanales.
+          </p>
+          <div class="mt-3 p-2 rounded-xl bg-amber-50 text-[10px] text-amber-700 font-semibold">
             Responsable: Scarlet Vega
           </div>
         </div>
 
-        <!-- STAGE 3: Diseño & Producción -->
-        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-pink-300 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-pink-800 font-cute">3. Diseño & Edición</span>
-              <span class="w-5 h-5 rounded-full bg-pink-100 text-pink-800 text-[10px] font-bold flex items-center justify-center">3</span>
-            </div>
-            <p class="text-[11px] text-slate-500 mb-3">Elaboración gráfica de piezas y edición audiovisual con lineamientos de marca.</p>
-
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-white border border-pink-100 shadow-xs">
-                <div class="font-bold text-slate-800">Piezas Lun & Mié</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Britani Mallqui (8+8 = 16 piezas)</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-sky-100 shadow-xs">
-                <div class="font-bold text-slate-800">Piezas Mar & Jue</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Daniela Bonilla (8+8 = 16 piezas)</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-emerald-100 shadow-xs">
-                <div class="font-bold text-slate-800">Ofertas Sáb & Dom</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Allison Rivas (10-15 piezas WA)</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-amber-100 shadow-xs">
-                <div class="font-bold text-slate-800">4 Videos Semanales</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Scarlet Vega (Reels/TikTok)</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-2 border-t border-slate-100 text-[10px] text-pink-700 font-semibold">
-            Responsable: Creadoras de Contenido
+        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-pink-400">
+          <span class="text-xs font-bold text-pink-900 uppercase font-cute block mb-2">3. Diseño & Edición</span>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Britani (Lun/Mié) y Daniela (Mar/Jue) diseñan 4 piezas por jornada. Scarlet edita los videos. Allison diseña ofertas WA (Sáb/Dom).
+          </p>
+          <div class="mt-3 p-2 rounded-xl bg-pink-50 text-[10px] text-pink-700 font-semibold">
+            Responsables: Content Creators
           </div>
         </div>
 
-        <!-- STAGE 4: Aprobación Técnica (Gatekeeper) -->
-        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-purple-500 bg-purple-50/30 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-purple-900 font-cute">4. Control Técnico</span>
-              <span class="w-5 h-5 rounded-full bg-purple-200 text-purple-900 text-[10px] font-bold flex items-center justify-center">4</span>
-            </div>
-            <p class="text-[11px] text-slate-600 mb-3">Filtro de calidad obligatorio antes de cualquier difusión o programación.</p>
-
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-white border-2 border-purple-200 shadow-xs">
-                <div class="flex items-center justify-between">
-                  <span class="font-bold text-purple-900">Aprobación Técnica</span>
-                  <span class="text-purple-600">🛡️</span>
-                </div>
-                <p class="text-[11px] text-slate-600 mt-1">
-                  • Tipografía y colores exactos<br>
-                  • Ortografía y legibilidad<br>
-                  • Resolución y formato por red<br>
-                  • Narrativa y consistencia
-                </p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-purple-100/70 border border-purple-200 text-[11px] text-purple-800 font-medium">
-                🔒 Si no cumple el estándar técnico, se solicita ajuste inmediato antes de archivar.
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-2 border-t border-purple-200 text-[10px] text-purple-800 font-bold">
-            Responsable: Adriana Chávez (Lead)
+        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-purple-600 bg-purple-50/40">
+          <span class="text-xs font-bold text-purple-950 uppercase font-cute block mb-2">4. Control Técnico (Gate)</span>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            Adriana inspecciona: tipografía oficial, paleta pastel, ortografía, compresión 1080p, audio claro y CTA hacia WhatsApp.
+          </p>
+          <div class="mt-3 p-2 rounded-xl bg-purple-200 text-[10px] text-purple-900 font-bold">
+            🛡️ Aprobación por Adriana Chávez
           </div>
         </div>
 
-        <!-- STAGE 5: Carpetas & Publicación -->
-        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-emerald-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 font-cute">5. Difusión & Canal</span>
-              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold flex items-center justify-center">5</span>
-            </div>
-            <p class="text-[11px] text-slate-500 mb-3">Organización en carpetas y salida a los 6 canales con atención viva.</p>
-
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-white border border-emerald-100 shadow-xs">
-                <div class="font-bold text-slate-800">Organización en Carpetas</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Adriana clasifica por red social</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-emerald-100 shadow-xs">
-                <div class="font-bold text-slate-800">Subida a WhatsApp</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Daniela publica en comunidad</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-emerald-100 shadow-xs">
-                <div class="font-bold text-slate-800">Interacción & Conversión</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Britani modera chat diariamente</p>
-              </div>
-              <div class="p-2.5 rounded-xl bg-white border border-emerald-100 shadow-xs">
-                <div class="font-bold text-slate-800">Monitoreo de Métricas</div>
-                <p class="text-[11px] text-slate-500 mt-0.5">Allison mide engagement y ventas</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-2 border-t border-slate-100 text-[10px] text-emerald-700 font-semibold">
-            Responsable: Equipo Multicanal
+        <div class="glass-card rounded-2xl p-4 border-t-4 border-t-emerald-400">
+          <span class="text-xs font-bold text-emerald-900 uppercase font-cute block mb-2">5. DAM & Distribución</span>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Adriana archiva en la carpeta de red. Daniela sube a WhatsApp (Mar/Jue). Britani modera el chat a diario. Allison mide KPIs.
+          </p>
+          <div class="mt-3 p-2 rounded-xl bg-emerald-50 text-[10px] text-emerald-700 font-semibold">
+            Responsables: Todo el Equipo
           </div>
         </div>
 
@@ -1268,338 +1150,222 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 5: ESTRATEGIA DE CANALES (6 REDES)     -->
+    <!-- TAB 6: BANCO AUDIOVISUAL (DAM) & CARPETAS  -->
+    <!-- ========================================== -->
+    <div id="tab-dam" class="tab-content hidden space-y-6">
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
+            <span>🗄️</span> Banco de Material Audiovisual (DAM) & Repositorio Digital
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500">
+            Co-organizado metódicamente por <strong>Adriana Chávez y Allison Rivas</strong> para que el equipo nunca sufra falta de material.
+          </p>
+        </div>
+        <span class="px-3 py-1.5 rounded-full bg-purple-100 text-purple-800 text-xs font-bold border border-purple-200">
+          Adriana + Allison DAM Lead
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- DAM Categories -->
+        <div class="glass-card rounded-3xl p-6 border border-purple-100 space-y-4">
+          <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2">
+            <span>📦</span> Categorías del Banco de Recursos (Asset Library)
+          </h3>
+          
+          <div class="space-y-3 text-xs">
+            <div class="p-3 rounded-2xl bg-purple-50/80 border border-purple-200">
+              <div class="font-bold text-purple-900 flex items-center justify-between">
+                <span>1. B-Roll & Clips de Idiomas + IA</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-purple-200 text-purple-800">Video 9:16</span>
+              </div>
+              <p class="text-slate-600 mt-1">Tomas de personas trabajando con laptops en cafeterías/co-workings, pantallas con prompts de ChatGPT, videollamadas en inglés, personas viajando por el mundo.</p>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-pink-50/80 border border-pink-200">
+              <div class="font-bold text-pink-900 flex items-center justify-between">
+                <span>2. Plantillas Editables Canva & Illustrator</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-pink-200 text-pink-800">Gráfica</span>
+              </div>
+              <p class="text-slate-600 mt-1">Diseñadas por Adriana con paleta pastel: Master templates para Carruseles (1080x1350), Stories interactivas (1080x1920), Flyers de eventos y Anuncios digitales.</p>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-emerald-50/80 border border-emerald-200">
+              <div class="font-bold text-emerald-900 flex items-center justify-between">
+                <span>3. Curaduría de Ofertas Laborales (Allison)</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-200 text-emerald-800">Empleo</span>
+              </div>
+              <p class="text-slate-600 mt-1">Base de datos actualizada con vacantes de empresas remotas (Upwork, Remote.co, LinkedIn Jobs, Turing, Remotive) que exigen inglés y habilidades digitales.</p>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-amber-50/80 border border-amber-200">
+              <div class="font-bold text-amber-900 flex items-center justify-between">
+                <span>4. Biblioteca de Audios & Efectos Sonoros</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-amber-200 text-amber-800">Audio Pro</span>
+              </div>
+              <p class="text-slate-600 mt-1">Tracks musicales en tendencia sin copyright, efectos de sonido (pops, whooshes, click) organizados por Scarlet y Adriana para CapCut y Premiere.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Cloud Folder Tree -->
+        <div class="glass-card rounded-3xl p-6 border border-purple-100 flex flex-col justify-between">
+          <div>
+            <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2 mb-2">
+              <span>📁</span> Estructura Oficial en la Nube (Google Drive / Notion)
+            </h3>
+            <p class="text-xs text-slate-600 mb-3">
+              Adriana verifica que cada arte aprobado se ubique en su carpeta de red:
+            </p>
+
+            <div class="font-mono text-xs bg-slate-900 text-slate-100 p-4 rounded-2xl space-y-1.5 overflow-x-auto">
+              <div class="text-pink-300 font-bold">📁 Polyglot_Map_Marketing_Hub/</div>
+              <div class="pl-4 text-purple-300">├── 📁 00_DAM_Banco_Audiovisual (Adriana & Allison)/</div>
+              <div class="pl-8 text-slate-400">├── B_Roll_Clips_IA_Work/</div>
+              <div class="pl-8 text-slate-400">├── Plantillas_Canva_Pastel_Official/</div>
+              <div class="pl-8 text-slate-400">└── Audios_Trends_Libres/</div>
+              <div class="pl-4 text-purple-300">├── 📁 01_Grilla_Semanales_Master/</div>
+              <div class="pl-8 text-slate-400">└── Grilla_Semanal_Sincronizada.xlsx</div>
+              <div class="pl-4 text-purple-300">├── 📁 02_Instagram/ (Posts, Carruseles, Stories)</div>
+              <div class="pl-4 text-purple-300">├── 📁 03_TikTok/ (Videos 9:16 Scarlet)</div>
+              <div class="pl-4 text-purple-300">├── 📁 04_LinkedIn/ (Banners, Artículos, B2B)</div>
+              <div class="pl-4 text-purple-300">├── 📁 05_Facebook/ (Piezas para Grupos)</div>
+              <div class="pl-4 text-purple-300">├── 📁 06_YouTube/ (Shorts y Episodios)</div>
+              <div class="pl-4 text-emerald-300 font-bold">├── 📁 07_Comunidad_WhatsApp/</div>
+              <div class="pl-8 text-slate-400">├── Para_Subir_Martes_Jueves_Daniela/</div>
+              <div class="pl-8 text-slate-400">└── Ofertas_Laborales_FinDeSemana_Allison/</div>
+              <div class="pl-4 text-amber-300 font-bold">└── 📁 99_En_Revision_Tecnica_Adriana/</div>
+            </div>
+          </div>
+
+          <div class="mt-4 p-3 rounded-xl bg-purple-50 border border-purple-200 text-xs text-purple-800">
+            🔒 <strong>Regla:</strong> Todo archivo exportado debe llevar nomenclatura: <code>[Canal]_[Fecha]_[Pilar]_[NombrePieza].mp4/.png</code>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 7: MATRIZ DE CANALES                   -->
     <!-- ========================================== -->
     <div id="tab-canales" class="tab-content hidden space-y-6">
       
       <div>
         <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-          <span>🌐</span> Estrategia y Distribución en las 6 Redes de Polyglot Map
+          <span>🌐</span> Estrategia por Red Social · Polyglot Map
         </h2>
         <p class="text-xs sm:text-sm text-slate-500">
-          Cada canal tiene un objetivo y formato específico para posicionar la marca y derivar tráfico al embudo de ventas.
+          Distribución de objetivos y formatos para los 6 canales de la marca.
         </p>
       </div>
 
-      <!-- 6 Channels Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- CANAL 1: WhatsApp Community -->
+        <!-- WhatsApp -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-emerald-500">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
-                💬
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">Comunidad de WhatsApp</h3>
-                <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                  Canal de Alta Conversión & Ventas
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg">💬</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">Comunidad de WhatsApp</h3>
+              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Conversión & Ventas</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-emerald-100">
-              <span class="font-bold text-slate-800">1. Interacción Diaria Viva:</span>
-              <p class="text-slate-600 mt-0.5">Britani conversa todos los días con la comunidad, resuelve consultas y mantiene activa la calidez de marca.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-emerald-100">
-              <span class="font-bold text-slate-800">2. Subida Programada:</span>
-              <p class="text-slate-600 mt-0.5">Daniela sube el contenido oficial del equipo los <strong>martes y jueves</strong>.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-emerald-100">
-              <span class="font-bold text-slate-800">3. Ofertas Laborales Semanales:</span>
-              <p class="text-slate-600 mt-0.5">Allison elabora <strong>10 a 15 piezas gráficas los fines de semana</strong> para compartir ofertas y oportunidades bilingües/remotas.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-emerald-100 flex items-center justify-between text-[11px] text-emerald-800 font-bold">
-            <span>Objetivo: Venta directa & Fidelización</span>
-            <span>⭐ Vital</span>
-          </div>
+          <p class="text-xs text-slate-600 mb-2">Canal central de cierre:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• <strong>Britani:</strong> Conversación e interacción viva a diario.</li>
+            <li>• <strong>Daniela:</strong> Subida programada los martes y jueves.</li>
+            <li>• <strong>Allison:</strong> 10-15 piezas de ofertas laborales los fines de semana.</li>
+          </ul>
         </div>
 
-        <!-- CANAL 2: Instagram -->
+        <!-- Instagram -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-pink-500">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center text-xl">
-                📸
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">Instagram (@polyglotmap)</h3>
-                <span class="text-[10px] font-bold text-pink-700 bg-pink-50 px-2 py-0.5 rounded-full border border-pink-200">
-                  Branding Visual & Alcance
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center text-lg">📸</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">Instagram (@polyglotmap)</h3>
+              <span class="text-[10px] font-bold text-pink-700 bg-pink-50 px-2 py-0.5 rounded-full">Branding & Tráfico</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-pink-100">
-              <span class="font-bold text-slate-800">Formatos Principales:</span>
-              <p class="text-slate-600 mt-0.5">Carruseles educativos (Britani/Daniela), Reels de alta retención (Scarlet) y Stories de interacción diaria.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-pink-100">
-              <span class="font-bold text-slate-800">Narrativa:</span>
-              <p class="text-slate-600 mt-0.5">Definida por Adriana para inspirar a aprender idiomas y viajar por el mundo.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-pink-100">
-              <span class="font-bold text-slate-800">Call to Action (CTA):</span>
-              <p class="text-slate-600 mt-0.5">"Únete a nuestra comunidad de WhatsApp en el link de la bio".</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-pink-100 flex items-center justify-between text-[11px] text-pink-800 font-bold">
-            <span>Objetivo: Posicionamiento & Leads</span>
-            <span>Diario</span>
-          </div>
+          <p class="text-xs text-slate-600 mb-2">Atracción visual:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• Carruseles educativos de IA e idiomas (Britani/Daniela).</li>
+            <li>• Reels dinámicos con hooks auditivos (Scarlet).</li>
+            <li>• Stories interactivas que dirigen al link de WhatsApp en bio.</li>
+          </ul>
         </div>
 
-        <!-- CANAL 3: TikTok -->
+        <!-- TikTok -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-slate-800">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl">
-                🎵
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">TikTok</h3>
-                <span class="text-[10px] font-bold text-slate-800 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
-                  Viralidad & Descubrimiento
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-lg">🎵</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">TikTok</h3>
+              <span class="text-[10px] font-bold text-slate-800 bg-slate-100 px-2 py-0.5 rounded-full">Descubrimiento & Viralidad</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-slate-100">
-              <span class="font-bold text-slate-800">Contenido Dinámico:</span>
-              <p class="text-slate-600 mt-0.5">Videos cortos de Scarlet (4 por semana) aprovechando hooks auditivos y tendencias culturales de idiomas.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-slate-100">
-              <span class="font-bold text-slate-800">Edición Pro:</span>
-              <p class="text-slate-600 mt-0.5">Ritmo ágil, subtítulos dinámicos y sonido optimizado bajo revisión técnica de Adriana.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-slate-100">
-              <span class="font-bold text-slate-800">Estrategia Top of Funnel:</span>
-              <p class="text-slate-600 mt-0.5">Capturar usuarios nuevos y redirigirlos al ecosistema de Polyglot Map.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-800 font-bold">
-            <span>Objetivo: Crecimiento exponencial</span>
-            <span>4x semana</span>
-          </div>
+          <p class="text-xs text-slate-600 mb-2">Top of Funnel:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• 4 videos semanales producidos por Scarlet.</li>
+            <li>• Tendencias culturales, humor de aprendizaje y prompts de IA.</li>
+            <li>• Llamada a unirse a la comunidad gratuita.</li>
+          </ul>
         </div>
 
-        <!-- CANAL 4: LinkedIn -->
+        <!-- LinkedIn -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-blue-600">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl">
-                💼
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">LinkedIn</h3>
-                <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">
-                  B2B & Posicionamiento Profesional
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg">💼</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">LinkedIn</h3>
+              <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">Posicionamiento B2B</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-blue-100">
-              <span class="font-bold text-slate-800">Enfoque de Contenido:</span>
-              <p class="text-slate-600 mt-0.5">Oportunidades de empleo internacional, el valor de los idiomas en el salario y casos de éxito.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-blue-100">
-              <span class="font-bold text-slate-800">Propuestas Comerciales:</span>
-              <p class="text-slate-600 mt-0.5">Alianzas generadas por Allison Rivas dirigidas a profesionales y reclutadores.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-blue-100">
-              <span class="font-bold text-slate-800">Tone of Voice:</span>
-              <p class="text-slate-600 mt-0.5">Corporativo, inspiracional y analítico con infografías de datos claros.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-blue-100 flex items-center justify-between text-[11px] text-blue-800 font-bold">
-            <span>Objetivo: Autoridad & Alianzas B2B</span>
-            <span>3x semana</span>
-          </div>
+          <p class="text-xs text-slate-600 mb-2">Empleabilidad ejecutiva:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• Infografías de salarios remotos en USD (Allison).</li>
+            <li>• Propuestas comerciales para empresas y alianzas.</li>
+            <li>• Artículos sobre el impacto de la IA en profesionales bilingües.</li>
+          </ul>
         </div>
 
-        <!-- CANAL 5: Facebook -->
+        <!-- Facebook -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-sky-600">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl">
-                👥
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">Facebook</h3>
-                <span class="text-[10px] font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded-full border border-sky-200">
-                  Comunidad Amplia & Grupos
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg">👥</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">Facebook</h3>
+              <span class="text-[10px] font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded-full">Comunidades & Grupos</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-sky-100">
-              <span class="font-bold text-slate-800">Difusión en Grupos:</span>
-              <p class="text-slate-600 mt-0.5">Especialidad de Daniela: compartir contenido en grupos de interés, idiomas y clasificados educativos.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-sky-100">
-              <span class="font-bold text-slate-800">Replicación Adaptada:</span>
-              <p class="text-slate-600 mt-0.5">Adaptación de piezas gráficas y álbumes con copys completos de Scarlet.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-sky-100">
-              <span class="font-bold text-slate-800">Conversión a Chat:</span>
-              <p class="text-slate-600 mt-0.5">Botón directo a WhatsApp para resolver dudas inmediatas de programas.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-sky-100 flex items-center justify-between text-[11px] text-sky-800 font-bold">
-            <span>Objetivo: Alcance masivo local</span>
-            <span>Constante</span>
-          </div>
+          <p class="text-xs text-slate-600 mb-2">Difusión masiva:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• Distribución en grupos de empleo e idiomas por Daniela.</li>
+            <li>• Álbumes de contenido y flyers de masterclasses gratuitas.</li>
+            <li>• Botón directo al chat de WhatsApp.</li>
+          </ul>
         </div>
 
-        <!-- CANAL 6: YouTube -->
+        <!-- YouTube -->
         <div class="glass-card rounded-3xl p-5 border-t-4 border-t-red-500">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-              <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-xl">
-                ▶️
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 font-cute text-base">YouTube</h3>
-                <span class="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded-full border border-red-200">
-                  Formato Transmedia & Shorts
-                </span>
-              </div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-lg">▶️</div>
+            <div>
+              <h3 class="font-bold text-slate-900 font-cute text-sm">YouTube</h3>
+              <span class="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded-full">Autoridad Evergreen</span>
             </div>
           </div>
-
-          <div class="space-y-2.5 text-xs mt-3">
-            <div class="p-2.5 rounded-xl bg-white border border-red-100">
-              <span class="font-bold text-slate-800">YouTube Shorts:</span>
-              <p class="text-slate-600 mt-0.5">Reutilización estratégica de los 4 videos verticales semanales producidos por Scarlet.</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-red-100">
-              <span class="font-bold text-slate-800">Narrativas de Marca:</span>
-              <p class="text-slate-600 mt-0.5">Propuestas narrativas guiadas por la experiencia transmedia de Adriana (Pijamada Cinéfila / De Vuelta al Cole).</p>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white border border-red-100">
-              <span class="font-bold text-slate-800">SEO Evergreen:</span>
-              <p class="text-slate-600 mt-0.5">Contenido indexable que sigue atrayendo clientes potenciales a lo largo del tiempo.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-red-100 flex items-center justify-between text-[11px] text-red-800 font-bold">
-            <span>Objetivo: Autoridad & Tráfico pasivo</span>
-            <span>Shorts + Especiales</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ========================================== -->
-    <!-- TAB 6: ESTRUCTURA DE CARPETAS & QUALITY   -->
-    <!-- ========================================== -->
-    <div id="tab-carpetas" class="tab-content hidden space-y-6">
-      
-      <div>
-        <h2 class="text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-          <span>📂</span> Organización de Carpetas Digitales & Guía de Aprobación
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-500">
-          Estandarización del repositorio en la nube de Polyglot Map liderado por Adriana Chávez para asegurar acceso inmediato.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        <!-- Folder Hierarchy Tree -->
-        <div class="glass-card rounded-3xl p-6 border border-purple-100">
-          <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2 mb-3">
-            <span>📁</span> Estructura Oficial de Carpetas en la Nube
-          </h3>
-          <p class="text-xs text-slate-600 mb-4">
-            Adriana verifica que cada contenido aprobado esté ubicado en la carpeta exacta con su nomenclatura correspondiente:
-          </p>
-
-          <div class="font-mono text-xs bg-slate-900 text-slate-100 p-4 rounded-2xl space-y-1.5 overflow-x-auto">
-            <div class="text-pink-300 font-bold">📁 Polyglot_Map_Marketing_2026/</div>
-            <div class="pl-4 text-purple-300">├── 📁 00_Lineamientos_Visuales_BrandBook/</div>
-            <div class="pl-8 text-slate-400">├── Paleta_Pastel_Codigos_Hex.pdf</div>
-            <div class="pl-8 text-slate-400">└── Tipografias_Logos_Assets/</div>
-            <div class="pl-4 text-purple-300">├── 📁 01_Grilla_Semanales_Master/</div>
-            <div class="pl-8 text-slate-400">└── Grilla_Semanal_Sincronizada.xlsx (Adriana & Allison)</div>
-            <div class="pl-4 text-purple-300">├── 📁 02_Instagram/</div>
-            <div class="pl-8 text-slate-400">├── Carruseles_Aprobados/</div>
-            <div class="pl-8 text-slate-400">└── Reels_Exportados_9x16/</div>
-            <div class="pl-4 text-purple-300">├── 📁 03_TikTok/</div>
-            <div class="pl-8 text-slate-400">└── Videos_Finales_Scarlet/</div>
-            <div class="pl-4 text-purple-300">├── 📁 04_LinkedIn/</div>
-            <div class="pl-8 text-slate-400">├── B2B_Infografias_Valor/</div>
-            <div class="pl-8 text-slate-400">└── Propuestas_Comerciales_Allison/</div>
-            <div class="pl-4 text-purple-300">├── 📁 05_Facebook/</div>
-            <div class="pl-8 text-slate-400">└── Piezas_Para_Grupos_Daniela/</div>
-            <div class="pl-4 text-purple-300">├── 📁 06_YouTube/</div>
-            <div class="pl-8 text-slate-400">└── Shorts_YT_Ready/</div>
-            <div class="pl-4 text-emerald-300 font-bold">├── 📁 07_Comunidad_WhatsApp/</div>
-            <div class="pl-8 text-slate-400">├── Para_Subir_Martes_Jueves_Daniela/</div>
-            <div class="pl-8 text-slate-400">└── Ofertas_Laborales_FinDeSemana_Allison/</div>
-            <div class="pl-4 text-amber-300 font-bold">└── 📁 99_En_Revision_Tecnica_Adriana/</div>
-            <div class="pl-8 text-slate-400">└── Pendientes_De_Aprobacion/</div>
-          </div>
-        </div>
-
-        <!-- Quality Assurance & Gatekeeper Checklist -->
-        <div class="space-y-4">
-          
-          <div class="glass-card rounded-3xl p-6 border border-pink-100">
-            <h3 class="text-base font-bold text-slate-900 font-cute flex items-center gap-2 mb-2">
-              <span>✅</span> Checklist Técnico de Aprobación (Dirección Creativa)
-            </h3>
-            <p class="text-xs text-slate-600 mb-3">
-              Criterios evaluados por Adriana Chávez antes de dar luz verde a cualquier arte:
-            </p>
-
-            <div class="space-y-2 text-xs">
-              <label class="flex items-start gap-2.5 p-2 rounded-xl bg-white border border-purple-100 cursor-pointer">
-                <input type="checkbox" checked class="mt-0.5 rounded text-purple-600 focus:ring-purple-400">
-                <span><strong>Consistencia Cromática:</strong> Uso exclusivo de la paleta oficial y contraste legible de textos.</span>
-              </label>
-              <label class="flex items-start gap-2.5 p-2 rounded-xl bg-white border border-purple-100 cursor-pointer">
-                <input type="checkbox" checked class="mt-0.5 rounded text-purple-600 focus:ring-purple-400">
-                <span><strong>Ortografía y Sintaxis Impecable:</strong> Revisión del copy redactado por Scarlet sin erratas.</span>
-              </label>
-              <label class="flex items-start gap-2.5 p-2 rounded-xl bg-white border border-purple-100 cursor-pointer">
-                <input type="checkbox" checked class="mt-0.5 rounded text-purple-600 focus:ring-purple-400">
-                <span><strong>Formato & Resolución:</strong> 1080x1350 para carruseles IG, 1080x1920 para Reels/TikTok, compresión optimizada.</span>
-              </label>
-              <label class="flex items-start gap-2.5 p-2 rounded-xl bg-white border border-purple-100 cursor-pointer">
-                <input type="checkbox" checked class="mt-0.5 rounded text-purple-600 focus:ring-purple-400">
-                <span><strong>Claridad del Call to Action (CTA):</strong> Cada pieza debe incentivar interactuar o unirse a la comunidad de WhatsApp.</span>
-              </label>
-              <label class="flex items-start gap-2.5 p-2 rounded-xl bg-white border border-purple-100 cursor-pointer">
-                <input type="checkbox" checked class="mt-0.5 rounded text-purple-600 focus:ring-purple-400">
-                <span><strong>Ubicación en Carpeta Final:</strong> Mover de "En Revisión" a la carpeta de la red correspondiente.</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="glass-card rounded-3xl p-5 bg-gradient-to-r from-amber-50 to-pink-50 border border-amber-200">
-            <h4 class="text-sm font-bold text-amber-900 font-cute flex items-center gap-1.5 mb-1">
-              <span>💡</span> Tip de Flujo Ágil para el Equipo
-            </h4>
-            <p class="text-xs text-slate-700 leading-relaxed">
-              Las creadoras de contenido deben subir los borradores con al menos <strong>12 horas de anticipación</strong> a la fecha programada de publicación para permitir que Adriana revise y haga notas de ajuste si fuesen necesarias.
-            </p>
-          </div>
-
+          <p class="text-xs text-slate-600 mb-2">Contenido transmedia:</p>
+          <ul class="text-xs space-y-1.5 text-slate-600">
+            <li>• YouTube Shorts adaptados de los videos de Scarlet.</li>
+            <li>• Masterclasses y episodios narrativos dirigidos por Adriana.</li>
+            <li>• Tráfico orgánico de búsqueda a largo plazo.</li>
+          </ul>
         </div>
 
       </div>
@@ -1633,7 +1399,7 @@
         </button>
       </div>
 
-      <!-- Modal Body Content (Injected by JS) -->
+      <!-- Modal Body Content -->
       <div id="modalContent" class="p-6 space-y-6 text-xs sm:text-sm text-slate-700">
         <!-- Dynamic CV details -->
       </div>
@@ -1706,8 +1472,8 @@
           location: "Lima, Perú",
           portfolio: "Portafolio Creativo Audiovisual disponible"
         },
-        profileSummary: "22 años, apasionada por la Comunicación Audiovisual y los Medios Interactivos. Destacada en producción audiovisual, dirección y producción de arte, habiendo liderado cortometrajes de ficción, programas de entretenimiento web y proyectos transmedia.",
-        polyglotRole: "Líder creativa integral: define lineamientos de marca, gatekeeper obligatorio de calidad técnica antes de publicar, diseño de narrativas para IG/TikTok/YouTube y organización metódica en carpetas según la red social correspondiente.",
+        profileSummary: "22 años, apasionada por la producción audiovisual, dirección de arte y proyectos transmedia. Experiencia dirigiendo proyectos transmedia, cortometrajes y gestión integral de equipos creativos.",
+        polyglotRole: "Directora general: define lineamientos visuales de la marca Polyglot Map, coordina con Allison la grilla y el Banco Audiovisual (DAM), supervisa los guiones con Scarlet y es el GATEKEEPER TÉCNICO OBLIGATORIO que aprueba técnicamente el 100% de los artes antes de publicarlos.",
         education: [
           { degree: "Comunicación Audiovisual y Medios Interactivos (10mo ciclo, en curso)", institution: "Universidad Peruana de Ciencias Aplicadas (UPC)", period: "2021 - 2026" },
           { degree: "Secundaria Completa", institution: "Trilce Marsano", period: "2016 - 2020" }
@@ -1724,69 +1490,41 @@
         languages: ["Español (Nativo)", "Inglés (Intermedio - Avanzado)"]
       },
 
-      britani: {
-        name: "Britani Estrella Mallqui Rodriguez",
-        initials: "BM",
-        bgGradient: "from-pink-500 to-rose-400",
-        role: "Content Creator de Piezas Gráficas & WA Community",
-        roleBadgeClass: "bg-pink-100 text-pink-800 border border-pink-200",
-        headline: "Estudiante de 8vo ciclo de Comunicaciones Audiovisuales en Medios Digitales (UPN)",
+      allison: {
+        name: "Allison Rivas",
+        initials: "AR",
+        bgGradient: "from-emerald-500 to-teal-400",
+        role: "Asistente de Dirección & Content Strategist",
+        roleBadgeClass: "bg-emerald-100 text-emerald-800 border border-emerald-200",
+        headline: "Especialista en Content Strategy, Tendencias de IA, Métricas y Banco Audiovisual DAM",
         contact: {
-          phone: "984 734 964",
-          email: "bmallquirodriguez@gmail.com",
-          location: "Las Magnolias 142, Independencia, Lima",
-          portfolio: "https://canva.link/elp5k7jrvxr4he9"
+          phone: "Contacto del equipo directivo",
+          email: "allison.rivas@polyglotmap.internal",
+          location: "Coordinación Remota Polyglot Map",
+          portfolio: "Dossier de Estrategia y Métricas Polyglot Map"
         },
-        profileSummary: "Comunicadora Audiovisual con enfoque en creación de contenido visual, storytelling y edición de video. Experiencia en narrativa audiovisual y producción creativa. Proactiva, organizada y con gran capacidad de trabajo colaborativo.",
-        polyglotRole: "Produce 8 piezas gráficas los lunes y 8 los miércoles (16 piezas semanales) para fortalecer la presencia visual, y mantiene la interacción activa diaria con la comunidad de WhatsApp de Polyglot Map.",
+        profileSummary: "Estratega de contenidos con enfoque en análisis de datos, tendencias de mercado laboral y prospección comercial. Asiste a Adriana en la dirección y lidera la curaduría de ofertas de trabajo internacionales.",
+        polyglotRole: "Investiga tendencias y propone ideas creativas; organiza junto con Adriana el Banco de Material Audiovisual (DAM); elabora entre 10 y 15 piezas gráficas semanales sobre ofertas laborales para WhatsApp (sábados y domingos); revisa métricas de posicionamiento y formula propuestas comerciales B2B.",
         education: [
-          { degree: "Comunicaciones Audiovisuales en Medios Digitales (8vo ciclo, en curso)", institution: "Universidad Privada del Norte (UPN)", period: "2021 - Actualidad" },
-          { degree: "Cajero Promotor de Servicios Financieros y Comerciales", institution: "Instituto Cepeban (Culminado)", period: "Culminado" },
-          { degree: "Secundaria Completa", institution: "IEP 26 de Julio - San Martín de Porres", period: "Secundaria" }
+          { degree: "Especialización en Estrategia Digital y Marketing de Contenidos", institution: "Formación Ejecutiva Superior", period: "En ejercicio" },
+          { degree: "Analítica Web y Optimización de Embudos de Conversión", institution: "Certificaciones de Growth & Data", period: "Vigente" }
         ],
         experience: [
-          { title: "Cajera & Orientación al Cliente", project: "Sodimac (Mejoramiento del Hogar)", desc: "Atención al cliente, uso de cajas autoservicio, beneficios, promociones y fidelización con tarjeta CMR (Oct 2024 - Actualmente)." },
-          { title: "Apoyo en Tienda Campaña Navideña", project: "Natura Cosméticos", desc: "Atención al cliente, cobro de caja, exhibición y testeo de mercadería (Dic 2024)." },
-          { title: "Asistente de Ventas", project: "Tiendas Ripley", desc: "Asistencia al cliente, asesoramiento de compra, reposición y montaje visual en tienda (Sep 2021 - Feb 2024)." }
+          { title: "Investigación de Tendencias & Ideas", project: "Polyglot Map", desc: "Monitoreo constante de novedades en IA aplicada a la productividad y habilidades bilingües demandadas en mercados globales." },
+          { title: "Co-organización Banco Audiovisual DAM", project: "Gestión de Recursos", desc: "Clasificación con Adriana de B-roll, plantillas de diseño y biblioteca de assets para evitar escasez de recursos." },
+          { title: "Curaduría de Empleo & Ofertas WhatsApp", project: "Comunidad Polyglot", desc: "Diseño semanal de 10-15 infografías de vacantes remotas que activan la conversión de prospectos." },
+          { title: "Propuestas Comerciales & Métricas", project: "Alianzas B2B", desc: "Diseño de presentaciones comerciales y reporte dominical de posicionamiento orgánico." }
         ],
-        tools: ["Canva (Avanzado)", "CapCut (Avanzado)", "Adobe Premiere (Básico)", "Diseño de Piezas para Redes", "Storytelling Audiovisual"],
-        softSkills: ["Creatividad y dinamismo", "Proactividad", "Trabajo en equipo", "Organización y responsabilidad", "Orientación al cliente"],
-        languages: ["Español (Nativo)", "Inglés (Básico)"]
-      },
-
-      daniela: {
-        name: "Daniela Bonilla Montoya",
-        initials: "DB",
-        bgGradient: "from-sky-500 to-cyan-400",
-        role: "Content Creator & Community en WhatsApp",
-        roleBadgeClass: "bg-sky-100 text-sky-800 border border-sky-200",
-        headline: "Profesional de Marketing Digital con 2 años de experiencia en Social Media y Content Creation",
-        contact: {
-          phone: "(506) 60495477",
-          email: "bonillamontoyadaniela@gmail.com",
-          location: "Alajuela, Costa Rica",
-          portfolio: "https://www.linkedin.com/in/daniela-bonilla-montoya-0926802b7/"
-        },
-        profileSummary: "Especialista en administración de múltiples perfiles digitales, creación de contenido, seguimiento comercial de prospectos y uso de herramientas de Inteligencia Artificial para acelerar flujos creativos. Conocimientos en branding, SEO/SEM y analítica de métricas.",
-        polyglotRole: "Crea 8 piezas gráficas los martes y 8 los jueves (16 piezas semanales) y es la responsable designada de subir y publicar ordenadamente el contenido de todo el equipo en la comunidad de WhatsApp.",
-        education: [
-          { degree: "Técnico en Marketing Digital", institution: "Centro de Especialización UISIL", period: "2026" },
-          { degree: "Licenciada en Enseñanza del Español", institution: "Universidad Internacional San Isidro Labrador (UISIL)", period: "2022 - 2026" }
-        ],
-        experience: [
-          { title: "Community Manager & Marketing Digital", project: "Solar Battery Center (Puerto Rico)", desc: "Gestión de 9 perfiles digitales, creación de 2-3 publicaciones diarias por perfil, 20-40 conversaciones diarias con clientes, seguimiento de hasta 50 clientes y prospectos diarios en WhatsApp Business, contenido con Canva/CapCut/IA y métricas en Meta Business Suite (2024 - 2026)." },
-          { title: "Asistente de Marketing Digital y Redes Sociales", project: "Hotel Arenal Regina (Costa Rica)", desc: "Piezas gráficas promocionales en Facebook oficial, concurso vacacional de Semana Santa y videos audiovisuales para TikTok (2024)." }
-        ],
-        tools: ["Meta Business Suite", "WhatsApp Business", "Canva", "CapCut", "ChatGPT & Gemini (IA para Copies y Contenido)", "Gestión de Grupos en Redes"],
-        softSkills: ["Community Management", "Atención comercial al cliente", "Redacción estructurada", "Organización metódica"],
-        languages: ["Español (Nativo)", "Inglés (Básico A2)"]
+        tools: ["Diseño de Infografías (Canva/Figma)", "Investigación de Tendencias (Google Trends, TikTok Creative Center)", "Meta & LinkedIn Analytics", "WhatsApp Community Management", "Google Workspace"],
+        softSkills: ["Pensamiento analítico", "Soporte directivo y organización", "Trend Hunting", "Enfoque en conversión y ventas"],
+        languages: ["Español (Nativo)", "Inglés (Profesional)"]
       },
 
       scarlet: {
         name: "Scarlet Melanie Vega Arango",
         initials: "SV",
         bgGradient: "from-amber-500 to-orange-400",
-        role: "Content & Copywriting Specialist",
+        role: "Content, Copywriting & Video Specialist",
         roleBadgeClass: "bg-amber-100 text-amber-800 border border-amber-200",
         headline: "Comunicadora Audiovisual y Publicista (UEM Madrid & UPC)",
         contact: {
@@ -1795,8 +1533,8 @@
           location: "Madrid, España / Lima, Perú",
           portfolio: "Perfil profesional en LinkedIn disponible"
         },
-        profileSummary: "Especialista en edición de video, fotografía y redacción persuasiva. Apasionada por transformar conceptos e ideas en historias visuales que conecten profundamente con la audiencia y generen atracción efectiva de usuarios.",
-        polyglotRole: "Escribe el copy de todas las piezas gráficas en los 6 canales, co-diseña la grilla de contenido semanal y crea 4 videos semanales en formato 9:16 (Reel o TikTok) con alto dinamismo narrativo.",
+        profileSummary: "Especialista en edición de video, fotografía y redacción publicitaria persuasiva. Conecta ideas innovadoras con narrativas visuales de alta retención.",
+        polyglotRole: "Produce 4 videos semanales en formato Reels o TikTok; redacta el copy de todas las piezas en los 6 canales; apoya directamente a Adriana en la organización y estructuración de la grilla de contenido semanal.",
         education: [
           { degree: "Doble Grado en Comunicación Audiovisual y Publicidad", institution: "Universidad Europea de Madrid", period: "2022 - Actualidad" },
           { degree: "Grado en Comunicación Audiovisual", institution: "Universidad Peruana de Ciencias Aplicadas (UPC)", period: "2018 - 2021" },
@@ -1805,42 +1543,69 @@
         experience: [
           { title: "Practicante de Comunicaciones", project: "Dormus (App del sueño - Madrid)", desc: "Edición de videos de alta retención para TikTok e Instagram. Colaboración con herramientas de Inteligencia Artificial (Abr - Ago 2025)." },
           { title: "Practicante Audiovisual", project: "Afilms (Productora Audiovisual - Lima)", desc: "Realización de videos y grabación de detrás de cámaras para producciones comerciales (Ago - Dic 2024)." },
-          { title: "Voluntaria Internacional", project: "Naciones Unidas ('Nutriendo esperanzas')", desc: "Proyecto de orientación e información a ciudadanos extranjeros (Mar 2022)." },
-          { title: "Voluntaria", project: "Asociación KP (Adopción de mascotas)", desc: "Apoyo a campañas y albergues (May 2022)." }
+          { title: "Voluntaria Internacional", project: "Naciones Unidas ('Nutriendo esperanzas')", desc: "Proyecto de orientación e información a ciudadanos extranjeros (Mar 2022)." }
         ],
         tools: ["DaVinci Resolve (Avanzado)", "Adobe Premiere Pro (Avanzado)", "CapCut (Avanzado)", "Adobe Illustrator (Avanzado)", "Adobe Photoshop (Intermedio)", "Adobe InDesign (Intermedio)"],
-        softSkills: ["Copywriting persuasivo", "Narrativa audiovisual dinámica", "Visión publicitaria estratégica", "Innovación creativa"],
+        softSkills: ["Copywriting persuasivo", "Edición de ritmo ágil 9:16", "Estructuración de grillas", "Visión publicitaria estratégica"],
         languages: ["Español (Nativo)", "Inglés Avanzado (Certificación Británico, 2014 - 2019)"]
       },
 
-      allison: {
-        name: "Allison Rivas",
-        initials: "AR",
-        bgGradient: "from-emerald-500 to-teal-400",
-        role: "Asistente de Dirección & Content Strategist",
-        roleBadgeClass: "bg-emerald-100 text-emerald-800 border border-emerald-200",
-        headline: "Especialista en Content Strategy, Análisis de Métricas y Propuestas Comerciales",
+      britani: {
+        name: "Britani Estrella Mallqui Rodriguez",
+        initials: "BM",
+        bgGradient: "from-pink-500 to-rose-400",
+        role: "Content Creator de Piezas Gráficas (Lun/Mié) & WA",
+        roleBadgeClass: "bg-pink-100 text-pink-800 border border-pink-200",
+        headline: "Estudiante de 8vo ciclo de Comunicaciones Audiovisuales en Medios Digitales (UPN)",
         contact: {
-          phone: "Contacto del equipo directivo",
-          email: "allison.rivas@polyglotmap.internal",
-          location: "Coordinación Remota Polyglot Map",
-          portfolio: "Dossier de Estrategia y Métricas Polyglot Map"
+          phone: "984 734 964",
+          email: "bmallquirodriguez@gmail.com",
+          location: "Las Magnolias 142, Independencia, Lima",
+          portfolio: "https://canva.link/elp5k7jrvxr4he9"
         },
-        profileSummary: "Estratega de contenidos y analítica con foco en conversión de leads, alianzas comerciales B2B y soporte ejecutivo de dirección. Especializada en transformar datos de interacción en decisiones de contenido semanales.",
-        polyglotRole: "Genera contenido los sábados y domingos: 10 a 15 piezas gráficas semanales sobre ofertas laborales para WhatsApp, analiza métricas de posicionamiento, formula propuestas comerciales y asiste a Adriana en la grilla.",
+        profileSummary: "Comunicadora Audiovisual con enfoque en creación de contenido visual, storytelling y diseño para redes sociales. Proactiva, organizada y con alto sentido de atención al cliente.",
+        polyglotRole: "Diseña 4 piezas gráficas por día los lunes y miércoles (posts, stories, flyers, banners, anuncios digitales y piezas de campañas); además, interactúa a diario con la comunidad de WhatsApp de Polyglot Map.",
         education: [
-          { degree: "Especialización en Estrategia Digital y Marketing de Contenidos", institution: "Formación Ejecutiva Superior", period: "En ejercicio" },
-          { degree: "Analítica Web y Optimización de Embudos de Conversión", institution: "Certificaciones de Growth & Data", period: "Vigente" }
+          { degree: "Comunicaciones Audiovisuales en Medios Digitales (8vo ciclo, en curso)", institution: "Universidad Privada del Norte (UPN)", period: "2021 - Actualidad" },
+          { degree: "Cajero Promotor de Servicios Financieros y Comerciales", institution: "Instituto Cepeban (Culminado)", period: "Culminado" },
+          { degree: "Secundaria Completa", institution: "IEP 26 de Julio - San Martín de Porres", period: "Secundaria" }
         ],
         experience: [
-          { title: "Content Strategist & Ofertas de Empleo", project: "Polyglot Map", desc: "Curaduría y diseño de 10-15 infografías semanales de ofertas laborales para dinamizar la comunidad de WhatsApp y generar atracción de leads calificados." },
-          { title: "Asistente de Dirección & Grilla", project: "Gestión de Operaciones", desc: "Coordinación directa con Adriana Chávez para la estructuración y balanceo semanal de la grilla de contenidos." },
-          { title: "Desarrollo de Propuestas Comerciales", project: "Alianzas B2B", desc: "Diseño de presentaciones comerciales para convenios y partnerships de la marca." },
-          { title: "Auditoría de Métricas de Posicionamiento", project: "KPIs Multicanal", desc: "Seguimiento semanal de alcance, interacción y tasas de conversión en todas las plataformas." }
+          { title: "Cajera & Orientación al Cliente", project: "Sodimac (Mejoramiento del Hogar)", desc: "Atención al cliente, beneficios y promociones, afiliación y fidelización con tarjeta CMR (Oct 2024 - Actualmente)." },
+          { title: "Apoyo en Tienda Campaña Navideña", project: "Natura Cosméticos", desc: "Atención al cliente, cobro de caja, exhibición y testeo de mercadería (Dic 2024)." },
+          { title: "Asistente de Ventas", project: "Tiendas Ripley", desc: "Asistencia al cliente, asesoramiento de compra, reposición y montaje visual en tienda (Sep 2021 - Feb 2024)." }
         ],
-        tools: ["Diseño de Infografías (Canva/Figma)", "Meta & LinkedIn Analytics", "Google Sheets / Dashboards", "Herramientas de WhatsApp Community", "Presentaciones Comerciales"],
-        softSkills: ["Pensamiento analítico", "Soporte directivo y organización", "Estrategia de empleabilidad", "Orientación a resultados de venta"],
-        languages: ["Español (Nativo)", "Inglés (Profesional)"]
+        tools: ["Canva (Avanzado)", "CapCut (Avanzado)", "Adobe Premiere (Básico)", "Diseño de Posts, Stories, Flyers y Banners", "Storytelling Audiovisual"],
+        softSkills: ["Creatividad y dinamismo", "Proactividad", "Trabajo en equipo", "Organización y responsabilidad", "Orientación al cliente"],
+        languages: ["Español (Nativo)", "Inglés (Básico)"]
+      },
+
+      daniela: {
+        name: "Daniela Bonilla Montoya",
+        initials: "DB",
+        bgGradient: "from-sky-500 to-cyan-400",
+        role: "Content Creator de Piezas Gráficas (Mar/Jue) & WA",
+        roleBadgeClass: "bg-sky-100 text-sky-800 border border-sky-200",
+        headline: "Profesional de Marketing Digital con 2 años de experiencia en Social Media y Content Creation",
+        contact: {
+          phone: "(506) 60495477",
+          email: "bonillamontoyadaniela@gmail.com",
+          location: "Alajuela, Costa Rica",
+          portfolio: "https://www.linkedin.com/in/daniela-bonilla-montoya-0926802b7/"
+        },
+        profileSummary: "Especialista en administración de múltiples perfiles digitales, creación de contenido, optimización con IA y seguimiento comercial. Experiencia en campañas y Meta Business Suite.",
+        polyglotRole: "Diseña 4 piezas gráficas por día los martes y jueves (posts, stories, flyers, banners, anuncios digitales y piezas de campañas); y se encarga de subir y distribuir el contenido del equipo a la comunidad de WhatsApp.",
+        education: [
+          { degree: "Técnico en Marketing Digital", institution: "Centro de Especialización UISIL", period: "2026" },
+          { degree: "Licenciada en Enseñanza del Español", institution: "Universidad Internacional San Isidro Labrador (UISIL)", period: "2022 - 2026" }
+        ],
+        experience: [
+          { title: "Community Manager & Marketing Digital", project: "Solar Battery Center (Puerto Rico)", desc: "Gestión de 9 perfiles digitales, 20-40 conversaciones diarias con clientes, seguimiento de hasta 50 clientes y prospectos diarios en WhatsApp Business, contenido con Canva/CapCut/IA y métricas en Meta Business Suite (2024 - 2026)." },
+          { title: "Asistente de Marketing Digital y Redes Sociales", project: "Hotel Arenal Regina (Costa Rica)", desc: "Piezas gráficas promocionales en Facebook oficial, concurso vacacional de Semana Santa y videos audiovisuales para TikTok (2024)." }
+        ],
+        tools: ["Meta Business Suite", "WhatsApp Business", "Canva", "CapCut", "ChatGPT & Gemini (IA para Copies y Contenido)", "Diseño de Anuncios Digitales"],
+        softSkills: ["Community Management", "Atención comercial al cliente", "Redacción estructurada", "Organización metódica"],
+        languages: ["Español (Nativo)", "Inglés (Básico A2)"]
       }
     };
 
@@ -1856,7 +1621,6 @@
       const headline = document.getElementById('modalHeadline');
       const content = document.getElementById('modalContent');
 
-      // Set header info
       avatar.className = `w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold font-cute text-xl shadow-md bg-gradient-to-tr ${data.bgGradient}`;
       avatar.innerText = data.initials;
       name.innerText = data.name;
@@ -1864,9 +1628,7 @@
       roleBadge.className = `text-xs font-bold px-2.5 py-0.5 rounded-full ${data.roleBadgeClass}`;
       headline.innerText = data.headline;
 
-      // Render rich modal content
       content.innerHTML = `
-        <!-- Polyglot Map Direct Impact -->
         <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-200">
           <h4 class="font-bold text-purple-900 font-cute text-sm flex items-center gap-1.5 mb-1">
             <span>✨</span> Misión y Aporte Estratégico en Polyglot Map:
@@ -1874,7 +1636,6 @@
           <p class="text-slate-700 leading-relaxed">${data.polyglotRole}</p>
         </div>
 
-        <!-- Contact & Profile Summary -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
             <span class="text-slate-500 font-semibold block mb-1">Contacto Directo:</span>
@@ -1886,16 +1647,11 @@
           </div>
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
             <span class="text-slate-500 font-semibold block mb-1">Portafolio / Credencial:</span>
-            <div class="text-purple-700 font-semibold break-all">
-              ${data.contact.portfolio}
-            </div>
-            <div class="mt-2 text-slate-500">
-              Idiomas: <strong>${data.languages.join(' · ')}</strong>
-            </div>
+            <div class="text-purple-700 font-semibold break-all">${data.contact.portfolio}</div>
+            <div class="mt-2 text-slate-500">Idiomas: <strong>${data.languages.join(' · ')}</strong></div>
           </div>
         </div>
 
-        <!-- Academic Background -->
         <div>
           <h4 class="font-bold text-slate-900 font-cute text-sm mb-2 flex items-center gap-1.5">
             <span>🎓</span> Formación Académica:
@@ -1913,10 +1669,9 @@
           </div>
         </div>
 
-        <!-- Professional Experience -->
         <div>
           <h4 class="font-bold text-slate-900 font-cute text-sm mb-2 flex items-center gap-1.5">
-            <span>💼</span> Experiencia Laboral & Proyectos Destacados:
+            <span>💼</span> Experiencia Laboral & Proyectos:
           </h4>
           <div class="space-y-2.5">
             ${data.experience.map(exp => `
@@ -1928,19 +1683,13 @@
           </div>
         </div>
 
-        <!-- Tools & Software Mastered -->
         <div>
           <h4 class="font-bold text-slate-900 font-cute text-sm mb-2 flex items-center gap-1.5">
-            <span>🛠️</span> Herramientas Técnicas & Habilidades:
+            <span>🛠️</span> Herramientas Técnicas:
           </h4>
           <div class="flex flex-wrap gap-1.5">
             ${data.tools.map(tool => `
               <span class="px-2.5 py-1 rounded-lg bg-pink-50 text-pink-700 border border-pink-200 text-[11px] font-semibold">${tool}</span>
-            `).join('')}
-          </div>
-          <div class="mt-2 flex flex-wrap gap-1.5">
-            ${data.softSkills.map(skill => `
-              <span class="px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 border border-amber-200 text-[11px] font-medium">✨ ${skill}</span>
             `).join('')}
           </div>
         </div>
@@ -1949,25 +1698,83 @@
       modal.classList.remove('hidden');
     }
 
-    // Close CV Modal
     function closeCvModal() {
-      const modal = document.getElementById('cvModal');
-      modal.classList.add('hidden');
+      document.getElementById('cvModal').classList.add('hidden');
     }
 
-    // Close modal on click outside
+    // Auto-Content Generator Logic
+    const generatorTemplates = {
+      idiomas_ia: {
+        hook: "🚨 Si sigues estudiando inglés como en el colegio, la IA te va a dejar atrás.",
+        visual: "Lámina 1 con fondo lavanda pastel. Mockup de laptop mostrando ChatGPT simulando una entrevista de trabajo en inglés con una empresa de San Francisco. Badge flotante: 'Aprende 3x más rápido'. Usar tipografía Plus Jakarta Sans gruesa.",
+        copy: "La mayoría cree que para ganar en dólares necesitas 5 años de gramática tradicional.\n\nFalso. ❌ Hoy los profesionales más exitosos usan Inteligencia Artificial para:\n1️⃣ Simular entrevistas en inglés con retroalimentación en tiempo real.\n2️⃣ Crear guiones de presentaciones y pitches de venta sin errores.\n3️⃣ Pulir su acento y naturalidad en conversaciones reales.\n\nEn Polyglot Map te enseñamos a dominar el idioma usando IA como tu acelerador personal.\n\n👇 ¿Quieres los 3 prompts que usan nuestros alumnos para prepararse en 48 horas? Comenta 'PROMPTS' y te los enviamos por WhatsApp.",
+        cta: "Escríbenos a nuestra comunidad de WhatsApp para recibir la guía gratuita de IA + Inglés."
+      },
+      empleabilidad: {
+        hook: "¿Por qué un profesional bilingüe con IA gana el triple por hacer exactamente lo mismo?",
+        visual: "Gráfico comparativo estilo Bento Grid pastel: Lado A (Salario local promedio: $600 USD) vs Lado B (Salario remoto internacional con inglés + IA: $2,800 USD). Badge con bandera de EE.UU. y tarjeta de débito en dólares.",
+        copy: "Tu límite de ingresos no es tu talento... es tu alcance geográfico. 🌍\n\nCuando dominas el inglés profesional y sabes integrar herramientas de Inteligencia Artificial para ser el doble de rápido:\n💼 Accedes a contratos directos en EE.UU., Canadá y Europa.\n🏡 Trabajas 100% desde tu casa en Latinoamérica.\n💰 Cobras en moneda fuerte cada fin de mes.\n\nDeja de competir por vacantes locales saturadas. Es momento de entrar al mercado global con Polyglot Map.\n\n🔗 Entra al enlace de nuestro perfil y únete a nuestra comunidad de WhatsApp donde compartimos vacantes remotas semanales.",
+        cta: "Toca el enlace de la bio y accede a las oportunidades de empleo bilingüe."
+      },
+      ofertas_laborales: {
+        hook: "🔥 5 Vacantes Remotas de esta semana que pagan desde $1,800 USD (Exigen inglés conversacional).",
+        visual: "Carrusel de empleos con formato Bento pastel menta y lavanda. Cada lámina tiene el logo de la empresa, puesto (Customer Success, Asistente Ejecutivo, Project Manager Jr), sueldo mensual en dólares y requisitos clave. Sello 'Vacante Verificada por Polyglot Map'.",
+        copy: "¡Nueva tanda de ofertas laborales para nuestra comunidad! 💼✨\n\nEsta semana encontramos oportunidades verificadas para trabajar desde casa:\n\n1. Virtual Executive Assistant | $1,800 - $2,200 USD/mes\n2. B2B Customer Support (Tech) | $1,500 - $2,000 USD/mes\n3. Junior Operations Coordinator | $2,000 - $2,500 USD/mes\n4. Content Moderator Bilingüe | $1,400 - $1,800 USD/mes\n\nRequisito indispensable en todas: Nivel de inglés B2 conversacional y manejo básico de herramientas digitales/IA.\n\n¿Quieres postular con un CV optimizado? Dentro de nuestra comunidad de WhatsApp te compartimos los links directos y plantillas de postulación.",
+        cta: "Únete a la comunidad de WhatsApp para ver los enlaces directos de postulación."
+      },
+      tips_idiomas: {
+        hook: "3 Frases que debes borrar de tus llamadas en inglés de trabajo (y qué decir en su lugar).",
+        visual: "Lámina dividida estilo 'Do vs Don't'. Lado izquierdo rojo pastel suave con la frase incorrecta ('Can you repeat?'). Lado derecho menta pastel con la alternativa ejecutiva ('Could you please elaborate on that?').",
+        copy: "En el mundo corporativo remoto, tu nivel de inglés no se mide por la cantidad de palabras difíciles que sabes, sino por tu seguridad al comunicarte. 🎯\n\nCambia esto:\n❌ 'I don't know' ➡️ ✅ 'Let me check on that and get back to you.'\n❌ 'What did you say?' ➡️ ✅ 'Could you clarify that last point?'\n❌ 'I have a problem' ➡️ ✅ 'We have a challenge that needs attention.'\n\nGuarda este post para tu próxima reunión de trabajo y compártelo con quien esté buscando trabajo remoto. 📌",
+        cta: "Guarda este post y comparte tu experiencia en los comentarios."
+      },
+      campana_ventas: {
+        hook: "⚡ Matrículas Abiertas: De cero a trabajar en inglés con IA en 12 semanas.",
+        visual: "Banner / Flyer promocional de alto impacto. Fondo pastel con badges brillantes: 'Cupos Limitados', 'Garantía de Fluidez', 'Acceso a Comunidad de Empleo'. Foto de Adriana Chávez y testimonio de alumno con oferta laboral en mano.",
+        copy: "Las oportunidades no esperan. Este mes abrimos convocatoria para el programa intensivo Polyglot Map: Idiomas + IA + Empleabilidad. 🚀\n\nQué incluye tu matrícula:\n✔️ Sesiones prácticas de conversación guiadas por expertos.\n✔️ Laboratorio de Inteligencia Artificial para acelerar tu aprendizaje.\n✔️ Asesoría personalizada de CV internacional y simulación de entrevistas.\n✔️ Acceso exclusivo a nuestra bolsa de trabajo y ofertas semanales.\n\n⚠️ Solo 25 cupos disponibles para esta cohorte.\n\n📲 Haz clic en el enlace de la bio o responde a este mensaje para hablar con una asesora de admisiones en WhatsApp.",
+        cta: "Reserva tu plaza hoy mismo a través de WhatsApp con beneficio especial."
+      }
+    };
+
+    function generarContenidoIA() {
+      const pilar = document.getElementById('genPilar').value;
+      const formato = document.getElementById('genFormato').value;
+      const creadora = document.getElementById('genCreadora').value;
+      const template = generatorTemplates[pilar] || generatorTemplates.idiomas_ia;
+
+      const creadoraNames = {
+        britani: "Britani Mallqui (Content Creator - Gráficos)",
+        daniela: "Daniela Bonilla (Content Creator - Gráficos & WA)",
+        scarlet: "Scarlet Vega (Videos 9:16 & Copywriting)",
+        allison: "Allison Rivas (Ofertas Laborales & Tendencias)"
+      };
+
+      document.getElementById('resTitulo').innerText = `Brief para ${creadoraNames[creadora]}`;
+      document.getElementById('resSubtitulo').innerText = `Formato: ${formato.toUpperCase()} · Pilar: ${pilar.replace('_', ' ').toUpperCase()}`;
+      document.getElementById('resHook').innerText = template.hook;
+      document.getElementById('resBriefVisual').innerHTML = template.visual;
+      document.getElementById('resCopywriting').innerText = template.copy;
+      document.getElementById('resCTA').innerText = template.cta;
+
+      const container = document.getElementById('genResultContainer');
+      container.classList.add('ring-4', 'ring-pink-200');
+      setTimeout(() => container.classList.remove('ring-4', 'ring-pink-200'), 600);
+    }
+
+    function copiarBrief() {
+      const copyText = document.getElementById('resCopywriting').innerText;
+      navigator.clipboard.writeText(copyText).then(() => {
+        alert("¡Copywriting copiado al portapapeles con éxito! 📋✨");
+      });
+    }
+
     window.addEventListener('click', function(e) {
       const modal = document.getElementById('cvModal');
-      if (e.target === modal) {
-        closeCvModal();
-      }
+      if (e.target === modal) closeCvModal();
     });
 
-    // Close on Escape key
     window.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeCvModal();
-      }
+      if (e.key === 'Escape') closeCvModal();
     });
   </script>
 
