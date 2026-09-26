@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polyglot Map | Creative Marketing Hub & Calendar</title>
+  <title>Polyglot Map · Creative Marketing Studio</title>
   <!-- Tailwind CSS approved CDN -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
@@ -16,8 +16,8 @@
 
     body {
       font-family: var(--font-main);
-      background-color: #FAF7FD;
-      color: #2E2538;
+      background-color: #FAF6FD;
+      color: #2D253A;
     }
 
     .font-cute {
@@ -30,7 +30,7 @@
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #F3EEFA;
+      background: #F4ECFB;
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb {
@@ -41,30 +41,40 @@
       background: #C084FC;
     }
 
-    /* Soft glass pastel cards */
-    .bento-card {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(238, 226, 255, 0.9);
+    /* Soft candy cards */
+    .candy-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(240, 228, 255, 0.9);
       box-shadow: 0 10px 25px -8px rgba(186, 150, 230, 0.12);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .bento-card:hover {
+    .candy-card:hover {
       transform: translateY(-2px);
       box-shadow: 0 16px 32px -10px rgba(186, 150, 230, 0.2);
     }
 
     .day-cell {
-      min-height: 95px;
+      min-height: 88px;
       transition: all 0.18s ease;
     }
     .day-cell:hover {
-      background: #FAF5FF;
+      background: #FAF3FF;
       border-color: #D8B4F8;
     }
 
-    /* Print styles */
+    /* Cute toast notification */
+    #toast {
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
     @media print {
       .no-print { display: none !important; }
       body { background: white !important; }
@@ -73,20 +83,20 @@
 </head>
 <body class="min-h-screen antialiased selection:bg-pink-200 selection:text-pink-900 pb-16">
 
-  <!-- Background decorative pastel spheres -->
-  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10 opacity-60">
-    <div class="absolute -top-20 -left-16 w-80 h-80 bg-purple-200/50 rounded-full blur-3xl"></div>
-    <div class="absolute top-1/3 -right-20 w-80 h-80 bg-pink-200/50 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 left-1/4 w-72 h-72 bg-teal-100/50 rounded-full blur-3xl"></div>
-    <div class="absolute top-2/3 right-1/4 w-72 h-72 bg-amber-100/50 rounded-full blur-3xl"></div>
+  <!-- Soft pastel ambient glow -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10 opacity-70">
+    <div class="absolute -top-16 -left-16 w-80 h-80 bg-purple-200/50 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/4 -right-16 w-80 h-80 bg-pink-200/50 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-1/3 w-80 h-80 bg-emerald-100/50 rounded-full blur-3xl"></div>
+    <div class="absolute top-2/3 right-1/4 w-80 h-80 bg-amber-100/50 rounded-full blur-3xl"></div>
   </div>
 
-  <!-- Header Sticky Bar -->
-  <header class="border-b border-purple-100 bg-white/80 backdrop-blur-md sticky top-0 z-30">
+  <!-- Header Friendly Bar -->
+  <header class="border-b border-purple-100 bg-white/85 backdrop-blur-md sticky top-0 z-30 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
-        <!-- Logo & Brand -->
+        <!-- Logo & Cute Identity -->
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-purple-400 via-pink-400 to-amber-300 p-0.5 shadow-sm flex items-center justify-center">
             <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
@@ -96,26 +106,25 @@
           <div>
             <div class="flex items-center gap-2">
               <h1 class="font-extrabold text-lg text-slate-800 tracking-tight font-cute">Polyglot Map</h1>
-              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-pink-100 text-pink-700 border border-pink-200">
-                ✨ Marketing & Publicidad
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-pink-100 text-pink-700 border border-pink-200">
+                ✨ Marketing Studio
               </span>
             </div>
-            <p class="text-[11px] text-slate-500 font-medium">Idiomas Acelerados + IA + Empleabilidad Remota</p>
+            <p class="text-[11px] text-slate-500 font-medium">Idiomas Acelerados + IA + Empleabilidad Remota en USD</p>
           </div>
         </div>
 
-        <!-- Visual Quick KPI Pills -->
-        <div class="hidden md:flex items-center gap-2 text-xs font-bold">
-          <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1.5">
-            <span>🎨</span> 22 Gráficas / Sem
-          </span>
-          <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1.5">
-            <span>🎬</span> 4 Videos / Reels
-          </span>
-          <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1.5">
-            <span>📊</span> Excel & Drive Sync
-          </span>
-          <button onclick="window.print()" class="no-print p-2 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition" title="Exportar PDF">
+        <!-- Quick Excel & Drive Sync Bar -->
+        <div class="flex items-center gap-2 text-xs font-bold">
+          <button onclick="exportarExcelCSV()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Descargar como archivo de Excel">
+            <span>📊</span>
+            <span class="hidden sm:inline">Excel</span>
+          </button>
+          <button onclick="copiarParaGoogleSheets()" class="px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Copiar tabla para pegar en Google Drive / Sheets">
+            <span>☁️</span>
+            <span class="hidden sm:inline">Copiar para Drive</span>
+          </button>
+          <button onclick="window.print()" class="no-print p-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition" title="Exportar o Imprimir">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
           </button>
         </div>
@@ -123,30 +132,24 @@
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs Friendly -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-purple-50">
-      <nav class="flex space-x-1 sm:space-x-2 overflow-x-auto py-2 text-xs sm:text-sm font-semibold" id="tabNav">
-        <button onclick="switchTab('tab-resumen')" id="btn-tab-resumen" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>🌸 Dashboard Visual</span>
+      <nav class="flex space-x-1 sm:space-x-3 overflow-x-auto py-2 text-xs sm:text-sm font-semibold" id="tabNav">
+        <button onclick="switchTab('tab-estudio')" id="btn-tab-estudio" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-purple-600 text-white transition shadow-sm font-bold">
+          <span>🌸 Estudio Creativo</span>
         </button>
-        <button onclick="switchTab('tab-calendario-mensual')" id="btn-tab-calendario-mensual" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 text-white transition shadow-sm font-bold">
-          <span>🗓️ Calendario 2026+ & Excel Sync</span>
+        <button onclick="switchTab('tab-calendario')" id="btn-tab-calendario" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>🗓️ Calendario 2026+ & Programador</span>
         </button>
-        <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+        <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
           </span>
-          <span>⚡ Generador de Contenido</span>
+          <span>⚡ Ideas & Feed Preview</span>
         </button>
-        <button onclick="switchTab('tab-cronograma')" id="btn-tab-cronograma" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>📅 Cronograma Semanal</span>
-        </button>
-        <button onclick="switchTab('tab-equipo')" id="btn-tab-equipo" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>👥 Equipo & CVs</span>
-        </button>
-        <button onclick="switchTab('tab-dam')" id="btn-tab-dam" class="tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>🗄️ Banco DAM</span>
+        <button onclick="switchTab('tab-equipo')" id="btn-tab-equipo" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>👥 Equipo & Credenciales</span>
         </button>
       </nav>
     </div>
@@ -155,342 +158,287 @@
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
 
-    <!-- ==================================================== -->
-    <!-- TAB 2: CALENDARIO MENSUAL 2026+ & EXCEL / DRIVE SYNC -->
-    <!-- ==================================================== -->
-    <div id="tab-calendario-mensual" class="tab-content space-y-6">
+    <!-- ========================================== -->
+    <!-- TAB 1: ESTUDIO CREATIVO (HOME AMIGABLE)    -->
+    <!-- ========================================== -->
+    <div id="tab-estudio" class="tab-content space-y-6">
       
-      <!-- Top Action & Sync Bar -->
-      <div class="bento-card rounded-3xl p-5 border border-purple-200">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+      <!-- Greeting Banner -->
+      <div class="candy-card rounded-3xl p-6 sm:p-7 bg-gradient-to-r from-purple-100/80 via-pink-100/70 to-amber-100/70 border border-purple-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 text-purple-800 text-xs font-extrabold font-cute mb-2 border border-purple-200 shadow-xs">
+              <span>💖 ¡Hola equipo Polyglot!</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+              <span>Modo Trabajo Colaborativo</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-cute tracking-tight">
+              Tu Espacio de Creación, Estrategia & Ventas
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl leading-relaxed">
+              Un flujo coordinado, visual y sin estrés para generar contenido que atrae estudiantes y ventas todos los días.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
+              <span class="px-3 py-1 rounded-xl bg-white text-purple-700 border border-purple-100 flex items-center gap-1 shadow-xs">
+                <span>🗣️</span> Idiomas
+              </span>
+              <span class="px-3 py-1 rounded-xl bg-white text-pink-700 border border-pink-100 flex items-center gap-1 shadow-xs">
+                <span>🤖</span> IA Acelerada
+              </span>
+              <span class="px-3 py-1 rounded-xl bg-white text-emerald-700 border border-emerald-100 flex items-center gap-1 shadow-xs">
+                <span>💼</span> Empleos en USD
+              </span>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-2 self-start sm:self-center">
+            <button onclick="switchTab('tab-calendario')" class="px-4 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-md shadow-purple-200 transition flex items-center gap-1.5">
+              <span>🗓️ Ver Calendario</span>
+            </button>
+            <button onclick="switchTab('tab-generador')" class="px-4 py-2.5 rounded-2xl bg-white hover:bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200 transition flex items-center gap-1.5">
+              <span>⚡ Inspirar Contenido</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Visual KPI Cards -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-pink-400">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-pink-600 uppercase">Gráficas Semanales</span>
+            <span class="p-2 rounded-xl bg-pink-100 text-pink-600 text-sm">🎨</span>
+          </div>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">22</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">8 Britani + 8 Daniela + 6 Allison</p>
+        </div>
+
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-amber-400">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-amber-600 uppercase">Videos & Reels</span>
+            <span class="p-2 rounded-xl bg-amber-100 text-amber-600 text-sm">🎬</span>
+          </div>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">4</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Scarlet (TikTok & Reels 9:16)</p>
+        </div>
+
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-emerald-400">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-600 uppercase">Ofertas Laborales</span>
+            <span class="p-2 rounded-xl bg-emerald-100 text-emerald-600 text-sm">💼</span>
+          </div>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">6 Piezas</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Allison (Lun/Mié/Vie para WhatsApp)</p>
+        </div>
+
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-purple-500">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-purple-700 uppercase">Calidad & DAM</span>
+            <span class="p-2 rounded-xl bg-purple-100 text-purple-700 text-sm">🛡️</span>
+          </div>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">100%</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Aprobado por Adriana antes de salir</p>
+        </div>
+
+      </div>
+
+      <!-- Quick Team Schedule Strip (Sin fechas fijas) -->
+      <div class="candy-card rounded-3xl p-6 border border-purple-100">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="font-extrabold text-slate-900 text-base font-cute flex items-center gap-2">
+              <span>🌸</span> Ritmo Operativo del Equipo
+            </h3>
+            <p class="text-xs text-slate-500">Quién diseña y publica en cada jornada sin sobrecarga</p>
+          </div>
+          <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full border border-purple-200">
+            Cadencia Continua
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
           
-          <!-- Month & Year Navigation Selectors -->
-          <div class="flex items-center gap-2 sm:gap-3">
-            <div class="w-10 h-10 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-lg">
-              🗓️
-            </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <button onclick="cambiarMesRelativo(-1)" class="p-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition" title="Mes Anterior">◀</button>
-                <select id="calMesSelect" onchange="cambiarMesAnio()" class="text-sm sm:text-base font-extrabold text-slate-800 bg-white border border-purple-200 rounded-xl px-2.5 py-1 focus:ring-2 focus:ring-purple-400 font-cute">
-                  <option value="0">Enero</option>
-                  <option value="1">Febrero</option>
-                  <option value="2">Marzo</option>
-                  <option value="3">Abril</option>
-                  <option value="4">Mayo</option>
-                  <option value="5">Junio</option>
-                  <option value="6">Julio</option>
-                  <option value="7">Agosto</option>
-                  <option value="8">Septiembre</option>
-                  <option value="9">Octubre</option>
-                  <option value="10">Noviembre</option>
-                  <option value="11">Diciembre</option>
-                </select>
-                <select id="calAnioSelect" onchange="cambiarMesAnio()" class="text-sm sm:text-base font-extrabold text-purple-700 bg-purple-50 border border-purple-200 rounded-xl px-2.5 py-1 focus:ring-2 focus:ring-purple-400 font-cute">
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                  <option value="2029">2029</option>
-                  <option value="2030">2030</option>
-                </select>
-                <button onclick="cambiarMesRelativo(1)" class="p-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition" title="Mes Siguiente">▶</button>
-                <button onclick="irAMesActual()" class="px-2.5 py-1 rounded-xl bg-white border border-purple-200 text-purple-700 text-xs font-bold hover:bg-purple-50 transition">Hoy</button>
-              </div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Haz clic en cualquier día para programar contenido o ver entregables.</p>
+          <!-- Lunes -->
+          <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200">
+            <span class="font-extrabold text-pink-900 block font-cute text-sm">Lunes</span>
+            <div class="mt-2 space-y-1 text-slate-700">
+              <div>• <strong>Britani:</strong> 4 piezas (Post, carrusel, anuncio)</div>
+              <div>• <strong>Allison:</strong> 2 piezas (Ofertas WA)</div>
+              <div class="text-[10px] text-pink-700 font-semibold">💬 Britani: WA Diario</div>
             </div>
           </div>
 
-          <!-- Excel & Drive Synchronization Actions -->
-          <div class="flex flex-wrap items-center gap-2">
-            
-            <!-- Export to CSV / Excel -->
-            <button onclick="exportarExcelCSV()" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm flex items-center gap-1.5 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              <span>Descargar Excel (.CSV)</span>
-            </button>
+          <!-- Martes -->
+          <div class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200">
+            <span class="font-extrabold text-sky-900 block font-cute text-sm">Martes</span>
+            <div class="mt-2 space-y-1 text-slate-700">
+              <div>• <strong>Daniela:</strong> 4 piezas (Post, carrusel, anuncio)</div>
+              <div>• <strong>Scarlet:</strong> Video 1 (Reel)</div>
+              <div class="text-[10px] text-sky-700 font-semibold">📲 Daniela: Sube a WA</div>
+            </div>
+          </div>
 
-            <!-- Copy for Google Drive / Sheets -->
-            <button onclick="copiarParaGoogleSheets()" class="px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-sm flex items-center gap-1.5 transition" title="Copia en formato tabla para pegar en Google Sheets con Cmd+V">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-              <span>Copiar para Google Sheets</span>
-            </button>
+          <!-- Miércoles -->
+          <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200">
+            <span class="font-extrabold text-pink-900 block font-cute text-sm">Miércoles</span>
+            <div class="mt-2 space-y-1 text-slate-700">
+              <div>• <strong>Britani:</strong> 4 piezas (Post, carrusel, anuncio)</div>
+              <div>• <strong>Allison:</strong> 2 piezas (Ofertas WA)</div>
+              <div>• <strong>Scarlet:</strong> Video 2 (Reel)</div>
+            </div>
+          </div>
 
-            <!-- Import CSV / Excel -->
-            <label class="px-3 py-2 rounded-xl bg-white border border-purple-200 hover:bg-purple-50 text-purple-700 font-bold text-xs cursor-pointer flex items-center gap-1.5 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
-              <span>Subir CSV</span>
-              <input type="file" id="csvFileInput" accept=".csv" class="hidden" onchange="importarCSV(event)">
-            </label>
+          <!-- Jueves -->
+          <div class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200">
+            <span class="font-extrabold text-sky-900 block font-cute text-sm">Jueves</span>
+            <div class="mt-2 space-y-1 text-slate-700">
+              <div>• <strong>Daniela:</strong> 4 piezas (Post, carrusel, anuncio)</div>
+              <div>• <strong>Scarlet:</strong> Video 3 (Reel)</div>
+              <div class="text-[10px] text-sky-700 font-semibold">📲 Daniela: Sube a WA</div>
+            </div>
+          </div>
 
-            <!-- Open Drive Link -->
-            <a href="https://drive.google.com" target="_blank" class="p-2 rounded-xl bg-white border border-purple-200 text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition" title="Abrir Google Drive en nueva pestaña">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.01 1.99c-1.92 0-3.69.7-5.06 1.86L2.4 12.3c-.26.46-.4.99-.4 1.54 0 1.74 1.41 3.16 3.16 3.16h8.84l4.99-8.67-6.98-6.34zm7.98 9.85l-4.99 8.67H22c1.1 0 2-.9 2-2 0-.55-.22-1.05-.59-1.42l-3.42-5.25z"/></svg>
-            </a>
-
+          <!-- Viernes -->
+          <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+            <span class="font-extrabold text-emerald-900 block font-cute text-sm">Viernes</span>
+            <div class="mt-2 space-y-1 text-slate-700">
+              <div>• <strong>Allison:</strong> 2 piezas (Completa 6 WA)</div>
+              <div>• <strong>Scarlet:</strong> Video 4 + Copies</div>
+              <div>• <strong>Adriana & Allison:</strong> Banco DAM</div>
+            </div>
           </div>
 
         </div>
-
-        <!-- Color legend -->
-        <div class="mt-4 pt-3 border-t border-purple-100 flex flex-wrap items-center gap-3 text-xs font-semibold">
-          <span class="text-slate-500 font-medium">Leyenda:</span>
-          <span class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-pink-100 text-pink-700">
-            <span class="w-2 h-2 rounded-full bg-pink-500"></span> Britani (4 piezas)
-          </span>
-          <span class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-sky-100 text-sky-700">
-            <span class="w-2 h-2 rounded-full bg-sky-500"></span> Daniela (4 piezas + WA)
-          </span>
-          <span class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Allison (6 piezas WA & Tendencias)
-          </span>
-          <span class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-100 text-amber-800">
-            <span class="w-2 h-2 rounded-full bg-amber-500"></span> Scarlet (4 Videos 9:16)
-          </span>
-          <span class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-purple-100 text-purple-800">
-            <span class="w-2 h-2 rounded-full bg-purple-500"></span> Adriana (Gatekeeper)
-          </span>
-        </div>
-      </div>
-
-      <!-- Calendar Grid Table Container -->
-      <div class="bento-card rounded-3xl p-4 sm:p-6 border border-purple-200 overflow-x-auto">
-        
-        <!-- Days of Week Header -->
-        <div class="grid grid-cols-7 gap-2 text-center text-xs font-extrabold text-purple-900 pb-2 border-b border-purple-100 min-w-[700px]">
-          <div class="py-1 bg-purple-50/70 rounded-xl">Lunes</div>
-          <div class="py-1 bg-purple-50/70 rounded-xl">Martes</div>
-          <div class="py-1 bg-purple-50/70 rounded-xl">Miércoles</div>
-          <div class="py-1 bg-purple-50/70 rounded-xl">Jueves</div>
-          <div class="py-1 bg-purple-50/70 rounded-xl">Viernes</div>
-          <div class="py-1 bg-slate-50 rounded-xl text-slate-500">Sábado</div>
-          <div class="py-1 bg-slate-50 rounded-xl text-slate-500">Domingo</div>
-        </div>
-
-        <!-- Dynamic Days Grid -->
-        <div id="calendarDaysGrid" class="grid grid-cols-7 gap-2 mt-2 min-w-[700px]">
-          <!-- Injected via JavaScript renderCalendar() -->
-        </div>
-
       </div>
 
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 1: DASHBOARD VISUAL (BENTO GRID)       -->
+    <!-- TAB 2: CALENDARIO MENSUAL 2026-2030+      -->
     <!-- ========================================== -->
-    <div id="tab-resumen" class="tab-content hidden space-y-6">
+    <div id="tab-calendario" class="tab-content hidden space-y-6">
       
-      <!-- Bento Visual Header -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        <!-- Welcome Card -->
-        <div class="md:col-span-2 bento-card rounded-3xl p-6 bg-gradient-to-br from-purple-100/70 via-pink-100/60 to-amber-100/60 border border-purple-200">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="px-2.5 py-0.5 rounded-full bg-white text-purple-800 text-[10px] font-extrabold uppercase tracking-wide border border-purple-200">
-              Flujo Operativo
-            </span>
-            <span class="text-xs text-slate-500 font-medium">Cadencia Semanal Continua</span>
-          </div>
-          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 font-cute">
-            Hub de Marketing: Idiomas + IA + Empleabilidad
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-xl leading-relaxed">
-            Coordinación visual de <strong>Adriana, Allison, Britani, Daniela y Scarlet</strong> para acelerar ventas de cursos y posicionar a Polyglot Map.
-          </p>
+      <!-- Top Calendar Control Card -->
+      <div class="candy-card rounded-3xl p-5 border border-purple-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          
+          <!-- Month & Year Nav -->
+          <div class="flex items-center gap-2">
+            <button onclick="cambiarMesRelativo(-1)" class="w-9 h-9 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition flex items-center justify-center">◀</button>
+            
+            <select id="calMesSelect" onchange="cambiarMesAnio()" class="text-sm font-extrabold text-slate-800 bg-white border border-purple-200 rounded-xl px-3 py-1.5 focus:ring-2 focus:ring-purple-400 font-cute">
+              <option value="0">Enero</option>
+              <option value="1">Febrero</option>
+              <option value="2">Marzo</option>
+              <option value="3">Abril</option>
+              <option value="4">Mayo</option>
+              <option value="5">Junio</option>
+              <option value="6">Julio</option>
+              <option value="7">Agosto</option>
+              <option value="8">Septiembre</option>
+              <option value="9">Octubre</option>
+              <option value="10">Noviembre</option>
+              <option value="11">Diciembre</option>
+            </select>
 
-          <!-- 3 Pillars Badges -->
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
-            <span class="px-3 py-1 rounded-xl bg-white text-purple-700 border border-purple-100 flex items-center gap-1 shadow-xs">
-              <span>🗣️</span> Idiomas Acelerados
-            </span>
-            <span class="px-3 py-1 rounded-xl bg-white text-pink-700 border border-pink-100 flex items-center gap-1 shadow-xs">
-              <span>🤖</span> Inteligencia Artificial
-            </span>
-            <span class="px-3 py-1 rounded-xl bg-white text-emerald-700 border border-emerald-100 flex items-center gap-1 shadow-xs">
-              <span>💼</span> Sueldos Remotos en USD
-            </span>
+            <select id="calAnioSelect" onchange="cambiarMesAnio()" class="text-sm font-extrabold text-purple-700 bg-purple-50 border border-purple-200 rounded-xl px-3 py-1.5 focus:ring-2 focus:ring-purple-400 font-cute">
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+
+            <button onclick="cambiarMesRelativo(1)" class="w-9 h-9 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition flex items-center justify-center">▶</button>
+            <button onclick="irAMesActual()" class="px-3 py-1.5 rounded-xl bg-white border border-purple-200 text-purple-700 text-xs font-bold hover:bg-purple-50 transition">Hoy</button>
           </div>
+
+          <!-- Color Tags -->
+          <div class="flex flex-wrap items-center gap-1.5 text-[11px] font-bold">
+            <span class="px-2 py-0.5 rounded-lg bg-pink-100 text-pink-700">🌸 Britani</span>
+            <span class="px-2 py-0.5 rounded-lg bg-sky-100 text-sky-700">💙 Daniela</span>
+            <span class="px-2 py-0.5 rounded-lg bg-emerald-100 text-emerald-800">🌿 Allison</span>
+            <span class="px-2 py-0.5 rounded-lg bg-amber-100 text-amber-800">🍯 Scarlet</span>
+            <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800">💜 Adriana</span>
+          </div>
+
         </div>
-
-        <!-- Fast Stats Bento -->
-        <div class="bento-card rounded-3xl p-6 flex flex-col justify-between border border-pink-200">
-          <div>
-            <span class="text-[10px] font-extrabold text-pink-600 uppercase tracking-wider block">Meta Semanal</span>
-            <div class="mt-2 flex items-baseline gap-2">
-              <span class="text-4xl font-extrabold text-slate-800 font-cute">22</span>
-              <span class="text-xs text-slate-500 font-semibold">piezas gráficas</span>
-            </div>
-            <div class="mt-1 flex items-center gap-2 text-xs text-slate-600 font-medium">
-              <span>+ 4 Videos / Reels 9:16</span>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-pink-100 text-[11px] text-slate-500 space-y-1">
-            <div>• Britani: 8 piezas (Post, Carrusel, Anuncio)</div>
-            <div>• Daniela: 8 piezas (Post, Carrusel, Anuncio)</div>
-            <div>• Allison: 6 piezas (Ofertas & Tendencias WA)</div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Team Visual Grid Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
-
-        <!-- Adriana -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-purple-500 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-extrabold flex items-center justify-center font-cute">AC</div>
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">LEAD</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-sm font-cute">Adriana Chávez</h3>
-            <p class="text-[11px] text-purple-700 font-semibold">Directora Creativa</p>
-            <div class="mt-2 text-[11px] text-slate-600 space-y-1">
-              <div>🛡️ <strong>Gatekeeper:</strong> Aprueba 100% artes.</div>
-              <div>🗄️ <strong>DAM con Allison:</strong> Banco audiovisual.</div>
-              <div>📁 <strong>Carpetas:</strong> Orden por red social.</div>
-            </div>
-          </div>
-          <button onclick="openCvModal('adriana')" class="mt-3 w-full py-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 text-[11px] font-bold transition">
-            Ver CV ➔
-          </button>
+      <!-- Month Grid Container -->
+      <div class="candy-card rounded-3xl p-4 sm:p-6 border border-purple-200 overflow-x-auto">
+        <div class="grid grid-cols-7 gap-2 text-center text-xs font-extrabold text-purple-900 pb-2 border-b border-purple-100 min-w-[700px]">
+          <div class="py-1 bg-purple-50/60 rounded-xl">Lunes</div>
+          <div class="py-1 bg-purple-50/60 rounded-xl">Martes</div>
+          <div class="py-1 bg-purple-50/60 rounded-xl">Miércoles</div>
+          <div class="py-1 bg-purple-50/60 rounded-xl">Jueves</div>
+          <div class="py-1 bg-purple-50/60 rounded-xl">Viernes</div>
+          <div class="py-1 bg-slate-50 rounded-xl text-slate-400">Sábado</div>
+          <div class="py-1 bg-slate-50 rounded-xl text-slate-400">Domingo</div>
         </div>
 
-        <!-- Allison -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-emerald-500 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center font-cute">AR</div>
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Lun / Mié / Vie</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-sm font-cute">Allison Rivas</h3>
-            <p class="text-[11px] text-emerald-700 font-semibold">Tendencias & Estrategia</p>
-            <div class="mt-2 text-[11px] text-slate-600 space-y-1">
-              <div>🔥 <strong>6 Piezas:</strong> Ofertas laborales & Tendencias para WA.</div>
-              <div>🔍 <strong>IA Trends:</strong> Propone ideas creativas.</div>
-              <div>📊 <strong>Propuestas:</strong> B2B y métricas.</div>
-            </div>
-          </div>
-          <button onclick="openCvModal('allison')" class="mt-3 w-full py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-[11px] font-bold transition">
-            Ver CV ➔
-          </button>
+        <div id="calendarDaysGrid" class="grid grid-cols-7 gap-2 mt-2 min-w-[700px]">
+          <!-- Injected via JavaScript -->
         </div>
-
-        <!-- Scarlet -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-amber-500 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 font-extrabold flex items-center justify-center font-cute">SV</div>
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Videos & Copy</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-sm font-cute">Scarlet Vega</h3>
-            <p class="text-[11px] text-amber-700 font-semibold">Video & Copywriting</p>
-            <div class="mt-2 text-[11px] text-slate-600 space-y-1">
-              <div>🎬 <strong>4 Videos:</strong> Reels & TikToks 9:16.</div>
-              <div>✍️ <strong>Copies:</strong> Textos persuasivos.</div>
-              <div>📑 <strong>Grilla:</strong> Apoyo directo a Adriana.</div>
-            </div>
-          </div>
-          <button onclick="openCvModal('scarlet')" class="mt-3 w-full py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-700 text-[11px] font-bold transition">
-            Ver CV ➔
-          </button>
-        </div>
-
-        <!-- Britani -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-pink-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 font-extrabold flex items-center justify-center font-cute">BM</div>
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-pink-100 text-pink-800">Lun & Mié</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-sm font-cute">Britani Mallqui</h3>
-            <p class="text-[11px] text-pink-700 font-semibold">Content Creator</p>
-            <div class="mt-2 text-[11px] text-slate-600 space-y-1">
-              <div>🎨 <strong>4 Piezas/día:</strong> Post, carrusel y anuncio campaña.</div>
-              <div>💬 <strong>WhatsApp:</strong> Interacción viva a diario.</div>
-            </div>
-          </div>
-          <button onclick="openCvModal('britani')" class="mt-3 w-full py-1.5 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-700 text-[11px] font-bold transition">
-            Ver CV ➔
-          </button>
-        </div>
-
-        <!-- Daniela -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-sky-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 font-extrabold flex items-center justify-center font-cute">DB</div>
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-sky-100 text-sky-800">Mar & Jue</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-sm font-cute">Daniela Bonilla</h3>
-            <p class="text-[11px] text-sky-700 font-semibold">Content & WA Community</p>
-            <div class="mt-2 text-[11px] text-slate-600 space-y-1">
-              <div>🎨 <strong>4 Piezas/día:</strong> Post, carrusel y anuncio campaña.</div>
-              <div>🚀 <strong>WhatsApp:</strong> Sube contenido oficial.</div>
-            </div>
-          </div>
-          <button onclick="openCvModal('daniela')" class="mt-3 w-full py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-[11px] font-bold transition">
-            Ver CV ➔
-          </button>
-        </div>
-
       </div>
 
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 3: AUTOGENERADOR DE CONTENIDO DINAMICO -->
+    <!-- TAB 3: GENERADOR DE IDEAS (FEED PREVIEW)   -->
     <!-- ========================================== -->
     <div id="tab-generador" class="tab-content hidden space-y-6">
       
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-xl sm:text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>⚡</span> Generador Inteligente de Contenido · Polyglot Map
+            <span>⚡</span> Inspirador de Contenido & Previsualizador de Feed
           </h2>
           <p class="text-xs text-slate-500">
-            Presiona el botón para generar una <strong>propuesta fresca, diferente y lista para publicar</strong> cada vez.
+            Cada vez que tocas el botón, genera una <strong>idea fresca, visual y con copy persuasivo</strong> para tus redes.
           </p>
         </div>
         <button onclick="generarContenidoAleatorio()" class="px-5 py-2.5 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:to-amber-600 text-white font-extrabold text-xs shadow-md shadow-pink-200 transition flex items-center gap-2 self-start sm:self-auto">
-          <span class="text-sm">🎲</span>
-          <span>¡Generar Nueva Idea Ahora!</span>
+          <span>🎲 ¡Dame una Idea Mágica!</span>
         </button>
       </div>
 
-      <!-- Dynamic Generator Controls & Output -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <!-- Feed Mockup Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        <!-- Left Column: Settings -->
-        <div class="bento-card rounded-3xl p-5 border border-purple-200 space-y-3.5">
-          <h3 class="text-xs font-bold text-purple-900 uppercase tracking-wider">Filtros de Contenido</h3>
+        <!-- Controls Column -->
+        <div class="candy-card rounded-3xl p-5 border border-purple-200 space-y-4">
+          <h3 class="text-xs font-bold text-purple-900 uppercase tracking-wider font-cute">Filtros Rápidos</h3>
           
           <div>
             <label class="text-[11px] font-bold text-slate-600 block mb-1">Pilar de Marca:</label>
-            <select id="selPilar" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-800 focus:ring-2 focus:ring-purple-400">
-              <option value="aleatorio">🎲 Aleatorio (Cualquiera)</option>
+            <select id="selPilar" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800">
+              <option value="aleatorio">🎲 Sorpréndeme (Aleatorio)</option>
               <option value="idiomas_ia">🤖 Idiomas + Inteligencia Artificial</option>
-              <option value="empleabilidad">💼 Empleabilidad Remota ($ USD)</option>
+              <option value="empleabilidad">💼 Empleabilidad Remota en USD</option>
               <option value="ofertas">📢 Ofertas Laborales Reales</option>
               <option value="campana">🚀 Anuncio de Campaña / Matrículas</option>
             </select>
           </div>
 
           <div>
-            <label class="text-[11px] font-bold text-slate-600 block mb-1">Formato Deseado:</label>
-            <select id="selFormato" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-800 focus:ring-2 focus:ring-purple-400">
-              <option value="aleatorio">🎲 Aleatorio (Post, Carrusel o Anuncio)</option>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Formato:</label>
+            <select id="selFormato" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800">
+              <option value="aleatorio">🎲 Aleatorio</option>
+              <option value="post">🖼️ Post para Feed</option>
               <option value="carrusel">📑 Carrusel de 5 Láminas</option>
-              <option value="post">🖼️ Post Estático + Story</option>
-              <option value="anuncio">🚀 Anuncio para Campaña (Ad)</option>
-              <option value="video">🎬 Video / Reel 9:16 (Scarlet)</option>
+              <option value="anuncio">🚀 Anuncio de Campaña</option>
+              <option value="video">🎬 Video 9:16 (Scarlet)</option>
             </select>
           </div>
 
           <div>
             <label class="text-[11px] font-bold text-slate-600 block mb-1">Asignar a:</label>
-            <select id="selCreadora" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-800 focus:ring-2 focus:ring-purple-400">
-              <option value="aleatorio">🎲 Creadora Automática</option>
+            <select id="selCreadora" onchange="generarContenidoAleatorio()" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 text-slate-800">
+              <option value="aleatorio">🎲 Automático</option>
               <option value="britani">Britani Mallqui (Lun / Mié)</option>
               <option value="daniela">Daniela Bonilla (Mar / Jue)</option>
               <option value="allison">Allison Rivas (Lun / Mié / Vie)</option>
@@ -498,50 +446,48 @@
             </select>
           </div>
 
-          <div class="pt-2 border-t border-purple-100">
-            <button onclick="generarContenidoAleatorio()" class="w-full py-2 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs transition flex items-center justify-center gap-1.5">
-              <span>🔄 Cambiar Propuesta</span>
-            </button>
-          </div>
+          <button onclick="generarContenidoAleatorio()" class="w-full py-2.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs transition">
+            🔄 Generar Otra Alternativa
+          </button>
         </div>
 
-        <!-- Center & Right: Visual Mockup & Brief Output -->
-        <div class="lg:col-span-2 bento-card rounded-3xl p-6 border-2 border-pink-200 relative">
+        <!-- Visual Phone / Post Mockup -->
+        <div class="lg:col-span-2 candy-card rounded-3xl p-6 border-2 border-pink-200">
           
-          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-purple-100">
-            <div class="flex items-center gap-2">
-              <span id="badgeCreadora" class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-pink-100 text-pink-700">Britani Mallqui</span>
-              <span id="badgeFormato" class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-purple-100 text-purple-700">Carrusel 5 Láminas</span>
-              <span id="badgePilar" class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-700">Idiomas + IA</span>
+          <div class="flex items-center justify-between pb-3 border-b border-purple-100">
+            <div class="flex items-center gap-2.5">
+              <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-purple-400 to-pink-400 p-0.5 flex items-center justify-center">
+                <div class="w-full h-full bg-white rounded-full flex items-center justify-center text-xs">🗺️</div>
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <span class="font-bold text-slate-900 text-xs">polyglotmap</span>
+                  <span class="text-[10px] text-pink-600 font-bold">• Siguiendo</span>
+                </div>
+                <span id="badgeCreadora" class="text-[10px] text-slate-500 font-medium">Asignado a Britani Mallqui</span>
+              </div>
             </div>
-            <button onclick="copiarTextoGenerado()" class="px-3 py-1 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition flex items-center gap-1 shadow-xs">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-              <span>Copiar Copy</span>
+            
+            <button onclick="copiarTextoGenerado()" class="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition flex items-center gap-1 shadow-xs">
+              <span>📋 Copiar Copy</span>
             </button>
           </div>
 
-          <div class="mt-4 space-y-3.5 text-xs">
-            
-            <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-200">
-              <span class="text-[10px] font-extrabold text-purple-800 uppercase tracking-wider block mb-1">🎯 Gancho / Titular (Hook)</span>
-              <div id="outHook" class="font-extrabold text-slate-900 text-sm sm:text-base font-cute"></div>
-            </div>
+          <!-- Graphic Mockup Area -->
+          <div class="mt-4 p-6 rounded-2xl bg-gradient-to-br from-purple-100/70 via-pink-100/70 to-amber-100/70 border border-purple-200 text-center space-y-2">
+            <span id="badgeFormato" class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-purple-800 shadow-xs">Carrusel 5 Láminas</span>
+            <h4 id="outHook" class="text-base sm:text-lg font-extrabold text-slate-900 font-cute max-w-md mx-auto leading-snug"></h4>
+            <p id="outVisual" class="text-xs text-slate-600 max-w-sm mx-auto font-medium"></p>
+          </div>
 
-            <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200">
-              <span class="text-[10px] font-extrabold text-pink-800 uppercase tracking-wider block mb-1">🎨 Instrucción de Diseño Visual</span>
-              <p id="outVisual" class="text-slate-700 leading-relaxed"></p>
+          <!-- Caption Text -->
+          <div class="mt-4 space-y-2 text-xs text-slate-700">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 font-medium">
+              <span>polyglotmap y otros</span>
+              <span id="badgePilar" class="font-bold text-purple-700">Idiomas + IA</span>
             </div>
-
-            <div class="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-              <span class="text-[10px] font-extrabold text-amber-800 uppercase tracking-wider block mb-1">✍️ Copywriting Completo</span>
-              <div id="outCopy" class="text-slate-700 whitespace-pre-line leading-relaxed text-xs"></div>
-            </div>
-
-            <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between text-[11px]">
-              <span class="font-bold text-emerald-900">Llamada a la acción:</span>
-              <span id="outCTA" class="text-emerald-700 font-semibold"></span>
-            </div>
-
+            <div id="outCopy" class="whitespace-pre-line leading-relaxed p-3 rounded-xl bg-purple-50/40 border border-purple-100 font-sans"></div>
+            <div class="text-[11px] text-emerald-700 font-bold p-2 rounded-lg bg-emerald-50 border border-emerald-100" id="outCTA"></div>
           </div>
 
         </div>
@@ -551,251 +497,82 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 4: CRONOGRAMA SEMANAL (SIN FECHAS)     -->
-    <!-- ========================================== -->
-    <div id="tab-cronograma" class="tab-content hidden space-y-6">
-      
-      <div class="flex items-center justify-between">
-        <div>
-          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>📅</span> Cronograma Semanal Recurrente (Sin Fechas Fijas)
-          </h2>
-          <p class="text-xs text-slate-500">
-            Cadencia continua: Allison activa <strong>Lunes, Miércoles y Viernes</strong> (6 piezas de ofertas & tendencias para WhatsApp).
-          </p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-3.5">
-        
-        <!-- LUNES -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-pink-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between pb-2 border-b border-pink-100">
-              <span class="font-extrabold text-sm text-pink-900 font-cute">Lunes</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-800 font-bold">Producción</span>
-            </div>
-            
-            <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-pink-50/80 border border-pink-200">
-                <strong class="text-pink-900 block font-cute">Britani (4 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Post, carrusel y anuncio para campaña.</span>
-                <div class="text-[10px] text-pink-700 mt-1 font-semibold">💬 WA diario</div>
-              </div>
-
-              <div class="p-2 rounded-xl bg-emerald-50/80 border border-emerald-200">
-                <strong class="text-emerald-900 block font-cute">Allison (2 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Ofertas laborales & tendencias para WA.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200 text-[10px] text-purple-900">
-                <strong>Adriana:</strong> Aprobación técnica y archivo.
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-medium text-center">
-            Total: 6 gráficas
-          </div>
-        </div>
-
-        <!-- MARTES -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-sky-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between pb-2 border-b border-sky-100">
-              <span class="font-extrabold text-sm text-sky-900 font-cute">Martes</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 font-bold">Subida WA</span>
-            </div>
-            
-            <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-sky-50/80 border border-sky-200">
-                <strong class="text-sky-900 block font-cute">Daniela (4 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Post, carrusel y anuncio + <strong>sube a WhatsApp</strong>.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <strong class="text-amber-900 block font-cute">Scarlet (Video 1)</strong>
-                <span class="text-slate-600 text-[11px]">Reel/TikTok 9:16 Idiomas + IA.</span>
-              </div>
-
-              <div class="p-1.5 rounded-lg bg-pink-50/60 text-[10px] text-pink-800">
-                Britani: Interacción en WhatsApp.
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-medium text-center">
-            Total: 4 gráficas + 1 video
-          </div>
-        </div>
-
-        <!-- MIÉRCOLES -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-pink-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between pb-2 border-b border-pink-100">
-              <span class="font-extrabold text-sm text-pink-900 font-cute">Miércoles</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-pink-100 text-pink-800 font-bold">Producción</span>
-            </div>
-            
-            <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-pink-50/80 border border-pink-200">
-                <strong class="text-pink-900 block font-cute">Britani (4 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Post, carrusel y anuncio para campaña.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-emerald-50/80 border border-emerald-200">
-                <strong class="text-emerald-900 block font-cute">Allison (2 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Ofertas laborales & tendencias para WA.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <strong class="text-amber-900 block font-cute">Scarlet (Video 2)</strong>
-                <span class="text-slate-600 text-[11px]">Reel de alta retención.</span>
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-medium text-center">
-            Total: 6 gráficas + 1 video
-          </div>
-        </div>
-
-        <!-- JUEVES -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-sky-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between pb-2 border-b border-sky-100">
-              <span class="font-extrabold text-sm text-sky-900 font-cute">Jueves</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 font-bold">Subida WA</span>
-            </div>
-            
-            <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-sky-50/80 border border-sky-200">
-                <strong class="text-sky-900 block font-cute">Daniela (4 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Post, carrusel y anuncio + <strong>sube a WhatsApp</strong>.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <strong class="text-amber-900 block font-cute">Scarlet (Video 3)</strong>
-                <span class="text-slate-600 text-[11px]">Reel / TikTok tendencias.</span>
-              </div>
-
-              <div class="p-1.5 rounded-lg bg-pink-50/60 text-[10px] text-pink-800">
-                Britani: Interacción en WhatsApp.
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-medium text-center">
-            Total: 4 gráficas + 1 video
-          </div>
-        </div>
-
-        <!-- VIERNES -->
-        <div class="bento-card rounded-2xl p-4 border-t-4 border-t-emerald-400 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between pb-2 border-b border-emerald-100">
-              <span class="font-extrabold text-sm text-emerald-900 font-cute">Viernes</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">Cierre & DAM</span>
-            </div>
-            
-            <div class="mt-3 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-emerald-50/80 border border-emerald-200">
-                <strong class="text-emerald-900 block font-cute">Allison (2 piezas)</strong>
-                <span class="text-slate-600 text-[11px]">Ofertas laborales & tendencias (completa 6/sem).</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-amber-50/80 border border-amber-200">
-                <strong class="text-amber-900 block font-cute">Scarlet (Video 4)</strong>
-                <span class="text-slate-600 text-[11px]">Entrega Video 4 + cierre copies.</span>
-              </div>
-
-              <div class="p-2 rounded-xl bg-purple-50/80 border border-purple-200 text-[10px] text-purple-900">
-                <strong>Adriana & Allison:</strong> Banco DAM y orden.
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-medium text-center">
-            Total: 2 gráficas + 1 video
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ========================================== -->
-    <!-- TAB 5: EQUIPO & CREDENCIALES (CVs)        -->
+    <!-- TAB 4: EQUIPO & CVs                       -->
     <!-- ========================================== -->
     <div id="tab-equipo" class="tab-content hidden space-y-6">
       
       <div class="flex items-center justify-between">
         <div>
           <h2 class="text-xl sm:text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>👥</span> Equipo y Credenciales Profesionales
+            <span>👥</span> Las 5 Integrantes de Polyglot Map
           </h2>
-          <p class="text-xs text-slate-500">Haz clic en cada integrante para ver su CV oficial verificado.</p>
+          <p class="text-xs text-slate-500">Toca el botón de cada tarjeta para ver su perfil y credenciales académicas completas.</p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         
         <!-- Adriana -->
-        <div class="bento-card rounded-3xl p-5 border-l-4 border-l-purple-600 flex flex-col justify-between">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-purple-600 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 font-bold flex items-center justify-center font-cute text-lg">AC</div>
               <div>
                 <h3 class="font-bold text-slate-900 text-sm font-cute">Adriana Chávez</h3>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Lead Creativa</span>
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Directora Creativa (Lead)</span>
               </div>
             </div>
-            <p class="text-xs text-slate-600 mt-2.5">
-              Dirección de arte, control técnico gatekeeper de cada pieza, organización de carpetas y co-gestión del banco DAM.
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Define los lineamientos de marca. <strong>Gatekeeper técnico:</strong> aprueba cada pieza antes de publicarse. Co-organiza el banco DAM con Allison.
             </p>
           </div>
           <button onclick="openCvModal('adriana')" class="mt-4 w-full py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition">
-            Ver CV Completo
+            Ver Perfil & CV
           </button>
         </div>
 
         <!-- Allison -->
-        <div class="bento-card rounded-3xl p-5 border-l-4 border-l-emerald-600 flex flex-col justify-between">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-emerald-600 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center font-cute text-lg">AR</div>
               <div>
                 <h3 class="font-bold text-slate-900 text-sm font-cute">Allison Rivas</h3>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Lun / Mié / Vie</span>
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Lunes, Miércoles y Viernes</span>
               </div>
             </div>
-            <p class="text-xs text-slate-600 mt-2.5">
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
               1. Investiga tendencias de IA y propone ideas.<br>
-              2. 6 piezas gráficas (ofertas laborales y tendencias) para WhatsApp.<br>
-              3. Elabora propuestas comerciales y co-organiza el DAM.
+              2. <strong>6 piezas gráficas semanales</strong> sobre ofertas laborales y tendencias para WhatsApp.<br>
+              3. Elabora propuestas comerciales y co-organiza el DAM con Adriana.
             </p>
           </div>
           <button onclick="openCvModal('allison')" class="mt-4 w-full py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition">
-            Ver Perfil Completo
+            Ver Perfil & CV
           </button>
         </div>
 
         <!-- Scarlet -->
-        <div class="bento-card rounded-3xl p-5 border-l-4 border-l-amber-600 flex flex-col justify-between">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-amber-600 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 font-bold flex items-center justify-center font-cute text-lg">SV</div>
               <div>
                 <h3 class="font-bold text-slate-900 text-sm font-cute">Scarlet Vega</h3>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Videos & Copy</span>
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Video & Copywriting</span>
               </div>
             </div>
-            <p class="text-xs text-slate-600 mt-2.5">
-              Edición de 4 videos y reels semanales 9:16 con alto dinamismo. Redacta el copywriting persuasivo de todas las piezas y apoya a Adriana en la grilla de contenidos.
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Produce <strong>4 videos y reels semanales 9:16</strong>. Redacta el copywriting persuasivo de todas las piezas y apoya a Adriana en la grilla.
             </p>
           </div>
           <button onclick="openCvModal('scarlet')" class="mt-4 w-full py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs transition">
-            Ver CV Completo
+            Ver Perfil & CV
           </button>
         </div>
 
         <!-- Britani -->
-        <div class="bento-card rounded-3xl p-5 border-l-4 border-l-pink-500 flex flex-col justify-between">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-pink-500 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-700 font-bold flex items-center justify-center font-cute text-lg">BM</div>
@@ -804,17 +581,17 @@
                 <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-pink-100 text-pink-800">Lunes & Miércoles</span>
               </div>
             </div>
-            <p class="text-xs text-slate-600 mt-2.5">
-              Diseña 4 piezas gráficas por día (posts, carruseles y anuncios de campaña) e interactúa a diario con la comunidad de WhatsApp.
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Diseña <strong>4 piezas gráficas por día</strong> (post, carrusel y anuncio para campaña) e interactúa a diario con la comunidad de WhatsApp.
             </p>
           </div>
           <button onclick="openCvModal('britani')" class="mt-4 w-full py-2 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold text-xs transition">
-            Ver CV Completo
+            Ver Perfil & CV
           </button>
         </div>
 
         <!-- Daniela -->
-        <div class="bento-card rounded-3xl p-5 border-l-4 border-l-sky-500 flex flex-col justify-between">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-sky-500 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 font-bold flex items-center justify-center font-cute text-lg">DB</div>
@@ -823,66 +600,13 @@
                 <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-sky-100 text-sky-800">Martes & Jueves</span>
               </div>
             </div>
-            <p class="text-xs text-slate-600 mt-2.5">
-              Diseña 4 piezas gráficas por día (posts, carruseles y anuncios de campaña) y se encarga de subir el contenido del equipo a WhatsApp.
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Diseña <strong>4 piezas gráficas por día</strong> (post, carrusel y anuncio para campaña) y se encarga de subir el contenido del equipo a WhatsApp.
             </p>
           </div>
-          <button onclick="openCvModal('daniela')" class="mt-4 w-full py-2 rounded-xl bg-sky-50 hover:bg-sky-600 text-white font-bold text-xs transition">
-            Ver CV Completo
+          <button onclick="openCvModal('daniela')" class="mt-4 w-full py-2 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs transition">
+            Ver Perfil & CV
           </button>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ========================================== -->
-    <!-- TAB 6: BANCO DAM & CARPETAS                -->
-    <!-- ========================================== -->
-    <div id="tab-dam" class="tab-content hidden space-y-6">
-      
-      <div class="flex items-center justify-between">
-        <div>
-          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>🗄️</span> Banco de Material Audiovisual (DAM) & Carpetas
-          </h2>
-          <p class="text-xs text-slate-500">Co-organizado por <strong>Adriana Chávez & Allison Rivas</strong>.</p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-        <div class="bento-card rounded-3xl p-5 border border-purple-200">
-          <h3 class="font-bold text-sm text-purple-900 font-cute mb-3">Recursos en el DAM</h3>
-          <div class="space-y-2 text-xs">
-            <div class="p-2.5 rounded-xl bg-purple-50 border border-purple-100">
-              <strong>1. B-Roll IA & Trabajo Remoto:</strong> Clips 9:16 de laptops, videollamadas y viajes.
-            </div>
-            <div class="p-2.5 rounded-xl bg-pink-50 border border-pink-100">
-              <strong>2. Plantillas Canva & Illustrator:</strong> Estilo pastel oficial para Posts, Carruseles y Anuncios.
-            </div>
-            <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-100">
-              <strong>3. Curaduría de Empleo (Allison):</strong> Vacantes remotas en USD filtradas cada semana.
-            </div>
-            <div class="p-2.5 rounded-xl bg-amber-50 border border-amber-100">
-              <strong>4. Audios Libres de Derechos:</strong> SFX y música en tendencia para CapCut y Premiere.
-            </div>
-          </div>
-        </div>
-
-        <div class="bento-card rounded-3xl p-5 border border-purple-200">
-          <h3 class="font-bold text-sm text-purple-900 font-cute mb-3">Carpetas por Canal</h3>
-          <div class="font-mono text-[11px] bg-slate-900 text-slate-200 p-3.5 rounded-2xl space-y-1">
-            <div class="text-pink-300 font-bold">📁 Polyglot_Map_Marketing/</div>
-            <div class="pl-3 text-purple-300">├── 📁 00_DAM_Assets (Adriana & Allison)</div>
-            <div class="pl-3 text-purple-300">├── 📁 01_Grilla_Sincronizada</div>
-            <div class="pl-3 text-purple-300">├── 📁 02_Instagram (Carruseles, Posts)</div>
-            <div class="pl-3 text-purple-300">├── 📁 03_TikTok (Reels 9:16 Scarlet)</div>
-            <div class="pl-3 text-emerald-300 font-bold">├── 📁 04_WhatsApp_Comunidad</div>
-            <div class="pl-6 text-slate-400">├── Martes_Jueves_Daniela</div>
-            <div class="pl-6 text-slate-400">└── Ofertas_Laborales_Allison (6/sem)</div>
-            <div class="pl-3 text-amber-300 font-bold">└── 📁 99_Aprobacion_Tecnica_Adriana</div>
-          </div>
         </div>
 
       </div>
@@ -892,32 +616,30 @@
   </main>
 
   <!-- ========================================== -->
-  <!-- MODAL: PROGRAMAR CONTENIDO EN EL DÍA       -->
+  <!-- MODAL: AGENDAR DÍA EN EL CALENDARIO        -->
   <!-- ========================================== -->
   <div id="dayModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bento-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
       
       <div class="flex items-start justify-between pb-3 border-b border-purple-100">
         <div>
-          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Programador de Contenido</span>
-          <h3 id="modalDayDateTitle" class="font-extrabold text-slate-900 font-cute text-lg mt-1">Día Seleccionado</h3>
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Programar Contenido</span>
+          <h3 id="modalDayDateTitle" class="font-extrabold text-slate-900 font-cute text-lg mt-1">Fecha</h3>
         </div>
         <button onclick="closeDayModal()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
       </div>
 
       <!-- Existing Events for this day -->
       <div class="mt-4">
-        <label class="text-xs font-bold text-slate-700 block mb-1.5">Entregables programados para este día:</label>
-        <div id="modalDayEventsList" class="space-y-2 max-h-44 overflow-y-auto p-1">
-          <!-- Dynamically populated -->
-        </div>
+        <label class="text-xs font-bold text-slate-700 block mb-1.5">Piezas agendadas para este día:</label>
+        <div id="modalDayEventsList" class="space-y-2 max-h-40 overflow-y-auto p-1"></div>
       </div>
 
       <!-- Add New Event Form -->
-      <div class="mt-4 pt-3 border-t border-purple-100 space-y-3">
-        <label class="text-xs font-bold text-purple-900 block font-cute">➕ Programar Nueva Pieza / Tarea:</label>
+      <div class="mt-4 pt-3 border-t border-purple-100 space-y-3 text-xs">
+        <strong class="text-purple-900 block font-cute">➕ Programar Nueva Pieza:</strong>
         
-        <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="grid grid-cols-2 gap-2">
           <div>
             <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Responsable:</label>
             <select id="newEventCreator" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
@@ -925,29 +647,27 @@
               <option value="Daniela Bonilla">Daniela Bonilla (4 piezas)</option>
               <option value="Allison Rivas">Allison Rivas (Ofertas & Tendencias)</option>
               <option value="Scarlet Vega">Scarlet Vega (Videos 9:16)</option>
-              <option value="Adriana Chávez">Adriana Chávez (Dirección & DAM)</option>
+              <option value="Adriana Chávez">Adriana Chávez (Dirección)</option>
             </select>
           </div>
           <div>
             <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Formato:</label>
             <select id="newEventFormat" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
-              <option value="Post Estático">🖼️ Post Estático</option>
-              <option value="Carrusel 5 Láminas">📑 Carrusel</option>
-              <option value="Anuncio Campaña">🚀 Anuncio para Campaña</option>
+              <option value="Post">🖼️ Post Estático</option>
+              <option value="Carrusel">📑 Carrusel</option>
+              <option value="Anuncio Campaña">🚀 Anuncio Campaña</option>
               <option value="Ofertas Laborales WA">💼 Ofertas Laborales WA</option>
-              <option value="Tendencias IA">🔍 Tendencias IA</option>
-              <option value="Video Reel/TikTok">🎬 Video Reel/TikTok 9:16</option>
-              <option value="Control de Calidad">🛡️ Control Técnico Adriana</option>
+              <option value="Video 9:16">🎬 Video Reel/TikTok</option>
             </select>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="grid grid-cols-2 gap-2">
           <div>
-            <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Canal de Destino:</label>
+            <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Canal:</label>
             <select id="newEventChannel" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
-              <option value="Comunidad WhatsApp">💬 Comunidad WhatsApp</option>
-              <option value="Instagram">📸 Instagram (@polyglotmap)</option>
+              <option value="Comunidad WhatsApp">💬 WhatsApp</option>
+              <option value="Instagram">📸 Instagram</option>
               <option value="TikTok">🎵 TikTok</option>
               <option value="LinkedIn">💼 LinkedIn</option>
               <option value="Facebook">👥 Facebook</option>
@@ -958,7 +678,7 @@
             <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Estado:</label>
             <select id="newEventStatus" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
               <option value="Borrador">📝 Borrador</option>
-              <option value="En Revisión Adriana">⏳ En Revisión Adriana</option>
+              <option value="En Revisión">⏳ En Revisión Adriana</option>
               <option value="Aprobado">✅ Aprobado</option>
               <option value="Publicado">🚀 Publicado</option>
             </select>
@@ -966,12 +686,12 @@
         </div>
 
         <div>
-          <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Título / Descripción de la Pieza:</label>
-          <input type="text" id="newEventTitle" placeholder="Ej: 3 Prompts de IA para simular entrevistas en inglés" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2 focus:ring-2 focus:ring-purple-400">
+          <label class="text-[10px] font-bold text-slate-500 block mb-0.5">Título de la Pieza:</label>
+          <input type="text" id="newEventTitle" placeholder="Ej: 3 Prompts de IA para simular entrevistas de trabajo" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2 focus:ring-2 focus:ring-purple-400">
         </div>
 
         <button onclick="guardarNuevoEventoEnDia()" class="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-sm transition">
-          💾 Guardar en Calendario (Sincronizable con Excel/Drive)
+          💾 Guardar en Calendario
         </button>
       </div>
 
@@ -979,12 +699,12 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- MODAL DE CREDENCIALES / CV COMPLETO        -->
+  <!-- MODAL DE CREDENCIALES / CV                -->
   <!-- ========================================== -->
   <div id="cvModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bento-card bg-white rounded-3xl max-w-xl w-full max-h-[88vh] overflow-y-auto border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[88vh] overflow-y-auto border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
       
-      <div class="flex items-start justify-between pb-4 border-b border-purple-100">
+      <div class="flex items-start justify-between pb-3 border-b border-purple-100">
         <div class="flex items-center gap-3">
           <div id="modalAvatar" class="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-extrabold font-cute text-lg"></div>
           <div>
@@ -995,7 +715,7 @@
         <button onclick="closeCvModal()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
       </div>
 
-      <div id="modalContent" class="mt-4 space-y-4 text-xs text-slate-700"></div>
+      <div id="modalContent" class="mt-4 space-y-3.5 text-xs text-slate-700"></div>
 
       <div class="mt-5 pt-3 border-t border-purple-100 flex justify-end">
         <button onclick="closeCvModal()" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs">
@@ -1005,9 +725,22 @@
     </div>
   </div>
 
-  <!-- JavaScript Calendar Engine & Excel / Drive Sync -->
+  <!-- CUTE TOAST FEEDBACK -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-purple-300 flex items-center gap-2 text-xs font-semibold">
+    <span id="toastIcon">✨</span>
+    <span id="toastMsg">¡Acción realizada con éxito!</span>
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
   <script>
-    // Tab switching
+    function showToast(msg, icon = "✨") {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      document.getElementById('toastIcon').innerText = icon;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2800);
+    }
+
     function switchTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
       const activeTab = document.getElementById(tabId);
@@ -1024,62 +757,34 @@
         activeBtn.classList.remove('text-slate-600');
       }
 
-      if (tabId === 'tab-calendario-mensual') {
+      if (tabId === 'tab-calendario') {
         renderCalendar();
       }
     }
 
-    // Current calendar state (Current timeline: 2026)
-    let curMonth = 8; // September (0-indexed: 8 = Sept)
+    // Calendar state
+    let curMonth = 8; // September
     let curYear = 2026;
     let selectedDateKey = "2026-09-21";
+    const STORAGE_KEY = "polyglot_calendar_events_clean_v3";
 
-    // Calendar Storage Key
-    const STORAGE_KEY = "polyglot_map_calendar_events_v2";
-
-    // Pre-seed recurring events if localStorage is empty
     function initializeEventsStore() {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        try {
-          return JSON.parse(stored);
-        } catch(e) {
-          console.error(e);
-        }
+        try { return JSON.parse(stored); } catch(e) {}
       }
 
-      // Default Seed for Sept - Oct 2026
       const initialEvents = [
-        // Lunes 21 Sep
-        { id: "e1", date: "2026-09-21", creator: "Britani Mallqui", format: "Post Estático", channel: "Instagram", status: "Aprobado", title: "3 Prompts IA para Simular Entrevistas en Inglés" },
-        { id: "e2", date: "2026-09-21", creator: "Britani Mallqui", format: "Carrusel 5 Láminas", channel: "Instagram", status: "Aprobado", title: "Guía para Aprender Vocabulario Tech en 3 Semanas" },
-        { id: "e3", date: "2026-09-21", creator: "Britani Mallqui", format: "Anuncio Campaña", channel: "Facebook", status: "Aprobado", title: "Anuncio Tráfico Matrículas Cohorte Octubre" },
-        { id: "e4", date: "2026-09-21", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Top 5 Vacantes Remotas de la Semana ($1,800 - $2,500 USD)" },
-        { id: "e5", date: "2026-09-21", creator: "Allison Rivas", format: "Tendencias IA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Tendencias de Empleo Remoto con IA para Hispanos" },
-
-        // Martes 22 Sep
-        { id: "e6", date: "2026-09-22", creator: "Daniela Bonilla", format: "Post Estático", channel: "Comunidad WhatsApp", status: "Publicado", title: "Mini-Quiz de Nivelación de Inglés en WhatsApp" },
-        { id: "e7", date: "2026-09-22", creator: "Daniela Bonilla", format: "Carrusel 5 Láminas", channel: "Instagram", status: "Aprobado", title: "Diferencias Salariales: Español vs Bilingüe con IA" },
-        { id: "e8", date: "2026-09-22", creator: "Daniela Bonilla", format: "Anuncio Campaña", channel: "Instagram", status: "Aprobado", title: "Story con Sticker de Enlace a WhatsApp" },
-        { id: "e9", date: "2026-09-22", creator: "Scarlet Vega", format: "Video Reel/TikTok", channel: "TikTok", status: "Aprobado", title: "Video 1: Cómo responder 'Tell me about yourself' con IA" },
-
-        // Miércoles 23 Sep
-        { id: "e10", date: "2026-09-23", creator: "Britani Mallqui", format: "Post Estático", channel: "Instagram", status: "En Revisión Adriana", title: "Tips de Fluidez: 3 frases que debes cambiar en reuniones" },
-        { id: "e11", date: "2026-09-23", creator: "Britani Mallqui", format: "Carrusel 5 Láminas", channel: "LinkedIn", status: "En Revisión Adriana", title: "Bento Infografía: Habilidades bilingües más cotizadas 2026" },
-        { id: "e12", date: "2026-09-23", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "En Revisión Adriana", title: "Ofertas de Customer Support y Virtual Assistant en USD" },
-        { id: "e13", date: "2026-09-23", creator: "Allison Rivas", format: "Tendencias IA", channel: "Comunidad WhatsApp", status: "En Revisión Adriana", title: "Cómo optimizar tu perfil de LinkedIn para reclutadores de EE.UU." },
-        { id: "e14", date: "2026-09-23", creator: "Scarlet Vega", format: "Video Reel/TikTok", channel: "Instagram", status: "En Revisión Adriana", title: "Video 2: El error que te cuesta el trabajo remoto en inglés" },
-
-        // Jueves 24 Sep
-        { id: "e15", date: "2026-09-24", creator: "Daniela Bonilla", format: "Post Estático", channel: "Facebook", status: "Borrador", title: "Flyer Masterclass Gratuita de IA para Principiantes" },
-        { id: "e16", date: "2026-09-24", creator: "Daniela Bonilla", format: "Anuncio Campaña", channel: "Facebook", status: "Borrador", title: "Campaña Conversión a WhatsApp" },
-        { id: "e17", date: "2026-09-24", creator: "Scarlet Vega", format: "Video Reel/TikTok", channel: "TikTok", status: "Borrador", title: "Video 3: Tendencia POV tu primera llamada en inglés" },
-
-        // Viernes 25 Sep
-        { id: "e18", date: "2026-09-25", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Borrador", title: "Cierre Semanal: Resumen de 10 Vacantes de Empleo Remoto en USD" },
-        { id: "e19", date: "2026-09-25", creator: "Allison Rivas", format: "Tendencias IA", channel: "Comunidad WhatsApp", status: "Borrador", title: "Herramientas de IA para redactar correos ejecutivos sin fallar" },
-        { id: "e20", date: "2026-09-25", creator: "Scarlet Vega", format: "Video Reel/TikTok", channel: "YouTube", status: "Borrador", title: "Video 4 / Shorts: Preguntas de entrevista que nadie te enseña" },
-        { id: "e21", date: "2026-09-25", creator: "Adriana Chávez", format: "Control de Calidad", channel: "Instagram", status: "Aprobado", title: "Auditoría de Banco DAM y actualización de carpetas en la nube" }
+        { id: "e1", date: "2026-09-21", creator: "Britani Mallqui", format: "Post", channel: "Instagram", status: "Aprobado", title: "3 Prompts IA para Entrevistas en Inglés" },
+        { id: "e2", date: "2026-09-21", creator: "Britani Mallqui", format: "Carrusel", channel: "Instagram", status: "Aprobado", title: "Vocabulario Tech Bilingüe en 3 Semanas" },
+        { id: "e3", date: "2026-09-21", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "5 Vacantes Remotas ($1,800 - $2,500 USD)" },
+        { id: "e4", date: "2026-09-22", creator: "Daniela Bonilla", format: "Post", channel: "Comunidad WhatsApp", status: "Publicado", title: "Quiz de Nivelación de Inglés en WA" },
+        { id: "e5", date: "2026-09-22", creator: "Scarlet Vega", format: "Video 9:16", channel: "TikTok", status: "Aprobado", title: "Video 1: Cómo responder en inglés con IA" },
+        { id: "e6", date: "2026-09-23", creator: "Britani Mallqui", format: "Post", channel: "Instagram", status: "Aprobado", title: "Tips de Fluidez: 3 frases ejecutivas" },
+        { id: "e7", date: "2026-09-23", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Ofertas de Customer Support en USD" },
+        { id: "e8", date: "2026-09-23", creator: "Scarlet Vega", format: "Video 9:16", channel: "Instagram", status: "Aprobado", title: "Video 2: Salarios remotos en dólares" },
+        { id: "e9", date: "2026-09-24", creator: "Daniela Bonilla", format: "Carrusel", channel: "Facebook", status: "Aprobado", title: "Flyer Masterclass Gratuita de IA" },
+        { id: "e10", date: "2026-09-25", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Cierre de Semana: 10 Vacantes Bilingües" }
       ];
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(initialEvents));
@@ -1088,11 +793,6 @@
 
     let allEvents = initializeEventsStore();
 
-    function saveEventsToStore() {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(allEvents));
-    }
-
-    // Change Month / Year via Selectors
     function cambiarMesAnio() {
       curMonth = parseInt(document.getElementById('calMesSelect').value);
       curYear = parseInt(document.getElementById('calAnioSelect').value);
@@ -1101,97 +801,68 @@
 
     function cambiarMesRelativo(delta) {
       curMonth += delta;
-      if (curMonth < 0) {
-        curMonth = 11;
-        curYear--;
-      } else if (curMonth > 11) {
-        curMonth = 0;
-        curYear++;
-      }
+      if (curMonth < 0) { curMonth = 11; curYear--; }
+      else if (curMonth > 11) { curMonth = 0; curYear++; }
       document.getElementById('calMesSelect').value = curMonth;
       document.getElementById('calAnioSelect').value = curYear;
       renderCalendar();
     }
 
     function irAMesActual() {
-      curMonth = 8; // Sept 2026
-      curYear = 2026;
+      curMonth = 8; curYear = 2026;
       document.getElementById('calMesSelect').value = curMonth;
       document.getElementById('calAnioSelect').value = curYear;
       renderCalendar();
     }
 
-    // Render Monthly Calendar Grid
     function renderCalendar() {
       const container = document.getElementById('calendarDaysGrid');
       if (!container) return;
       container.innerHTML = "";
 
-      // Month info
-      const firstDayOfMonth = new Date(curYear, curMonth, 1);
-      const daysInMonth = new Date(curYear, curMonth + 1, 0).getDate();
-      
-      // Calculate day of week for the 1st of month (0 = Sun, 1 = Mon ... 6 = Sat)
-      // We want Monday = 0, Sunday = 6
-      let startDay = firstDayOfMonth.getDay() - 1;
+      const firstDay = new Date(curYear, curMonth, 1);
+      const totalDays = new Date(curYear, curMonth + 1, 0).getDate();
+      let startDay = firstDay.getDay() - 1;
       if (startDay === -1) startDay = 6;
 
-      // Empty placeholder cells before 1st of month
       for (let i = 0; i < startDay; i++) {
-        const emptyCell = document.createElement('div');
-        emptyCell.className = "day-cell rounded-2xl bg-slate-50/50 border border-slate-100 opacity-40 p-2";
-        container.appendChild(emptyCell);
+        const empty = document.createElement('div');
+        empty.className = "day-cell rounded-2xl bg-slate-50/40 border border-slate-100 opacity-30 p-2";
+        container.appendChild(empty);
       }
 
-      // Render each day of the month
-      for (let day = 1; day <= daysInMonth; day++) {
-        const dayStr = String(day).padStart(2, '0');
-        const monthStr = String(curMonth + 1).padStart(2, '0');
-        const dateKey = `${curYear}-${monthStr}-${dayStr}`;
-
-        // Filter events on this date
-        const dayEvents = allEvents.filter(ev => ev.date === dateKey);
+      for (let day = 1; day <= totalDays; day++) {
+        const dateKey = `${curYear}-${String(curMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const dayEvents = allEvents.filter(e => e.date === dateKey);
+        const isToday = (dateKey === "2026-09-19" || dateKey === "2026-09-25");
 
         const cell = document.createElement('div');
         cell.className = "day-cell rounded-2xl bg-white border border-purple-100 p-2 flex flex-col justify-between cursor-pointer hover:shadow-md";
-        
-        // Highlight today (2026-09-19)
-        const isToday = (dateKey === "2026-09-19");
-        const todayBadge = isToday ? `<span class="px-1.5 py-0.2 rounded-md bg-pink-500 text-white font-extrabold text-[9px]">Hoy</span>` : "";
 
-        // Render badges
-        let eventsHtml = "";
+        let chips = "";
         dayEvents.slice(0, 3).forEach(ev => {
-          let badgeClass = "bg-purple-100 text-purple-800";
-          if (ev.creator.includes("Britani")) badgeClass = "bg-pink-100 text-pink-700";
-          else if (ev.creator.includes("Daniela")) badgeClass = "bg-sky-100 text-sky-700";
-          else if (ev.creator.includes("Allison")) badgeClass = "bg-emerald-100 text-emerald-800";
-          else if (ev.creator.includes("Scarlet")) badgeClass = "bg-amber-100 text-amber-800";
+          let color = "bg-purple-100 text-purple-800";
+          if (ev.creator.includes("Britani")) color = "bg-pink-100 text-pink-700";
+          else if (ev.creator.includes("Daniela")) color = "bg-sky-100 text-sky-700";
+          else if (ev.creator.includes("Allison")) color = "bg-emerald-100 text-emerald-800";
+          else if (ev.creator.includes("Scarlet")) color = "bg-amber-100 text-amber-800";
 
-          eventsHtml += `
-            <div class="truncate text-[9px] font-bold px-1.5 py-0.5 rounded ${badgeClass} border border-black/5" title="${ev.creator}: ${ev.title}">
-              ${ev.creator.split(' ')[0]}: ${ev.title}
-            </div>
-          `;
+          chips += `<div class="truncate text-[9px] font-bold px-1.5 py-0.5 rounded ${color}">${ev.creator.split(' ')[0]}: ${ev.title}</div>`;
         });
 
         if (dayEvents.length > 3) {
-          eventsHtml += `<div class="text-[9px] text-purple-600 font-bold">+${dayEvents.length - 3} más</div>`;
+          chips += `<div class="text-[9px] text-purple-600 font-bold">+${dayEvents.length - 3} más</div>`;
         }
 
         cell.innerHTML = `
           <div>
             <div class="flex items-center justify-between">
               <span class="font-extrabold text-xs text-slate-800 font-cute ${isToday ? 'text-pink-600' : ''}">${day}</span>
-              ${todayBadge}
+              ${isToday ? '<span class="px-1.5 py-0.2 rounded-md bg-pink-500 text-white font-extrabold text-[8px]">Hoy</span>' : ''}
             </div>
-            <div class="mt-1.5 space-y-1">
-              ${eventsHtml}
-            </div>
+            <div class="mt-1 space-y-1">${chips}</div>
           </div>
-          <div class="mt-1 text-right">
-            <span class="text-[10px] text-purple-400 hover:text-purple-700 font-bold">+</span>
-          </div>
+          <div class="mt-1 text-right text-[11px] text-purple-400 font-bold hover:text-purple-700">+</div>
         `;
 
         cell.onclick = () => openDayModal(dateKey, day);
@@ -1199,24 +870,19 @@
       }
     }
 
-    // Open Day Modal
     function openDayModal(dateKey, dayNum) {
       selectedDateKey = dateKey;
       const modal = document.getElementById('dayModal');
-      const title = document.getElementById('modalDayDateTitle');
-      const list = document.getElementById('modalDayEventsList');
-
       const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
       const [y, m, d] = dateKey.split('-');
-      title.innerText = `${parseInt(d)} de ${meses[parseInt(m) - 1]} de ${y}`;
-
+      document.getElementById('modalDayDateTitle').innerText = `${parseInt(d)} de ${meses[parseInt(m)-1]} de ${y}`;
       renderDayEventsInModal();
       modal.classList.remove('hidden');
     }
 
     function renderDayEventsInModal() {
       const list = document.getElementById('modalDayEventsList');
-      const dayEvents = allEvents.filter(ev => ev.date === selectedDateKey);
+      const dayEvents = allEvents.filter(e => e.date === selectedDateKey);
 
       if (dayEvents.length === 0) {
         list.innerHTML = `<div class="text-slate-400 text-[11px] p-2 bg-slate-50 rounded-xl">No hay piezas programadas para este día aún.</div>`;
@@ -1224,16 +890,16 @@
       }
 
       list.innerHTML = dayEvents.map(ev => `
-        <div class="p-2.5 rounded-xl bg-purple-50/60 border border-purple-100 flex items-center justify-between gap-2 text-xs">
+        <div class="p-2.5 rounded-xl bg-purple-50/60 border border-purple-100 flex items-center justify-between text-xs">
           <div>
             <div class="flex items-center gap-1.5">
               <strong class="text-slate-900">${ev.creator}</strong>
-              <span class="text-[9px] px-2 py-0.2 rounded bg-purple-200 text-purple-800 font-bold">${ev.format}</span>
+              <span class="text-[9px] px-1.5 py-0.2 rounded bg-purple-200 text-purple-800 font-bold">${ev.format}</span>
               <span class="text-[9px] text-slate-500 font-medium">(${ev.channel})</span>
             </div>
             <p class="text-slate-700 text-[11px] mt-0.5">${ev.title}</p>
           </div>
-          <button onclick="eliminarEvento('${ev.id}')" class="text-pink-500 hover:text-pink-700 text-xs font-bold p-1" title="Eliminar">✕</button>
+          <button onclick="eliminarEvento('${ev.id}')" class="text-pink-500 hover:text-pink-700 font-bold text-xs p-1">✕</button>
         </div>
       `).join('');
     }
@@ -1242,15 +908,14 @@
       document.getElementById('dayModal').classList.add('hidden');
     }
 
-    // Add New Event on Selected Day
     function guardarNuevoEventoEnDia() {
       const creator = document.getElementById('newEventCreator').value;
       const format = document.getElementById('newEventFormat').value;
       const channel = document.getElementById('newEventChannel').value;
       const status = document.getElementById('newEventStatus').value;
-      const title = document.getElementById('newEventTitle').value.trim() || "Nueva Pieza Publicitaria Polyglot Map";
+      const title = document.getElementById('newEventTitle').value.trim() || "Nueva Pieza Publicitaria";
 
-      const newEv = {
+      allEvents.push({
         id: "ev_" + Date.now(),
         date: selectedDateKey,
         creator: creator,
@@ -1258,32 +923,27 @@
         channel: channel,
         status: status,
         title: title
-      };
+      });
 
-      allEvents.push(newEv);
-      saveEventsToStore();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(allEvents));
       renderDayEventsInModal();
       renderCalendar();
       document.getElementById('newEventTitle').value = "";
+      showToast("¡Pieza programada en el calendario! 🌸", "🗓️");
     }
 
     function eliminarEvento(id) {
-      allEvents = allEvents.filter(ev => ev.id !== id);
-      saveEventsToStore();
+      allEvents = allEvents.filter(e => e.id !== id);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(allEvents));
       renderDayEventsInModal();
       renderCalendar();
+      showToast("Pieza eliminada.", "🗑️");
     }
 
-    // EXPORT TO EXCEL (.CSV format with UTF-8 BOM for Microsoft Excel)
     function exportarExcelCSV() {
       const headers = ["Fecha", "Responsable", "Formato", "Canal", "Estado", "Titulo_De_La_Pieza"];
       const rows = allEvents.map(ev => [
-        `"${ev.date}"`,
-        `"${ev.creator}"`,
-        `"${ev.format}"`,
-        `"${ev.channel}"`,
-        `"${ev.status}"`,
-        `"${ev.title.replace(/"/g, '""')}"`
+        `"${ev.date}"`, `"${ev.creator}"`, `"${ev.format}"`, `"${ev.channel}"`, `"${ev.status}"`, `"${ev.title.replace(/"/g, '""')}"`
       ]);
 
       const csvContent = "\uFEFF" + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
@@ -1295,65 +955,19 @@
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      showToast("¡Archivo CSV descargado para Microsoft Excel! 📊", "📥");
     }
 
-    // COPY FORMATTED TSV FOR GOOGLE SHEETS / DRIVE
     function copiarParaGoogleSheets() {
       const headers = ["Fecha", "Responsable", "Formato", "Canal", "Estado", "Título"];
-      const rows = allEvents.map(ev => [
-        ev.date,
-        ev.creator,
-        ev.format,
-        ev.channel,
-        ev.status,
-        ev.title
-      ]);
-
-      const tsvContent = [headers.join("\t"), ...rows.map(e => e.join("\t"))].join("\n");
-      navigator.clipboard.writeText(tsvContent).then(() => {
-        alert("¡Datos del calendario copiados! ✨\n\nPuedes abrir tu Google Sheets en Google Drive y presionar Cmd+V o Ctrl+V para pegar la tabla completa.");
+      const rows = allEvents.map(ev => [ev.date, ev.creator, ev.format, ev.channel, ev.status, ev.title]);
+      const tsv = [headers.join("\t"), ...rows.map(e => e.join("\t"))].join("\n");
+      navigator.clipboard.writeText(tsv).then(() => {
+        showToast("¡Copiado para Google Drive / Sheets! Presiona Cmd+V o Ctrl+V para pegar.", "📋");
       });
     }
 
-    // IMPORT CSV
-    function importarCSV(e) {
-      const file = e.target.files[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = function(evt) {
-        const text = evt.target.result;
-        const lines = text.split(/\r\n|\n/).filter(line => line.trim() !== "");
-        if (lines.length <= 1) return;
-
-        // Skip header
-        const imported = [];
-        for (let i = 1; i < lines.length; i++) {
-          const parts = lines[i].split(',').map(s => s.replace(/^"|"$/g, '').trim());
-          if (parts.length >= 2) {
-            imported.push({
-              id: "imp_" + i + "_" + Date.now(),
-              date: parts[0] || "2026-09-21",
-              creator: parts[1] || "Britani Mallqui",
-              format: parts[2] || "Post Estático",
-              channel: parts[3] || "Instagram",
-              status: parts[4] || "Aprobado",
-              title: parts[5] || "Pieza Importada"
-            });
-          }
-        }
-
-        if (imported.length > 0) {
-          allEvents = imported;
-          saveEventsToStore();
-          renderCalendar();
-          alert(`¡Se importaron ${imported.length} entregables exitosamente al calendario! 🎉`);
-        }
-      };
-      reader.readAsText(file, "UTF-8");
-    }
-
-    // Dynamic Database of Hooks, Visuals, Copies & CTAs
+    // Dynamic Generator Pool
     const hooksPool = [
       "🔥 Si quieres ganar $2,500 USD/mes trabajando en remoto, este es el error #1 en tu inglés...",
       "🤖 3 Prompts de Inteligencia Artificial que te vuelven bilingüe en 30 días sin memorizar gramática.",
@@ -1361,16 +975,14 @@
       "⚠️ No aprendas inglés como en el colegio. La IA cambió las reglas del juego para siempre.",
       "🎯 La diferencia entre un sueldo de $600 y uno de $3,000 USD viviendo en Latinoamérica es esta habilidad.",
       "🚀 Hack de pronunciación con IA: Cómo sonar 100% natural en tus videollamadas de trabajo.",
-      "💼 Vacantes abiertas: Customer Success, Project Manager Jr y Asistente Virtual en USD.",
-      "✨ Matrículas Abiertas Polyglot Map: Aprende inglés con IA y postula a tu primer empleo remoto en 12 semanas."
+      "💼 Vacantes abiertas: Customer Success, Project Manager Jr y Asistente Virtual en USD."
     ];
 
     const visualsPool = [
-      "Estilo Bento pastel lavanda. Mockup de laptop con ChatGPT abierto simulando una entrevista de trabajo con una startup de California. Badge 'Inglés Acelerado'.",
-      "Carrusel de 5 láminas en tonos rosa y menta pastel. Lámina 1 con titular grande sin serifas. Láminas 2-4 con los prompts exactos. Lámina 5 con CTA a WhatsApp.",
-      "Anuncio para campaña de conversión: Fondo pastel suave, testimonio de alumna con badge de 'Contratada en $2,200 USD/mes'. Botón destacado 'Más Información'.",
-      "Post estático estilo comparativa: Lado A (Inglés tradicional sin IA: 4 años) vs Lado B (Método Polyglot Map con IA: 12 semanas con empleo remoto).",
-      "Infografía de vacantes laborales: Logos de empresas remotas verificadas, rango salarial en dólares, requisitos y bandera de EE.UU."
+      "Estilo Bento pastel lavanda. Mockup de laptop con ChatGPT abierto simulando una entrevista con una startup de EE.UU. Badge 'Inglés Acelerado'.",
+      "Carrusel de 5 láminas en tonos rosa y menta pastel con los prompts exactos y CTA a WhatsApp.",
+      "Anuncio para campaña de conversión: Fondo pastel suave, testimonio de alumna con badge de 'Contratada en $2,200 USD/mes'.",
+      "Infografía de vacantes laborales: Logos de empresas remotas verificadas, rango salarial en dólares y bandera de EE.UU."
     ];
 
     const copiesPool = [
@@ -1407,32 +1019,23 @@ Requisitos:
 • Inglés conversacional B2.
 • Manejo básico de herramientas digitales e IA.
 
-💡 En nuestra comunidad de WhatsApp te compartimos los enlaces directos y plantillas de CV optimizadas para postular con éxito.`,
-
-      `¿Cuánto dinero estás dejando sobre la mesa por postergar tu inglés? 💸
-
-Un desarrollador, diseñador o asistente que habla inglés gana en promedio un 250% más que uno que solo habla español. Y hoy, con herramientas como ChatGPT y Claude, dominar el idioma nunca fue tan fácil.
-
-Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesional en Polyglot Map.
-
-🎯 Haz clic en el enlace de nuestro perfil y entra a nuestra comunidad de WhatsApp hoy mismo.`
+💡 En nuestra comunidad de WhatsApp te compartimos los enlaces directos y plantillas de CV optimizadas para postular con éxito.`
     ];
 
     const ctasPool = [
       "📲 Únete a nuestra comunidad de WhatsApp en el link de la bio.",
       "💬 Comenta 'POLÍGLOTA' y te enviamos la guía gratuita por mensaje privado.",
-      "🚀 Toca el enlace de nuestro perfil para postular a las vacantes de esta semana.",
-      "✨ Escríbenos por WhatsApp para agendar tu test de nivelación gratuito."
+      "🚀 Toca el enlace de nuestro perfil para postular a las vacantes de esta semana."
     ];
 
     const creadorasList = [
-      { name: "Britani Mallqui", badge: "bg-pink-100 text-pink-700" },
-      { name: "Daniela Bonilla", badge: "bg-sky-100 text-sky-700" },
-      { name: "Allison Rivas", badge: "bg-emerald-100 text-emerald-800" },
-      { name: "Scarlet Vega", badge: "bg-amber-100 text-amber-800" }
+      { name: "Britani Mallqui", desc: "Asignado a Britani Mallqui (Lun / Mié)" },
+      { name: "Daniela Bonilla", desc: "Asignado a Daniela Bonilla (Mar / Jue)" },
+      { name: "Allison Rivas", desc: "Asignado a Allison Rivas (Lun / Mié / Vie)" },
+      { name: "Scarlet Vega", desc: "Asignado a Scarlet Vega (Videos 9:16)" }
     ];
 
-    const formatosList = ["Post Estático (Feed)", "Carrusel 5 Láminas", "Anuncio para Campaña (Paid Ad)", "Video 9:16 Reel/TikTok"];
+    const formatosList = ["Post Estático (Feed)", "Carrusel 5 Láminas", "Anuncio Campaña", "Video 9:16 Reel/TikTok"];
     const pilaresList = ["Idiomas + IA", "Empleabilidad Remota en USD", "Ofertas Laborales Reales", "Campaña de Matrículas"];
 
     function generarContenidoAleatorio() {
@@ -1440,58 +1043,55 @@ Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesi
       const visual = visualsPool[Math.floor(Math.random() * visualsPool.length)];
       const copy = copiesPool[Math.floor(Math.random() * copiesPool.length)];
       const cta = ctasPool[Math.floor(Math.random() * ctasPool.length)];
-      
+
       const selCreadoraVal = document.getElementById('selCreadora').value;
-      let creadoraObj;
-      if (selCreadoraVal === 'britani') creadoraObj = creadorasList[0];
-      else if (selCreadoraVal === 'daniela') creadoraObj = creadorasList[1];
-      else if (selCreadoraVal === 'allison') creadoraObj = creadorasList[2];
-      else if (selCreadoraVal === 'scarlet') creadoraObj = creadorasList[3];
-      else creadoraObj = creadorasList[Math.floor(Math.random() * creadorasList.length)];
+      let cObj = creadorasList[Math.floor(Math.random() * creadorasList.length)];
+      if (selCreadoraVal === 'britani') cObj = creadorasList[0];
+      else if (selCreadoraVal === 'daniela') cObj = creadorasList[1];
+      else if (selCreadoraVal === 'allison') cObj = creadorasList[2];
+      else if (selCreadoraVal === 'scarlet') cObj = creadorasList[3];
 
       const selFormatoVal = document.getElementById('selFormato').value;
-      let formatoText = formatosList[Math.floor(Math.random() * formatosList.length)];
-      if (selFormatoVal === 'carrusel') formatoText = "Carrusel 5 Láminas";
-      else if (selFormatoVal === 'post') formatoText = "Post Estático + Story";
-      else if (selFormatoVal === 'anuncio') formatoText = "Anuncio para Campaña (Ad)";
-      else if (selFormatoVal === 'video') formatoText = "Video / Reel 9:16 (Scarlet)";
+      let fText = formatosList[Math.floor(Math.random() * formatosList.length)];
+      if (selFormatoVal === 'carrusel') fText = "Carrusel 5 Láminas";
+      else if (selFormatoVal === 'post') fText = "Post para Feed";
+      else if (selFormatoVal === 'anuncio') fText = "Anuncio Campaña";
+      else if (selFormatoVal === 'video') fText = "Video 9:16 (Scarlet)";
 
       const selPilarVal = document.getElementById('selPilar').value;
-      let pilarText = pilaresList[Math.floor(Math.random() * pilaresList.length)];
-      if (selPilarVal === 'idiomas_ia') pilarText = "Idiomas + Inteligencia Artificial";
-      else if (selPilarVal === 'empleabilidad') pilarText = "Empleabilidad Remota ($ USD)";
-      else if (selPilarVal === 'ofertas') pilarText = "Ofertas Laborales Reales";
-      else if (selPilarVal === 'campana') pilarText = "Campaña de Matrículas";
+      let pText = pilaresList[Math.floor(Math.random() * pilaresList.length)];
+      if (selPilarVal === 'idiomas_ia') pText = "Idiomas + IA";
+      else if (selPilarVal === 'empleabilidad') pText = "Empleabilidad en USD";
+      else if (selPilarVal === 'ofertas') pText = "Ofertas Laborales";
+      else if (selPilarVal === 'campana') pText = "Campaña Matrículas";
 
-      document.getElementById('badgeCreadora').innerText = creadoraObj.name;
-      document.getElementById('badgeCreadora').className = `px-2.5 py-0.5 rounded-full text-[10px] font-extrabold ${creadoraObj.badge}`;
-      document.getElementById('badgeFormato').innerText = formatoText;
-      document.getElementById('badgePilar').innerText = pilarText;
-
+      document.getElementById('badgeCreadora').innerText = cObj.desc;
+      document.getElementById('badgeFormato').innerText = fText;
+      document.getElementById('badgePilar').innerText = pText;
       document.getElementById('outHook').innerText = hook;
       document.getElementById('outVisual').innerText = visual;
       document.getElementById('outCopy').innerText = copy;
-      document.getElementById('outCTA').innerText = `"${cta}"`;
+      document.getElementById('outCTA').innerText = cta;
     }
 
     function copiarTextoGenerado() {
-      const copyText = document.getElementById('outCopy').innerText;
-      navigator.clipboard.writeText(copyText).then(() => {
-        alert("¡Copywriting copiado al portapapeles con éxito! ✨📋");
+      const copy = document.getElementById('outCopy').innerText;
+      navigator.clipboard.writeText(copy).then(() => {
+        showToast("¡Copy copiado al portapapeles! Listo para pegar 💕", "📋");
       });
     }
 
-    // CV Data Store
+    // CV Store
     const teamCvData = {
       adriana: {
         name: "Adriana Chávez Quispitupac",
         initials: "AC",
         bg: "bg-purple-600",
         badge: "bg-purple-100 text-purple-800",
-        role: "Directora Creativa y Audiovisual (Lead)",
-        desc: "Lidera la dirección de arte y lineamientos visuales. Gatekeeper técnico: aprueba 100% de las piezas antes de salir. Co-organiza el DAM con Allison y ordena carpetas por red social.",
+        role: "Directora Creativa & Lead",
+        mision: "Lidera la dirección de arte de Polyglot Map. Gatekeeper técnico: aprueba el 100% de las piezas antes de salir. Co-organiza el banco DAM con Allison y ordena carpetas por red.",
         studies: "UPC · Comunicación Audiovisual y Medios Interactivos (10mo ciclo, 2021-2026).",
-        experience: "Dirección de Pijamada Cinéfila (transmedia YT, IG, Spotify, TikTok), De Vuelta al Cole, Whiplash, cortometrajes Melancolía y Expreso.",
+        experience: "Dirección de Pijamada Cinéfila (transmedia), De Vuelta al Cole, Whiplash, cortometrajes Melancolía y Expreso.",
         tools: "Premiere Pro, After Effects, Illustrator, InDesign, Photoshop, Blender 3D, Canva, CapCut."
       },
       allison: {
@@ -1499,30 +1099,30 @@ Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesi
         initials: "AR",
         bg: "bg-emerald-600",
         badge: "bg-emerald-100 text-emerald-800",
-        role: "Asistente de Dirección & Content Strategist",
-        desc: "1. Investiga tendencias de IA y propone ideas creativas.<br>2. Diseña 6 piezas gráficas semanales (Lunes, Miércoles y Viernes) sobre ofertas laborales & tendencias para compartir en WhatsApp.<br>3. Elabora propuestas comerciales y co-organiza el Banco DAM con Adriana.",
+        role: "Tendencias & Content Strategist",
+        mision: "1. Investiga tendencias de IA y propone ideas.<br>2. 6 piezas gráficas semanales (Lunes, Miércoles y Viernes) sobre ofertas laborales & tendencias para WhatsApp.<br>3. Elabora propuestas comerciales y co-organiza el DAM con Adriana.",
         studies: "Especialista en Content Strategy, Análisis de Datos y Propuestas Comerciales.",
-        experience: "Curaduría y diseño de infografías de empleo remoto, auditoría de métricas semanales y diseño de alianzas estratégicas.",
-        tools: "Investigación de Tendencias (Google Trends, TikTok Insights), Canva, Meta & LinkedIn Analytics, Google Workspace."
+        experience: "Curaduría y diseño de infografías de empleo remoto en USD, auditoría de métricas y alianzas estratégicas.",
+        tools: "Google Trends, TikTok Insights, Canva, Meta & LinkedIn Analytics, Google Workspace."
       },
       scarlet: {
         name: "Scarlet Melanie Vega Arango",
         initials: "SV",
         bg: "bg-amber-500",
         badge: "bg-amber-100 text-amber-800",
-        role: "Content, Copywriting & Video Specialist",
-        desc: "Edita 4 videos y reels semanales 9:16 con alto dinamismo. Redacta el copywriting persuasivo de todas las piezas y apoya a Adriana en la grilla de contenidos.",
+        role: "Video & Copywriting Specialist",
+        mision: "Produce 4 videos y reels semanales 9:16 con alto dinamismo. Redacta el copywriting persuasivo de todas las piezas y apoya a Adriana en la grilla de contenidos.",
         studies: "Doble Grado en Comunicación Audiovisual y Publicidad (U. Europea de Madrid & UPC).",
         experience: "Dormus (App del sueño - Madrid) en videos para TikTok/Instagram con IA; Afilms (Lima).",
-        tools: "DaVinci Resolve (Avanzado), Premiere Pro, CapCut, Illustrator, Photoshop, Inglés Británico Avanzado."
+        tools: "DaVinci Resolve, Premiere Pro, CapCut, Illustrator, Photoshop, Inglés Británico Avanzado."
       },
       britani: {
         name: "Britani Estrella Mallqui Rodriguez",
         initials: "BM",
         bg: "bg-pink-500",
         badge: "bg-pink-100 text-pink-800",
-        role: "Content Creator de Piezas Gráficas (Lun/Mié) & WA",
-        desc: "Diseña 4 piezas gráficas por día los lunes y miércoles (posts, carruseles y anuncios de campaña) e interactúa a diario con la comunidad de WhatsApp.",
+        role: "Content Creator (Lun / Mié)",
+        mision: "Diseña 4 piezas gráficas por día los lunes y miércoles (post, carrusel y anuncio para campaña) e interactúa a diario con la comunidad de WhatsApp.",
         studies: "UPN · Comunicaciones Audiovisuales en Medios Digitales (8vo ciclo, en curso).",
         experience: "Sodimac, Natura Cosméticos y Ripley en ventas, servicio al cliente y storytelling para redes.",
         tools: "Canva avanzado, CapCut, Premiere básico, diseño de piezas para redes sociales."
@@ -1532,8 +1132,8 @@ Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesi
         initials: "DB",
         bg: "bg-sky-500",
         badge: "bg-sky-100 text-sky-800",
-        role: "Content Creator de Piezas Gráficas (Mar/Jue) & WA",
-        desc: "Diseña 4 piezas gráficas por día los martes y jueves (posts, carruseles y anuncios de campaña) y se encarga de subir el contenido del equipo a WhatsApp.",
+        role: "Content & WA Community (Mar / Jue)",
+        mision: "Diseña 4 piezas gráficas por día los martes y jueves (post, carrusel y anuncio para campaña) y se encarga de subir el contenido del equipo a WhatsApp.",
         studies: "Técnico en Marketing Digital y Lic. en Enseñanza del Español (UISIL, 2022-2026).",
         experience: "Solar Battery Center (gestión de 9 perfiles, WhatsApp Business, IA, Meta Suite) y Hotel Arenal Regina.",
         tools: "Meta Business Suite, WhatsApp Business, Canva, CapCut, ChatGPT y Gemini."
@@ -1553,14 +1153,14 @@ Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesi
       document.getElementById('modalContent').innerHTML = `
         <div class="p-3 rounded-2xl bg-purple-50/70 border border-purple-200">
           <strong class="text-purple-900 block font-cute mb-1">Misión en Polyglot Map:</strong>
-          <div class="text-slate-700 leading-relaxed">${d.desc}</div>
+          <div class="text-slate-700 leading-relaxed">${d.mision}</div>
         </div>
         <div>
           <strong class="text-slate-900 block font-cute mb-1">🎓 Formación:</strong>
           <p class="text-slate-600">${d.studies}</p>
         </div>
         <div>
-          <strong class="text-slate-900 block font-cute mb-1">💼 Experiencia Clave:</strong>
+          <strong class="text-slate-900 block font-cute mb-1">💼 Experiencia:</strong>
           <p class="text-slate-600">${d.experience}</p>
         </div>
         <div>
@@ -1581,7 +1181,6 @@ Deja de estudiar inglés tradicional y empieza a entrenar con propósito profesi
       if (e.target === document.getElementById('dayModal')) closeDayModal();
     });
 
-    // Initial render
     window.addEventListener('DOMContentLoaded', () => {
       renderCalendar();
       generarContenidoAleatorio();
