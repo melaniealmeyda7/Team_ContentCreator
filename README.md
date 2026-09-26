@@ -5,11 +5,37 @@
 
 ---
 
-## ⚡ Conexión Oficial con Airtable (Avances en Simultáneo)
+## ⚡ Conexión e Incrustación Oficial con Airtable (Avances en Simultáneo)
 
-El dashboard cuenta con integración directa al espacio colaborativo de Airtable:
-- **Enlace de Invitación Oficial:** [Airtable Polyglot Map](https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)
-- **Asignación Dinámica:** **No se establecen días rígidos de lunes a domingo.** La **Directora Creativa (Adriana)** se encarga de asignar quién elabora cada pieza según las prioridades del momento, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
+El dashboard cuenta con integración e incrustación directa al espacio colaborativo de Airtable con dos modalidades de visualización:
+
+1. **⚡ Base Interactiva Sincronizada (Airtable-Style Grid):**
+   - Tabla interactiva nativa con filtros por integrante (Adriana, Alison, Daniela, Scarlet, Britani).
+   - Filtros por estado (*Pauta / Por Iniciar, En Creación, En Edición / Copy, En Revisión Adriana, Aprobado, Publicado*).
+   - Buscador en tiempo real por palabras clave.
+   - Cambio rápido de estado con un clic directo.
+   - Modal para asignar nuevas piezas publicitarias con persistencia en `localStorage`.
+2. **🌐 Iframe Web Oficial de Airtable:**
+   - Contenedor embebido dentro del dashboard con soporte para vistas compartidas y visor integrado.
+   - Acceso con un clic a pantalla completa.
+   - **Enlace de Invitación Oficial:** [Airtable Polyglot Map](https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)
+
+> **Regla Operativa:** **No se establecen días rígidos de lunes a domingo.** La **Directora Creativa (Adriana)** asigna y gestiona las piezas dinámicamente en Airtable según prioridades, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
+
+---
+
+## 🌸 Marketing Studio (HQ Estratégico & Pipeline)
+
+El nuevo **Marketing Studio** incluye:
+- **🎯 3 Pilares Estratégicos:** *Idiomas Acelerados* (fluidez conversacional sin bloqueos), *Inteligencia Artificial* (simuladores de entrevistas laborales y práctica 24/7) y *Empleabilidad en USD* (sueldos de $1,500 a $4,000 USD/mes).
+- **📊 Monitor de Metas Semanales:** 22 piezas gráficas totales, 4 videos cortos 9:16, 6 ofertas laborales y tendencias IA para WhatsApp, y reporte continuo de analítica de ventas.
+- **🔄 Pipeline Creativo en 5 Etapas:**
+  1. *Pauta Estratégica & Asignación* (Adriana pauta en Airtable + Alison tendencias IA).
+  2. *Creación Base* (Daniela graba 4 videos; Britani, Daniela y Alison crean gráficas).
+  3. *Post-Producción & Copywriting* (Scarlet edita 9:16 + redacta copys con gancho).
+  4. *Gatekeeper de Calidad* (Adriana aprueba 100% de piezas antes de salir).
+  5. *Distribución & Ventas* (Daniela sube a WhatsApp; Britani interactúa; Daniela, Adriana y Alison auditan conversión).
+- **🎲 Probador Rápido de Ganchos & CTAs:** Generador inmediato de copys y ganchos de alta conversión listos para copiar con un solo clic.
 
 ---
 
@@ -25,10 +51,10 @@ El dashboard cuenta con integración directa al espacio colaborativo de Airtable
 
 ---
 
-## 🎬 Flujo de Trabajo de Videos Cortos (4 Semanales)
-1. **Paso 1 (Pauta):** Adriana Chávez define el tema, el enfoque pedagógico de idiomas/IA y el guion base.
-2. **Paso 2 (Creación/Grabación):** Daniela crea y graba los 4 videos cortos siguiendo las instrucciones de Adriana.
-3. **Paso 3 (Edición & Post-producción):** Scarlet Vega realiza la edición profesional con dinamismo, cortes ágiles, subtítulos animados y optimización vertical 9:16 para TikTok e Instagram Reels.
+## 🎬 Flujo de Producción de Videos Cortos (4 Semanales)
+1. **Paso 1 (Pauta):** Adriana Chávez define el tema pedagógico de idiomas/IA y la estructura.
+2. **Paso 2 (Creación/Grabación):** Daniela Bonilla graba los 4 videos cortos siguiendo la pauta de Adriana.
+3. **Paso 3 (Edición & Post-producción):** Scarlet Vega realiza la edición profesional vertical 9:16 con dinamismo, ritmo ágil y subtítulos destacados.
 4. **Paso 4 (Control de Calidad):** Adriana aprueba el video final antes de publicarlo.
 
 ---
@@ -38,4 +64,4 @@ El dashboard cuenta con integración directa al espacio colaborativo de Airtable
 - **Acceso Directo a Airtable:** Banner integrado en el calendario para conectar con la base de avances en vivo.
 - **📥 Descargar Excel (.CSV UTF-8 BOM):** Archivo directo con codificación compatible para Microsoft Excel.
 - **📋 Copiar para Google Sheets:** Formato tabulado (TSV) listo para pegar en Google Drive con `Cmd+V` o `Ctrl+V`.
-- **⚡ Generador de Contenido:** Generador interactivo con vista previa en mockup móvil de feed.
+- **💡 Generador de Contenido:** Generador interactivo con vista previa en mockup móvil de feed.

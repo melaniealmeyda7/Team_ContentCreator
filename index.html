@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polyglot Map · Creative Marketing Studio</title>
+  <title>Polyglot Map · Creative Marketing Studio & Airtable Live Hub</title>
   <!-- Tailwind CSS approved CDN -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
@@ -41,18 +41,24 @@
       background: #C084FC;
     }
 
-    /* Soft candy cards */
+    /* Soft candy glass cards */
     .candy-card {
       background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(240, 228, 255, 0.9);
+      border: 1px solid rgba(240, 228, 255, 0.95);
       box-shadow: 0 10px 25px -8px rgba(186, 150, 230, 0.12);
       transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .candy-card:hover {
       transform: translateY(-2px);
       box-shadow: 0 16px 32px -10px rgba(186, 150, 230, 0.2);
+    }
+
+    .candy-card-flat {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(240, 228, 255, 0.9);
+      box-shadow: 0 4px 12px -2px rgba(186, 150, 230, 0.08);
     }
 
     .day-cell {
@@ -75,6 +81,15 @@
       opacity: 1;
     }
 
+    /* Pulse glow */
+    @keyframes softPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+    .soft-pulse {
+      animation: softPulse 2.2s infinite ease-in-out;
+    }
+
     @media print {
       .no-print { display: none !important; }
       body { background: white !important; }
@@ -83,29 +98,29 @@
 </head>
 <body class="min-h-screen antialiased selection:bg-pink-200 selection:text-pink-900 pb-16">
 
-  <!-- Soft pastel ambient glow -->
-  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10 opacity-70">
-    <div class="absolute -top-16 -left-16 w-80 h-80 bg-purple-200/50 rounded-full blur-3xl"></div>
-    <div class="absolute top-1/4 -right-16 w-80 h-80 bg-pink-200/50 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 left-1/3 w-80 h-80 bg-emerald-100/50 rounded-full blur-3xl"></div>
-    <div class="absolute top-2/3 right-1/4 w-80 h-80 bg-amber-100/50 rounded-full blur-3xl"></div>
+  <!-- Soft pastel ambient background glow -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10 opacity-75">
+    <div class="absolute -top-16 -left-16 w-96 h-96 bg-purple-200/50 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/4 -right-16 w-96 h-96 bg-pink-200/50 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-1/3 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl"></div>
+    <div class="absolute top-2/3 right-1/4 w-96 h-96 bg-amber-100/50 rounded-full blur-3xl"></div>
   </div>
 
   <!-- Header Friendly Bar -->
-  <header class="border-b border-purple-100 bg-white/85 backdrop-blur-md sticky top-0 z-30 shadow-xs">
+  <header class="border-b border-purple-100 bg-white/90 backdrop-blur-md sticky top-0 z-30 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
         <!-- Logo & Cute Identity -->
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-purple-400 via-pink-400 to-amber-300 p-0.5 shadow-sm flex items-center justify-center">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-purple-500 via-pink-500 to-amber-300 p-0.5 shadow-sm flex items-center justify-center">
             <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
               <span class="text-xl">🗺️</span>
             </div>
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <h1 class="font-extrabold text-lg text-slate-800 tracking-tight font-cute">Polyglot Map</h1>
+              <h1 class="font-extrabold text-lg text-slate-900 tracking-tight font-cute">Polyglot Map</h1>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-pink-100 text-pink-700 border border-pink-200">
                 ✨ Marketing Studio
               </span>
@@ -116,18 +131,24 @@
 
         <!-- Quick Airtable, Excel & Drive Sync Bar -->
         <div class="flex items-center gap-2 text-xs font-bold">
-          <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Abrir espacio de trabajo en Airtable (Avances en simultáneo)">
-            <span>⚡</span>
-            <span class="hidden sm:inline">Airtable en Vivo</span>
-          </a>
+          <button onclick="switchTab('tab-airtable')" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Ver base oficial de Airtable incrustada">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
+            <span>⚡ Airtable en Vivo</span>
+          </button>
+
           <button onclick="exportarExcelCSV()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Descargar como archivo de Excel">
             <span>📊</span>
             <span class="hidden sm:inline">Excel</span>
           </button>
+          
           <button onclick="copiarParaGoogleSheets()" class="px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Copiar tabla para pegar en Google Drive / Sheets">
             <span>☁️</span>
             <span class="hidden sm:inline">Drive</span>
           </button>
+          
           <button onclick="window.print()" class="no-print p-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition" title="Exportar o Imprimir">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
           </button>
@@ -140,20 +161,27 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-purple-50">
       <nav class="flex space-x-1 sm:space-x-3 overflow-x-auto py-2 text-xs sm:text-sm font-semibold" id="tabNav">
         <button onclick="switchTab('tab-estudio')" id="btn-tab-estudio" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-purple-600 text-white transition shadow-sm font-bold">
-          <span>🌸 Estudio Creativo</span>
+          <span>🌸 Marketing Studio</span>
         </button>
-        <button onclick="switchTab('tab-calendario')" id="btn-tab-calendario" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>🗓️ Calendario 2026+ & Programador</span>
-        </button>
-        <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+        
+        <button onclick="switchTab('tab-airtable')" id="btn-tab-airtable" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition font-bold">
           <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
           </span>
-          <span>⚡ Ideas & Feed Preview</span>
+          <span>⚡ Base Airtable en Vivo</span>
         </button>
+
+        <button onclick="switchTab('tab-calendario')" id="btn-tab-calendario" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>🗓️ Calendario 2026+ & Grilla</span>
+        </button>
+        
+        <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>💡 Ideas & Feed Preview</span>
+        </button>
+        
         <button onclick="switchTab('tab-equipo')" id="btn-tab-equipo" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
-          <span>👥 Roles, Funciones & Equipo</span>
+          <span>👥 Roles & Equipo</span>
         </button>
       </nav>
     </div>
@@ -163,47 +191,55 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
 
     <!-- ========================================== -->
-    <!-- TAB 1: ESTUDIO CREATIVO (HOME AMIGABLE)    -->
+    <!-- TAB 1: MARKETING STUDIO (HQ ESTRATÉGICO)   -->
     <!-- ========================================== -->
     <div id="tab-estudio" class="tab-content space-y-6">
       
       <!-- Greeting Banner -->
-      <div class="candy-card rounded-3xl p-6 sm:p-7 bg-gradient-to-r from-purple-100/80 via-pink-100/70 to-amber-100/70 border border-purple-200">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div class="candy-card rounded-3xl p-6 sm:p-7 bg-gradient-to-r from-purple-100/90 via-pink-100/80 to-amber-100/70 border border-purple-200">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 text-purple-800 text-xs font-extrabold font-cute mb-2 border border-purple-200 shadow-xs">
-              <span>💖 ¡Hola equipo Polyglot!</span>
+              <span>💖 ¡Bienvenida al Marketing Studio!</span>
               <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
-              <span>Modo Trabajo Colaborativo</span>
+              <span>Polyglot Map 2026</span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-cute tracking-tight">
-              Tu Espacio de Creación, Estrategia & Ventas
+              Estrategia, Contenido Viral & Conversión en Dólares
             </h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl leading-relaxed">
-              Un flujo coordinado, visual y sin estrés para generar contenido que atrae estudiantes y ventas todos los días.
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+              El centro de mando para posicionar a <strong>Polyglot Map</strong> como la academia líder en <strong>Idiomas Acelerados + IA + Empleabilidad Remota en USD</strong>. Flujo dinámico, pautas claras y avances en tiempo real.
             </p>
 
             <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
               <span class="px-3 py-1 rounded-xl bg-white text-purple-700 border border-purple-100 flex items-center gap-1 shadow-xs">
-                <span>🗣️</span> Idiomas
+                <span>🗣️</span> Idiomas Acelerados
               </span>
               <span class="px-3 py-1 rounded-xl bg-white text-pink-700 border border-pink-100 flex items-center gap-1 shadow-xs">
-                <span>🤖</span> IA Acelerada
+                <span>🤖</span> Inteligencia Artificial
               </span>
               <span class="px-3 py-1 rounded-xl bg-white text-emerald-700 border border-emerald-100 flex items-center gap-1 shadow-xs">
-                <span>💼</span> Empleos en USD
+                <span>💼</span> Sueldos $1,500 - $4,000 USD
+              </span>
+              <span class="px-3 py-1 rounded-xl bg-white text-orange-700 border border-orange-100 flex items-center gap-1 shadow-xs">
+                <span>💬</span> Comunidad de WhatsApp
               </span>
             </div>
           </div>
 
-          <!-- Quick Action Buttons -->
-          <div class="flex flex-col sm:flex-row gap-2 self-start sm:self-center">
-            <button onclick="switchTab('tab-calendario')" class="px-4 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-md shadow-purple-200 transition flex items-center gap-1.5">
-              <span>🗓️ Ver Calendario</span>
+          <!-- Quick Actions in Hero -->
+          <div class="flex flex-col sm:flex-row lg:flex-col gap-2 self-start lg:self-center shrink-0">
+            <button onclick="switchTab('tab-airtable')" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md shadow-orange-200 transition flex items-center justify-center gap-2">
+              <span>⚡ Base Airtable en Vivo</span>
             </button>
-            <button onclick="switchTab('tab-generador')" class="px-4 py-2.5 rounded-2xl bg-white hover:bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200 transition flex items-center gap-1.5">
-              <span>⚡ Inspirar Contenido</span>
-            </button>
+            <div class="flex gap-2">
+              <button onclick="switchTab('tab-generador')" class="px-3.5 py-2 rounded-2xl bg-white hover:bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200 transition flex items-center gap-1.5 shadow-xs">
+                <span>💡 Generar Copy</span>
+              </button>
+              <button onclick="switchTab('tab-calendario')" class="px-3.5 py-2 rounded-2xl bg-white hover:bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200 transition flex items-center gap-1.5 shadow-xs">
+                <span>🗓️ Calendario</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -216,7 +252,7 @@
             <span class="text-xs font-bold text-pink-600 uppercase">Gráficas Semanales</span>
             <span class="p-2 rounded-xl bg-pink-100 text-pink-600 text-sm">🎨</span>
           </div>
-          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">22</div>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">22 Piezas</div>
           <p class="text-[11px] text-slate-500 mt-0.5">Asignadas por Adriana en Airtable (Britani, Daniela y Alison)</p>
         </div>
 
@@ -249,28 +285,280 @@
 
       </div>
 
-      <!-- CENTRO DE ASIGNACIÓN DINÁMICA & AIRTABLE HUB -->
-      <div class="candy-card rounded-3xl p-6 border-2 border-orange-200/80 bg-gradient-to-br from-amber-50/50 via-white to-purple-50/40">
+      <!-- SECCIÓN 1: PILARES DE MARCA INTERACTIVOS -->
+      <div class="candy-card rounded-3xl p-6 border border-purple-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 text-[10px] font-extrabold uppercase">
+              <span>🎯 Fundamentos de Contenido</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 font-cute mt-1">
+              Los 3 Pilares Estratégicos de Polyglot Map
+            </h3>
+            <p class="text-xs text-slate-500">
+              Cada pieza gráfica o video debe anclarse en al menos uno de estos tres pilares para asegurar la conversión.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-xl border border-purple-200 self-start sm:self-auto">
+            ⚡ Matriz de Posicionamiento
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Pilar 1 -->
+          <div class="p-4 rounded-2xl bg-purple-50/60 border border-purple-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-xl bg-purple-500 text-white flex items-center justify-center font-bold text-sm shadow-xs">🗣️</span>
+                <div>
+                  <h4 class="font-extrabold text-purple-950 text-sm font-cute">Idiomas Acelerados</h4>
+                  <span class="text-[10px] text-purple-700 font-semibold">Fluidez sin bloqueos mentales</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Superamos el método tradicional memorístico. Enseñamos cómo hablar inglés con confianza y naturalidad desde el día uno con metodologías neuro-conversacionales.
+              </p>
+              <div class="mt-3 p-2.5 rounded-xl bg-white/90 border border-purple-100 text-[11px] text-purple-900 space-y-1">
+                <strong class="block font-cute text-purple-950">🔥 Ganchos Clave:</strong>
+                <p>• "El error #1 que cometes al hablar en tus videollamadas."</p>
+                <p>• "Aprende el inglés que sí usan las empresas de EE.UU."</p>
+              </div>
+            </div>
+            <button onclick="cargarPilarEnTester('idiomas_ia')" class="mt-3 text-center py-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-800 font-bold text-xs transition">
+              Probar ideas de este pilar ➔
+            </button>
+          </div>
+
+          <!-- Pilar 2 -->
+          <div class="p-4 rounded-2xl bg-pink-50/60 border border-pink-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-xl bg-pink-500 text-white flex items-center justify-center font-bold text-sm shadow-xs">🤖</span>
+                <div>
+                  <h4 class="font-extrabold text-pink-950 text-sm font-cute">Inteligencia Artificial</h4>
+                  <span class="text-[10px] text-pink-700 font-semibold">Simuladores & Práctica 24/7</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Uso de IA generativa para simular entrevistas laborales en inglés, corregir pronunciación en tiempo real y acelerar el vocabulario técnico especializado.
+              </p>
+              <div class="mt-3 p-2.5 rounded-xl bg-white/90 border border-pink-100 text-[11px] text-pink-900 space-y-1">
+                <strong class="block font-cute text-pink-950">🔥 Ganchos Clave:</strong>
+                <p>• "3 Prompts para entrenar tu entrevista laboral con ChatGPT."</p>
+                <p>• "Cómo tener un tutor nativo de inglés con IA sin pagar nada."</p>
+              </div>
+            </div>
+            <button onclick="cargarPilarEnTester('idiomas_ia')" class="mt-3 text-center py-1.5 rounded-xl bg-pink-100 hover:bg-pink-200 text-pink-800 font-bold text-xs transition">
+              Probar ideas de este pilar ➔
+            </button>
+          </div>
+
+          <!-- Pilar 3 -->
+          <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">💼</span>
+                <div>
+                  <h4 class="font-extrabold text-emerald-950 text-sm font-cute">Empleabilidad en USD</h4>
+                  <span class="text-[10px] text-emerald-800 font-semibold">Vacantes remotas globales</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                El puente directo al empleo: vacantes reales verificadas ($1,500 a $4,000 USD/mes), optimización de CV para sistemas ATS y perfiles de LinkedIn bilingües.
+              </p>
+              <div class="mt-3 p-2.5 rounded-xl bg-white/90 border border-emerald-100 text-[11px] text-emerald-900 space-y-1">
+                <strong class="block font-cute text-emerald-950">🔥 Ganchos Clave:</strong>
+                <p>• "5 Empresas de EE.UU. contratando talento latino en USD."</p>
+                <p>• "El cambio en tu CV que te consigue entrevistas en dólares."</p>
+              </div>
+            </div>
+            <button onclick="cargarPilarEnTester('empleabilidad')" class="mt-3 text-center py-1.5 rounded-xl bg-emerald-100 hover:bg-emerald-200 text-emerald-800 font-bold text-xs transition">
+              Probar ideas de este pilar ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 2: PIPELINE CREATIVO EN 5 ETAPAS -->
+      <div class="candy-card rounded-3xl p-6 border border-purple-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-pink-100 text-pink-800 text-[10px] font-extrabold uppercase">
+              <span>🔄 Flujo Operativo Coordinado</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 font-cute mt-1">
+              Pipeline Creativo: De la Idea a la Venta en 5 Pasos
+            </h3>
+            <p class="text-xs text-slate-500">
+              Cómo se articulan los roles de Adriana, Alison, Daniela, Scarlet y Britani en cada fase.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-xl">
+            Flujo Sin Cuellos de Botella
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+          
+          <!-- Paso 1 -->
+          <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-200 flex flex-col justify-between">
+            <div>
+              <span class="w-6 h-6 rounded-lg bg-purple-600 text-white font-bold text-xs flex items-center justify-center mb-2">1</span>
+              <h5 class="font-extrabold text-slate-900 text-xs font-cute">Pauta Estratégica</h5>
+              <p class="text-[11px] text-slate-600 mt-1">
+                <strong>Adriana Chávez</strong> pauta y asigna las piezas dinámicamente en Airtable. <strong>Alison</strong> aporta tendencias de IA y ofertas.
+              </p>
+            </div>
+            <div class="mt-2 text-[10px] font-bold text-purple-700">En Base Airtable</div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200 flex flex-col justify-between">
+            <div>
+              <span class="w-6 h-6 rounded-lg bg-sky-600 text-white font-bold text-xs flex items-center justify-center mb-2">2</span>
+              <h5 class="font-extrabold text-slate-900 text-xs font-cute">Creación Base</h5>
+              <p class="text-[11px] text-slate-600 mt-1">
+                <strong>Daniela graba los 4 videos cortos</strong> según la pauta. <strong>Britani, Daniela y Alison</strong> diseñan las piezas gráficas asignadas.
+              </p>
+            </div>
+            <div class="mt-2 text-[10px] font-bold text-sky-700">Grabación & Diseño</div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 flex flex-col justify-between">
+            <div>
+              <span class="w-6 h-6 rounded-lg bg-amber-600 text-white font-bold text-xs flex items-center justify-center mb-2">3</span>
+              <h5 class="font-extrabold text-slate-900 text-xs font-cute">Post-Producción & Copy</h5>
+              <p class="text-[11px] text-slate-600 mt-1">
+                <strong>Scarlet edita los 4 videos en 9:16</strong> con dinamismo, efectos y subtítulos. Redacta el <strong>copy persuasivo</strong> de todas las piezas.
+              </p>
+            </div>
+            <div class="mt-2 text-[10px] font-bold text-amber-700">Edición 9:16 + Copies</div>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200 flex flex-col justify-between">
+            <div>
+              <span class="w-6 h-6 rounded-lg bg-pink-600 text-white font-bold text-xs flex items-center justify-center mb-2">4</span>
+              <h5 class="font-extrabold text-slate-900 text-xs font-cute">Gatekeeper de Calidad</h5>
+              <p class="text-[11px] text-slate-600 mt-1">
+                <strong>Adriana Chávez</strong> revisa y aprueba el 100% de las piezas antes de salir a redes o a la comunidad.
+              </p>
+            </div>
+            <div class="mt-2 text-[10px] font-bold text-pink-700">Aprobación Técnica</div>
+          </div>
+
+          <!-- Paso 5 -->
+          <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex flex-col justify-between">
+            <div>
+              <span class="w-6 h-6 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center mb-2">5</span>
+              <h5 class="font-extrabold text-slate-900 text-xs font-cute">Distribución & Ventas</h5>
+              <p class="text-[11px] text-slate-600 mt-1">
+                <strong>Daniela sube a WhatsApp</strong>. <strong>Britani interactúa a diario</strong>. <strong>Daniela, Adriana y Alison</strong> auditan conversiones.
+              </p>
+            </div>
+            <div class="mt-2 text-[10px] font-bold text-emerald-700">Conversión a Matrículas</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECCIÓN 3: AIRTABLE EN VIVO INCRUSTADO EN MARKETING STUDIO -->
+      <div class="candy-card rounded-3xl p-6 border-2 border-orange-200 bg-gradient-to-br from-amber-50/40 via-white to-purple-50/40">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-orange-100">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-extrabold font-cute mb-1.5 border border-orange-200 shadow-xs">
-              <span>⚡ Airtable Workspace Conectado</span>
+              <span>⚡ Base Airtable Incrustada</span>
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>En Simultáneo</span>
+              <span>Visualización en Directo</span>
             </div>
             <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl font-cute flex items-center gap-2">
-              Gestión Dinámica de Piezas & Seguimiento en Vivo
+              Seguimiento de Avances & Asignación Dinámica
             </h3>
             <p class="text-xs text-slate-600 mt-0.5">
-              La asignación de piezas <strong>no tiene días fijos de lunes a domingo</strong>. De eso se encarga la <strong>Directora Creativa (Adriana)</strong> directamente en Airtable para que todo el equipo visualice los avances en simultáneo.
+              Sin días fijos de lunes a domingo: <strong>Adriana pauta y asigna</strong> aquí para que todo el equipo avance en simultáneo.
             </p>
           </div>
 
-          <!-- Direct Airtable Buttons -->
-          <div class="flex flex-wrap items-center gap-2 self-start sm:self-center">
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="switchTab('tab-airtable')" class="px-3.5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
+              <span>⚡ Expandir a Pantalla Completa</span>
+            </button>
+            <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition flex items-center gap-1.5 shadow-xs">
+              <span>🚀 Abrir Airtable Oficial</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Mini Table Preview -->
+        <div class="mt-4 overflow-x-auto">
+          <div class="flex items-center justify-between text-xs font-bold mb-2">
+            <span class="text-slate-700">Últimas Asignaciones en Curso:</span>
+            <button onclick="abrirModalNuevaTareaAirtable()" class="px-3 py-1 rounded-lg bg-purple-600 text-white font-bold hover:bg-purple-700 transition flex items-center gap-1">
+              <span>➕ Asignar Pieza</span>
+            </button>
+          </div>
+
+          <div id="miniAirtableContainer" class="space-y-2">
+            <!-- Dynamic Mini Rows Injected via JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECCIÓN 4: PROBADOR RÁPIDO DE GANCHOS & ÁNGULOS VIRALES -->
+      <div class="candy-card rounded-3xl p-6 border border-purple-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase">
+              <span>⚡ Laboratorio Rápido de Copys</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 font-cute mt-1">
+              Probador Rápido de Ganchos & CTAs de Alta Conversión
+            </h3>
+            <p class="text-xs text-slate-500">
+              Genera ideas al instante para TikTok, Reels, carruseles o mensajes directos para la comunidad de WhatsApp.
+            </p>
+          </div>
+          <button onclick="generarGanchosRapidos()" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition shadow-xs flex items-center gap-1.5 self-start sm:self-auto">
+            <span>🎲 Generar Nuevos Ganchos</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="studioHooksContainer">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: BASE AIRTABLE EN VIVO (EMBEBIDA)    -->
+    <!-- ========================================== -->
+    <div id="tab-airtable" class="tab-content hidden space-y-6">
+      
+      <!-- Top Hub Header -->
+      <div class="candy-card rounded-3xl p-6 bg-gradient-to-r from-orange-100/90 via-amber-100/80 to-pink-100/80 border border-orange-200">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/95 text-orange-800 text-xs font-extrabold font-cute mb-2 border border-orange-200 shadow-xs">
+              <span>⚡ Espacio Oficial Conectado</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Avances en Simultáneo</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-cute tracking-tight">
+              Base de Control & Asignación Dinámica en Airtable
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-700 mt-1 max-w-2xl leading-relaxed">
+              <strong>Adriana Chávez (Directora Creativa)</strong> asigna y actualiza las piezas directamente aquí. No existen días rígidos de lunes a domingo: todo el equipo consulta y reporta su estado en tiempo real.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 self-start lg:self-center">
             <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md shadow-orange-200 transition flex items-center gap-2">
-              <span>🚀 Abrir Base de Airtable</span>
+              <span>🚀 Abrir Base en Airtable</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
             <button onclick="copiarLinkAirtable()" class="px-3.5 py-2.5 rounded-2xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition flex items-center gap-1.5 shadow-xs">
@@ -279,82 +567,135 @@
           </div>
         </div>
 
-        <!-- 3 Bento Columns for Workflows -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+        <!-- Mode Toggle Bar -->
+        <div class="mt-5 pt-4 border-t border-orange-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-700">Modo de Visualización:</span>
+            <div class="inline-flex rounded-xl p-1 bg-white/80 border border-orange-200 shadow-2xs">
+              <button onclick="setAirtableMode('grid')" id="btnAirtableGrid" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs">
+                ⚡ Base Interactiva Sincronizada
+              </button>
+              <button onclick="setAirtableMode('iframe')" id="btnAirtableIframe" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition">
+                🌐 Iframe Oficial Airtable
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="abrirModalNuevaTareaAirtable()" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition flex items-center gap-1.5">
+              <span>➕ Asignar Nueva Pieza</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW A: INTERACTIVE AIRTABLE-STYLE GRID (ALWAYS WORKS, FAST, EDITABLE, PERSISTENT) -->
+      <div id="airtableGridView" class="space-y-4">
+        
+        <!-- Controls & Filters Bar -->
+        <div class="candy-card rounded-2xl p-4 border border-purple-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           
-          <!-- Workflow 1: Videos Cortos -->
-          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold text-amber-900 font-cute flex items-center gap-1.5">
-                  <span>🎬</span> Flujo de Videos Cortos (4/sem)
-                </span>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-200 text-amber-900">TikTok & Reels</span>
-              </div>
-              <ul class="space-y-2 text-xs text-slate-700 leading-relaxed">
-                <li class="flex items-start gap-1.5">
-                  <span class="text-amber-600 font-bold">1.</span>
-                  <span><strong>Adriana Chávez:</strong> Pauta y define el tema y contenido estratégico del video.</span>
-                </li>
-                <li class="flex items-start gap-1.5">
-                  <span class="text-amber-600 font-bold">2.</span>
-                  <span><strong>Daniela crea 4 videos cortos:</strong> Graba y estructura el contenido según la pauta de Adriana.</span>
-                </li>
-                <li class="flex items-start gap-1.5">
-                  <span class="text-amber-600 font-bold">3.</span>
-                  <span><strong>Scarlet los edita:</strong> Realiza la post-producción, dinamismo, subtítulos, efectos y formato vertical 9:16.</span>
-                </li>
-              </ul>
+          <div class="flex flex-wrap items-center gap-2">
+            <!-- Search -->
+            <div class="relative">
+              <input type="text" id="airtableSearch" oninput="filtrarTareasAirtable()" placeholder="Buscar tarea, responsable, pilar..." class="text-xs rounded-xl border border-purple-200 bg-white py-2 pl-8 pr-3 w-56 sm:w-64 focus:ring-2 focus:ring-purple-400 focus:outline-none">
+              <span class="absolute left-2.5 top-2.5 text-xs text-slate-400">🔍</span>
             </div>
-            <div class="mt-3 p-2 rounded-xl bg-white/80 border border-amber-200 text-[10px] text-amber-900 font-semibold">
-              ✅ Aprobación final por Adriana antes de publicar.
-            </div>
+
+            <!-- Filter Member -->
+            <select id="airtableFilterMember" onchange="filtrarTareasAirtable()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
+              <option value="all">👥 Todo el Equipo</option>
+              <option value="Britani">🌸 Britani (Content Creator)</option>
+              <option value="Daniela">💙 Daniela (Content Creators & Analytic)</option>
+              <option value="Alison">🌿 Alison (Content Strategist)</option>
+              <option value="Scarlet">🍯 Scarlet (Video Producer/Copy)</option>
+              <option value="Adriana">💜 Adriana (Directora Creativa)</option>
+            </select>
+
+            <!-- Filter Status -->
+            <select id="airtableFilterStatus" onchange="filtrarTareasAirtable()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
+              <option value="all">🚦 Todos los Estados</option>
+              <option value="Pauta / Por Iniciar">📝 Pauta / Por Iniciar</option>
+              <option value="En Creación">🎨 En Creación</option>
+              <option value="En Edición / Copy">🎬 En Edición / Copy</option>
+              <option value="En Revisión Adriana">⏳ En Revisión Adriana</option>
+              <option value="Aprobado">✅ Aprobado</option>
+              <option value="Publicado">🚀 Publicado</option>
+            </select>
           </div>
 
-          <!-- Workflow 2: Content Analytics en Ventas -->
-          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex flex-col justify-between">
+          <div class="flex items-center gap-2 text-xs text-slate-500 font-medium">
+            <span id="airtableCountBadge" class="px-2.5 py-1 rounded-xl bg-purple-100 text-purple-800 font-bold">12 Tareas</span>
+            <button onclick="resetearTareasAirtableDemo()" class="text-[11px] text-purple-600 hover:text-purple-800 underline">Restaurar demo</button>
+          </div>
+
+        </div>
+
+        <!-- Interactive Table Grid -->
+        <div class="candy-card rounded-3xl p-4 sm:p-5 border border-purple-200 overflow-x-auto shadow-xs">
+          <table class="w-full text-left text-xs min-w-[900px]">
+            <thead>
+              <tr class="border-b border-purple-100 text-slate-500 text-[11px] uppercase tracking-wider font-cute">
+                <th class="py-2.5 px-3">Tarea / Pieza Publicitaria</th>
+                <th class="py-2.5 px-3">Asignada a</th>
+                <th class="py-2.5 px-3">Formato</th>
+                <th class="py-2.5 px-3">Pilar</th>
+                <th class="py-2.5 px-3">Fecha Entrega</th>
+                <th class="py-2.5 px-3">Estado (Click para cambiar)</th>
+                <th class="py-2.5 px-3">Pauta de Adriana</th>
+                <th class="py-2.5 px-3 text-center">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="airtableTableBody" class="divide-y divide-purple-50 text-slate-700">
+              <!-- Injected via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- VIEW B: DIRECT IFRAME EMBED CONTAINER -->
+      <div id="airtableIframeView" class="hidden space-y-4">
+        
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-start gap-2">
+            <span class="text-base">ℹ️</span>
             <div>
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold text-emerald-900 font-cute flex items-center gap-1.5">
-                  <span>📈</span> Analítica de Ventas & Expansión
-                </span>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-200 text-emerald-900">Tríada Comercial</span>
-              </div>
-              <p class="text-xs text-slate-700 leading-relaxed">
-                <strong>Daniela (Content Analytic en ventas)</strong> trabaja en conjunto y sincronía con <strong>Adriana</strong> y <strong>Alison</strong> para:
+              <strong>Incrustación directa de Airtable:</strong>
+              <p class="text-[11px] text-amber-800 mt-0.5">
+                Si tu navegador bloquea la vista por políticas de inicio de sesión de Airtable, puedes abrir la base directamente con el botón de la derecha o pegar tu <strong>enlace de vista compartida (embed view)</strong> generado en Airtable.
               </p>
-              <ul class="mt-2 space-y-1 text-xs text-slate-700 leading-relaxed">
-                <li>• Medir tasas de clics y conversión a la comunidad de WhatsApp.</li>
-                <li>• Auditar qué piezas y ofertas generan más consultas de matrícula.</li>
-                <li>• Co-crear propuestas comerciales y ajustar la grilla de ventas.</li>
-              </ul>
-            </div>
-            <div class="mt-3 p-2 rounded-xl bg-white/80 border border-emerald-200 text-[10px] text-emerald-900 font-semibold">
-              💼 Foco: Maximizar inscripciones en USD para Polyglot Map.
             </div>
           </div>
+          <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-xs transition shrink-0">
+            Abrir en Ventana Completa ➔
+          </a>
+        </div>
 
-          <!-- Workflow 3: Piezas Gráficas y WhatsApp -->
-          <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-200 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold text-purple-900 font-cute flex items-center gap-1.5">
-                  <span>🎨</span> Piezas Gráficas & WhatsApp
-                </span>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-purple-200 text-purple-900">Asignación Directa</span>
-              </div>
-              <ul class="space-y-1.5 text-xs text-slate-700 leading-relaxed">
-                <li>• <strong>Asignación por Adriana en Airtable:</strong> Britani, Daniela y Alison reciben tareas según necesidades.</li>
-                <li>• <strong>Britani (Content Creator):</strong> Piezas gráficas e interacción y conversación diaria con la comunidad en WhatsApp.</li>
-                <li>• <strong>Daniela (Content Creators):</strong> Piezas gráficas y subida/distribución oficial de contenidos a WhatsApp.</li>
-                <li>• <strong>Alison (Content Strategist):</strong> 6 piezas semanales de ofertas laborales y tendencias para WhatsApp.</li>
-              </ul>
+        <!-- Custom Embed URL bar -->
+        <div class="candy-card rounded-2xl p-3 border border-purple-200 flex flex-col sm:flex-row items-center gap-2 text-xs">
+          <label class="font-bold text-slate-700 shrink-0">Enlace de Embed Personalizado:</label>
+          <input type="text" id="customAirtableUrlInput" placeholder="https://airtable.com/embed/..." value="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+          <button onclick="actualizarIframeAirtable()" class="px-3.5 py-2 rounded-xl bg-purple-600 text-white font-bold hover:bg-purple-700 transition shrink-0">
+            Cargar Iframe
+          </button>
+        </div>
+
+        <!-- The Iframe Container -->
+        <div class="candy-card rounded-3xl p-2 border-2 border-orange-200 bg-slate-900 shadow-xl overflow-hidden">
+          <div class="flex items-center justify-between px-3 py-2 bg-slate-800 text-slate-200 rounded-2xl text-xs mb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-400"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              <span class="ml-2 font-mono text-[11px] text-slate-300">airtable.com/polyglot-map-workspace</span>
             </div>
-            <div class="mt-3 p-2 rounded-xl bg-white/80 border border-purple-200 text-[10px] text-purple-900 font-semibold">
-              🔄 Todo el equipo actualiza sus estados en vivo en Airtable.
-            </div>
+            <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="text-orange-400 hover:text-orange-300 font-bold text-xs flex items-center gap-1">
+              <span>Abrir externo</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
           </div>
-
+          <iframe id="airtableFrame" src="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" class="w-full h-[620px] rounded-2xl border-0 bg-white" title="Base Oficial de Airtable Polyglot Map"></iframe>
         </div>
 
       </div>
@@ -362,12 +703,12 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 2: CALENDARIO MENSUAL 2026-2030+      -->
+    <!-- TAB 3: CALENDARIO MENSUAL 2026-2030+      -->
     <!-- ========================================== -->
     <div id="tab-calendario" class="tab-content hidden space-y-6">
       
       <!-- Airtable Live Sync Banner in Calendar -->
-      <div class="candy-card rounded-2xl p-4 bg-gradient-to-r from-amber-100/80 via-orange-50 to-pink-50 border border-orange-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="candy-card rounded-2xl p-4 bg-gradient-to-r from-amber-100/90 via-orange-50 to-pink-50 border border-orange-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-xl bg-orange-500 text-white flex items-center justify-center font-bold text-lg shadow-xs">
             ⚡
@@ -382,10 +723,9 @@
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
-            <span>🚀 Abrir en Airtable</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-          </a>
+          <button onclick="switchTab('tab-airtable')" class="px-3.5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
+            <span>⚡ Ver Base Airtable</span>
+          </button>
           <button onclick="copiarLinkAirtable()" class="px-3 py-2 rounded-xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition shadow-xs">
             📋 Copiar Link
           </button>
@@ -432,7 +772,7 @@
             <span class="px-2 py-0.5 rounded-lg bg-pink-100 text-pink-700">🌸 Britani (Content Creator)</span>
             <span class="px-2 py-0.5 rounded-lg bg-sky-100 text-sky-700">💙 Daniela (Content Creators)</span>
             <span class="px-2 py-0.5 rounded-lg bg-emerald-100 text-emerald-800">🌿 Alison (Content Strategist)</span>
-            <span class="px-2 py-0.5 rounded-lg bg-amber-100 text-amber-800">🍯 Scarlet (Video Producer/Copywriter)</span>
+            <span class="px-2 py-0.5 rounded-lg bg-amber-100 text-amber-800">🍯 Scarlet (Video Producer/Copy)</span>
             <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800">💜 Adriana (Directora Creativa)</span>
           </div>
 
@@ -459,14 +799,14 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 3: GENERADOR DE IDEAS (FEED PREVIEW)   -->
+    <!-- TAB 4: GENERADOR DE IDEAS (FEED PREVIEW)   -->
     <!-- ========================================== -->
     <div id="tab-generador" class="tab-content hidden space-y-6">
       
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-xl sm:text-2xl font-bold text-slate-900 font-cute flex items-center gap-2">
-            <span>⚡</span> Inspirador de Contenido & Previsualizador de Feed
+            <span>💡</span> Inspirador de Contenido & Previsualizador de Feed
           </h2>
           <p class="text-xs text-slate-500">
             Cada vez que tocas el botón, genera una <strong>idea fresca, visual y con copy persuasivo</strong> para tus redes.
@@ -568,13 +908,12 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- ========================================== -->
-    <!-- TAB 4: ROLES & FUNCIONES DEL EQUIPO        -->
+    <!-- TAB 5: ROLES & FUNCIONES DEL EQUIPO        -->
     <!-- ========================================== -->
     <div id="tab-equipo" class="tab-content hidden space-y-6">
       
       <!-- Header Tab -->
-      <div class="candy-card rounded-3xl p-6 bg-gradient-to-r from-purple-100/70 via-pink-100/60 to-sky-100/60 border border-purple-200">
+      <div class="candy-card rounded-3xl p-6 bg-gradient-to-r from-purple-100/80 via-pink-100/70 to-sky-100/70 border border-purple-200">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 text-purple-800 text-xs font-extrabold font-cute mb-2 border border-purple-200 shadow-xs">
@@ -958,6 +1297,103 @@
   </main>
 
   <!-- ========================================== -->
+  <!-- MODAL: AGENDAR / ASIGNAR EN AIRTABLE       -->
+  <!-- ========================================== -->
+  <div id="airtableTaskModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-orange-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+      
+      <div class="flex items-start justify-between pb-3 border-b border-orange-100">
+        <div>
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-100 text-orange-800">Airtable Hub</span>
+          <h3 class="font-extrabold text-slate-900 font-cute text-lg mt-1">Asignar Nueva Tarea en Airtable</h3>
+        </div>
+        <button onclick="cerrarModalNuevaTareaAirtable()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
+      </div>
+
+      <div class="mt-4 space-y-3 text-xs">
+        <div>
+          <label class="text-[11px] font-bold text-slate-600 block mb-1">Título de la Pieza o Tarea:</label>
+          <input type="text" id="newTaskTitle" placeholder="Ej: Video 3: Salarios en dólares para talento bilingüe en Latam" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-orange-400">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Asignar a:</label>
+            <select id="newTaskAssignee" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+              <option value="Britani Mallqui">Britani · Content Creator</option>
+              <option value="Daniela Bonilla">Daniela · Content Creators & Analytic</option>
+              <option value="Alison Rivas">Alison · Content Strategist</option>
+              <option value="Scarlet Vega">Scarlet · Video Producer/Copywriter</option>
+              <option value="Adriana Chávez">Adriana Chávez · Directora Creativa</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Formato:</label>
+            <select id="newTaskFormat" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+              <option value="Video Corto 9:16">🎬 Video Corto 9:16</option>
+              <option value="Post Feed">🖼️ Post Feed</option>
+              <option value="Carrusel 5 Láminas">📑 Carrusel 5 Láminas</option>
+              <option value="Anuncio Campaña">🚀 Anuncio Campaña</option>
+              <option value="Ofertas Laborales WA">📢 Ofertas Laborales WA</option>
+              <option value="Analítica de Ventas">📈 Analítica de Ventas</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Pilar Estratégico:</label>
+            <select id="newTaskPillar" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+              <option value="Idiomas + IA">🤖 Idiomas + IA</option>
+              <option value="Empleabilidad USD">💼 Empleabilidad USD</option>
+              <option value="Ofertas Laborales">📢 Ofertas Laborales</option>
+              <option value="Campaña Matrícula">🚀 Campaña Matrícula</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Fecha de Entrega:</label>
+            <input type="date" id="newTaskDueDate" value="2026-09-28" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Estado Inicial:</label>
+            <select id="newTaskStatus" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+              <option value="Pauta / Por Iniciar">📝 Pauta / Por Iniciar</option>
+              <option value="En Creación">🎨 En Creación</option>
+              <option value="En Edición / Copy">🎬 En Edición / Copy</option>
+              <option value="En Revisión Adriana">⏳ En Revisión Adriana</option>
+              <option value="Aprobado">✅ Aprobado</option>
+              <option value="Publicado">🚀 Publicado</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-[11px] font-bold text-slate-600 block mb-1">Canal de Destino:</label>
+            <select id="newTaskChannel" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+              <option value="Comunidad WhatsApp">💬 Comunidad WhatsApp</option>
+              <option value="TikTok & Reels">🎬 TikTok & Reels</option>
+              <option value="Instagram Feed">📸 Instagram Feed</option>
+              <option value="LinkedIn">💼 LinkedIn</option>
+              <option value="Meta Ads">🚀 Meta Ads</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="text-[11px] font-bold text-slate-600 block mb-1">Pauta / Guion / Instrucción de Adriana:</label>
+          <textarea id="newTaskNotes" rows="2" placeholder="Detalle pedagógico, gancho sugerido o requerimientos de edición..." class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-orange-400"></textarea>
+        </div>
+
+        <button onclick="guardarNuevaTareaAirtable()" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md transition">
+          💾 Guardar en Base de Airtable
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
   <!-- MODAL: AGENDAR DÍA EN EL CALENDARIO        -->
   <!-- ========================================== -->
   <div id="dayModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
@@ -1075,6 +1511,7 @@
 
   <!-- Interactive JavaScript Engine -->
   <script>
+    // Toast Feedback
     function showToast(msg, icon = "✨") {
       const toast = document.getElementById('toast');
       document.getElementById('toastMsg').innerText = msg;
@@ -1083,6 +1520,7 @@
       setTimeout(() => toast.classList.remove('show'), 2800);
     }
 
+    // Tab Navigation
     function switchTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
       const activeTab = document.getElementById(tabId);
@@ -1099,19 +1537,467 @@
         activeBtn.classList.remove('text-slate-600');
       }
 
-      if (tabId === 'tab-calendario') {
-        renderCalendar();
+      if (tabId === 'tab-calendario') renderCalendar();
+      if (tabId === 'tab-airtable') renderAirtableTable();
+    }
+
+    // ==========================================
+    // AIRTABLE STATE & ENGINE
+    // ==========================================
+    const AIRTABLE_STORAGE_KEY = "polyglot_airtable_tasks_v2";
+
+    function initializeAirtableStore() {
+      const stored = localStorage.getItem(AIRTABLE_STORAGE_KEY);
+      if (stored) {
+        try { return JSON.parse(stored); } catch(e) {}
+      }
+
+      const defaultTasks = [
+        {
+          id: "at_1",
+          title: "Video Corto 1: Cómo responder en inglés con IA en tu entrevista",
+          assignee: "Daniela Bonilla",
+          format: "Video Corto 9:16",
+          pillar: "Idiomas + IA",
+          dueDate: "2026-09-22",
+          status: "En Edición / Copy",
+          channel: "TikTok & Reels",
+          notes: "Daniela graba sobre guion de Adriana. Scarlet edita en 9:16 con cortes ágiles y subtítulos."
+        },
+        {
+          id: "at_2",
+          title: "Video Corto 2: Salarios en USD para talentos bilingües en Latam",
+          assignee: "Daniela Bonilla",
+          format: "Video Corto 9:16",
+          pillar: "Empleabilidad USD",
+          dueDate: "2026-09-24",
+          status: "En Creación",
+          channel: "TikTok & Reels",
+          notes: "Daniela graba pauta de Adriana sobre rangos salariales ($1,500 - $3,000 USD). Scarlet edita."
+        },
+        {
+          id: "at_3",
+          title: "Video Corto 3: 3 Prompts para sonar como nativo sin memorizar gramática",
+          assignee: "Daniela Bonilla",
+          format: "Video Corto 9:16",
+          pillar: "Idiomas + IA",
+          dueDate: "2026-09-26",
+          status: "Pauta / Por Iniciar",
+          channel: "TikTok & Reels",
+          notes: "Pautado por Adriana para Daniela. Scarlet a cargo de post-producción."
+        },
+        {
+          id: "at_4",
+          title: "Video Corto 4: Test en vivo: ¿Tu inglés pasa los filtros de reclutadores?",
+          assignee: "Daniela Bonilla",
+          format: "Video Corto 9:16",
+          pillar: "Empleabilidad USD",
+          dueDate: "2026-09-28",
+          status: "Pauta / Por Iniciar",
+          channel: "TikTok & Reels",
+          notes: "Prueba conversacional con IA. Daniela graba y Scarlet edita."
+        },
+        {
+          id: "at_5",
+          title: "Pieza WA 1: 5 Vacantes Remotas ($1,800 - $2,500 USD) para asistentes",
+          assignee: "Alison Rivas",
+          format: "Ofertas Laborales WA",
+          pillar: "Ofertas Laborales",
+          dueDate: "2026-09-21",
+          status: "Aprobado",
+          channel: "Comunidad WhatsApp",
+          notes: "6 piezas semanales de Alison para WhatsApp sobre vacantes reales y tendencias."
+        },
+        {
+          id: "at_6",
+          title: "Pieza WA 2: Vacantes Customer Success Representative en USD",
+          assignee: "Alison Rivas",
+          format: "Ofertas Laborales WA",
+          pillar: "Ofertas Laborales",
+          dueDate: "2026-09-23",
+          status: "Aprobado",
+          channel: "Comunidad WhatsApp",
+          notes: "Requisitos B2 inglés conversacional + enlace a formulario."
+        },
+        {
+          id: "at_7",
+          title: "Pieza WA 3: Ofertas Project Coordinator Jr en EE.UU.",
+          assignee: "Alison Rivas",
+          format: "Ofertas Laborales WA",
+          pillar: "Ofertas Laborales",
+          dueDate: "2026-09-25",
+          status: "En Revisión Adriana",
+          channel: "Comunidad WhatsApp",
+          notes: "Alison revisa con Adriana para aprobación técnica antes de difundir."
+        },
+        {
+          id: "at_8",
+          title: "Reporte Analítica de Ventas & Conversión de WhatsApp",
+          assignee: "Daniela Bonilla",
+          format: "Analítica de Ventas",
+          pillar: "Empleabilidad USD",
+          dueDate: "2026-09-25",
+          status: "En Creación",
+          channel: "Comunidad WhatsApp",
+          notes: "Daniela (Content Analytic en ventas) analiza tasas de clics y matrículas junto a Adriana y Alison."
+        },
+        {
+          id: "at_9",
+          title: "Carrusel 5 Láminas: Guía Paso a Paso para Entrenar tu Inglés con ChatGPT",
+          assignee: "Britani Mallqui",
+          format: "Carrusel 5 Láminas",
+          pillar: "Idiomas + IA",
+          dueDate: "2026-09-21",
+          status: "Publicado",
+          channel: "Instagram Feed",
+          notes: "Pieza asignada por Adriana a Britani. Copy redactado por Scarlet."
+        },
+        {
+          id: "at_10",
+          title: "Post Feed: La habilidad #1 que te duplica el sueldo en dólares",
+          assignee: "Britani Mallqui",
+          format: "Post Feed",
+          pillar: "Empleabilidad USD",
+          dueDate: "2026-09-23",
+          status: "Aprobado",
+          channel: "Instagram Feed",
+          notes: "Diseño por Britani, interacción comunitaria diaria en WhatsApp."
+        },
+        {
+          id: "at_11",
+          title: "Anuncio de Campaña: Aprende Inglés 3x Más Rápido con IA - Matrículas",
+          assignee: "Britani Mallqui",
+          format: "Anuncio Campaña",
+          pillar: "Campaña Matrícula",
+          dueDate: "2026-09-25",
+          status: "En Revisión Adriana",
+          channel: "Meta Ads",
+          notes: "Pieza de conversión directa hacia WhatsApp de ventas."
+        },
+        {
+          id: "at_12",
+          title: "Propuesta Comercial B2B: Alianza para Capacitación en Empresas",
+          assignee: "Alison Rivas",
+          format: "Post Feed",
+          pillar: "Empleabilidad USD",
+          dueDate: "2026-09-26",
+          status: "En Creación",
+          channel: "LinkedIn",
+          notes: "Elaborada por Alison con apoyo de Adriana y Daniela para captar empresas."
+        }
+      ];
+
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(defaultTasks));
+      return defaultTasks;
+    }
+
+    let airtableTasks = initializeAirtableStore();
+
+    function setAirtableMode(mode) {
+      const gridView = document.getElementById('airtableGridView');
+      const iframeView = document.getElementById('airtableIframeView');
+      const btnGrid = document.getElementById('btnAirtableGrid');
+      const btnIframe = document.getElementById('btnAirtableIframe');
+
+      if (mode === 'grid') {
+        gridView.classList.remove('hidden');
+        iframeView.classList.add('hidden');
+        btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs";
+        btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition";
+      } else {
+        gridView.classList.add('hidden');
+        iframeView.classList.remove('hidden');
+        btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition";
+        btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs";
       }
     }
 
-    // Calendar state
+    function renderAirtableTable() {
+      const tbody = document.getElementById('airtableTableBody');
+      const miniContainer = document.getElementById('miniAirtableContainer');
+      const searchVal = (document.getElementById('airtableSearch')?.value || "").toLowerCase().trim();
+      const memberVal = document.getElementById('airtableFilterMember')?.value || "all";
+      const statusVal = document.getElementById('airtableFilterStatus')?.value || "all";
+
+      const filtered = airtableTasks.filter(t => {
+        const matchesSearch = !searchVal || 
+          t.title.toLowerCase().includes(searchVal) ||
+          t.assignee.toLowerCase().includes(searchVal) ||
+          t.format.toLowerCase().includes(searchVal) ||
+          t.pillar.toLowerCase().includes(searchVal) ||
+          (t.notes && t.notes.toLowerCase().includes(searchVal));
+
+        const matchesMember = memberVal === "all" || t.assignee.includes(memberVal);
+        const matchesStatus = statusVal === "all" || t.status === statusVal;
+
+        return matchesSearch && matchesMember && matchesStatus;
+      });
+
+      // Update count badge
+      const countBadge = document.getElementById('airtableCountBadge');
+      if (countBadge) countBadge.innerText = `${filtered.length} Tareas`;
+
+      // Render main table rows
+      if (tbody) {
+        if (filtered.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="8" class="text-center py-8 text-slate-400">No se encontraron tareas con los filtros seleccionados.</td></tr>`;
+        } else {
+          tbody.innerHTML = filtered.map(t => {
+            let statusClass = "bg-purple-100 text-purple-800 border-purple-200";
+            if (t.status === "Aprobado") statusClass = "bg-emerald-100 text-emerald-800 border-emerald-200";
+            else if (t.status === "Publicado") statusClass = "bg-sky-100 text-sky-800 border-sky-200";
+            else if (t.status === "En Revisión Adriana") statusClass = "bg-pink-100 text-pink-800 border-pink-200";
+            else if (t.status === "En Edición / Copy") statusClass = "bg-amber-100 text-amber-800 border-amber-200";
+            else if (t.status === "En Creación") statusClass = "bg-orange-100 text-orange-800 border-orange-200";
+
+            let assigneeBadge = "bg-slate-100 text-slate-700";
+            if (t.assignee.includes("Britani")) assigneeBadge = "bg-pink-100 text-pink-800";
+            else if (t.assignee.includes("Daniela")) assigneeBadge = "bg-sky-100 text-sky-800";
+            else if (t.assignee.includes("Alison")) assigneeBadge = "bg-emerald-100 text-emerald-800";
+            else if (t.assignee.includes("Scarlet")) assigneeBadge = "bg-amber-100 text-amber-800";
+            else if (t.assignee.includes("Adriana")) assigneeBadge = "bg-purple-100 text-purple-800";
+
+            return `
+              <tr class="hover:bg-purple-50/40 transition">
+                <td class="py-3 px-3">
+                  <div class="font-bold text-slate-900">${t.title}</div>
+                  <div class="text-[10px] text-slate-500 font-medium">${t.channel || 'Redes Sociales'}</div>
+                </td>
+                <td class="py-3 px-3">
+                  <span class="px-2 py-0.5 rounded-lg text-[11px] font-bold ${assigneeBadge}">${t.assignee.split(' ')[0]}</span>
+                </td>
+                <td class="py-3 px-3 font-semibold text-slate-700 text-[11px]">
+                  ${t.format}
+                </td>
+                <td class="py-3 px-3">
+                  <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-bold">${t.pillar}</span>
+                </td>
+                <td class="py-3 px-3 font-medium text-slate-600 text-[11px]">
+                  ${t.dueDate}
+                </td>
+                <td class="py-3 px-3">
+                  <button onclick="ciclarEstadoTareaAirtable('${t.id}')" class="px-2.5 py-1 rounded-xl text-[10px] font-extrabold border transition shadow-2xs hover:opacity-80 flex items-center gap-1 ${statusClass}" title="Click para cambiar estado">
+                    <span>${t.status}</span>
+                    <span class="text-[9px]">🔄</span>
+                  </button>
+                </td>
+                <td class="py-3 px-3 text-[11px] text-slate-600 max-w-xs leading-relaxed">
+                  ${t.notes || '—'}
+                </td>
+                <td class="py-3 px-3 text-center">
+                  <button onclick="eliminarTareaAirtable('${t.id}')" class="text-pink-500 hover:text-pink-700 font-bold p-1 text-xs" title="Eliminar tarea">
+                    🗑️
+                  </button>
+                </td>
+              </tr>
+            `;
+          }).join('');
+        }
+      }
+
+      // Render mini view in Tab 1
+      if (miniContainer) {
+        miniContainer.innerHTML = airtableTasks.slice(0, 4).map(t => {
+          let statusColor = "bg-purple-100 text-purple-800";
+          if (t.status === "Aprobado") statusColor = "bg-emerald-100 text-emerald-800";
+          else if (t.status === "Publicado") statusColor = "bg-sky-100 text-sky-800";
+          else if (t.status.includes("Revisión")) statusColor = "bg-pink-100 text-pink-800";
+          else if (t.status.includes("Edición")) statusColor = "bg-amber-100 text-amber-800";
+
+          return `
+            <div class="p-3 rounded-2xl bg-white border border-purple-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-2xs hover:border-purple-300 transition">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-xs shrink-0">⚡</span>
+                <div>
+                  <h6 class="font-bold text-slate-900 text-xs">${t.title}</h6>
+                  <span class="text-[10px] text-slate-500 font-medium">Asignada a: <strong>${t.assignee}</strong> · ${t.format}</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 self-start sm:self-center">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${statusColor}">${t.status}</span>
+                <button onclick="switchTab('tab-airtable')" class="text-[10px] font-bold text-orange-600 hover:text-orange-800 underline">Ver Base ➔</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    function filtrarTareasAirtable() {
+      renderAirtableTable();
+    }
+
+    const ESTADOS_CYCLE = [
+      "Pauta / Por Iniciar",
+      "En Creación",
+      "En Edición / Copy",
+      "En Revisión Adriana",
+      "Aprobado",
+      "Publicado"
+    ];
+
+    function ciclarEstadoTareaAirtable(id) {
+      const task = airtableTasks.find(t => t.id === id);
+      if (!task) return;
+      const idx = ESTADOS_CYCLE.indexOf(task.status);
+      const nextIdx = (idx + 1) % ESTADOS_CYCLE.length;
+      task.status = ESTADOS_CYCLE[nextIdx];
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
+      renderAirtableTable();
+      showToast(`Estado actualizado: ${task.status} 🚀`, "🔄");
+    }
+
+    function eliminarTareaAirtable(id) {
+      airtableTasks = airtableTasks.filter(t => t.id !== id);
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
+      renderAirtableTable();
+      showToast("Tarea eliminada de la base.", "🗑️");
+    }
+
+    function abrirModalNuevaTareaAirtable() {
+      document.getElementById('airtableTaskModal').classList.remove('hidden');
+    }
+
+    function cerrarModalNuevaTareaAirtable() {
+      document.getElementById('airtableTaskModal').classList.add('hidden');
+    }
+
+    function guardarNuevaTareaAirtable() {
+      const title = document.getElementById('newTaskTitle').value.trim() || "Nueva Pieza Publicitaria";
+      const assignee = document.getElementById('newTaskAssignee').value;
+      const format = document.getElementById('newTaskFormat').value;
+      const pillar = document.getElementById('newTaskPillar').value;
+      const dueDate = document.getElementById('newTaskDueDate').value;
+      const status = document.getElementById('newTaskStatus').value;
+      const channel = document.getElementById('newTaskChannel').value;
+      const notes = document.getElementById('newTaskNotes').value.trim();
+
+      const newTask = {
+        id: "at_" + Date.now(),
+        title,
+        assignee,
+        format,
+        pillar,
+        dueDate,
+        status,
+        channel,
+        notes
+      };
+
+      airtableTasks.unshift(newTask);
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
+      renderAirtableTable();
+      cerrarModalNuevaTareaAirtable();
+      document.getElementById('newTaskTitle').value = "";
+      document.getElementById('newTaskNotes').value = "";
+      showToast("¡Tarea asignada con éxito en Airtable! ⚡", "✅");
+    }
+
+    function resetearTareasAirtableDemo() {
+      localStorage.removeItem(AIRTABLE_STORAGE_KEY);
+      airtableTasks = initializeAirtableStore();
+      renderAirtableTable();
+      showToast("Base de Airtable restaurada con datos demo.", "✨");
+    }
+
+    function actualizarIframeAirtable() {
+      const url = document.getElementById('customAirtableUrlInput').value.trim();
+      if (url) {
+        document.getElementById('airtableFrame').src = url;
+        showToast("Iframe actualizado.", "🌐");
+      }
+    }
+
+    function copiarLinkAirtable() {
+      const airtableUrl = "https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts";
+      navigator.clipboard.writeText(airtableUrl).then(() => {
+        showToast("¡Link de Airtable copiado al portapapeles! ⚡", "🚀");
+      });
+    }
+
+    // ==========================================
+    // STUDIO HOOKS TESTER
+    // ==========================================
+    const studioHooksList = [
+      {
+        pilar: "Idiomas + IA",
+        badge: "bg-purple-100 text-purple-800",
+        hook: "🤖 3 Prompts de ChatGPT para simular una entrevista laboral en inglés y sonar como nativo.",
+        cta: "📲 Únete a nuestra comunidad de WhatsApp para descargar la guía gratuita con los prompts listos para copiar."
+      },
+      {
+        pilar: "Empleabilidad en USD",
+        badge: "bg-emerald-100 text-emerald-800",
+        hook: "💼 Si ganas menos de $1,500 USD viviendo en Latam, este cambio en tu inglés conversacional te abre puertas.",
+        cta: "💬 Comenta 'DÓLARES' y te enviamos el test de nivelación con IA por mensaje privado."
+      },
+      {
+        pilar: "Ofertas Laborales",
+        badge: "bg-amber-100 text-amber-800",
+        hook: "📢 5 Empresas de EE.UU. que están contratando talento bilingüe remoto esta semana (sueldos $1,800 - $3,200).",
+        cta: "🚀 Toca el enlace de nuestro perfil y accede a las vacantes antes de que cierren postulaciones."
+      },
+      {
+        pilar: "Idiomas + IA",
+        badge: "bg-purple-100 text-purple-800",
+        hook: "⚠️ No memorices listas de verbos en 2026. Así es como la IA te entrena en conversación real en 30 días.",
+        cta: "📲 Escríbenos a WhatsApp para asegurar tu cupo en la próxima cohorte intensiva de Polyglot Map."
+      },
+      {
+        pilar: "Campaña Matrícula",
+        badge: "bg-pink-100 text-pink-800",
+        hook: "🎯 Tu talento ya no tiene fronteras... tu idioma tampoco debería tenerlas. Aprende con IA en Polyglot Map.",
+        cta: "✨ Cupos limitados: postula hoy a la beca parcial en nuestra comunidad exclusiva."
+      },
+      {
+        pilar: "Empleabilidad en USD",
+        badge: "bg-emerald-100 text-emerald-800",
+        hook: "🔥 El error #1 en el CV de los profesionales latinos al postular a empresas de Estados Unidos y Europa.",
+        cta: "💡 Descarga nuestra plantilla de CV optimizada para ATS en el link de la bio."
+      }
+    ];
+
+    function generarGanchosRapidos() {
+      const container = document.getElementById('studioHooksContainer');
+      if (!container) return;
+      const shuffled = [...studioHooksList].sort(() => 0.5 - Math.random()).slice(0, 3);
+
+      container.innerHTML = shuffled.map(h => `
+        <div class="p-4 rounded-2xl bg-white border border-purple-200 shadow-2xs flex flex-col justify-between hover:border-purple-400 transition">
+          <div>
+            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full ${h.badge}">${h.pilar}</span>
+            <h5 class="font-extrabold text-slate-900 text-xs font-cute mt-2.5 leading-snug">${h.hook}</h5>
+            <p class="text-[11px] text-slate-600 mt-2 p-2 rounded-xl bg-purple-50/50 leading-relaxed">${h.cta}</p>
+          </div>
+          <button onclick="copiarHookRapido('${h.hook.replace(/'/g, "\\'")}')" class="mt-3 py-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs transition flex items-center justify-center gap-1">
+            <span>📋 Copiar Gancho</span>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function copiarHookRapido(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast("¡Gancho copiado al portapapeles! 🎯", "📋");
+      });
+    }
+
+    function cargarPilarEnTester(pilar) {
+      switchTab('tab-generador');
+      document.getElementById('selPilar').value = pilar;
+      generarContenidoAleatorio();
+    }
+
+    // ==========================================
+    // CALENDAR 2026-2030+ ENGINE
+    // ==========================================
     let curMonth = 8; // September
     let curYear = 2026;
     let selectedDateKey = "2026-09-21";
-    const STORAGE_KEY = "polyglot_calendar_events_clean_v3";
+    const CALENDAR_STORAGE_KEY = "polyglot_calendar_events_clean_v3";
 
     function initializeEventsStore() {
-      const stored = localStorage.getItem(STORAGE_KEY);
+      const stored = localStorage.getItem(CALENDAR_STORAGE_KEY);
       if (stored) {
         try { return JSON.parse(stored); } catch(e) {}
       }
@@ -1119,17 +2005,17 @@
       const initialEvents = [
         { id: "e1", date: "2026-09-21", creator: "Britani Mallqui", format: "Post", channel: "Instagram", status: "Aprobado", title: "3 Prompts IA para Entrevistas en Inglés" },
         { id: "e2", date: "2026-09-21", creator: "Britani Mallqui", format: "Carrusel", channel: "Instagram", status: "Aprobado", title: "Vocabulario Tech Bilingüe en 3 Semanas" },
-        { id: "e3", date: "2026-09-21", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "5 Vacantes Remotas ($1,800 - $2,500 USD)" },
+        { id: "e3", date: "2026-09-21", creator: "Alison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "5 Vacantes Remotas ($1,800 - $2,500 USD)" },
         { id: "e4", date: "2026-09-22", creator: "Daniela Bonilla", format: "Post", channel: "Comunidad WhatsApp", status: "Publicado", title: "Quiz de Nivelación de Inglés en WA" },
         { id: "e5", date: "2026-09-22", creator: "Scarlet Vega", format: "Video 9:16", channel: "TikTok", status: "Aprobado", title: "Video 1: Cómo responder en inglés con IA" },
         { id: "e6", date: "2026-09-23", creator: "Britani Mallqui", format: "Post", channel: "Instagram", status: "Aprobado", title: "Tips de Fluidez: 3 frases ejecutivas" },
-        { id: "e7", date: "2026-09-23", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Ofertas de Customer Support en USD" },
+        { id: "e7", date: "2026-09-23", creator: "Alison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Ofertas de Customer Support en USD" },
         { id: "e8", date: "2026-09-23", creator: "Scarlet Vega", format: "Video 9:16", channel: "Instagram", status: "Aprobado", title: "Video 2: Salarios remotos en dólares" },
         { id: "e9", date: "2026-09-24", creator: "Daniela Bonilla", format: "Carrusel", channel: "Facebook", status: "Aprobado", title: "Flyer Masterclass Gratuita de IA" },
-        { id: "e10", date: "2026-09-25", creator: "Allison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Cierre de Semana: 10 Vacantes Bilingües" }
+        { id: "e10", date: "2026-09-25", creator: "Alison Rivas", format: "Ofertas Laborales WA", channel: "Comunidad WhatsApp", status: "Aprobado", title: "Cierre de Semana: 10 Vacantes Bilingües" }
       ];
 
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(initialEvents));
+      localStorage.setItem(CALENDAR_STORAGE_KEY, JSON.stringify(initialEvents));
       return initialEvents;
     }
 
@@ -1186,7 +2072,7 @@
           let color = "bg-purple-100 text-purple-800";
           if (ev.creator.includes("Britani")) color = "bg-pink-100 text-pink-700";
           else if (ev.creator.includes("Daniela")) color = "bg-sky-100 text-sky-700";
-          else if (ev.creator.includes("Allison")) color = "bg-emerald-100 text-emerald-800";
+          else if (ev.creator.includes("Alison")) color = "bg-emerald-100 text-emerald-800";
           else if (ev.creator.includes("Scarlet")) color = "bg-amber-100 text-amber-800";
 
           chips += `<div class="truncate text-[9px] font-bold px-1.5 py-0.5 rounded ${color}">${ev.creator.split(' ')[0]}: ${ev.title}</div>`;
@@ -1267,7 +2153,7 @@
         title: title
       });
 
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(allEvents));
+      localStorage.setItem(CALENDAR_STORAGE_KEY, JSON.stringify(allEvents));
       renderDayEventsInModal();
       renderCalendar();
       document.getElementById('newEventTitle').value = "";
@@ -1276,7 +2162,7 @@
 
     function eliminarEvento(id) {
       allEvents = allEvents.filter(e => e.id !== id);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(allEvents));
+      localStorage.setItem(CALENDAR_STORAGE_KEY, JSON.stringify(allEvents));
       renderDayEventsInModal();
       renderCalendar();
       showToast("Pieza eliminada.", "🗑️");
@@ -1309,14 +2195,9 @@
       });
     }
 
-    function copiarLinkAirtable() {
-      const airtableUrl = "https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts";
-      navigator.clipboard.writeText(airtableUrl).then(() => {
-        showToast("¡Link de Airtable copiado al portapapeles! ⚡", "🚀");
-      });
-    }
-
-    // Dynamic Generator Pool
+    // ==========================================
+    // DYNAMIC GENERATOR POOL
+    // ==========================================
     const hooksPool = [
       "🔥 Si quieres ganar $2,500 USD/mes trabajando en remoto, este es el error #1 en tu inglés...",
       "🤖 3 Prompts de Inteligencia Artificial que te vuelven bilingüe en 30 días sin memorizar gramática.",
@@ -1430,7 +2311,9 @@ Requisitos:
       });
     }
 
-    // CV Store
+    // ==========================================
+    // TEAM CV DATA STORE
+    // ==========================================
     const teamCvData = {
       adriana: {
         name: "Adriana Chávez",
@@ -1531,14 +2414,18 @@ Requisitos:
       document.getElementById('cvModal').classList.add('hidden');
     }
 
+    // Modal click out listeners
     window.addEventListener('click', e => {
       if (e.target === document.getElementById('cvModal')) closeCvModal();
       if (e.target === document.getElementById('dayModal')) closeDayModal();
+      if (e.target === document.getElementById('airtableTaskModal')) cerrarModalNuevaTareaAirtable();
     });
 
     window.addEventListener('DOMContentLoaded', () => {
       renderCalendar();
       generarContenidoAleatorio();
+      generarGanchosRapidos();
+      renderAirtableTable();
     });
   </script>
 
