@@ -17,7 +17,38 @@ El seguimiento y la asignación se gestionan de forma centralizada en **Airtable
 
 ---
 
+## 🎯 Metas y KPIs Clave del Sprint Semanal
+
+- **Meta de Piezas Gráficas Semanales:** **12 / 16 piezas**
+  - **Alison:** 4 piezas semanales (Tendencias de IA, Ofertas Laborales remotas y propuestas).
+  - **Britani:** 4 a 8 piezas semanales (Post feed, carruseles educativos y anuncios de campaña).
+  - **Daniela:** 4 piezas semanales (Creatividades gráficas asignadas por Adriana para captación y ventas).
+- **Meta de Producción Audiovisual:** **4 videos cortos semanales (9:16)**
+  - Pautados por **Adriana**, grabados/creados por **Daniela**, editados con efectos e identidad visual por **Scarlet**, aprobados por **Adriana**.
+- **Distribución Multicanal:** Publicación en Feed (1:1), Carruseles (4:5 / 1:1), Reels/TikTok (9:16) y difusión comunitaria en **WhatsApp**.
+
+---
+
+## 🎨 Suite Interactiva del Marketing Studio
+
+1. **🎨 Brand Kit & Paleta Oficial con Copiado Rápido:**
+   - Paleta de colores oficial (`#8B5CF6`, `#EC4899`, `#0284C7`, `#10B981`, `#F59E0B`, `#FAF6FD`).
+   - Copiado interactivo del código HEX con un solo clic y feedback visual (toast).
+2. **📱 Simulador Interactivo de Formatos:**
+   - **Post Cuadrado (1:1):** Mockup para feed con gancho visual y branding de Polyglot Map.
+   - **Carrusel Educativo (5 Láminas):** Navegador interactivo de láminas (Lámina 1 a 5) con cambio en tiempo real del título, contenido y diseño de cada slide.
+   - **Reel / TikTok (9:16):** Mockup vertical dinámico para previsualizar contenido audiovisual con botones de reproducción, subtítulos animados y barra de sonido viral.
+   - **Comunidad WhatsApp:** Vista previa de mensaje oficial con formato de burbuja de chat y CTA directo.
+3. **⚡ Generador Inteligente de Contenido Polyglot Map:**
+   - Generación instantánea de ideas de post, guiones de video, copies persuasivos con gancho, desarrollo y CTA, hashtags optimizados y asignación sugerida.
+4. **🔄 Pipeline Creativo de 5 Fases:**
+   - Ideación / Pauta ➔ Diseño & Grabación ➔ Edición & Copywriting ➔ Aprobación Adriana ➔ Publicado & Métricas. Conectado con filtros en un clic hacia la base de Airtable.
+
+---
+
 ## 👥 Estructura Oficial de Roles y Funciones del Equipo
+
+> *En el Dashboard interactivo puedes alternar entre **Tarjetas Bento** y **Tabla Resumen** mediante el selector de vista para una lectura limpia y sin duplicidades.*
 
 | Integrante | Rol Oficial | Jornada / Días | Funciones y Responsabilidades Clave | Entregables y Metas |
 | :--- | :--- | :--- | :--- | :--- |
@@ -32,5 +63,5 @@ El seguimiento y la asignación se gestionan de forma centralizada en **Airtable
 ## 🎬 Flujo de Trabajo de Videos Cortos (4 Semanales)
 1. **Paso 1 (Pauta):** Adriana Chávez define el tema, el enfoque pedagógico de idiomas/IA y el guion base.
 2. **Paso 2 (Creación/Grabación):** Daniela crea y graba los 4 videos cortos siguiendo las instrucciones de Adriana.
-3. **Paso 3 (Edición, Post-producción & Identidad Visual):** Scarlet Vega realiza la edición profesional con dinamismo, cortes ágiles, subtítulos animados, formato vertical 9:16 e identidad visual uniforme.
+3. **Paso 3 (Edición, Post-producción & Identidad Visual):** Scarlet realiza la edición profesional con dinamismo, cortes ágiles, subtítulos animados, formato vertical 9:16 e identidad visual uniforme.
 4. **Paso 4 (Control de Calidad):** Adriana aprueba el video final antes de publicarlo.
