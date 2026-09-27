@@ -110,7 +110,7 @@
           </div>
         </div>
 
-        <!-- Quick Airtable, Excel & Drive Sync Bar -->
+        <!-- Quick Airtable & Google Drive Upload Bar -->
         <div class="flex items-center gap-2 text-xs font-bold">
           <button onclick="switchTab('tab-airtable')" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Ver base oficial de Airtable donde deben conectarse">
             <span class="relative flex h-2 w-2">
@@ -120,15 +120,12 @@
             <span>⚡ Airtable en Vivo</span>
           </button>
 
-          <button onclick="exportarAirtableExcelCSV()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Descargar tareas de Airtable como Excel">
-            <span>📊</span>
-            <span class="hidden sm:inline">Excel</span>
-          </button>
-          
-          <button onclick="copiarAirtableParaGoogleSheets()" class="px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Copiar base para pegar en Google Drive / Sheets">
-            <span>☁️</span>
-            <span class="hidden sm:inline">Drive</span>
-          </button>
+          <a href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-md" title="Abrir carpeta de Google Drive para subir contenido y material audiovisual">
+            <span class="text-sm">📁</span>
+            <span class="hidden sm:inline">Subir Contenido (Drive)</span>
+            <span class="sm:hidden">Drive</span>
+            <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
           
           <button onclick="window.print()" class="no-print p-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition" title="Exportar o Imprimir">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -1026,9 +1023,9 @@
             </div>
             
             <div class="mt-3.5 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-purple-50/60 text-purple-900 font-medium">
-                <strong class="font-bold block text-purple-950 mb-0.5">🗓️ Jornada:</strong>
-                Lunes a Viernes · Supervisión y Dirección Continua
+              <div class="p-2.5 rounded-xl bg-purple-50/80 text-purple-900 font-medium flex items-center justify-between border border-purple-100">
+                <span class="font-bold text-purple-950 flex items-center gap-1.5"><span>📍</span> País de residencia:</span>
+                <span class="font-extrabold text-purple-900 bg-white px-2.5 py-0.5 rounded-lg border border-purple-200 text-[11px] shadow-2xs">Perú 🇵🇪</span>
               </div>
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
@@ -1061,9 +1058,9 @@
             </div>
             
             <div class="mt-3.5 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-emerald-50/60 text-emerald-900 font-medium">
-                <strong class="font-bold block text-emerald-950 mb-0.5">🗓️ Jornada:</strong>
-                Lunes, Miércoles y Viernes
+              <div class="p-2.5 rounded-xl bg-emerald-50/80 text-emerald-900 font-medium flex items-center justify-between border border-emerald-100">
+                <span class="font-bold text-emerald-950 flex items-center gap-1.5"><span>📍</span> País de residencia:</span>
+                <span class="font-extrabold text-emerald-900 bg-white px-2.5 py-0.5 rounded-lg border border-emerald-200 text-[11px] shadow-2xs">Perú 🇵🇪</span>
               </div>
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
@@ -1099,9 +1096,9 @@
             </div>
             
             <div class="mt-3.5 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-sky-50/60 text-sky-900 font-medium">
-                <strong class="font-bold block text-sky-950 mb-0.5">🗓️ Jornada:</strong>
-                Martes y Jueves (Diseño) + Continuo (Videos & Analítica)
+              <div class="p-2.5 rounded-xl bg-sky-50/80 text-sky-900 font-medium flex items-center justify-between border border-sky-100">
+                <span class="font-bold text-sky-950 flex items-center gap-1.5"><span>📍</span> País de residencia:</span>
+                <span class="font-extrabold text-sky-900 bg-white px-2.5 py-0.5 rounded-lg border border-sky-200 text-[11px] shadow-2xs">Costa Rica 🇨🇷</span>
               </div>
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
@@ -1138,9 +1135,9 @@
             </div>
             
             <div class="mt-3.5 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-amber-50/60 text-amber-900 font-medium">
-                <strong class="font-bold block text-amber-950 mb-0.5">🗓️ Jornada:</strong>
-                Continuo / Semanal
+              <div class="p-2.5 rounded-xl bg-amber-50/80 text-amber-900 font-medium flex items-center justify-between border border-amber-100">
+                <span class="font-bold text-amber-950 flex items-center gap-1.5"><span>📍</span> País de residencia:</span>
+                <span class="font-extrabold text-amber-900 bg-white px-2.5 py-0.5 rounded-lg border border-amber-200 text-[11px] shadow-2xs">España 🇪🇸</span>
               </div>
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
@@ -1173,9 +1170,9 @@
             </div>
             
             <div class="mt-3.5 space-y-2 text-xs">
-              <div class="p-2 rounded-xl bg-pink-50/60 text-pink-900 font-medium">
-                <strong class="font-bold block text-pink-950 mb-0.5">🗓️ Jornada:</strong>
-                Lunes & Miércoles (Diseño) + Diario (WhatsApp)
+              <div class="p-2.5 rounded-xl bg-pink-50/80 text-pink-900 font-medium flex items-center justify-between border border-pink-100">
+                <span class="font-bold text-pink-950 flex items-center gap-1.5"><span>📍</span> País de residencia:</span>
+                <span class="font-extrabold text-pink-900 bg-white px-2.5 py-0.5 rounded-lg border border-pink-200 text-[11px] shadow-2xs">Perú 🇵🇪</span>
               </div>
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
@@ -1213,7 +1210,7 @@
             <tr class="border-b border-purple-100 text-slate-500 text-[11px] uppercase tracking-wider font-cute">
               <th class="py-2.5 px-3">Integrante</th>
               <th class="py-2.5 px-3">Rol Oficial</th>
-              <th class="py-2.5 px-3">Jornada / Días</th>
+              <th class="py-2.5 px-3">País de Residencia</th>
               <th class="py-2.5 px-3">Funciones Principales</th>
               <th class="py-2.5 px-3">Entregable Semanal</th>
               <th class="py-2.5 px-3 text-center">CV</th>
@@ -1229,7 +1226,9 @@
               <td class="py-3 px-3">
                 <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800 font-extrabold text-[11px]">Directora Creativa (Lead)</span>
               </td>
-              <td class="py-3 px-3 text-[11px] font-medium text-slate-600">Lunes a Viernes · Supervisión</td>
+              <td class="py-3 px-3 text-[11px] font-bold">
+                <span class="px-2.5 py-1 rounded-lg bg-purple-50 text-purple-900 border border-purple-200 shadow-2xs">Perú 🇵🇪</span>
+              </td>
               <td class="py-3 px-3 leading-relaxed">
                 • <strong>Asigna piezas dinámicamente en Airtable</strong> para avances en simultáneo.<br>
                 • <strong>Pauta y contenido</strong> para los 4 videos cortos que creará Daniela.<br>
@@ -1251,7 +1250,9 @@
               <td class="py-3 px-3">
                 <span class="px-2 py-0.5 rounded-lg bg-emerald-100 text-emerald-800 font-extrabold text-[11px]">Content Strategist</span>
               </td>
-              <td class="py-3 px-3 text-[11px] font-medium text-emerald-800 font-bold">Lunes, Miércoles y Viernes</td>
+              <td class="py-3 px-3 text-[11px] font-bold">
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-900 border border-emerald-200 shadow-2xs">Perú 🇵🇪</span>
+              </td>
               <td class="py-3 px-3 leading-relaxed">
                 • 1. Investiga tendencias de IA y propone ideas creativas.<br>
                 • 2. <strong>Genera 4 piezas gráficas semanales</strong> sobre ofertas laborales y tendencias para WhatsApp y redes.<br>
@@ -1276,7 +1277,9 @@
                   <span class="px-2 py-0.5 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-[10px]">Content Analytic en Ventas</span>
                 </div>
               </td>
-              <td class="py-3 px-3 text-[11px] font-medium text-sky-800 font-bold">Martes & Jueves + Continuo</td>
+              <td class="py-3 px-3 text-[11px] font-bold">
+                <span class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-900 border border-sky-200 shadow-2xs">Costa Rica 🇨🇷</span>
+              </td>
               <td class="py-3 px-3 leading-relaxed">
                 • <strong>Crea 4 videos semanales cortos</strong> sobre el contenido que le indique Adriana.<br>
                 • <strong>Content Analytic en ventas:</strong> analiza métricas comerciales con Adriana y Alison.<br>
@@ -1302,7 +1305,9 @@
                   <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800 font-bold text-[10px]">Identidad Visual & Gestión</span>
                 </div>
               </td>
-              <td class="py-3 px-3 text-[11px] font-medium text-slate-600">Continuo / Semanal</td>
+              <td class="py-3 px-3 text-[11px] font-bold">
+                <span class="px-2.5 py-1 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 shadow-2xs">España 🇪🇸</span>
+              </td>
               <td class="py-3 px-3 leading-relaxed">
                 • <strong>Edición profesional de los 4 videos cortos</strong> creados por Daniela (post-producción 9:16).<br>
                 • <strong>Redacta el copywriting persuasivo</strong> de todas las piezas del equipo.<br>
@@ -1324,7 +1329,9 @@
               <td class="py-3 px-3">
                 <span class="px-2 py-0.5 rounded-lg bg-pink-100 text-pink-800 font-extrabold text-[11px]">Content Creator</span>
               </td>
-              <td class="py-3 px-3 text-[11px] font-medium text-pink-800 font-bold">Lunes & Miércoles</td>
+              <td class="py-3 px-3 text-[11px] font-bold">
+                <span class="px-2.5 py-1 rounded-lg bg-pink-50 text-pink-900 border border-pink-200 shadow-2xs">Perú 🇵🇪</span>
+              </td>
               <td class="py-3 px-3 leading-relaxed">
                 • Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel, anuncio).<br>
                 • <strong>Interacción diaria</strong> con la comunidad de WhatsApp para dinamizar el engagement.
@@ -2268,7 +2275,7 @@ Requisitos:
         bg: "bg-purple-600",
         badge: "bg-purple-100 text-purple-800",
         role: "Directora Creativa (Lead)",
-        jornada: "Lunes a Viernes · Supervisión Continua",
+        pais: "Perú 🇵🇪",
         mision: "1. <strong>Asignación dinámica en Airtable:</strong> define y asigna las piezas día a día para que todo el equipo vea los avances en simultáneo.<br>2. <strong>Pauta y dirección de videos cortos:</strong> dicta a Daniela los contenidos y temas de los 4 videos cortos semanales.<br>3. <strong>Gatekeeper técnico obligatorio:</strong> aprueba el 100% de las piezas antes de salir.<br>4. Analítica de ventas y Banco DAM junto con Daniela y Alison.",
         studies: "UPC · Comunicación Audiovisual y Medios Interactivos (10mo ciclo, 2021-2026).",
         experience: "Dirección de Pijamada Cinéfila (transmedia), De Vuelta al Cole, Whiplash, cortometrajes Melancolía y Expreso.",
@@ -2280,7 +2287,7 @@ Requisitos:
         bg: "bg-emerald-600",
         badge: "bg-emerald-100 text-emerald-800",
         role: "Content Strategist",
-        jornada: "Lunes, Miércoles y Viernes",
+        pais: "Perú 🇵🇪",
         mision: "1. Investiga tendencias virales de IA y propone ideas creativas.<br>2. <strong>Genera 4 piezas gráficas semanales</strong> sobre ofertas laborales & tendencias para WhatsApp y redes.<br>3. Elabora propuestas comerciales B2B y alianzas estratégicas.<br>4. <strong>Gestión mensual en conjunto con Scarlet y Daniela</strong>.<br>5. Analítica de ventas y posicionamiento junto a Adriana y Daniela.",
         studies: "Especialista en Content Strategy, Análisis de Datos y Propuestas Comerciales.",
         experience: "Curaduría y diseño de infografías de empleo remoto en USD, auditoría de métricas y alianzas estratégicas.",
@@ -2292,7 +2299,7 @@ Requisitos:
         bg: "bg-sky-500",
         badge: "bg-sky-100 text-sky-800",
         role: "Content Creators & Content Analytic en Ventas",
-        jornada: "Martes y Jueves (Diseño) + Continuo (Videos & Analítica)",
+        pais: "Costa Rica 🇨🇷",
         mision: "1. <strong>Crea 4 videos semanales cortos</strong> sobre el contenido que le indique Adriana.<br>2. <strong>Content Analytic en ventas:</strong> analiza métricas de consultas y ventas trabajando en conjunto con Adriana y Alison.<br>3. Diseña piezas gráficas asignadas por Adriana en Airtable.<br>4. Subida y distribución oficial del contenido a WhatsApp.<br>5. <strong>Gestión mensual en conjunto con Alison y Scarlet</strong>.",
         studies: "Técnico en Marketing Digital y Lic. en Enseñanza del Español (UISIL, 2022-2026).",
         experience: "Solar Battery Center (gestión de 9 perfiles, WhatsApp Business, IA, Meta Suite) y Hotel Arenal Regina.",
@@ -2304,7 +2311,7 @@ Requisitos:
         bg: "bg-amber-500",
         badge: "bg-amber-100 text-amber-800",
         role: "Video Producer/Copywriter & Identidad Visual",
-        jornada: "Continuo / Semanal",
+        pais: "España 🇪🇸",
         mision: "1. <strong>Edición profesional de los 4 videos cortos</strong> creados por Daniela (post-producción, dinamismo, subtítulos, efectos 9:16).<br>2. Produce y edita videos de alto impacto.<br>3. Redacta el <strong>copywriting persuasivo</strong> de todas las piezas del equipo.<br>4. <strong>Apoya con la identidad visual</strong> de Polyglot Map asegurando coherencia gráfica en todas las piezas.<br>5. <strong>Gestión mensual en conjunto con Alison y Daniela</strong>.",
         studies: "Doble Grado en Comunicación Audiovisual y Publicidad (U. Europea de Madrid & UPC).",
         experience: "Dormus (App del sueño - Madrid) en videos para TikTok/Instagram con IA; Afilms (Lima).",
@@ -2316,7 +2323,7 @@ Requisitos:
         bg: "bg-pink-500",
         badge: "bg-pink-100 text-pink-800",
         role: "Content Creator",
-        jornada: "Lunes & Miércoles (Diseño) + Diario (WhatsApp)",
+        pais: "Perú 🇵🇪",
         mision: "1. Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel y anuncio para campaña).<br>2. Interactúa y conversa a diario con la comunidad de WhatsApp para dinamizar el engagement y la captación de alumnos.",
         studies: "UPN · Comunicaciones Audiovisuales en Medios Digitales (8vo ciclo, en curso).",
         experience: "Sodimac, Natura Cosméticos y Ripley en ventas, servicio al cliente y storytelling para redes.",
@@ -2336,7 +2343,7 @@ Requisitos:
 
       document.getElementById('modalContent').innerHTML = `
         <div class="p-3 rounded-2xl bg-purple-50/70 border border-purple-200">
-          <div class="text-[11px] font-bold text-purple-900 mb-1">🗓️ Jornada: <span class="font-normal text-slate-700">${d.jornada || ''}</span></div>
+          <div class="text-[11px] font-bold text-purple-900 mb-1">📍 País de residencia: <span class="font-extrabold text-slate-800 bg-white/90 px-2 py-0.5 rounded-lg border border-purple-200">${d.pais || ''}</span></div>
           <strong class="text-purple-900 block font-cute mb-1">Funciones y Misión en Polyglot Map:</strong>
           <div class="text-slate-700 leading-relaxed">${d.mision}</div>
         </div>
