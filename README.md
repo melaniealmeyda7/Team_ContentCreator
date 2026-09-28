@@ -5,16 +5,37 @@
 
 ---
 
-## ⚡ Conexión e Incrustación Oficial con Airtable y Google Drive
+## ⚡ Conexión Oficial con Airtable y Google Drive (Ecosistema Centralizado)
 
-El seguimiento, la asignación y la entrega de contenido se gestionan de forma centralizada:
+El seguimiento, la asignación, los recursos de marca y la entrega de contenidos se gestionan de forma centralizada:
 - **Enlace Oficial de Airtable:** [Airtable Polyglot Map](https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)
+- **🎨 Carpeta Oficial de Google Drive con Logo Oficial y Recursos de Marca:** [Descargar Logos Oficiales en Google Drive](https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing)
 - **📁 Carpeta Oficial de Google Drive para Subir Contenido:** [Subir Contenido a Google Drive](https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing)
-- **Asignación Dinámica:** **No se establecen días rígidos de lunes a domingo.** La **Directora Creativa (Adriana)** se encarga de asignar quién elabora cada pieza según las prioridades del momento, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
+- **Asignación Dinámica:** **No se establecen días rígidos de lunes a domingo.** La **Coordinadora Creativa (Adriana)** se encarga de asignar quién elabora cada pieza según las prioridades del momento, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
 - **Visualizador Integrado:** 
   1. **⚡ Base Interactiva Sincronizada (Airtable Grid):** Filtro por integrante, filtro por estado, buscador dinámico, cambio de estado con un clic y persistencia local.
   2. **🌐 Iframe Web Oficial:** Contenedor embebido y acceso directo a pantalla completa.
-- **Acceso Rápido en Cabecera:** Botón directo **📁 Subir Contenido (Drive)** para cargar artes, fotos y grabaciones audiovisuales a la nube oficial.
+- **Acceso Rápido en Cabecera:**
+  - `⚡ Airtable en Vivo`
+  - `📁 Subir Contenido (Drive)`
+  - `🎨 Logo Oficial (Drive)`
+
+---
+
+## 🎨 Identidad Visual Oficial: Cyber-Futurista Educativo & High-Tech Glow
+
+En **Polyglot Map se trabaja oficialmente bajo este estilo visual de vanguardia**:
+- **🌌 Fondos & Iluminación:** Atmósferas oscuras cinematográficas (azul noche profundo, carbón y grafito) con iluminación volumétrica de estudio que genera máximo contraste con los elementos en primer plano.
+- **🌐 Metáforas Visuales de Idiomas + IA:** Esferas flotantes luminosas con banderas de países (Perú, USA, UK, Brasil, Japón, Francia, Alemania, Italia), redes neuronales interconectadas, lentes inteligentes de Realidad Aumentada (AR) y núcleos holográficos de IA.
+- **🎧 Audio Waveform & Shadowing:** Siluetas de perfil con audífonos de diadema profesionales sobre espectros de frecuencias sonoras bioluminiscentes (*voice waveforms*) en degradado cian-violeta para formatos de Reel/TikTok (9:16).
+- **✍️ Jerarquía Tipográfica:** Titulares *extra bold* sans-serif en blanco puro + acentos dorados (*"Idiomas + IA = Super Poder"*), combinados con fuentes cursivas elegantes (*SHADOWING*) y llamadas a la acción claras (*DESLIZA ➔*).
+- **🖼️ Piezas de Referencia en el Dashboard:**
+  - **Referencia 1 (Post / Portada):** Sujeto con gafas AR interactuando con la interfaz holográfica (*Idiomas + IA = Super Poder*).
+  - **Referencia 2 (Reel 9:16 / Audio):** Silueta con audífonos y ondas de sonido (*El Poder del Shadowing*).
+  - **Referencia 3 (Carrusel):** Pasarela en perspectiva con arcos de banderas internacionales (*Tus Logros Globales*).
+  - **Referencia 4 (Creativo 3D / Viral):** Render de calculadora retro-tech con banderas en pantalla (*Según nuestros cálculos*).
+- **🎨 Paleta Cromática Oficial (1-Click HEX Copy):**
+  `#8B5CF6` (Purple Brand), `#EC4899` (Blush Pink), `#0284C7` (Sky Tech), `#10B981` (Mint Empleo), `#F59E0B` (Honey Gold), `#FAF6FD` (Canvas Suave).
 
 ---
 
@@ -30,33 +51,16 @@ El seguimiento, la asignación y la entrega de contenido se gestionan de forma c
 
 ---
 
-## 🎨 Suite Interactiva del Marketing Studio
-
-1. **🎨 Brand Kit & Paleta Oficial con Copiado Rápido:**
-   - Paleta de colores oficial (`#8B5CF6`, `#EC4899`, `#0284C7`, `#10B981`, `#F59E0B`, `#FAF6FD`).
-   - Copiado interactivo del código HEX con un solo clic y feedback visual (toast).
-2. **📱 Simulador Interactivo de Formatos:**
-   - **Post Cuadrado (1:1):** Mockup para feed con gancho visual y branding de Polyglot Map.
-   - **Carrusel Educativo (5 Láminas):** Navegador interactivo de láminas (Lámina 1 a 5) con cambio en tiempo real del título, contenido y diseño de cada slide.
-   - **Reel / TikTok (9:16):** Mockup vertical dinámico para previsualizar contenido audiovisual con botones de reproducción, subtítulos animados y barra de sonido viral.
-   - **Comunidad WhatsApp:** Vista previa de mensaje oficial con formato de burbuja de chat y CTA directo.
-3. **⚡ Generador Inteligente de Contenido Polyglot Map:**
-   - Generación instantánea de ideas de post, guiones de video, copies persuasivos con gancho, desarrollo y CTA, hashtags optimizados y asignación sugerida.
-4. **🔄 Pipeline Creativo de 5 Fases:**
-   - Ideación / Pauta ➔ Diseño & Grabación ➔ Edición & Copywriting ➔ Aprobación Adriana ➔ Publicado & Métricas. Conectado con filtros en un clic hacia la base de Airtable.
-
----
-
 ## 👥 Estructura Oficial de Roles y Equipo
 
 > *En el Dashboard interactivo puedes alternar entre **Tarjetas Bento** y **Tabla Resumen** mediante el selector de vista para una lectura limpia y sin duplicidades.*
 
 | Integrante | Rol Oficial | País de Residencia | Funciones y Responsabilidades Clave | Entregables y Metas |
 | :--- | :--- | :--- | :--- | :--- |
-| **Adriana Chávez** | **Directora Creativa (Lead)** | **Perú 🇵🇪** | • **Asigna y gestiona las piezas dinámicamente en Airtable** sin rigidez de días para seguimiento simultáneo.<br>• **Pauta y dirección de videos cortos:** dicta a Daniela los contenidos, temas y enfoque de los 4 videos semanales.<br>• **Gatekeeper técnico obligatorio:** aprueba el 100% de artes y videos antes de salir.<br>• Supervisa DAM y lidera la analítica y estrategia de ventas con Daniela y Alison. | 100% de piezas aprobadas + Base Airtable activa + Grilla y DAM coordinados |
+| **Adriana Chávez** | **Coordinadora Creativa (Lead)** | **Perú 🇵🇪** | • **Asigna y coordina las piezas dinámicamente en Airtable** sin rigidez de días para seguimiento simultáneo.<br>• **Pauta y dirección de videos cortos:** dicta a Daniela los contenidos, temas y enfoque de los 4 videos semanales.<br>• **Gatekeeper técnico obligatorio:** aprueba el 100% de artes y videos antes de salir.<br>• Supervisa DAM y lidera la analítica y estrategia de ventas con Daniela y Alison. | 100% de piezas aprobadas + Base Airtable activa + Grilla y DAM coordinados |
 | **Alison** | **Content Strategist** | **Perú 🇵🇪** | • **1. Investiga tendencias de IA** y propone ideas creativas de contenido.<br>• **2. Genera 4 piezas gráficas semanales** sobre ofertas laborales & tendencias para WhatsApp y redes.<br>• **3. Elabora propuestas comerciales B2B** y alianzas estratégicas.<br>• **4. Gestión mensual** en conjunto con **Scarlet y Daniela**.<br>• Analítica de ventas y posicionamiento junto a Adriana y Daniela. | 4 piezas gráficas semanales + Gestión mensual + Propuestas B2B + DAM |
 | **Daniela** | **Content Creators & Content Analytic en Ventas** | **Costa Rica 🇨🇷** | • **1. Crea 4 videos semanales cortos** sobre el contenido y pautas que le indique Adriana.<br>• **2. Content Analytic en ventas:** analiza métricas de conversión y ventas trabajando en conjunto con Adriana y Alison.<br>• Diseña piezas gráficas asignadas por Adriana en Airtable.<br>• **Subida oficial y distribución** de contenidos a la comunidad de WhatsApp.<br>• **3. Gestión mensual** en conjunto con **Alison y Scarlet**. | 4 videos cortos creados + Reporte de analítica de ventas + Subida a WhatsApp |
-| **Scarlet** | **Video Producer/Copywriter & Identidad Visual** | **España 🇪🇸** | • **Edición profesional de los 4 videos cortos semanales** creados por Daniela (post-producción, dinamismo, efectos, subtítulos animados 9:16 para TikTok y Reels).<br>• Redacta el **copywriting persuasivo** (ganchos, narrativa y CTAs) de todas las piezas del equipo.<br>• **Apoya con la identidad visual** de Polyglot Map asegurando coherencia gráfica y estética de marca.<br>• **Gestión mensual en conjunto con Alison y Daniela** para la planificación y cumplimiento de metas. | 4 videos 9:16 editados + Copies persuasivos integrales + Identidad Visual + Gestión Mensual |
+| **Scarlet** | **Video Producer/Copywriter & Identidad Visual** | **España 🇪🇸** | • **Edición profesional de los 4 videos cortos semanales** creados por Daniela (post-producción, dinamismo, efectos, subtítulos animados 9:16 para TikTok y Reels).<br>• Redacta el **copywriting persuasivo** (ganchos, narrativa y CTAs) de todas las piezas del equipo.<br>• **Lidera la identidad visual oficial** de Polyglot Map (Cyber-Futurista & High-Tech Glow) asegurando coherencia gráfica en todas las piezas.<br>• **Gestión mensual en conjunto con Alison y Daniela** para la planificación y cumplimiento de metas. | 4 videos 9:16 editados + Copies persuasivos integrales + Identidad Visual + Gestión Mensual |
 | **Britani** | **Content Creator** | **Perú 🇵🇪** | • Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel y anuncio para campaña).<br>• **Interacción y conversación diaria** con la audiencia en la comunidad de WhatsApp para dinamizar el engagement y la conversión. | Gráficas asignadas en Airtable + Interacción comunitaria diaria en WhatsApp |
 
 ---
@@ -64,5 +68,5 @@ El seguimiento, la asignación y la entrega de contenido se gestionan de forma c
 ## 🎬 Flujo de Trabajo de Videos Cortos (4 Semanales)
 1. **Paso 1 (Pauta):** Adriana Chávez define el tema, el enfoque pedagógico de idiomas/IA y el guion base.
 2. **Paso 2 (Creación/Grabación):** Daniela crea y graba los 4 videos cortos siguiendo las instrucciones de Adriana.
-3. **Paso 3 (Edición, Post-producción & Identidad Visual):** Scarlet realiza la edición profesional con dinamismo, cortes ágiles, subtítulos animados, formato vertical 9:16 e identidad visual uniforme.
+3. **Paso 3 (Edición, Post-producción & Identidad Visual):** Scarlet realiza la edición profesional con dinamismo, cortes ágiles, subtítulos animados, formato vertical 9:16 e identidad visual oficial.
 4. **Paso 4 (Control de Calidad):** Adriana aprueba el video final antes de publicarlo.

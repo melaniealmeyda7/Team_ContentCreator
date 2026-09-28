@@ -110,7 +110,7 @@
           </div>
         </div>
 
-        <!-- Quick Airtable & Google Drive Upload Bar -->
+        <!-- Quick Airtable, Content Drive & Logo Drive Bar -->
         <div class="flex items-center gap-2 text-xs font-bold">
           <button onclick="switchTab('tab-airtable')" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Ver base oficial de Airtable donde deben conectarse">
             <span class="relative flex h-2 w-2">
@@ -120,10 +120,17 @@
             <span>⚡ Airtable en Vivo</span>
           </button>
 
-          <a href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-md" title="Abrir carpeta de Google Drive para subir contenido y material audiovisual">
+          <a href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-md" title="Abrir carpeta de Google Drive para subir contenido y material audiovisual">
             <span class="text-sm">📁</span>
             <span class="hidden sm:inline">Subir Contenido (Drive)</span>
-            <span class="sm:hidden">Drive</span>
+            <span class="sm:hidden">Subir</span>
+            <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-md" title="Descargar Logo Oficial y Recursos de Marca en Google Drive">
+            <span class="text-sm">🎨</span>
+            <span class="hidden sm:inline">Logo Oficial (Drive)</span>
+            <span class="sm:hidden">Logo</span>
             <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
           
@@ -286,80 +293,286 @@
 
       </div>
 
-      <!-- SECCIÓN INTERACTIVA: KIT DE IDENTIDAD VISUAL & PALETA CROMÁTICA -->
-      <div class="candy-card rounded-3xl p-5 border border-purple-200">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+      <!-- SECCIÓN INTERACTIVA: KIT DE IDENTIDAD VISUAL & ESTILO OFICIAL -->
+      <div class="candy-card rounded-3xl p-6 border border-purple-200 space-y-6">
+        
+        <!-- Header Identidad Visual -->
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-purple-100">
           <div>
-            <span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800">
-              🎨 Identidad Visual Oficial · Polyglot Map
-            </span>
-            <h4 class="font-extrabold text-slate-900 font-cute text-base mt-1">
-              Paleta Cromática & Guía Estética (Click en cada color para copiar HEX)
-            </h4>
-            <p class="text-xs text-slate-500">
-              Coordinada por <strong>Scarlet</strong> para mantener coherencia en Canva, Premiere, Figma y CapCut.
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-purple-100 via-pink-100 to-sky-100 text-purple-900 text-[11px] font-extrabold uppercase border border-purple-200 shadow-2xs mb-1.5">
+              <span>🎨 Identidad Visual Oficial · Polyglot Map</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-600 animate-ping"></span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 font-cute tracking-tight">
+              Estilo Visual de Marca: Cyber-Futurista Educativo & High-Tech Glow
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed">
+              En <strong>Polyglot Map se trabaja oficialmente con este estilo visual de vanguardia</strong>: composiciones cinematográficas profundas, interfaces holográficas de idiomas fusionadas con Inteligencia Artificial, ondas de sonido bioluminiscentes y tipografía de alto impacto. <strong>Scarlet</strong> coordina y supervisa que el 100% de piezas mantenga esta línea estética.
             </p>
           </div>
-          <div class="flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-xl">
-            <span>✨ Tipografías: Quicksand & Plus Jakarta</span>
+
+          <!-- Botones de Drive oficiales -->
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <a href="https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold text-xs shadow-md shadow-purple-200 transition flex items-center gap-2" title="Descargar Logo Oficial y Recursos de Marca en Google Drive">
+              <span class="text-base">🎨</span>
+              <span>Logo Oficial (Drive)</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-2xl bg-sky-50 hover:bg-sky-100 text-sky-800 font-bold text-xs border border-sky-200 transition flex items-center gap-1.5 shadow-2xs" title="Abrir carpeta para subir material de video y diseño">
+              <span>📁</span>
+              <span>Subir Contenido (Drive)</span>
+            </a>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
-          <!-- Color 1 -->
-          <button onclick="copiarColor('#8B5CF6', 'Polyglot Purple')" class="p-2.5 rounded-2xl bg-white border border-purple-200 flex items-center gap-2 hover:border-purple-500 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#8B5CF6] shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#8B5CF6</span>
-              <span class="text-[10px] text-slate-500">Purple Brand</span>
+        <!-- Pilares del Estilo Visual Oficial -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+          <div class="p-3.5 rounded-2xl bg-slate-900 text-white border border-slate-800 flex flex-col justify-between shadow-xs">
+            <div>
+              <div class="text-lg mb-1">🌌</div>
+              <h5 class="font-extrabold text-sky-300 font-cute text-sm">Fondos Dark & Iluminación</h5>
+              <p class="text-slate-300 text-[11px] mt-1 leading-relaxed">
+                Atmósferas oscuras cinematográficas (azul noche, carbón, grafito) con iluminación volumétrica de estudio que destaca al sujeto.
+              </p>
             </div>
-          </button>
-          
-          <!-- Color 2 -->
-          <button onclick="copiarColor('#EC4899', 'Blush Pink')" class="p-2.5 rounded-2xl bg-white border border-pink-200 flex items-center gap-2 hover:border-pink-500 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#EC4899] shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#EC4899</span>
-              <span class="text-[10px] text-slate-500">Blush Pink</span>
-            </div>
-          </button>
+            <span class="mt-2 text-[10px] font-bold text-sky-400 bg-sky-950/80 px-2 py-0.5 rounded-md inline-block self-start border border-sky-800">Contraste Alto</span>
+          </div>
 
-          <!-- Color 3 -->
-          <button onclick="copiarColor('#0284C7', 'Sky Cyan')" class="p-2.5 rounded-2xl bg-white border border-sky-200 flex items-center gap-2 hover:border-sky-500 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#0284C7] shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#0284C7</span>
-              <span class="text-[10px] text-slate-500">Sky Tech</span>
+          <div class="p-3.5 rounded-2xl bg-gradient-to-br from-indigo-950 to-purple-950 text-white border border-purple-800/60 flex flex-col justify-between shadow-xs">
+            <div>
+              <div class="text-lg mb-1">🌐</div>
+              <h5 class="font-extrabold text-pink-300 font-cute text-sm">Hologramas & Metáforas IA</h5>
+              <p class="text-slate-300 text-[11px] mt-1 leading-relaxed">
+                Esferas luminosas con banderas de países (EN, ES, FR, DE, IT, JP), nodos de datos flotantes, lentes AR y núcleo central de Inteligencia Artificial.
+              </p>
             </div>
-          </button>
+            <span class="mt-2 text-[10px] font-bold text-pink-300 bg-pink-950/80 px-2 py-0.5 rounded-md inline-block self-start border border-pink-800">Tecnología + Idiomas</span>
+          </div>
 
-          <!-- Color 4 -->
-          <button onclick="copiarColor('#10B981', 'Emerald Growth')" class="p-2.5 rounded-2xl bg-white border border-emerald-200 flex items-center gap-2 hover:border-emerald-500 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#10B981] shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#10B981</span>
-              <span class="text-[10px] text-slate-500">Mint Empleo</span>
+          <div class="p-3.5 rounded-2xl bg-gradient-to-br from-slate-900 to-cyan-950 text-white border border-cyan-800/60 flex flex-col justify-between shadow-xs">
+            <div>
+              <div class="text-lg mb-1">🎧</div>
+              <h5 class="font-extrabold text-cyan-300 font-cute text-sm">Audio Waveform & Shadowing</h5>
+              <p class="text-slate-300 text-[11px] mt-1 leading-relaxed">
+                Siluetas de perfil con audífonos profesionales y visualizador de frecuencias sonoras (*waveform*) neón cian/violeta para técnicas de pronunciación.
+              </p>
             </div>
-          </button>
+            <span class="mt-2 text-[10px] font-bold text-cyan-300 bg-cyan-950/80 px-2 py-0.5 rounded-md inline-block self-start border border-cyan-800">Fluidez & Reels 9:16</span>
+          </div>
 
-          <!-- Color 5 -->
-          <button onclick="copiarColor('#F59E0B', 'Honey Amber')" class="p-2.5 rounded-2xl bg-white border border-amber-200 flex items-center gap-2 hover:border-amber-500 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#F59E0B] shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#F59E0B</span>
-              <span class="text-[10px] text-slate-500">Honey Gold</span>
+          <div class="p-3.5 rounded-2xl bg-gradient-to-br from-slate-900 to-amber-950 text-white border border-amber-800/60 flex flex-col justify-between shadow-xs">
+            <div>
+              <div class="text-lg mb-1">✍️</div>
+              <h5 class="font-extrabold text-amber-300 font-cute text-sm">Tipografía de Alto Impacto</h5>
+              <p class="text-slate-300 text-[11px] mt-1 leading-relaxed">
+                Titulares sans-serif extra bold en blanco puro + acentos dorados/ámbar, combinados con términos en cursiva estilizada (*SHADOWING*) y CTAs directos.
+              </p>
             </div>
-          </button>
-
-          <!-- Color 6 -->
-          <button onclick="copiarColor('#FAF6FD', 'Pastel Canvas')" class="p-2.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-2 hover:border-purple-300 transition text-left shadow-2xs">
-            <span class="w-7 h-7 rounded-xl bg-[#FAF6FD] border border-slate-300 shrink-0 shadow-xs"></span>
-            <div class="truncate">
-              <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#FAF6FD</span>
-              <span class="text-[10px] text-slate-500">Canvas Suave</span>
-            </div>
-          </button>
+            <span class="mt-2 text-[10px] font-bold text-amber-300 bg-amber-950/80 px-2 py-0.5 rounded-md inline-block self-start border border-amber-800">Ganchos Visuales</span>
+          </div>
         </div>
+
+        <!-- Muestrario de Imágenes de Referencia Oficiales -->
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="font-extrabold text-slate-900 font-cute text-base flex items-center gap-2">
+              <span>🖼️</span> Piezas de Referencia Oficiales (Estilo Oficial de Polyglot Map)
+            </h4>
+            <span class="text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+              Inspiración Mandatoria para Gráficas y Videos
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Pieza 1: Idiomas + IA = Super Poder -->
+            <div class="candy-card rounded-2xl overflow-hidden border border-purple-200 hover:border-purple-400 transition flex flex-col group shadow-xs">
+              <div class="relative bg-slate-950 aspect-[3/4] overflow-hidden flex items-center justify-center cursor-pointer" onclick="openImageModal('assets/img/estilo_referencia_1_idiomas_ia.jpg', 'Referencia 1: Idiomas + IA = Super Poder')">
+                <img src="assets/img/estilo_referencia_1_idiomas_ia.jpg" alt="Idiomas + IA = Super Poder" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute top-2.5 left-2.5">
+                  <span class="px-2 py-0.5 rounded-md bg-purple-600/90 text-white text-[10px] font-extrabold backdrop-blur-xs shadow-xs">
+                    Portada / Post 1:1 o 4:5
+                  </span>
+                </div>
+                <div class="absolute bottom-2.5 left-2.5 right-2.5 text-white">
+                  <div class="text-[10px] uppercase tracking-wider font-extrabold text-sky-300">Inteligencia Artificial</div>
+                  <div class="text-xs font-extrabold font-cute leading-tight">Idiomas + IA = Super Poder</div>
+                </div>
+              </div>
+              <div class="p-3 bg-white text-xs flex-1 flex flex-col justify-between">
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  <strong>Elementos:</strong> Sujeto con lentes AR, núcleo interactivo de IA, esferas de banderas internacionales conectadas por nodos de datos y tipografía blanco + oro.
+                </p>
+                <div class="mt-2 pt-2 border-t border-purple-50 flex items-center justify-between">
+                  <span class="text-[10px] text-purple-700 font-bold">Pilar: Innovación & IA</span>
+                  <a href="assets/img/estilo_referencia_1_idiomas_ia.jpg" target="_blank" class="text-[10px] text-purple-600 hover:text-purple-800 underline font-bold">Ver completa ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pieza 2: El Poder del Shadowing -->
+            <div class="candy-card rounded-2xl overflow-hidden border border-purple-200 hover:border-purple-400 transition flex flex-col group shadow-xs">
+              <div class="relative bg-slate-950 aspect-[3/4] overflow-hidden flex items-center justify-center cursor-pointer" onclick="openImageModal('assets/img/estilo_referencia_2_shadowing.jpg', 'Referencia 2: El Poder del Shadowing')">
+                <img src="assets/img/estilo_referencia_2_shadowing.jpg" alt="El Poder del Shadowing" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute top-2.5 left-2.5">
+                  <span class="px-2 py-0.5 rounded-md bg-cyan-600/90 text-white text-[10px] font-extrabold backdrop-blur-xs shadow-xs">
+                    Reel / Portada 9:16
+                  </span>
+                </div>
+                <div class="absolute bottom-2.5 left-2.5 right-2.5 text-white">
+                  <div class="text-[10px] uppercase tracking-wider font-extrabold text-cyan-300">Fluidez & Pronunciación</div>
+                  <div class="text-xs font-extrabold font-cute leading-tight">El Poder del <em>SHADOWING</em></div>
+                </div>
+              </div>
+              <div class="p-3 bg-white text-xs flex-1 flex flex-col justify-between">
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  <strong>Elementos:</strong> Silueta en perfil con audífonos profesionales, espectro de onda de audio (*waveform*) neón cian/violeta y tipografía elegante con cursiva.
+                </p>
+                <div class="mt-2 pt-2 border-t border-purple-50 flex items-center justify-between">
+                  <span class="text-[10px] text-cyan-700 font-bold">Pilar: Método & Habla</span>
+                  <a href="assets/img/estilo_referencia_2_shadowing.jpg" target="_blank" class="text-[10px] text-cyan-600 hover:text-cyan-800 underline font-bold">Ver completa ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pieza 3: Tus Logros Globales -->
+            <div class="candy-card rounded-2xl overflow-hidden border border-purple-200 hover:border-purple-400 transition flex flex-col group shadow-xs">
+              <div class="relative bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 aspect-[3/4] p-4 flex flex-col justify-between text-white border-b border-purple-200">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded-md bg-amber-500/90 text-slate-950 text-[10px] font-extrabold shadow-xs">
+                    Carrusel / Feed 4:5
+                  </span>
+                  <span class="text-[10px] text-amber-300 font-mono font-bold">Lámina 1/5</span>
+                </div>
+                <div class="my-auto text-center space-y-1">
+                  <div class="text-2xl">🏛️ 🇵🇪 🇺🇸 🇬🇧 🇧🇷 🇯🇵</div>
+                  <h5 class="text-base font-extrabold font-serif text-amber-200 tracking-wide uppercase">Tus Logros Globales</h5>
+                  <p class="text-[11px] text-slate-200 font-light">¡Construye tu futuro internacional!</p>
+                </div>
+                <div class="text-center pt-2 border-t border-white/10 text-[10px] font-extrabold text-amber-300 uppercase tracking-widest">
+                  DESLIZA ➔
+                </div>
+              </div>
+              <div class="p-3 bg-white text-xs flex-1 flex flex-col justify-between">
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  <strong>Elementos:</strong> Sujeto caminando por túnel de arcos iluminados con banderas de los idiomas enseñados en Polyglot Map. Gancho aspiracional de empleabilidad.
+                </p>
+                <div class="mt-2 pt-2 border-t border-purple-50 flex items-center justify-between">
+                  <span class="text-[10px] text-amber-700 font-bold">Pilar: Empleabilidad Global</span>
+                  <span class="text-[10px] text-slate-400 font-medium">Estilo Referencia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pieza 4: Según Nuestros Cálculos -->
+            <div class="candy-card rounded-2xl overflow-hidden border border-purple-200 hover:border-purple-400 transition flex flex-col group shadow-xs">
+              <div class="relative bg-gradient-to-br from-blue-700 to-indigo-900 aspect-[3/4] p-4 flex flex-col justify-between text-white border-b border-purple-200">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded-md bg-white text-blue-900 text-[10px] font-extrabold shadow-xs">
+                    Creativo 3D / Viral
+                  </span>
+                  <span class="text-[10px] text-sky-200 font-bold">🌍✈️ Polyglot Map</span>
+                </div>
+                <div class="my-auto text-center space-y-2">
+                  <h5 class="text-sm font-extrabold font-cute leading-snug">Según nuestros cálculos:</h5>
+                  <div class="p-2.5 rounded-xl bg-slate-900/80 border border-sky-400/40 text-center font-mono text-[10px] text-emerald-300 shadow-inner">
+                    <div class="text-xs mb-1">🇧🇷 🇺🇸 🇫🇷 🇮🇹</div>
+                    <div>NECESITAS: APRENDER UN NUEVO IDIOMA</div>
+                  </div>
+                </div>
+                <div class="text-center pt-2 border-t border-white/10 text-[10px] text-sky-200">
+                  📱 Ideal para WhatsApp y Anuncios
+                </div>
+              </div>
+              <div class="p-3 bg-white text-xs flex-1 flex flex-col justify-between">
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  <strong>Elementos:</strong> Render 3D de objeto retro-tech (calculadora) con pantalla digital y banderas de idiomas. Formato ágil de alta retención para campañas publicitarias.
+                </p>
+                <div class="mt-2 pt-2 border-t border-purple-50 flex items-center justify-between">
+                  <span class="text-[10px] text-sky-700 font-bold">Pilar: Captación & Redes</span>
+                  <span class="text-[10px] text-slate-400 font-medium">Estilo Referencia</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Paleta Cromática con Copiado Rápido HEX -->
+        <div class="pt-4 border-t border-purple-100">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <div>
+              <h5 class="font-extrabold text-slate-900 font-cute text-sm">
+                Paleta Cromática Oficial (Haz click en cualquier color para copiar el código HEX)
+              </h5>
+              <p class="text-[11px] text-slate-500">
+                Garantiza la consistencia cromática entre Adobe Premiere, After Effects, Canva, Photoshop y CapCut.
+              </p>
+            </div>
+            <div class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-xl">
+              Tipografías oficiales: Quicksand (títulos) + Plus Jakarta Sans (lectura)
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+            <!-- Color 1 -->
+            <button onclick="copiarColor('#8B5CF6', 'Polyglot Purple')" class="p-2.5 rounded-2xl bg-white border border-purple-200 flex items-center gap-2 hover:border-purple-500 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#8B5CF6] shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#8B5CF6</span>
+                <span class="text-[10px] text-slate-500">Purple Brand</span>
+              </div>
+            </button>
+            
+            <!-- Color 2 -->
+            <button onclick="copiarColor('#EC4899', 'Blush Pink')" class="p-2.5 rounded-2xl bg-white border border-pink-200 flex items-center gap-2 hover:border-pink-500 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#EC4899] shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#EC4899</span>
+                <span class="text-[10px] text-slate-500">Blush Pink</span>
+              </div>
+            </button>
+
+            <!-- Color 3 -->
+            <button onclick="copiarColor('#0284C7', 'Sky Cyan')" class="p-2.5 rounded-2xl bg-white border border-sky-200 flex items-center gap-2 hover:border-sky-500 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#0284C7] shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#0284C7</span>
+                <span class="text-[10px] text-slate-500">Sky Tech</span>
+              </div>
+            </button>
+
+            <!-- Color 4 -->
+            <button onclick="copiarColor('#10B981', 'Emerald Growth')" class="p-2.5 rounded-2xl bg-white border border-emerald-200 flex items-center gap-2 hover:border-emerald-500 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#10B981] shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#10B981</span>
+                <span class="text-[10px] text-slate-500">Mint Empleo</span>
+              </div>
+            </button>
+
+            <!-- Color 5 -->
+            <button onclick="copiarColor('#F59E0B', 'Honey Amber')" class="p-2.5 rounded-2xl bg-white border border-amber-200 flex items-center gap-2 hover:border-amber-500 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#F59E0B] shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#F59E0B</span>
+                <span class="text-[10px] text-slate-500">Honey Gold</span>
+              </div>
+            </button>
+
+            <!-- Color 6 -->
+            <button onclick="copiarColor('#FAF6FD', 'Pastel Canvas')" class="p-2.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-2 hover:border-purple-300 transition text-left shadow-2xs">
+              <span class="w-7 h-7 rounded-xl bg-[#FAF6FD] border border-slate-300 shrink-0 shadow-xs"></span>
+              <div class="truncate">
+                <span class="block text-[11px] font-extrabold text-slate-800 font-mono">#FAF6FD</span>
+                <span class="text-[10px] text-slate-500">Canvas Suave</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
       </div>
 
       <!-- SECCIÓN 1: PILARES DE MARCA INTERACTIVOS -->
@@ -639,7 +852,7 @@
               Base de Control & Asignación Dinámica en Airtable
             </h2>
             <p class="text-xs sm:text-sm text-slate-700 mt-1 max-w-2xl leading-relaxed">
-              <strong>Adriana Chávez (Directora Creativa)</strong> asigna y actualiza las piezas directamente aquí. <strong>Todo el equipo debe conectarse a esta base</strong> para registrar su avance en tiempo real sin rigidez de días.
+              <strong>Adriana Chávez (Coordinadora Creativa)</strong> asigna y actualiza las piezas directamente aquí. <strong>Todo el equipo debe conectarse a esta base</strong> para registrar su avance en tiempo real sin rigidez de días.
             </p>
           </div>
 
@@ -696,7 +909,7 @@
               <option value="Daniela">💙 Daniela (Content Creators & Analytic)</option>
               <option value="Alison">🌿 Alison (Content Strategist · 4 Piezas)</option>
               <option value="Scarlet">🍯 Scarlet (Video Producer & Identidad)</option>
-              <option value="Adriana">💜 Adriana (Directora Creativa)</option>
+              <option value="Adriana">💜 Adriana (Coordinadora Creativa)</option>
             </select>
 
             <!-- Filter Status -->
@@ -1018,7 +1231,7 @@
               <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white font-bold flex items-center justify-center font-cute text-lg shadow-xs">AC</div>
               <div>
                 <h3 class="font-bold text-slate-900 text-base font-cute">Adriana Chávez</h3>
-                <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 border border-purple-200">Directora Creativa (Lead)</span>
+                <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 border border-purple-200">Coordinadora Creativa (Lead)</span>
               </div>
             </div>
             
@@ -1224,7 +1437,7 @@
                 <span>Adriana Chávez</span>
               </td>
               <td class="py-3 px-3">
-                <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800 font-extrabold text-[11px]">Directora Creativa (Lead)</span>
+                <span class="px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800 font-extrabold text-[11px]">Coordinadora Creativa (Lead)</span>
               </td>
               <td class="py-3 px-3 text-[11px] font-bold">
                 <span class="px-2.5 py-1 rounded-lg bg-purple-50 text-purple-900 border border-purple-200 shadow-2xs">Perú 🇵🇪</span>
@@ -1377,7 +1590,7 @@
               <option value="Daniela Bonilla">Daniela · Content Creators & Analytic</option>
               <option value="Alison Rivas">Alison · Content Strategist (4 piezas)</option>
               <option value="Scarlet Vega">Scarlet · Video Producer & Identidad</option>
-              <option value="Adriana Chávez">Adriana Chávez · Directora Creativa</option>
+              <option value="Adriana Chávez">Adriana Chávez · Coordinadora Creativa</option>
             </select>
           </div>
           <div>
@@ -1475,6 +1688,27 @@
     </div>
   </div>
 
+  <!-- ========================================== -->
+  <!-- MODAL: LIGHTBOX DE IMÁGENES DE REFERENCIA  -->
+  <!-- ========================================== -->
+  <div id="imageLightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto" onclick="closeImageModal()">
+    <div class="candy-card bg-slate-900 border border-purple-500/40 rounded-3xl max-w-2xl w-full p-4 relative shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-3 border-b border-purple-900/50">
+        <h4 id="lightboxTitle" class="text-sm font-extrabold text-white font-cute">Referencia Visual</h4>
+        <button onclick="closeImageModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center font-bold">✕</button>
+      </div>
+      <div class="mt-3 flex items-center justify-center bg-black/60 rounded-2xl overflow-hidden max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="Referencia Visual" class="max-h-[70vh] w-auto object-contain rounded-xl shadow-lg">
+      </div>
+      <div class="mt-3 flex items-center justify-between text-xs text-slate-400">
+        <span>🎨 Estilo Oficial: Cyber-Futurista & High-Tech Glow</span>
+        <a id="lightboxDownloadBtn" href="" target="_blank" class="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-[11px] flex items-center gap-1">
+          <span>Abrir original</span> ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- CUTE TOAST FEEDBACK -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-purple-300 flex items-center gap-2 text-xs font-semibold">
     <span id="toastIcon">✨</span>
@@ -1483,6 +1717,18 @@
 
   <!-- Interactive JavaScript Engine -->
   <script>
+    // Lightbox modal for reference images
+    function openImageModal(src, title) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxTitle').innerText = title || "Referencia Visual Oficial";
+      document.getElementById('lightboxDownloadBtn').href = src;
+      document.getElementById('imageLightboxModal').classList.remove('hidden');
+    }
+
+    function closeImageModal() {
+      document.getElementById('imageLightboxModal').classList.add('hidden');
+    }
+
     // Toast Feedback
     function showToast(msg, icon = "✨") {
       const toast = document.getElementById('toast');
@@ -2274,7 +2520,7 @@ Requisitos:
         initials: "AC",
         bg: "bg-purple-600",
         badge: "bg-purple-100 text-purple-800",
-        role: "Directora Creativa (Lead)",
+        role: "Coordinadora Creativa (Lead)",
         pais: "Perú 🇵🇪",
         mision: "1. <strong>Asignación dinámica en Airtable:</strong> define y asigna las piezas día a día para que todo el equipo vea los avances en simultáneo.<br>2. <strong>Pauta y dirección de videos cortos:</strong> dicta a Daniela los contenidos y temas de los 4 videos cortos semanales.<br>3. <strong>Gatekeeper técnico obligatorio:</strong> aprueba el 100% de las piezas antes de salir.<br>4. Analítica de ventas y Banco DAM junto con Daniela y Alison.",
         studies: "UPC · Comunicación Audiovisual y Medios Interactivos (10mo ciclo, 2021-2026).",
