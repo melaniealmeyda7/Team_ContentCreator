@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polyglot Map · Creative Marketing Studio & Airtable Live Hub</title>
+  <title>Polyglot Map · Creative Marketing Studio & Matriz Excel / Sheets Hub</title>
   <!-- Tailwind CSS approved CDN -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
@@ -110,14 +110,14 @@
           </div>
         </div>
 
-        <!-- Quick Airtable, Content Drive & Logo Drive Bar -->
+        <!-- Quick Excel/Sheets, Content Drive & Logo Drive Bar -->
         <div class="flex items-center gap-2 text-xs font-bold">
-          <button onclick="switchTab('tab-airtable')" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Ver base oficial de Airtable donde deben conectarse">
+          <button onclick="switchTab('tab-excel')" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs" title="Ver matriz oficial de Excel / Google Sheets donde deben conectarse">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
             </span>
-            <span>⚡ Airtable en Vivo</span>
+            <span>📊 Matriz Excel en Vivo</span>
           </button>
 
           <a href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-md" title="Abrir carpeta de Google Drive para subir contenido y material audiovisual">
@@ -142,19 +142,19 @@
       </div>
     </div>
 
-    <!-- Navigation Tabs Friendly (Sin Calendario, Foco Total en Airtable) -->
+    <!-- Navigation Tabs Friendly (Sin Calendario, Foco Total en Matriz Excel / Sheets) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-purple-50">
       <nav class="flex space-x-1 sm:space-x-3 overflow-x-auto py-2 text-xs sm:text-sm font-semibold" id="tabNav">
         <button onclick="switchTab('tab-estudio')" id="btn-tab-estudio" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-purple-600 text-white transition shadow-sm font-bold">
           <span>🌸 Marketing Studio</span>
         </button>
         
-        <button onclick="switchTab('tab-airtable')" id="btn-tab-airtable" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition font-bold">
+        <button onclick="switchTab('tab-excel')" id="btn-tab-excel" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition font-bold">
           <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span>⚡ Conexión Airtable en Vivo</span>
+          <span>📊 Matriz Excel / Sheets en Vivo</span>
         </button>
         
         <button onclick="switchTab('tab-generador')" id="btn-tab-generador" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
@@ -189,7 +189,7 @@
               Estrategia Creativa, Contenido Viral & Posicionamiento
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-              El centro de mando para posicionar a <strong>Polyglot Map</strong> como la academia líder en <strong>Idiomas Acelerados + IA + Empleabilidad Remota en USD</strong>. Conexión centralizada en Airtable sin rigideces de calendario.
+              El centro de mando para posicionar a <strong>Polyglot Map</strong> como la academia líder en <strong>Idiomas Acelerados + IA + Empleabilidad Remota en USD</strong>. Conexión centralizada en Matriz Excel / Google Sheets sin rigideces de calendario.
             </p>
 
             <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
@@ -202,16 +202,16 @@
               <span class="px-3 py-1 rounded-xl bg-white text-emerald-700 border border-emerald-100 flex items-center gap-1 shadow-xs">
                 <span>💼</span> Sueldos $1,500 - $4,000 USD
               </span>
-              <span class="px-3 py-1 rounded-xl bg-white text-orange-700 border border-orange-100 flex items-center gap-1 shadow-xs">
-                <span>⚡</span> Conexión Airtable Obligatoria
+              <span class="px-3 py-1 rounded-xl bg-white text-emerald-700 border border-emerald-100 flex items-center gap-1 shadow-xs">
+                <span>📊</span> Matriz Excel / Sheets en Vivo
               </span>
             </div>
           </div>
 
           <!-- Quick Actions in Hero -->
           <div class="flex flex-col sm:flex-row lg:flex-col gap-2 self-start lg:self-center shrink-0">
-            <button onclick="switchTab('tab-airtable')" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md shadow-orange-200 transition flex items-center justify-center gap-2">
-              <span>⚡ Abrir Base de Airtable</span>
+            <button onclick="switchTab('tab-excel')" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-extrabold text-xs shadow-md shadow-emerald-200 transition flex items-center justify-center gap-2">
+              <span>📊 Abrir Matriz Excel / Sheets</span>
             </button>
             <div class="flex gap-2">
               <button onclick="switchTab('tab-generador')" class="px-3.5 py-2 rounded-2xl bg-white hover:bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200 transition flex items-center gap-1.5 shadow-xs">
@@ -225,28 +225,28 @@
         </div>
       </div>
 
-      <!-- MANDATORY AIRTABLE CALLOUT BANNER -->
-      <div class="candy-card rounded-2xl p-4 bg-gradient-to-r from-amber-100/90 via-orange-50 to-pink-50 border border-orange-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <!-- MANDATORY EXCEL / GOOGLE SHEETS CALLOUT BANNER -->
+      <div class="candy-card rounded-2xl p-4 bg-gradient-to-r from-emerald-100/90 via-teal-50 to-green-50 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-orange-500 text-white flex items-center justify-center font-bold text-lg shadow-xs">
-            ⚡
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-lg shadow-xs">
+            📊
           </div>
           <div>
             <h4 class="font-bold text-slate-900 text-xs sm:text-sm font-cute flex items-center gap-1.5">
-              <span>Espacio Oficial de Airtable · Conexión Obligatoria del Equipo</span>
+              <span>Espacio Oficial de Control en Excel (Google Sheets) · Conexión del Equipo</span>
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             </h4>
             <p class="text-[11px] text-slate-600">
-              Todo el equipo (<strong>Adriana, Alison, Daniela, Scarlet y Britani</strong>) debe conectarse a esta base para revisar la asignación dinámica y reportar avances en simultáneo.
+              Todo el equipo (<strong>Adriana, Alison, Daniela, Scarlet y Britani</strong>) debe conectarse a esta matriz oficial de Google Sheets / Excel para revisar la asignación dinámica y reportar avances en simultáneo.
             </p>
           </div>
         </div>
         <div class="flex items-center gap-2 shrink-0">
-          <button onclick="switchTab('tab-airtable')" class="px-3.5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
-            <span>⚡ Ver Base Incrustada</span>
+          <button onclick="switchTab('tab-excel')" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
+            <span>📊 Ver Matriz Incrustada</span>
           </button>
-          <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition shadow-xs flex items-center gap-1">
-            <span>🚀 Conectarse</span>
+          <a href="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-300 transition shadow-xs flex items-center gap-1.5">
+            <span>🚀 Abrir Google Sheets</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
         </div>
@@ -261,7 +261,7 @@
             <span class="p-2 rounded-xl bg-pink-100 text-pink-600 text-sm">🎨</span>
           </div>
           <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">12 / 16 Piezas</div>
-          <p class="text-[11px] text-slate-500 mt-0.5"><strong>Allison: 4 piezas semanales</strong> + <strong>Britani (4-8)</strong> y <strong>Daniela (4)</strong> asignadas en Airtable</p>
+          <p class="text-[11px] text-slate-500 mt-0.5"><strong>Allison: 4 piezas semanales</strong> + <strong>Britani (4-8)</strong> y <strong>Daniela (4)</strong> asignadas en la Matriz Excel</p>
         </div>
 
         <div class="candy-card rounded-3xl p-5 border-l-4 border-l-amber-400">
@@ -282,13 +282,13 @@
           <p class="text-[11px] text-slate-500 mt-0.5"><strong>Scarlet apoya con la identidad visual</strong> y la <strong>gestión mensual con Allison y Daniela</strong></p>
         </div>
 
-        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-orange-500">
+        <div class="candy-card rounded-3xl p-5 border-l-4 border-l-emerald-500">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-orange-600 uppercase">Seguimiento en Vivo</span>
-            <span class="p-2 rounded-xl bg-orange-100 text-orange-600 text-sm">⚡</span>
+            <span class="text-xs font-bold text-emerald-600 uppercase">Seguimiento en Vivo</span>
+            <span class="p-2 rounded-xl bg-emerald-100 text-emerald-600 text-sm">📊</span>
           </div>
-          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">Airtable</div>
-          <p class="text-[11px] text-slate-500 mt-0.5">Asignación dinámica sin días fijos de lunes a domingo</p>
+          <div class="text-3xl font-extrabold text-slate-800 font-cute mt-1">Excel / Sheets</div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Asignación dinámica sin días fijos en Google Sheets</p>
         </div>
 
       </div>
@@ -669,7 +669,7 @@
         </div>
       </div>
 
-      <!-- SECCIÓN 2: PIPELINE CREATIVO EN 5 ETAPAS (CLICK PARA FILTRAR EN AIRTABLE) -->
+      <!-- SECCIÓN 2: PIPELINE CREATIVO EN 5 ETAPAS (CLICK PARA FILTRAR EN LA MATRIZ EXCEL / SHEETS) -->
       <div class="candy-card rounded-3xl p-6 border border-purple-200">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
           <div>
@@ -680,7 +680,7 @@
               De la Pauta a la Publicación en 5 Fases
             </h3>
             <p class="text-xs text-slate-500">
-              Haz clic en cualquiera de las fases para filtrar las tareas correspondientes directamente en la base de Airtable.
+              Haz clic en cualquiera de las fases para filtrar las tareas correspondientes directamente en la matriz de control de Excel / Sheets.
             </p>
           </div>
           <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-xl border border-purple-200">
@@ -691,12 +691,12 @@
         <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
           
           <!-- Paso 1 -->
-          <button onclick="filtrarAirtableDesdePipeline('Pauta / Por Iniciar')" class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-200 hover:border-purple-400 hover:shadow-xs transition text-left flex flex-col justify-between">
+          <button onclick="filtrarMatrizDesdePipeline('Pauta / Por Iniciar')" class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-200 hover:border-purple-400 hover:shadow-xs transition text-left flex flex-col justify-between">
             <div>
               <span class="w-6 h-6 rounded-lg bg-purple-600 text-white font-bold text-xs flex items-center justify-center mb-2">1</span>
               <h5 class="font-extrabold text-slate-900 text-xs font-cute">Pauta Estratégica</h5>
               <p class="text-[11px] text-slate-600 mt-1">
-                <strong>Adriana Chávez</strong> pauta y asigna dinámicamente en Airtable. <strong>Alison</strong> investiga tendencias de IA.
+                <strong>Adriana Chávez</strong> pauta y asigna dinámicamente en Excel / Sheets. <strong>Alison</strong> investiga tendencias de IA.
               </p>
             </div>
             <div class="mt-2 text-[10px] font-bold text-purple-700 flex items-center gap-1">
@@ -705,7 +705,7 @@
           </button>
 
           <!-- Paso 2 -->
-          <button onclick="filtrarAirtableDesdePipeline('En Creación')" class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200 hover:border-sky-400 hover:shadow-xs transition text-left flex flex-col justify-between">
+          <button onclick="filtrarMatrizDesdePipeline('En Creación')" class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200 hover:border-sky-400 hover:shadow-xs transition text-left flex flex-col justify-between">
             <div>
               <span class="w-6 h-6 rounded-lg bg-sky-600 text-white font-bold text-xs flex items-center justify-center mb-2">2</span>
               <h5 class="font-extrabold text-slate-900 text-xs font-cute">Creación Base</h5>
@@ -719,7 +719,7 @@
           </button>
 
           <!-- Paso 3 -->
-          <button onclick="filtrarAirtableDesdePipeline('En Edición / Copy')" class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 hover:border-amber-400 hover:shadow-xs transition text-left flex flex-col justify-between">
+          <button onclick="filtrarMatrizDesdePipeline('En Edición / Copy')" class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 hover:border-amber-400 hover:shadow-xs transition text-left flex flex-col justify-between">
             <div>
               <span class="w-6 h-6 rounded-lg bg-amber-600 text-white font-bold text-xs flex items-center justify-center mb-2">3</span>
               <h5 class="font-extrabold text-slate-900 text-xs font-cute">Edición & Identidad Visual</h5>
@@ -733,7 +733,7 @@
           </button>
 
           <!-- Paso 4 -->
-          <button onclick="filtrarAirtableDesdePipeline('En Revisión Adriana')" class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200 hover:border-pink-400 hover:shadow-xs transition text-left flex flex-col justify-between">
+          <button onclick="filtrarMatrizDesdePipeline('En Revisión Adriana')" class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-200 hover:border-pink-400 hover:shadow-xs transition text-left flex flex-col justify-between">
             <div>
               <span class="w-6 h-6 rounded-lg bg-pink-600 text-white font-bold text-xs flex items-center justify-center mb-2">4</span>
               <h5 class="font-extrabold text-slate-900 text-xs font-cute">Gatekeeper de Calidad</h5>
@@ -747,7 +747,7 @@
           </button>
 
           <!-- Paso 5 -->
-          <button onclick="filtrarAirtableDesdePipeline('Aprobado')" class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200 hover:border-emerald-400 hover:shadow-xs transition text-left flex flex-col justify-between">
+          <button onclick="filtrarMatrizDesdePipeline('Aprobado')" class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200 hover:border-emerald-400 hover:shadow-xs transition text-left flex flex-col justify-between">
             <div>
               <span class="w-6 h-6 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center mb-2">5</span>
               <h5 class="font-extrabold text-slate-900 text-xs font-cute">Distribución & Gestión Mensual</h5>
@@ -763,13 +763,13 @@
         </div>
       </div>
 
-      <!-- SECCIÓN 3: AIRTABLE EN VIVO INCRUSTADO EN MARKETING STUDIO -->
-      <div class="candy-card rounded-3xl p-6 border-2 border-orange-200 bg-gradient-to-br from-amber-50/40 via-white to-purple-50/40">
+      <!-- SECCIÓN 3: MATRIZ EXCEL / SHEETS EN VIVO INCRUSTADA EN MARKETING STUDIO -->
+      <div class="candy-card rounded-3xl p-6 border-2 border-emerald-200 bg-gradient-to-br from-emerald-50/40 via-white to-teal-50/40">
         
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-orange-100">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-emerald-100">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-extrabold font-cute mb-1.5 border border-orange-200 shadow-xs">
-              <span>⚡ Base Airtable Incrustada</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold font-cute mb-1.5 border border-emerald-200 shadow-xs">
+              <span>📊 Base Excel / Sheets Incrustada</span>
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
               <span>Visualización en Directo</span>
             </div>
@@ -782,11 +782,11 @@
           </div>
 
           <div class="flex flex-wrap items-center gap-2">
-            <button onclick="switchTab('tab-airtable')" class="px-3.5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
-              <span>⚡ Expandir a Pantalla Completa</span>
+            <button onclick="switchTab('tab-excel')" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs shadow-xs transition flex items-center gap-1.5">
+              <span>📊 Expandir a Pantalla Completa</span>
             </button>
-            <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition flex items-center gap-1.5 shadow-xs">
-              <span>🚀 Conectarse a Airtable</span>
+            <a href="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-300 transition flex items-center gap-1.5 shadow-xs">
+              <span>🚀 Abrir Google Sheets</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
           </div>
@@ -796,12 +796,12 @@
         <div class="mt-4 overflow-x-auto">
           <div class="flex items-center justify-between text-xs font-bold mb-2">
             <span class="text-slate-700">Últimas Asignaciones en Curso:</span>
-            <button onclick="abrirModalNuevaTareaAirtable()" class="px-3 py-1 rounded-lg bg-purple-600 text-white font-bold hover:bg-purple-700 transition flex items-center gap-1">
+            <button onclick="abrirModalNuevaTareaMatriz()" class="px-3 py-1 rounded-lg bg-emerald-600 text-white font-bold hover:bg-emerald-700 transition flex items-center gap-1 shadow-xs">
               <span>➕ Asignar Pieza</span>
             </button>
           </div>
 
-          <div id="miniAirtableContainer" class="space-y-2">
+          <div id="miniMatrizContainer" class="space-y-2">
             <!-- Dynamic Mini Rows Injected via JS -->
           </div>
         </div>
@@ -835,62 +835,68 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TAB 2: BASE AIRTABLE EN VIVO (EMBEBIDA)    -->
+    <!-- TAB 2: MATRIZ EXCEL / SHEETS EN VIVO       -->
     <!-- ========================================== -->
-    <div id="tab-airtable" class="tab-content hidden space-y-6">
+    <div id="tab-excel" class="tab-content hidden space-y-6">
       
       <!-- Top Hub Header -->
-      <div class="candy-card rounded-3xl p-6 bg-gradient-to-r from-orange-100/90 via-amber-100/80 to-pink-100/80 border border-orange-200">
+      <div class="candy-card rounded-3xl p-6 bg-gradient-to-r from-emerald-100/90 via-teal-100/80 to-sky-100/80 border border-emerald-200">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/95 text-orange-800 text-xs font-extrabold font-cute mb-2 border border-orange-200 shadow-xs">
-              <span>⚡ Espacio Oficial Conectado</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/95 text-emerald-900 text-xs font-extrabold font-cute mb-2 border border-emerald-200 shadow-xs">
+              <span>📊 Espacio Oficial Conectado</span>
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Avances en Simultáneo</span>
+              <span>Google Sheets & Excel · Avances en Simultáneo</span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-cute tracking-tight">
-              Base de Control & Asignación Dinámica en Airtable
+              Matriz de Control & Asignación Dinámica en Excel (Google Sheets)
             </h2>
             <p class="text-xs sm:text-sm text-slate-700 mt-1 max-w-2xl leading-relaxed">
-              <strong>Adriana Chávez (Coordinadora Creativa)</strong> asigna y actualiza las piezas directamente aquí. <strong>Todo el equipo debe conectarse a esta base</strong> para registrar su avance en tiempo real sin rigidez de días.
+              <strong>Adriana Chávez (Coordinadora Creativa)</strong> asigna y actualiza las piezas directamente en esta hoja de cálculo. <strong>Todo el equipo debe conectarse a esta matriz de Excel / Google Sheets</strong> para registrar su avance en tiempo real sin rigidez de días.
             </p>
           </div>
 
           <div class="flex flex-wrap items-center gap-2 self-start lg:self-center">
-            <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md shadow-orange-200 transition flex items-center gap-2">
-              <span>🚀 Conectarse a Base en Airtable</span>
+            <a href="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-extrabold text-xs shadow-md shadow-emerald-200 transition flex items-center gap-2">
+              <span>🚀 Abrir Hoja en Google Sheets</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
-            <button onclick="copiarLinkAirtable()" class="px-3.5 py-2.5 rounded-2xl bg-white hover:bg-orange-50 text-orange-700 font-bold text-xs border border-orange-200 transition flex items-center gap-1.5 shadow-xs">
+            <button onclick="copiarLinkGoogleSheets()" class="px-3.5 py-2.5 rounded-2xl bg-white hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-300 transition flex items-center gap-1.5 shadow-xs">
               <span>📋 Copiar Link</span>
+            </button>
+            <button onclick="exportarExcelCSV()" class="px-3.5 py-2.5 rounded-2xl bg-white hover:bg-teal-50 text-teal-800 font-bold text-xs border border-teal-300 transition flex items-center gap-1.5 shadow-xs">
+              <span>📥 Exportar Excel (.csv)</span>
             </button>
           </div>
         </div>
 
         <!-- Mode Toggle Bar -->
-        <div class="mt-5 pt-4 border-t border-orange-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="mt-5 pt-4 border-t border-emerald-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div class="flex items-center gap-2">
             <span class="text-xs font-bold text-slate-700">Modo de Visualización:</span>
-            <div class="inline-flex rounded-xl p-1 bg-white/80 border border-orange-200 shadow-2xs">
-              <button onclick="setAirtableMode('grid')" id="btnAirtableGrid" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs">
-                ⚡ Base Interactiva Sincronizada
+            <div class="inline-flex rounded-xl p-1 bg-white/80 border border-emerald-200 shadow-2xs">
+              <button onclick="setMatrizMode('grid')" id="btnMatrizGrid" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white transition shadow-xs">
+                📊 Matriz Interactiva Sincronizada
               </button>
-              <button onclick="setAirtableMode('iframe')" id="btnAirtableIframe" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition">
-                🌐 Iframe Oficial Airtable
+              <button onclick="setMatrizMode('iframe')" id="btnMatrizIframe" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-emerald-700 transition">
+                🌐 Iframe Oficial Google Sheets
               </button>
             </div>
           </div>
 
           <div class="flex items-center gap-2">
-            <button onclick="abrirModalNuevaTareaAirtable()" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition flex items-center gap-1.5">
+            <button onclick="copiarParaGoogleSheets()" class="px-3 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-800 font-bold text-xs border border-teal-200 transition flex items-center gap-1">
+              <span>📋 Copiar Datos (TSV)</span>
+            </button>
+            <button onclick="abrirModalNuevaTareaMatriz()" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition flex items-center gap-1.5">
               <span>➕ Asignar Nueva Pieza</span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- VIEW A: INTERACTIVE AIRTABLE-STYLE GRID (ALWAYS WORKS, FAST, EDITABLE, PERSISTENT) -->
-      <div id="airtableGridView" class="space-y-4">
+      <!-- VIEW A: INTERACTIVE EXCEL/SHEETS STYLE GRID (ALWAYS WORKS, FAST, EDITABLE, PERSISTENT) -->
+      <div id="matrizGridView" class="space-y-4">
         
         <!-- Controls & Filters Bar -->
         <div class="candy-card rounded-2xl p-4 border border-purple-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -898,12 +904,12 @@
           <div class="flex flex-wrap items-center gap-2">
             <!-- Search -->
             <div class="relative">
-              <input type="text" id="airtableSearch" oninput="filtrarTareasAirtable()" placeholder="Buscar tarea, responsable, pilar..." class="text-xs rounded-xl border border-purple-200 bg-white py-2 pl-8 pr-3 w-56 sm:w-64 focus:ring-2 focus:ring-purple-400 focus:outline-none">
+              <input type="text" id="matrizSearch" oninput="filtrarTareasMatriz()" placeholder="Buscar tarea, responsable, pilar..." class="text-xs rounded-xl border border-purple-200 bg-white py-2 pl-8 pr-3 w-56 sm:w-64 focus:ring-2 focus:ring-emerald-400 focus:outline-none">
               <span class="absolute left-2.5 top-2.5 text-xs text-slate-400">🔍</span>
             </div>
 
             <!-- Filter Member -->
-            <select id="airtableFilterMember" onchange="filtrarTareasAirtable()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
+            <select id="matrizFilterMember" onchange="filtrarTareasMatriz()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
               <option value="all">👥 Todo el Equipo</option>
               <option value="Britani">🌸 Britani (Content Creator)</option>
               <option value="Daniela">💙 Daniela (Content Creators & Analytic)</option>
@@ -913,7 +919,7 @@
             </select>
 
             <!-- Filter Status -->
-            <select id="airtableFilterStatus" onchange="filtrarTareasAirtable()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
+            <select id="matrizFilterStatus" onchange="filtrarTareasMatriz()" class="text-xs rounded-xl border border-purple-200 bg-white p-2 text-slate-700 font-medium">
               <option value="all">🚦 Todos los Estados</option>
               <option value="Pauta / Por Iniciar">📝 Pauta / Por Iniciar</option>
               <option value="En Creación">🎨 En Creación</option>
@@ -925,8 +931,8 @@
           </div>
 
           <div class="flex items-center gap-2 text-xs text-slate-500 font-medium">
-            <span id="airtableCountBadge" class="px-2.5 py-1 rounded-xl bg-purple-100 text-purple-800 font-bold">12 Tareas</span>
-            <button onclick="resetearTareasAirtableDemo()" class="text-[11px] text-purple-600 hover:text-purple-800 underline">Restaurar demo</button>
+            <span id="matrizCountBadge" class="px-2.5 py-1 rounded-xl bg-emerald-100 text-emerald-800 font-bold">12 Tareas</span>
+            <button onclick="resetearTareasMatrizDemo()" class="text-[11px] text-purple-600 hover:text-purple-800 underline">Restaurar demo</button>
           </div>
 
         </div>
@@ -946,7 +952,7 @@
                 <th class="py-2.5 px-3 text-center">Acciones</th>
               </tr>
             </thead>
-            <tbody id="airtableTableBody" class="divide-y divide-purple-50 text-slate-700">
+            <tbody id="matrizTableBody" class="divide-y divide-purple-50 text-slate-700">
               <!-- Injected via JavaScript -->
             </tbody>
           </table>
@@ -954,48 +960,48 @@
 
       </div>
 
-      <!-- VIEW B: DIRECT IFRAME EMBED CONTAINER -->
-      <div id="airtableIframeView" class="hidden space-y-4">
+      <!-- VIEW B: DIRECT IFRAME EMBED CONTAINER FOR GOOGLE SHEETS -->
+      <div id="matrizIframeView" class="hidden space-y-4">
         
-        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div class="flex items-start gap-2">
-            <span class="text-base">ℹ️</span>
+            <span class="text-base">📊</span>
             <div>
-              <strong>Incrustación directa de Airtable:</strong>
-              <p class="text-[11px] text-amber-800 mt-0.5">
-                Si tu navegador bloquea la vista por políticas de inicio de sesión de Airtable, puedes abrir la base directamente con el botón de la derecha o pegar tu <strong>enlace de vista compartida (embed view)</strong> generado en Airtable.
+              <strong>Incrustación en vivo de Google Sheets (Excel):</strong>
+              <p class="text-[11px] text-emerald-800 mt-0.5">
+                Puedes editar y visualizar en vivo la hoja oficial de Polyglot Map. Si deseas trabajar en pantalla completa con herramientas avanzadas de Excel/Sheets, ábrela con el botón directo de la derecha.
               </p>
             </div>
           </div>
-          <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-xs transition shrink-0">
-            Abrir en Ventana Completa ➔
+          <a href="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs transition shrink-0 flex items-center gap-1.5 shadow-xs">
+            <span>Abrir en Google Sheets ➔</span>
           </a>
         </div>
 
         <!-- Custom Embed URL bar -->
         <div class="candy-card rounded-2xl p-3 border border-purple-200 flex flex-col sm:flex-row items-center gap-2 text-xs">
-          <label class="font-bold text-slate-700 shrink-0">Enlace de Embed Personalizado:</label>
-          <input type="text" id="customAirtableUrlInput" placeholder="https://airtable.com/embed/..." value="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
-          <button onclick="actualizarIframeAirtable()" class="px-3.5 py-2 rounded-xl bg-purple-600 text-white font-bold hover:bg-purple-700 transition shrink-0">
-            Cargar Iframe
+          <label class="font-bold text-slate-700 shrink-0">Enlace de la Hoja (Google Sheets / Excel):</label>
+          <input type="text" id="customGoogleSheetsUrlInput" placeholder="https://docs.google.com/spreadsheets/d/..." value="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2">
+          <button onclick="actualizarIframeGoogleSheets()" class="px-3.5 py-2 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700 transition shrink-0">
+            Cargar Hoja
           </button>
         </div>
 
         <!-- The Iframe Container -->
-        <div class="candy-card rounded-3xl p-2 border-2 border-orange-200 bg-slate-900 shadow-xl overflow-hidden">
+        <div class="candy-card rounded-3xl p-2 border-2 border-emerald-200 bg-slate-900 shadow-xl overflow-hidden">
           <div class="flex items-center justify-between px-3 py-2 bg-slate-800 text-slate-200 rounded-2xl text-xs mb-2">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-red-400"></span>
               <span class="w-3 h-3 rounded-full bg-amber-400"></span>
               <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
-              <span class="ml-2 font-mono text-[11px] text-slate-300">airtable.com/polyglot-map-workspace</span>
+              <span class="ml-2 font-mono text-[11px] text-slate-300">docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc</span>
             </div>
-            <a href="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" target="_blank" rel="noopener noreferrer" class="text-orange-400 hover:text-orange-300 font-bold text-xs flex items-center gap-1">
-              <span>Abrir externo</span>
+            <a href="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-bold text-xs flex items-center gap-1">
+              <span>Abrir pestaña completa</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
           </div>
-          <iframe id="airtableFrame" src="https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts" class="w-full h-[620px] rounded-2xl border-0 bg-white" title="Base Oficial de Airtable Polyglot Map"></iframe>
+          <iframe id="googleSheetsFrame" src="https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing&widget=true&headers=false" class="w-full h-[640px] rounded-2xl border-0 bg-white" title="Matriz Oficial de Control Google Sheets Polyglot Map"></iframe>
         </div>
 
       </div>
@@ -1243,14 +1249,14 @@
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
                 <ul class="space-y-1 text-slate-600 leading-relaxed text-[11px]">
-                  <li>• <strong>Asigna piezas dinámicamente en Airtable</strong> para que el equipo vea los avances en simultáneo (sin rigideces de lunes a domingo).</li>
+                  <li>• <strong>Asigna piezas dinámicamente en la Matriz Excel / Sheets</strong> para que el equipo vea los avances en simultáneo (sin rigideces de lunes a domingo).</li>
                   <li>• <strong>Pauta y dicta a Daniela</strong> los temas, enfoques y guiones para los 4 videos cortos semanales.</li>
                   <li>• <strong>Gatekeeper técnico obligatorio:</strong> aprueba el 100% de artes y videos antes de salir.</li>
                   <li>• Analítica de ventas y Banco DAM junto con Daniela y Alison.</li>
                 </ul>
               </div>
               <div class="p-2 rounded-xl bg-purple-100/50 text-[11px] text-purple-900 font-semibold">
-                <strong>Meta Semanal:</strong> 100% de piezas aprobadas + Base de Airtable activa + DAM ordenado.
+                <strong>Meta Semanal:</strong> 100% de piezas aprobadas + Matriz Excel / Sheets activa + DAM ordenado.
               </div>
             </div>
           </div>
@@ -1318,7 +1324,7 @@
                 <ul class="space-y-1 text-slate-600 leading-relaxed text-[11px]">
                   <li>• <strong>Crea 4 videos semanales cortos</strong> sobre el contenido y pautas que le indique Adriana.</li>
                   <li>• <strong>Content Analytic en ventas:</strong> analiza métricas de conversión y ventas trabajando en conjunto con Adriana y Alison.</li>
-                  <li>• Diseña piezas gráficas asignadas por Adriana en Airtable.</li>
+                  <li>• Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets.</li>
                   <li>• Se encarga de la <strong>subida oficial y distribución</strong> de las piezas a WhatsApp.</li>
                   <li>• <strong>Gestión mensual en conjunto con Alison y Scarlet</strong>.</li>
                 </ul>
@@ -1342,7 +1348,7 @@
                 <h3 class="font-bold text-slate-900 text-base font-cute">Scarlet</h3>
                 <div class="flex flex-wrap gap-1 mt-0.5">
                   <span class="text-[9px] font-extrabold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200">Video Producer/Copywriter</span>
-                  <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800 border border-purple-200">Identidad Visual & Gestión</span>
+                  <span class="text-[9px] font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 border border-purple-200">Identidad Visual & Gestión</span>
                 </div>
               </div>
             </div>
@@ -1390,7 +1396,7 @@
               <div>
                 <strong class="text-slate-800 font-bold block mb-1">🎯 Funciones Clave:</strong>
                 <ul class="space-y-1 text-slate-600 leading-relaxed text-[11px]">
-                  <li>• Diseña piezas gráficas (post, carrusel y anuncio para campaña) asignadas por Adriana en Airtable.</li>
+                  <li>• Diseña piezas gráficas (post, carrusel y anuncio para campaña) asignadas por Adriana en la Matriz Excel / Sheets.</li>
                   <li>• <strong>Interacción y dinamización diaria</strong> con la comunidad de WhatsApp para maximizar la conversión.</li>
                   <li>• Diseña piezas publicitarias enfocadas en captación de alumnos bilingües.</li>
                 </ul>
@@ -1443,12 +1449,12 @@
                 <span class="px-2.5 py-1 rounded-lg bg-purple-50 text-purple-900 border border-purple-200 shadow-2xs">Perú 🇵🇪</span>
               </td>
               <td class="py-3 px-3 leading-relaxed">
-                • <strong>Asigna piezas dinámicamente en Airtable</strong> para avances en simultáneo.<br>
+                • <strong>Asigna piezas dinámicamente en la Matriz Excel / Sheets</strong> para avances en simultáneo.<br>
                 • <strong>Pauta y contenido</strong> para los 4 videos cortos que creará Daniela.<br>
                 • <strong>Gatekeeper técnico obligatorio:</strong> aprueba 100% de artes y videos.<br>
                 • Analítica y estrategia de ventas junto con Daniela y Alison.
               </td>
-              <td class="py-3 px-3 font-semibold text-purple-900">100% aprobado + Airtable activo + DAM</td>
+              <td class="py-3 px-3 font-semibold text-purple-900">100% aprobado + Matriz activa + DAM</td>
               <td class="py-3 px-3 text-center">
                 <button onclick="openCvModal('adriana')" class="p-1.5 rounded-lg bg-purple-100 hover:bg-purple-200 text-purple-700 text-xs font-bold transition">Ver</button>
               </td>
@@ -1496,7 +1502,7 @@
               <td class="py-3 px-3 leading-relaxed">
                 • <strong>Crea 4 videos semanales cortos</strong> sobre el contenido que le indique Adriana.<br>
                 • <strong>Content Analytic en ventas:</strong> analiza métricas comerciales con Adriana y Alison.<br>
-                • Diseña piezas gráficas asignadas por Adriana en Airtable.<br>
+                • Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets.<br>
                 • <strong>Subida oficial y distribución</strong> de contenidos a WhatsApp.<br>
                 • <strong>Gestión mensual en conjunto con Alison y Scarlet</strong>.
               </td>
@@ -1546,7 +1552,7 @@
                 <span class="px-2.5 py-1 rounded-lg bg-pink-50 text-pink-900 border border-pink-200 shadow-2xs">Perú 🇵🇪</span>
               </td>
               <td class="py-3 px-3 leading-relaxed">
-                • Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel, anuncio).<br>
+                • Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets (post, carrusel, anuncio).<br>
                 • <strong>Interacción diaria</strong> con la comunidad de WhatsApp para dinamizar el engagement.
               </td>
               <td class="py-3 px-3 font-semibold text-pink-900">Gráficas asignadas + Interacción WA diaria</td>
@@ -1563,23 +1569,23 @@
   </main>
 
   <!-- ========================================== -->
-  <!-- MODAL: AGENDAR / ASIGNAR EN AIRTABLE       -->
+  <!-- MODAL: AGENDAR / ASIGNAR EN MATRIZ EXCEL   -->
   <!-- ========================================== -->
-  <div id="airtableTaskModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-orange-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+  <div id="matrizTaskModal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-emerald-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
       
-      <div class="flex items-start justify-between pb-3 border-b border-orange-100">
+      <div class="flex items-start justify-between pb-3 border-b border-emerald-100">
         <div>
-          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-100 text-orange-800">Airtable Hub</span>
-          <h3 class="font-extrabold text-slate-900 font-cute text-lg mt-1">Asignar Nueva Tarea en Airtable</h3>
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Matriz Excel / Sheets Hub</span>
+          <h3 class="font-extrabold text-slate-900 font-cute text-lg mt-1">Asignar Nueva Tarea en la Matriz</h3>
         </div>
-        <button onclick="cerrarModalNuevaTareaAirtable()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
+        <button onclick="cerrarModalNuevaTareaMatriz()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
       </div>
 
       <div class="mt-4 space-y-3 text-xs">
         <div>
           <label class="text-[11px] font-bold text-slate-600 block mb-1">Título de la Pieza o Tarea:</label>
-          <input type="text" id="newTaskTitle" placeholder="Ej: Video 3: Salarios en dólares para talento bilingüe en Latam" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-orange-400">
+          <input type="text" id="newTaskTitle" placeholder="Ej: Video 3: Salarios en dólares para talento bilingüe en Latam" class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-emerald-400">
         </div>
 
         <div class="grid grid-cols-2 gap-2">
@@ -1650,11 +1656,11 @@
 
         <div>
           <label class="text-[11px] font-bold text-slate-600 block mb-1">Pauta / Guion / Instrucción de Adriana:</label>
-          <textarea id="newTaskNotes" rows="2" placeholder="Detalle pedagógico, gancho sugerido o requerimientos de edición..." class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-orange-400"></textarea>
+          <textarea id="newTaskNotes" rows="2" placeholder="Detalle pedagógico, gancho sugerido o requerimientos de edición..." class="w-full text-xs rounded-xl border border-purple-200 bg-white p-2.5 focus:ring-2 focus:ring-emerald-400"></textarea>
         </div>
 
-        <button onclick="guardarNuevaTareaAirtable()" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 text-white font-extrabold text-xs shadow-md transition">
-          💾 Guardar en Base de Airtable
+        <button onclick="guardarNuevaTareaMatriz()" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-extrabold text-xs shadow-md transition">
+          💾 Guardar en Matriz Excel / Sheets
         </button>
       </div>
 
@@ -1755,7 +1761,7 @@
         activeBtn.classList.remove('text-slate-600');
       }
 
-      if (tabId === 'tab-airtable') renderAirtableTable();
+      if (tabId === 'tab-excel' || tabId === 'tab-airtable') renderMatrizTable();
     }
 
     // Role View Switcher (Sin Repetición)
@@ -1788,12 +1794,14 @@
     }
 
     // ==========================================
-    // AIRTABLE STATE & ENGINE
+    // EXCEL / GOOGLE SHEETS STATE & ENGINE
     // ==========================================
+    const EXCEL_STORAGE_KEY = "polyglot_excel_tasks_v5";
     const AIRTABLE_STORAGE_KEY = "polyglot_airtable_tasks_v4";
+    const GOOGLE_SHEETS_URL = "https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing";
 
-    function initializeAirtableStore() {
-      const stored = localStorage.getItem(AIRTABLE_STORAGE_KEY);
+    function initializeMatrizStore() {
+      const stored = localStorage.getItem(EXCEL_STORAGE_KEY) || localStorage.getItem(AIRTABLE_STORAGE_KEY);
       if (stored) {
         try { return JSON.parse(stored); } catch(e) {}
       }
@@ -1933,39 +1941,44 @@
         }
       ];
 
-      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(defaultTasks));
+      localStorage.setItem(EXCEL_STORAGE_KEY, JSON.stringify(defaultTasks));
       return defaultTasks;
     }
 
-    let airtableTasks = initializeAirtableStore();
+    let matrizTasks = initializeMatrizStore();
+    // Backwards compatibility alias
+    let airtableTasks = matrizTasks;
 
-    function setAirtableMode(mode) {
-      const gridView = document.getElementById('airtableGridView');
-      const iframeView = document.getElementById('airtableIframeView');
-      const btnGrid = document.getElementById('btnAirtableGrid');
-      const btnIframe = document.getElementById('btnAirtableIframe');
+    function setMatrizMode(mode) {
+      const gridView = document.getElementById('matrizGridView') || document.getElementById('airtableGridView');
+      const iframeView = document.getElementById('matrizIframeView') || document.getElementById('airtableIframeView');
+      const btnGrid = document.getElementById('btnMatrizGrid') || document.getElementById('btnAirtableGrid');
+      const btnIframe = document.getElementById('btnMatrizIframe') || document.getElementById('btnAirtableIframe');
+
+      if (!gridView || !iframeView) return;
 
       if (mode === 'grid') {
         gridView.classList.remove('hidden');
         iframeView.classList.add('hidden');
-        btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs";
-        btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition";
+        if (btnGrid) btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white transition shadow-xs";
+        if (btnIframe) btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-emerald-700 transition";
       } else {
         gridView.classList.add('hidden');
         iframeView.classList.remove('hidden');
-        btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-orange-700 transition";
-        btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-500 text-white transition shadow-xs";
+        if (btnGrid) btnGrid.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-emerald-700 transition";
+        if (btnIframe) btnIframe.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white transition shadow-xs";
       }
     }
+    const setAirtableMode = setMatrizMode;
 
-    function renderAirtableTable() {
-      const tbody = document.getElementById('airtableTableBody');
-      const miniContainer = document.getElementById('miniAirtableContainer');
-      const searchVal = (document.getElementById('airtableSearch')?.value || "").toLowerCase().trim();
-      const memberVal = document.getElementById('airtableFilterMember')?.value || "all";
-      const statusVal = document.getElementById('airtableFilterStatus')?.value || "all";
+    function renderMatrizTable() {
+      const tbody = document.getElementById('matrizTableBody') || document.getElementById('airtableTableBody');
+      const miniContainer = document.getElementById('miniMatrizContainer') || document.getElementById('miniAirtableContainer');
+      const searchVal = (document.getElementById('matrizSearch')?.value || document.getElementById('airtableSearch')?.value || "").toLowerCase().trim();
+      const memberVal = document.getElementById('matrizFilterMember')?.value || document.getElementById('airtableFilterMember')?.value || "all";
+      const statusVal = document.getElementById('matrizFilterStatus')?.value || document.getElementById('airtableFilterStatus')?.value || "all";
 
-      const filtered = airtableTasks.filter(t => {
+      const filtered = matrizTasks.filter(t => {
         const matchesSearch = !searchVal || 
           t.title.toLowerCase().includes(searchVal) ||
           t.assignee.toLowerCase().includes(searchVal) ||
@@ -1980,7 +1993,7 @@
       });
 
       // Update count badge
-      const countBadge = document.getElementById('airtableCountBadge');
+      const countBadge = document.getElementById('matrizCountBadge') || document.getElementById('airtableCountBadge');
       if (countBadge) countBadge.innerText = `${filtered.length} Tareas`;
 
       // Render main table rows
@@ -2022,7 +2035,7 @@
                   ${t.dueDate}
                 </td>
                 <td class="py-3 px-3">
-                  <button onclick="ciclarEstadoTareaAirtable('${t.id}')" class="px-2.5 py-1 rounded-xl text-[10px] font-extrabold border transition shadow-2xs hover:opacity-80 flex items-center gap-1 ${statusClass}" title="Click para cambiar estado">
+                  <button onclick="ciclarEstadoTareaMatriz('${t.id}')" class="px-2.5 py-1 rounded-xl text-[10px] font-extrabold border transition shadow-2xs hover:opacity-80 flex items-center gap-1 ${statusClass}" title="Click para cambiar estado">
                     <span>${t.status}</span>
                     <span class="text-[9px]">🔄</span>
                   </button>
@@ -2031,7 +2044,7 @@
                   ${t.notes || '—'}
                 </td>
                 <td class="py-3 px-3 text-center">
-                  <button onclick="eliminarTareaAirtable('${t.id}')" class="text-pink-500 hover:text-pink-700 font-bold p-1 text-xs" title="Eliminar tarea">
+                  <button onclick="eliminarTareaMatriz('${t.id}')" class="text-pink-500 hover:text-pink-700 font-bold p-1 text-xs" title="Eliminar tarea">
                     🗑️
                   </button>
                 </td>
@@ -2043,7 +2056,7 @@
 
       // Render mini view in Tab 1
       if (miniContainer) {
-        miniContainer.innerHTML = airtableTasks.slice(0, 4).map(t => {
+        miniContainer.innerHTML = matrizTasks.slice(0, 4).map(t => {
           let statusColor = "bg-purple-100 text-purple-800";
           if (t.status === "Aprobado") statusColor = "bg-emerald-100 text-emerald-800";
           else if (t.status === "Publicado") statusColor = "bg-sky-100 text-sky-800";
@@ -2051,9 +2064,9 @@
           else if (t.status.includes("Edición")) statusColor = "bg-amber-100 text-amber-800";
 
           return `
-            <div class="p-3 rounded-2xl bg-white border border-purple-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-2xs hover:border-purple-300 transition">
+            <div class="p-3 rounded-2xl bg-white border border-emerald-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-2xs hover:border-emerald-300 transition">
               <div class="flex items-center gap-2.5">
-                <span class="w-8 h-8 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-xs shrink-0">⚡</span>
+                <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">📊</span>
                 <div>
                   <h6 class="font-bold text-slate-900 text-xs">${t.title}</h6>
                   <span class="text-[10px] text-slate-500 font-medium">Asignada a: <strong>${t.assignee}</strong> · ${t.format}</span>
@@ -2061,25 +2074,28 @@
               </div>
               <div class="flex items-center gap-2 self-start sm:self-center">
                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${statusColor}">${t.status}</span>
-                <button onclick="switchTab('tab-airtable')" class="text-[10px] font-bold text-orange-600 hover:text-orange-800 underline">Ver Base ➔</button>
+                <button onclick="switchTab('tab-excel')" class="text-[10px] font-bold text-emerald-700 hover:text-emerald-900 underline">Ver Matriz ➔</button>
               </div>
             </div>
           `;
         }).join('');
       }
     }
+    const renderAirtableTable = renderMatrizTable;
 
-    function filtrarTareasAirtable() {
-      renderAirtableTable();
+    function filtrarTareasMatriz() {
+      renderMatrizTable();
     }
+    const filtrarTareasAirtable = filtrarTareasMatriz;
 
-    function filtrarAirtableDesdePipeline(status) {
-      switchTab('tab-airtable');
-      const sel = document.getElementById('airtableFilterStatus');
+    function filtrarMatrizDesdePipeline(status) {
+      switchTab('tab-excel');
+      const sel = document.getElementById('matrizFilterStatus') || document.getElementById('airtableFilterStatus');
       if (sel) sel.value = status;
-      renderAirtableTable();
-      showToast(`Filtrado en Airtable por estado: ${status}`, "⚡");
+      renderMatrizTable();
+      showToast(`Filtrado en Matriz por estado: ${status}`, "📊");
     }
+    const filtrarAirtableDesdePipeline = filtrarMatrizDesdePipeline;
 
     const ESTADOS_CYCLE = [
       "Pauta / Por Iniciar",
@@ -2090,33 +2106,42 @@
       "Publicado"
     ];
 
-    function ciclarEstadoTareaAirtable(id) {
-      const task = airtableTasks.find(t => t.id === id);
+    function ciclarEstadoTareaMatriz(id) {
+      const task = matrizTasks.find(t => t.id === id);
       if (!task) return;
       const idx = ESTADOS_CYCLE.indexOf(task.status);
       const nextIdx = (idx + 1) % ESTADOS_CYCLE.length;
       task.status = ESTADOS_CYCLE[nextIdx];
-      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
-      renderAirtableTable();
+      localStorage.setItem(EXCEL_STORAGE_KEY, JSON.stringify(matrizTasks));
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(matrizTasks));
+      renderMatrizTable();
       showToast(`Estado actualizado: ${task.status} 🚀`, "🔄");
     }
+    const ciclarEstadoTareaAirtable = ciclarEstadoTareaMatriz;
 
-    function eliminarTareaAirtable(id) {
-      airtableTasks = airtableTasks.filter(t => t.id !== id);
-      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
-      renderAirtableTable();
-      showToast("Tarea eliminada de la base.", "🗑️");
+    function eliminarTareaMatriz(id) {
+      matrizTasks = matrizTasks.filter(t => t.id !== id);
+      airtableTasks = matrizTasks;
+      localStorage.setItem(EXCEL_STORAGE_KEY, JSON.stringify(matrizTasks));
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(matrizTasks));
+      renderMatrizTable();
+      showToast("Tarea eliminada de la matriz.", "🗑️");
     }
+    const eliminarTareaAirtable = eliminarTareaMatriz;
 
-    function abrirModalNuevaTareaAirtable() {
-      document.getElementById('airtableTaskModal').classList.remove('hidden');
+    function abrirModalNuevaTareaMatriz() {
+      const modal = document.getElementById('matrizTaskModal') || document.getElementById('airtableTaskModal');
+      if (modal) modal.classList.remove('hidden');
     }
+    const abrirModalNuevaTareaAirtable = abrirModalNuevaTareaMatriz;
 
-    function cerrarModalNuevaTareaAirtable() {
-      document.getElementById('airtableTaskModal').classList.add('hidden');
+    function cerrarModalNuevaTareaMatriz() {
+      const modal = document.getElementById('matrizTaskModal') || document.getElementById('airtableTaskModal');
+      if (modal) modal.classList.add('hidden');
     }
+    const cerrarModalNuevaTareaAirtable = cerrarModalNuevaTareaMatriz;
 
-    function guardarNuevaTareaAirtable() {
+    function guardarNuevaTareaMatriz() {
       const title = document.getElementById('newTaskTitle').value.trim() || "Nueva Pieza Publicitaria";
       const assignee = document.getElementById('newTaskAssignee').value;
       const format = document.getElementById('newTaskFormat').value;
@@ -2138,40 +2163,48 @@
         notes
       };
 
-      airtableTasks.unshift(newTask);
-      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(airtableTasks));
-      renderAirtableTable();
-      cerrarModalNuevaTareaAirtable();
+      matrizTasks.unshift(newTask);
+      airtableTasks = matrizTasks;
+      localStorage.setItem(EXCEL_STORAGE_KEY, JSON.stringify(matrizTasks));
+      localStorage.setItem(AIRTABLE_STORAGE_KEY, JSON.stringify(matrizTasks));
+      renderMatrizTable();
+      cerrarModalNuevaTareaMatriz();
       document.getElementById('newTaskTitle').value = "";
       document.getElementById('newTaskNotes').value = "";
-      showToast("¡Tarea asignada con éxito en Airtable! ⚡", "✅");
+      showToast("¡Tarea asignada con éxito en la Matriz Excel / Sheets! 📊", "✅");
     }
+    const guardarNuevaTareaAirtable = guardarNuevaTareaMatriz;
 
-    function resetearTareasAirtableDemo() {
+    function resetearTareasMatrizDemo() {
+      localStorage.removeItem(EXCEL_STORAGE_KEY);
       localStorage.removeItem(AIRTABLE_STORAGE_KEY);
-      airtableTasks = initializeAirtableStore();
-      renderAirtableTable();
-      showToast("Base de Airtable restaurada con datos demo.", "✨");
+      matrizTasks = initializeMatrizStore();
+      airtableTasks = matrizTasks;
+      renderMatrizTable();
+      showToast("Matriz restaurada con datos demo oficiales.", "✨");
     }
+    const resetearTareasAirtableDemo = resetearTareasMatrizDemo;
 
-    function actualizarIframeAirtable() {
-      const url = document.getElementById('customAirtableUrlInput').value.trim();
-      if (url) {
-        document.getElementById('airtableFrame').src = url;
-        showToast("Iframe actualizado.", "🌐");
+    function actualizarIframeGoogleSheets() {
+      const url = document.getElementById('customGoogleSheetsUrlInput')?.value.trim();
+      const frame = document.getElementById('googleSheetsFrame') || document.getElementById('airtableFrame');
+      if (url && frame) {
+        frame.src = url;
+        showToast("Hoja de Google Sheets cargada en visor.", "🌐");
       }
     }
+    const actualizarIframeAirtable = actualizarIframeGoogleSheets;
 
-    function copiarLinkAirtable() {
-      const airtableUrl = "https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts";
-      navigator.clipboard.writeText(airtableUrl).then(() => {
-        showToast("¡Link de Airtable copiado al portapapeles! ⚡", "🚀");
+    function copiarLinkGoogleSheets() {
+      navigator.clipboard.writeText(GOOGLE_SHEETS_URL).then(() => {
+        showToast("¡Enlace oficial de Google Sheets copiado al portapapeles! 📊", "🚀");
       });
     }
+    const copiarLinkAirtable = copiarLinkGoogleSheets;
 
-    function exportarAirtableExcelCSV() {
+    function exportarExcelCSV() {
       const headers = ["ID", "Tarea", "Responsable", "Formato", "Pilar", "Fecha_Entrega", "Estado", "Canal", "Pauta_Notas"];
-      const rows = airtableTasks.map(t => [
+      const rows = matrizTasks.map(t => [
         `"${t.id}"`,
         `"${(t.title || '').replace(/"/g, '""')}"`,
         `"${(t.assignee || '').replace(/"/g, '""')}"`,
@@ -2188,16 +2221,17 @@
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.setAttribute("href", url);
-      link.setAttribute("download", `Polyglot_Map_Airtable_Avances_${new Date().getFullYear()}.csv`);
+      link.setAttribute("download", `Polyglot_Map_Matriz_Control_${new Date().getFullYear()}.csv`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      showToast("¡Base de Airtable descargada para Microsoft Excel! 📊", "📥");
+      showToast("¡Matriz descargada para Microsoft Excel! 📊", "📥");
     }
+    const exportarAirtableExcelCSV = exportarExcelCSV;
 
-    function copiarAirtableParaGoogleSheets() {
+    function copiarParaGoogleSheets() {
       const headers = ["Tarea", "Responsable", "Formato", "Pilar", "Fecha Entrega", "Estado", "Canal", "Pauta / Notas"];
-      const rows = airtableTasks.map(t => [
+      const rows = matrizTasks.map(t => [
         t.title,
         t.assignee,
         t.format,
@@ -2209,9 +2243,10 @@
       ]);
       const tsv = [headers.join("\t"), ...rows.map(e => e.join("\t"))].join("\n");
       navigator.clipboard.writeText(tsv).then(() => {
-        showToast("¡Base de Airtable copiada para Google Drive / Sheets! Presiona Cmd+V o Ctrl+V para pegar.", "📋");
+        showToast("¡Matriz copiada en formato TSV para Google Sheets! Presiona Cmd+V o Ctrl+V para pegar.", "📋");
       });
     }
+    const copiarAirtableParaGoogleSheets = copiarParaGoogleSheets;
 
     // ==========================================
     // STUDIO HOOKS TESTER
@@ -2522,7 +2557,7 @@ Requisitos:
         badge: "bg-purple-100 text-purple-800",
         role: "Coordinadora Creativa (Lead)",
         pais: "Perú 🇵🇪",
-        mision: "1. <strong>Asignación dinámica en Airtable:</strong> define y asigna las piezas día a día para que todo el equipo vea los avances en simultáneo.<br>2. <strong>Pauta y dirección de videos cortos:</strong> dicta a Daniela los contenidos y temas de los 4 videos cortos semanales.<br>3. <strong>Gatekeeper técnico obligatorio:</strong> aprueba el 100% de las piezas antes de salir.<br>4. Analítica de ventas y Banco DAM junto con Daniela y Alison.",
+        mision: "1. <strong>Asignación dinámica en la Matriz Excel / Sheets:</strong> define y asigna las piezas día a día para que todo el equipo vea los avances en simultáneo.<br>2. <strong>Pauta y dirección de videos cortos:</strong> dicta a Daniela los contenidos y temas de los 4 videos cortos semanales.<br>3. <strong>Gatekeeper técnico obligatorio:</strong> aprueba el 100% de las piezas antes de salir.<br>4. Analítica de ventas y Banco DAM junto con Daniela y Alison.",
         studies: "UPC · Comunicación Audiovisual y Medios Interactivos (10mo ciclo, 2021-2026).",
         experience: "Dirección de Pijamada Cinéfila (transmedia), De Vuelta al Cole, Whiplash, cortometrajes Melancolía y Expreso.",
         tools: "Premiere Pro, After Effects, Illustrator, InDesign, Photoshop, Blender 3D, Canva, CapCut."
@@ -2546,7 +2581,7 @@ Requisitos:
         badge: "bg-sky-100 text-sky-800",
         role: "Content Creators & Content Analytic en Ventas",
         pais: "Costa Rica 🇨🇷",
-        mision: "1. <strong>Crea 4 videos semanales cortos</strong> sobre el contenido que le indique Adriana.<br>2. <strong>Content Analytic en ventas:</strong> analiza métricas de consultas y ventas trabajando en conjunto con Adriana y Alison.<br>3. Diseña piezas gráficas asignadas por Adriana en Airtable.<br>4. Subida y distribución oficial del contenido a WhatsApp.<br>5. <strong>Gestión mensual en conjunto con Alison y Scarlet</strong>.",
+        mision: "1. <strong>Crea 4 videos semanales cortos</strong> sobre el contenido que le indique Adriana.<br>2. <strong>Content Analytic en ventas:</strong> analiza métricas de consultas y ventas trabajando en conjunto con Adriana y Alison.<br>3. Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets.<br>4. Subida y distribución oficial del contenido a WhatsApp.<br>5. <strong>Gestión mensual en conjunto con Alison y Scarlet</strong>.",
         studies: "Técnico en Marketing Digital y Lic. en Enseñanza del Español (UISIL, 2022-2026).",
         experience: "Solar Battery Center (gestión de 9 perfiles, WhatsApp Business, IA, Meta Suite) y Hotel Arenal Regina.",
         tools: "Meta Business Suite, WhatsApp Business, Canva, CapCut, ChatGPT y Gemini."
@@ -2570,7 +2605,7 @@ Requisitos:
         badge: "bg-pink-100 text-pink-800",
         role: "Content Creator",
         pais: "Perú 🇵🇪",
-        mision: "1. Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel y anuncio para campaña).<br>2. Interactúa y conversa a diario con la comunidad de WhatsApp para dinamizar el engagement y la captación de alumnos.",
+        mision: "1. Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets (post, carrusel y anuncio para campaña).<br>2. Interactúa y conversa a diario con la comunidad de WhatsApp para dinamizar el engagement y la captación de alumnos.",
         studies: "UPN · Comunicaciones Audiovisuales en Medios Digitales (8vo ciclo, en curso).",
         experience: "Sodimac, Natura Cosméticos y Ripley en ventas, servicio al cliente y storytelling para redes.",
         tools: "Canva avanzado, CapCut, Premiere básico, diseño de piezas para redes sociales."
@@ -2617,13 +2652,15 @@ Requisitos:
     // Modal click out listeners
     window.addEventListener('click', e => {
       if (e.target === document.getElementById('cvModal')) closeCvModal();
-      if (e.target === document.getElementById('airtableTaskModal')) cerrarModalNuevaTareaAirtable();
+      if (e.target === document.getElementById('matrizTaskModal') || e.target === document.getElementById('airtableTaskModal')) {
+        cerrarModalNuevaTareaMatriz();
+      }
     });
 
     window.addEventListener('DOMContentLoaded', () => {
       generarContenidoAleatorio();
       generarGanchosRapidos();
-      renderAirtableTable();
+      renderMatrizTable();
     });
   </script>
 

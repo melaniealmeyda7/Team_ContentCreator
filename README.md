@@ -1,22 +1,22 @@
-# 🗺️ Polyglot Map · Creative Marketing Studio & Airtable Live Hub
+# 🗺️ Polyglot Map · Creative Marketing Studio & Matriz Excel / Sheets Hub
 
 > **Ecosistema Visual de Marketing, Publicidad y Operaciones Creativas de Polyglot Map.**
 > **Pilares de Marca: Idiomas Acelerados + Inteligencia Artificial + Empleabilidad Remota en USD.**
 
 ---
 
-## ⚡ Conexión Oficial con Airtable y Google Drive (Ecosistema Centralizado)
+## 📊 Conexión Oficial con Matriz Excel (Google Sheets) y Google Drive (Ecosistema Centralizado)
 
 El seguimiento, la asignación, los recursos de marca y la entrega de contenidos se gestionan de forma centralizada:
-- **Enlace Oficial de Airtable:** [Airtable Polyglot Map](https://airtable.com/invite/l?inviteId=inv33rULjPAIUeWl2&inviteToken=c1041e03a49081986c7b4e1ee0da1a039bd314557145080e67901cf4851d32c5&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)
+- **📊 Enlace Oficial de la Matriz Excel (Google Sheets):** [Matriz de Control Polyglot Map en Google Sheets](https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing)
 - **🎨 Carpeta Oficial de Google Drive con Logo Oficial y Recursos de Marca:** [Descargar Logos Oficiales en Google Drive](https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing)
 - **📁 Carpeta Oficial de Google Drive para Subir Contenido:** [Subir Contenido a Google Drive](https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing)
 - **Asignación Dinámica:** **No se establecen días rígidos de lunes a domingo.** La **Coordinadora Creativa (Adriana)** se encarga de asignar quién elabora cada pieza según las prioridades del momento, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
 - **Visualizador Integrado:** 
-  1. **⚡ Base Interactiva Sincronizada (Airtable Grid):** Filtro por integrante, filtro por estado, buscador dinámico, cambio de estado con un clic y persistencia local.
-  2. **🌐 Iframe Web Oficial:** Contenedor embebido y acceso directo a pantalla completa.
+  1. **📊 Matriz Interactiva Sincronizada (Grid):** Filtro por integrante, filtro por estado, buscador dinámico, cambio de estado con un clic, exportación a Excel (.csv) y copiado de datos para Google Sheets.
+  2. **🌐 Iframe Web Oficial de Google Sheets:** Contenedor embebido interactivo y acceso directo a pantalla completa.
 - **Acceso Rápido en Cabecera:**
-  - `⚡ Airtable en Vivo`
+  - `📊 Matriz Excel en Vivo`
   - `📁 Subir Contenido (Drive)`
   - `🎨 Logo Oficial (Drive)`
 
@@ -57,11 +57,11 @@ En **Polyglot Map se trabaja oficialmente bajo este estilo visual de vanguardia*
 
 | Integrante | Rol Oficial | País de Residencia | Funciones y Responsabilidades Clave | Entregables y Metas |
 | :--- | :--- | :--- | :--- | :--- |
-| **Adriana Chávez** | **Coordinadora Creativa (Lead)** | **Perú 🇵🇪** | • **Asigna y coordina las piezas dinámicamente en Airtable** sin rigidez de días para seguimiento simultáneo.<br>• **Pauta y dirección de videos cortos:** dicta a Daniela los contenidos, temas y enfoque de los 4 videos semanales.<br>• **Gatekeeper técnico obligatorio:** aprueba el 100% de artes y videos antes de salir.<br>• Supervisa DAM y lidera la analítica y estrategia de ventas con Daniela y Alison. | 100% de piezas aprobadas + Base Airtable activa + Grilla y DAM coordinados |
+| **Adriana Chávez** | **Coordinadora Creativa (Lead)** | **Perú 🇵🇪** | • **Asigna y coordina las piezas dinámicamente en la Matriz Excel / Sheets** sin rigidez de días para seguimiento simultáneo.<br>• **Pauta y dirección de videos cortos:** dicta a Daniela los contenidos, temas y enfoque de los 4 videos semanales.<br>• **Gatekeeper técnico obligatorio:** aprueba el 100% de artes y videos antes de salir.<br>• Supervisa DAM y lidera la analítica y estrategia de ventas con Daniela y Alison. | 100% de piezas aprobadas + Matriz activa + Grilla y DAM coordinados |
 | **Alison** | **Content Strategist** | **Perú 🇵🇪** | • **1. Investiga tendencias de IA** y propone ideas creativas de contenido.<br>• **2. Genera 4 piezas gráficas semanales** sobre ofertas laborales & tendencias para WhatsApp y redes.<br>• **3. Elabora propuestas comerciales B2B** y alianzas estratégicas.<br>• **4. Gestión mensual** en conjunto con **Scarlet y Daniela**.<br>• Analítica de ventas y posicionamiento junto a Adriana y Daniela. | 4 piezas gráficas semanales + Gestión mensual + Propuestas B2B + DAM |
-| **Daniela** | **Content Creators & Content Analytic en Ventas** | **Costa Rica 🇨🇷** | • **1. Crea 4 videos semanales cortos** sobre el contenido y pautas que le indique Adriana.<br>• **2. Content Analytic en ventas:** analiza métricas de conversión y ventas trabajando en conjunto con Adriana y Alison.<br>• Diseña piezas gráficas asignadas por Adriana en Airtable.<br>• **Subida oficial y distribución** de contenidos a la comunidad de WhatsApp.<br>• **3. Gestión mensual** en conjunto con **Alison y Scarlet**. | 4 videos cortos creados + Reporte de analítica de ventas + Subida a WhatsApp |
+| **Daniela** | **Content Creators & Content Analytic en Ventas** | **Costa Rica 🇨🇷** | • **1. Crea 4 videos semanales cortos** sobre el contenido y pautas que le indique Adriana.<br>• **2. Content Analytic en ventas:** analiza métricas de conversión y ventas trabajando en conjunto con Adriana y Alison.<br>• Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets.<br>• **Subida oficial y distribución** de contenidos a la comunidad de WhatsApp.<br>• **3. Gestión mensual** en conjunto con **Alison y Scarlet**. | 4 videos cortos creados + Reporte de analítica de ventas + Subida a WhatsApp |
 | **Scarlet** | **Video Producer/Copywriter & Identidad Visual** | **España 🇪🇸** | • **Edición profesional de los 4 videos cortos semanales** creados por Daniela (post-producción, dinamismo, efectos, subtítulos animados 9:16 para TikTok y Reels).<br>• Redacta el **copywriting persuasivo** (ganchos, narrativa y CTAs) de todas las piezas del equipo.<br>• **Lidera la identidad visual oficial** de Polyglot Map (Cyber-Futurista & High-Tech Glow) asegurando coherencia gráfica en todas las piezas.<br>• **Gestión mensual en conjunto con Alison y Daniela** para la planificación y cumplimiento de metas. | 4 videos 9:16 editados + Copies persuasivos integrales + Identidad Visual + Gestión Mensual |
-| **Britani** | **Content Creator** | **Perú 🇵🇪** | • Diseña piezas gráficas asignadas por Adriana en Airtable (post, carrusel y anuncio para campaña).<br>• **Interacción y conversación diaria** con la audiencia en la comunidad de WhatsApp para dinamizar el engagement y la conversión. | Gráficas asignadas en Airtable + Interacción comunitaria diaria en WhatsApp |
+| **Britani** | **Content Creator** | **Perú 🇵🇪** | • Diseña piezas gráficas asignadas por Adriana en la Matriz Excel / Sheets (post, carrusel y anuncio para campaña).<br>• **Interacción y conversación diaria** con la audiencia en la comunidad de WhatsApp para dinamizar el engagement y la conversión. | Gráficas asignadas en Matriz + Interacción comunitaria diaria en WhatsApp |
 
 ---
 
