@@ -1,7 +1,7 @@
 # 🗺️ Polyglot Map · Creative Marketing Studio & Matriz Excel / Sheets Hub
 
 > **Ecosistema Visual de Marketing, Publicidad y Operaciones Creativas de Polyglot Map.**
-> **Pilares de Marca: Idiomas Acelerados + Inteligencia Artificial + Empleabilidad Remota en USD.**
+> **Pilares de Marca: IDIOMAS + IA+ EMPLEABILIDAD.**
 
 ---
 
