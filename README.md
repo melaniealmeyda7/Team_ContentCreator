@@ -8,13 +8,14 @@
 ## 📊 Conexión Oficial con Matriz Excel (Google Sheets) y Google Drive (Ecosistema Centralizado)
 
 El seguimiento, la asignación, los recursos de marca y la entrega de contenidos se gestionan de forma centralizada:
-- **📊 Enlace Oficial de la Matriz Excel (Google Sheets):** [Matriz de Control Polyglot Map en Google Sheets](https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing)
+- **📊 Enlace Oficial de Edición en Google Sheets:** [Matriz de Control Polyglot Map en Google Sheets](https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing)
+- **🌐 Conexión en Vivo Incrustada (HTML Embed):** Publicado vía `pubhtml` (`https://docs.google.com/spreadsheets/d/e/2PACX-1vQjO3CRSGGcHnIZHsf04k4KFtTT9ubLeYSuvc74FUpYWR77e0DnaoPoxQuHN7TJt78rFLprbHGY2iPP/pubhtml?widget=true&headers=false`) con renderizado directo en el Dashboard sin bloqueos ni requerimiento de login.
 - **🎨 Carpeta Oficial de Google Drive con Logo Oficial y Recursos de Marca:** [Descargar Logos Oficiales en Google Drive](https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing)
 - **📁 Carpeta Oficial de Google Drive para Subir Contenido:** [Subir Contenido a Google Drive](https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing)
 - **Asignación Dinámica:** **No se establecen días rígidos de lunes a domingo.** La **Coordinadora Creativa (Adriana)** se encarga de asignar quién elabora cada pieza según las prioridades del momento, permitiendo que todo el equipo visualice y actualice los avances en simultáneo en tiempo real.
 - **Visualizador Integrado:** 
-  1. **📊 Matriz Interactiva Sincronizada (Grid):** Filtro por integrante, filtro por estado, buscador dinámico, cambio de estado con un clic, exportación a Excel (.csv) y copiado de datos para Google Sheets.
-  2. **🌐 Iframe Web Oficial de Google Sheets:** Contenedor embebido interactivo y acceso directo a pantalla completa.
+  1. **🌐 Conexión Excel en Vivo (Iframe Oficial Directo):** Visor embebido a pantalla completa en la pestaña `Matriz Excel en Vivo` y en la Sección 3 del `Marketing Studio`.
+  2. **📋 Registro Auxiliar & Exportación:** Exportación a Excel (.csv), copia de datos tabulares (TSV), recarga en vivo con 1 clic y modal de asignación rápida de piezas.
 - **Acceso Rápido en Cabecera:**
   - `📊 Matriz Excel en Vivo`
   - `📁 Subir Contenido (Drive)`
