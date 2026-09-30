@@ -5,6 +5,17 @@
 
 ---
 
+## 🔒 Acceso y Seguridad del Portal (Security Gate)
+
+El dashboard cuenta con un control de acceso interactivo para proteger los recursos y planes estratégicos del equipo:
+- **Pantalla Limpia de Acceso (`#security-gate-screen`):** Al abrir o recargar la página, el contenido del estudio (`#studio-main-content`) se mantiene estrictamente oculto hasta ingresar la contraseña autorizada.
+- **Contraseña Oficial de Acceso:** `PM2026q4`
+- **Persistencia Inteligente en Sesión:** Al validar la clave, el acceso queda guardado en la sesión activa del navegador (`sessionStorage`) para no tener que escribirla en cada recarga durante la jornada de trabajo.
+- **Botón de Bloqueo Rápido 🔒:** Ubicado en la cabecera superior junto al botón de exportación para cerrar la sesión y bloquear la pantalla en cualquier momento.
+- **Efectos & Confeti:** Animación shake y alerta en caso de clave incorrecta, y celebración con confeti cute al desbloquear el portal.
+
+---
+
 ## 📊 Conexión Oficial con Matriz Excel (Google Sheets) y Google Drive (Ecosistema Centralizado)
 
 El seguimiento, la asignación, los recursos de marca, las videollamadas y la entrega de contenidos se gestionan de forma centralizada:
@@ -22,6 +33,7 @@ El seguimiento, la asignación, los recursos de marca, las videollamadas y la en
   - `📁 Subir Contenido (Drive)`
   - `🎨 Logo Oficial (Drive)`
   - `🎥 Sala Meet`
+  - `🔒 Bloquear Sesión`
 
 ---
 

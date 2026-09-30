@@ -6,6 +6,8 @@
   <title>Polyglot Map · Creative Marketing Studio & Matriz Excel / Sheets Hub</title>
   <!-- Tailwind CSS approved CDN -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@600;700;800&display=swap');
 
@@ -22,6 +24,32 @@
 
     .font-cute {
       font-family: var(--font-cute);
+    }
+
+    /* Main Studio Content Hidden by Default until password validation */
+    #studio-main-content {
+      display: none;
+    }
+
+    /* Security Gate Shake Animation */
+    @keyframes gateShake {
+      0%, 100% { transform: translateX(0); }
+      15%, 45%, 75% { transform: translateX(-8px); }
+      30%, 60%, 90% { transform: translateX(8px); }
+    }
+    .shake-error {
+      animation: gateShake 0.45s ease-in-out;
+      border-color: #F43F5E !important;
+      box-shadow: 0 0 0 4px rgba(244, 63, 94, 0.2) !important;
+    }
+
+    /* Glassmorphism Security Gate Card */
+    .gate-glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1.5px solid rgba(235, 215, 255, 0.95);
+      box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.25);
     }
 
     /* Soft cute scrollbars */
@@ -87,6 +115,100 @@
     <div class="absolute top-2/3 right-1/4 w-96 h-96 bg-amber-100/50 rounded-full blur-3xl"></div>
   </div>
 
+  <!-- ========================================================================= -->
+  <!-- 1. PANTALLA LIMPIA DE ACCESO (#security-gate-screen)                     -->
+  <!-- ========================================================================= -->
+  <div id="security-gate-screen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gradient-to-br from-purple-100/95 via-pink-50/95 to-amber-50/95 backdrop-blur-md overflow-y-auto">
+    <!-- Ambient Glow Orbs inside Gate -->
+    <div class="absolute -top-20 -left-20 w-80 h-80 bg-purple-300/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-pink-300/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/4 w-60 h-60 bg-amber-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Cute Pastel Glassmorphism Card -->
+    <div id="gateCard" class="gate-glass-card rounded-3xl p-7 sm:p-9 max-w-md w-full relative z-10 text-center space-y-6">
+      
+      <!-- Brand & Security Header -->
+      <div class="flex flex-col items-center gap-3">
+        <div class="w-16 h-16 rounded-3xl bg-gradient-to-tr from-purple-500 via-pink-500 to-amber-300 p-0.5 shadow-md flex items-center justify-center">
+          <div class="w-full h-full bg-white rounded-[22px] flex items-center justify-center">
+            <span class="text-3xl">🔐</span>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700 border border-pink-200">
+            <span>✨</span>
+            <span>Polyglot Map · Marketing Studio</span>
+          </div>
+          <h2 class="text-2xl font-extrabold text-slate-900 font-cute tracking-tight pt-1">Acceso Seguro al Studio</h2>
+          <p class="text-[11px] font-extrabold tracking-wider text-purple-700 font-cute">IDIOMAS + IA+ EMPLEABILIDAD</p>
+        </div>
+
+        <p class="text-xs text-slate-600 max-w-xs leading-relaxed">
+          Ingresa la contraseña oficial del equipo para desbloquear el Marketing Studio y la matriz de contenidos.
+        </p>
+      </div>
+
+      <!-- Password Form -->
+      <form id="gateForm" onsubmit="validateGatePassword(event)" class="space-y-4 text-left">
+        <div>
+          <label for="gatePassword" class="text-xs font-bold text-slate-700 block mb-1.5 flex items-center justify-between">
+            <span>🔑 Contraseña de Acceso</span>
+            <span class="text-[10px] text-purple-600 font-semibold font-cute">Requerida</span>
+          </label>
+          <div class="relative">
+            <input 
+              type="password" 
+              id="gatePassword" 
+              placeholder="Ingresa la contraseña..." 
+              autocomplete="current-password"
+              class="w-full text-sm rounded-2xl border-2 border-purple-200 bg-white/95 px-4 py-3 pr-12 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-4 focus:ring-purple-100 transition shadow-inner font-mono"
+              required
+            />
+            <button 
+              type="button" 
+              onclick="toggleGatePasswordVisibility()" 
+              id="btnToggleVisibility" 
+              class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-purple-600 p-2 rounded-xl transition"
+              title="Ver u ocultar clave"
+            >
+              <span id="gateEyeIcon" class="text-base select-none">👁️</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Error Alert Message -->
+        <div id="gateErrorAlert" class="hidden text-xs font-bold text-rose-700 bg-rose-50/95 border border-rose-200 rounded-2xl px-3.5 py-2.5 flex items-center gap-2 shadow-xs">
+          <span class="text-base">⚠️</span>
+          <span id="gateErrorMsg">Contraseña incorrecta. Acceso denegado.</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit" 
+          id="btnGateSubmit" 
+          class="w-full py-3.5 px-4 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 hover:from-purple-700 hover:to-pink-700 text-white font-extrabold text-sm shadow-md hover:shadow-lg transition-all transform active:scale-[0.98] flex items-center justify-center gap-2 font-cute"
+        >
+          <span>Ingresar al Portal</span>
+          <span>🚀</span>
+        </button>
+      </form>
+
+      <!-- Footer Info -->
+      <div class="pt-2 border-t border-purple-100 flex items-center justify-center gap-2 text-[11px] text-slate-400 font-medium">
+        <span>🛡️</span>
+        <span>Acceso restringido para el equipo oficial de contenidos</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 2. CONTENIDO REAL DEL SITIO (#studio-main-content)                         -->
+  <!-- Estrictamente oculto con display: none hasta validar contraseña           -->
+  <!-- ========================================================================= -->
+  <div id="studio-main-content" style="display: none;">
+
   <!-- Header Friendly Bar -->
   <header class="border-b border-purple-100 bg-white/90 backdrop-blur-md sticky top-0 z-30 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -146,6 +268,12 @@
           
           <button onclick="window.print()" class="no-print p-1.5 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 transition" title="Exportar o Imprimir">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          </button>
+
+          <!-- Botón de Bloqueo Rápido 🔒 -->
+          <button onclick="lockStudioSession()" class="no-print px-3 py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-xs transition flex items-center gap-1.5 shadow-xs hover:shadow-sm" title="Cerrar sesión y bloquear pantalla">
+            <span>🔒</span>
+            <span class="hidden md:inline">Bloquear</span>
           </button>
         </div>
 
@@ -1929,8 +2057,207 @@
     <span id="toastMsg">¡Acción realizada con éxito!</span>
   </div>
 
+  </div> <!-- /#studio-main-content -->
+
   <!-- Interactive JavaScript Engine -->
   <script>
+    // ==========================================
+    // SECURITY GATE & ACCESS CONTROL (#security-gate-screen)
+    // ==========================================
+    const GATE_SESSION_KEY = 'PM_STUDIO_AUTH_TOKEN';
+    const OFFICIAL_PASSWORD = 'PM2026q4';
+
+    function isStudioAuthenticated() {
+      return sessionStorage.getItem(GATE_SESSION_KEY) === 'unlocked_pm_2026';
+    }
+
+    function initSecurityGate() {
+      const gate = document.getElementById('security-gate-screen');
+      const content = document.getElementById('studio-main-content');
+      const passInput = document.getElementById('gatePassword');
+      
+      if (isStudioAuthenticated()) {
+        if (gate) gate.style.display = 'none';
+        if (content) content.style.display = 'block';
+      } else {
+        if (gate) {
+          gate.style.display = 'flex';
+          gate.style.opacity = '1';
+        }
+        if (content) content.style.display = 'none';
+        if (passInput) {
+          setTimeout(() => passInput.focus(), 150);
+        }
+      }
+    }
+
+    function validateGatePassword(event) {
+      if (event) event.preventDefault();
+      
+      const passInput = document.getElementById('gatePassword');
+      const errBox = document.getElementById('gateErrorAlert');
+      const errMsg = document.getElementById('gateErrorMsg');
+      const enteredPass = passInput ? passInput.value.trim() : '';
+
+      if (enteredPass === OFFICIAL_PASSWORD) {
+        // Correct Password!
+        if (errBox) errBox.classList.add('hidden');
+        sessionStorage.setItem(GATE_SESSION_KEY, 'unlocked_pm_2026');
+        
+        const gate = document.getElementById('security-gate-screen');
+        const content = document.getElementById('studio-main-content');
+        
+        if (gate) {
+          gate.style.opacity = '0';
+          gate.style.transition = 'opacity 0.25s ease-out';
+          setTimeout(() => {
+            gate.style.display = 'none';
+            gate.style.opacity = '1';
+          }, 250);
+        }
+        
+        if (content) {
+          content.style.display = 'block';
+        }
+        
+        // Launch Confetti animation
+        launchCuteConfetti();
+        
+        showToast("¡Bienvenida al Marketing Studio! Acceso concedido 🎉", "🎉");
+      } else {
+        // Incorrect Password!
+        if (errBox) {
+          errBox.classList.remove('hidden');
+          if (errMsg) errMsg.innerText = "Contraseña incorrecta. Acceso denegado.";
+        }
+        
+        if (passInput) {
+          passInput.classList.remove('shake-error');
+          void passInput.offsetWidth; // Force CSS reflow for shake animation
+          passInput.classList.add('shake-error');
+          passInput.focus();
+          passInput.select();
+          setTimeout(() => {
+            passInput.classList.remove('shake-error');
+          }, 500);
+        }
+        
+        // Ensure content is strictly hidden
+        const content = document.getElementById('studio-main-content');
+        if (content) content.style.display = 'none';
+      }
+    }
+
+    function toggleGatePasswordVisibility() {
+      const passInput = document.getElementById('gatePassword');
+      const eyeIcon = document.getElementById('gateEyeIcon');
+      if (!passInput) return;
+      
+      if (passInput.type === 'password') {
+        passInput.type = 'text';
+        if (eyeIcon) eyeIcon.innerText = '🙈';
+      } else {
+        passInput.type = 'password';
+        if (eyeIcon) eyeIcon.innerText = '👁️';
+      }
+    }
+
+    function lockStudioSession() {
+      sessionStorage.removeItem(GATE_SESSION_KEY);
+      const gate = document.getElementById('security-gate-screen');
+      const content = document.getElementById('studio-main-content');
+      const passInput = document.getElementById('gatePassword');
+      const errBox = document.getElementById('gateErrorAlert');
+
+      if (content) content.style.display = 'none';
+      if (gate) {
+        gate.style.display = 'flex';
+        gate.style.opacity = '1';
+      }
+      if (errBox) errBox.classList.add('hidden');
+      if (passInput) {
+        passInput.value = '';
+        passInput.type = 'password';
+        const eyeIcon = document.getElementById('gateEyeIcon');
+        if (eyeIcon) eyeIcon.innerText = '👁️';
+        setTimeout(() => passInput.focus(), 150);
+      }
+      showToast("🔒 Sesión bloqueada correctamente", "🔒");
+    }
+
+    function launchCuteConfetti() {
+      try {
+        if (typeof confetti === 'function') {
+          confetti({
+            particleCount: 90,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#A855F7', '#EC4899', '#10B981', '#3B82F6', '#F59E0B']
+          });
+          setTimeout(() => {
+            confetti({
+              particleCount: 50,
+              angle: 60,
+              spread: 55,
+              origin: { x: 0 },
+              colors: ['#A855F7', '#EC4899', '#F43F5E']
+            });
+            confetti({
+              particleCount: 50,
+              angle: 120,
+              spread: 55,
+              origin: { x: 1 },
+              colors: ['#10B981', '#3B82F6', '#F59E0B']
+            });
+          }, 250);
+          return;
+        }
+      } catch (e) {
+        console.warn("Canvas-confetti fallback invoked", e);
+      }
+      spawnEmojiConfetti();
+    }
+
+    function spawnEmojiConfetti() {
+      const emojis = ['🎉', '✨', '🌸', '💜', '⭐', '💫', '💖', '🚀'];
+      const container = document.createElement('div');
+      container.style.position = 'fixed';
+      container.style.inset = '0';
+      container.style.pointerEvents = 'none';
+      container.style.zIndex = '9999';
+      container.style.overflow = 'hidden';
+      document.body.appendChild(container);
+
+      for (let i = 0; i < 35; i++) {
+        const el = document.createElement('span');
+        el.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.position = 'absolute';
+        el.style.left = (Math.random() * 90 + 5) + 'vw';
+        el.style.top = (Math.random() * 20 + 70) + 'vh';
+        el.style.fontSize = (Math.random() * 18 + 16) + 'px';
+        el.style.transition = 'all 2s cubic-bezier(0.25, 1, 0.5, 1)';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0px) rotate(0deg)';
+        container.appendChild(el);
+
+        const destX = (Math.random() - 0.5) * 160;
+        const destY = -(Math.random() * 450 + 200);
+        const destRot = (Math.random() - 0.5) * 720;
+
+        setTimeout(() => {
+          el.style.transform = `translate(${destX}px, ${destY}px) rotate(${destRot}deg)`;
+          el.style.opacity = '0';
+        }, 20);
+      }
+
+      setTimeout(() => {
+        container.remove();
+      }, 2200);
+    }
+
+    // Immediately run gate check
+    initSecurityGate();
+
     // Lightbox modal for reference images
     function openImageModal(src, title) {
       document.getElementById('lightboxImg').src = src;
@@ -2884,6 +3211,7 @@ Requisitos:
     });
 
     window.addEventListener('DOMContentLoaded', () => {
+      initSecurityGate();
       generarContenidoAleatorio();
       generarGanchosRapidos();
       renderMatrizTable();
