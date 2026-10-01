@@ -42,13 +42,14 @@ El seguimiento, la asignación, los recursos de marca, las videollamadas y la en
 
 Pestaña interactiva con el programa de formación y aceleración para el equipo oficial:
 - **Módulo 1: Job Coaching Grupal (Melanie Almeyda · CEO & Coach):**
-  1. *Job Coaching Grupal I:* Inducción Profesional, CV, Formato ATS (incluye plantilla ATS en Word).
-  2. *Job Coaching Grupal II:* Optimización de LinkedIn (incluye guía de 45+ keywords estratégicas).
-  3. *Job Coaching Grupal III:* Portafolio Profesional + IA (incluye plantilla de casos y framework de métricas).
-  - Cada sesión incluye toggle interactivo `Marcar Realizada` con persistencia en el navegador y acceso directo a la sala de Google Meet.
+  - **Estado:** ⏳ **Por definir honorario** (y horarios/fechas a coordinar con dirección general).
+  - 1. *Job Coaching Grupal I:* Inducción Profesional, CV, Formato ATS (incluye plantilla ATS en Word).
+  - 2. *Job Coaching Grupal II:* Optimización de LinkedIn (incluye guía de 45+ keywords estratégicas).
+  - 3. *Job Coaching Grupal III:* Portafolio Profesional + IA (incluye plantilla de casos y framework de métricas).
+  - Cada sesión incluye toggle interactivo `Marcar Realizada` con persistencia en el navegador y sala de Google Meet.
 - **Módulo 2: Clases de Idiomas (Profesor Jhonatan · Docente de Idiomas):**
-  1. *INGLÉS / Conversacional:* Práctica oral intensiva, fluidez comunicativa y debates en vivo (+ Guía de Expresiones y Audio).
-  2. *PORTUGUÉS desde Cero:* Nivel Inicial A1, fonética, vocabulario cotidiano y gramática básica (+ Cuaderno de Ejercicios).
+  - 1. *INGLÉS / Conversacional:* 🔒 **Bloqueado Mientras Tanto** (sesiones de conversación y acceso a sala temporalmente pausados por coordinación general).
+  - 2. *PORTUGUÉS desde Cero:* 🟢 **Activo** — Nivel Inicial A1, fonética, vocabulario cotidiano y gramática básica con acceso en vivo a la sala de Google Meet (+ Cuaderno de Ejercicios).
 - **Convocatoria Oficial (5 Practicantes / Creadoras de la Base de Datos):**
   - Convocatoria basada estrictamente en el equipo oficial del proyecto: **Adriana Chávez** (Perú 🇵🇪), **Alison** (Perú 🇵🇪), **Daniela** (Costa Rica 🇨🇷), **Scarlet** (España 🇪🇸) y **Britani** (Perú 🇵🇪).
   - Stack visual de avatares con modal interactivo de lista de asistencia y roles.
