@@ -302,6 +302,11 @@
         <button onclick="switchTab('tab-equipo')" id="btn-tab-equipo" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
           <span>👥 Roles & Equipo</span>
         </button>
+
+        <button onclick="switchTab('tab-cursos')" id="btn-tab-cursos" class="tab-btn flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition">
+          <span>🎓 Micro-learning & Cursos</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-pink-100 text-pink-700 border border-pink-200">2 Módulos 🍱</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -382,6 +387,9 @@
                 </a>
                 <button onclick="switchTab('tab-generador')" class="px-3 py-2.5 rounded-2xl bg-purple-50 hover:bg-purple-100 text-purple-800 font-black text-xs border border-purple-200 transition flex items-center gap-1">
                   <span>💡 Generar Hooks</span>
+                </button>
+                <button onclick="switchTab('tab-cursos')" class="px-3 py-2.5 rounded-2xl bg-pink-50 hover:bg-pink-100 text-pink-800 font-black text-xs border border-pink-200 transition flex items-center gap-1 shadow-2xs" title="Ver cursos de Job Coaching e Idiomas">
+                  <span>🎓 Cursos & Coaching</span>
                 </button>
               </div>
             </div>
@@ -1902,6 +1910,666 @@
 
     </div>
 
+    <!-- ========================================================================= -->
+    <!-- TAB 5: MICRO-LEARNING & CURSOS (JOB COACHING & IDIOMAS)                   -->
+    <!-- ========================================================================= -->
+    <div id="tab-cursos" class="tab-content hidden space-y-8">
+
+      <!-- Header Banner / Hero Micro-learning -->
+      <div class="candy-card rounded-3xl p-6 sm:p-7 bg-gradient-to-r from-purple-100/90 via-pink-50/90 to-amber-50/80 border-2 border-purple-200/90 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-extrabold bg-white/95 text-purple-700 border border-purple-200 shadow-2xs">
+            <span>🎓</span>
+            <span>Programa de Formación & Aceleración · Polyglot Map</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-cute tracking-tight">Micro-learning & Cursos Especializados</h2>
+          <p class="text-xs font-black tracking-wider text-purple-700 font-cute uppercase">IDIOMAS + IA+ EMPLEABILIDAD</p>
+          <p class="text-xs text-slate-600 max-w-2xl leading-relaxed">
+            Sesiones en vivo y recursos clave de <strong>Job Coaching Grupal</strong> (con Melanie Almeyda · CEO & Coach) y <strong>Clases de Idiomas</strong> (Inglés & Portugués con el Profesor Jhonatan) convocadas especialmente para el equipo oficial de practicantes y creadoras de Polyglot Map.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+          <button onclick="abrirModalConvocadas()" class="px-3.5 py-2.5 rounded-2xl bg-white hover:bg-purple-50 text-purple-900 font-bold text-xs border border-purple-200 transition shadow-2xs flex items-center gap-1.5">
+            <span>👥</span>
+            <span>5 Practicantes Convocadas</span>
+          </button>
+          <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-extrabold text-xs transition shadow-sm hover:shadow-md flex items-center gap-2">
+            <span class="text-sm">🎥</span>
+            <span>Sala Abierta Meet</span>
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ======================================================================= -->
+      <!-- MODULO 1: JOB COACHING GRUPAL (MELANIE ALMEYDA)                         -->
+      <!-- ======================================================================= -->
+      <section class="space-y-4">
+        <!-- Section Title Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-purple-100">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3 h-3 rounded-full bg-purple-600 shadow-sm animate-pulse"></span>
+            <div>
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 font-cute flex items-center gap-2">
+                <span>Job Coaching Grupal: Inducción, LinkedIn & Portafolio + IA</span>
+              </h3>
+              <p class="text-xs text-slate-500 font-medium">Programa de aceleración y desarrollo profesional guiado por Melanie Almeyda para el equipo de creadoras.</p>
+            </div>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200 self-start sm:self-auto">
+            <span>💼</span>
+            <span>Melanie Almeyda · CEO & Coach</span>
+          </div>
+        </div>
+
+        <!-- Cards Grid: 3 Columnas Job Coaching -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- CARD JC 1: INDUCCIÓN, CV, FORMATO ATS -->
+          <div id="card-jc-1" class="candy-card rounded-3xl overflow-hidden border border-purple-100 shadow-sm flex flex-col justify-between transition hover:shadow-md bg-white">
+            <div>
+              <!-- Header Image & Badges -->
+              <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" alt="CV Formato ATS" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
+                
+                <!-- Badges Top -->
+                <div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-white border border-white/20 flex items-center gap-1 shadow-xs">
+                    <span>📄</span>
+                    <span>CV & OPTIMIZACIÓN ATS</span>
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-500/90 text-white backdrop-blur-md flex items-center gap-1 shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    <span>Acceso Libre • En Vivo</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Bar on Image -->
+                <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 flex items-center justify-between text-[11px] font-bold text-white border-t border-white/10">
+                  <span class="flex items-center gap-1 text-purple-200">
+                    <span>📅</span>
+                    <span>Mié 30 Set • 09:30 AM</span>
+                  </span>
+                  <span class="flex items-center gap-1 text-amber-200">
+                    <span>⏱️</span>
+                    <span>45 minutos</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Content Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h4 class="text-base font-extrabold text-slate-900 font-cute leading-snug">
+                    Job Coaching Grupal I: Inducción Profesional, CV, Formato ATS
+                  </h4>
+                </div>
+
+                <!-- Instructor Row -->
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-extrabold text-xs flex items-center justify-center font-cute shadow-xs">
+                    MA
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900 leading-tight">Melanie Almeyda</h5>
+                    <p class="text-[10px] font-semibold text-slate-400">CEO & Coach</p>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Inducción al programa de prácticas, estructura y redacción de CV profesional para marketing, contenido y estrategia bilingüe en formato ATS, verbos de acción y presentación ante agencias.
+                </p>
+
+                <!-- Resource Chips -->
+                <div class="flex flex-wrap items-center gap-2 text-xs font-bold pt-1">
+                  <span class="px-2.5 py-1 rounded-xl bg-purple-50 text-purple-800 border border-purple-200 text-[11px] flex items-center gap-1">
+                    <span>📖</span>
+                    <span>3 Módulos Teóricos</span>
+                  </span>
+                  <button type="button" onclick="abrirModalRecurso('ats')" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] flex items-center gap-1 transition shadow-2xs font-extrabold">
+                    <span>+</span>
+                    <span>Plantilla ATS Word</span>
+                  </button>
+                </div>
+
+                <!-- Convocadas Avatar Stack (Base de Datos Oficial: 5 Practicantes) -->
+                <div class="flex items-center justify-between py-2 border-y border-purple-100/80">
+                  <div class="flex items-center gap-2">
+                    <div class="flex -space-x-2 overflow-hidden py-1 cursor-pointer" onclick="abrirModalConvocadas()" title="Ver lista de practicantes convocadas">
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-purple-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Adriana Chávez (Perú 🇵🇪)">AC</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-emerald-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Alison (Perú 🇵🇪)">AR</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-sky-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Daniela (Costa Rica 🇨🇷)">DB</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-amber-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Scarlet (España 🇪🇸)">SV</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-pink-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Britani (Perú 🇵🇪)">BM</div>
+                    </div>
+                    <button type="button" onclick="abrirModalConvocadas()" class="text-[11px] font-bold text-purple-700 hover:text-purple-900 transition flex items-center gap-1 font-cute">
+                      <span>5 Practicantes Convocadas</span>
+                      <span class="text-[10px]">▾</span>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-400">Equipo Oficial</span>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-500">
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#ATS</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#CV</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Inducción</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#AcciónVerbs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action & Footer -->
+            <div class="p-5 pt-0 space-y-3">
+              <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold text-xs shadow-sm hover:shadow-md transition flex items-center justify-center gap-2">
+                <span>🎥</span>
+                <span>Ingresar a la Sala Meet</span>
+              </a>
+
+              <div class="flex items-center justify-between pt-1">
+                <button type="button" onclick="toggleJobCoachingRealizada(1)" id="btn-jc-state-1" class="text-xs font-bold text-slate-600 hover:text-emerald-700 flex items-center gap-1.5 transition">
+                  <span id="jc-icon-1">☑️</span>
+                  <span id="jc-label-1">Marcar Realizada</span>
+                </button>
+                <button type="button" onclick="resetJobCoachingSession(1)" class="text-slate-400 hover:text-slate-600 text-xs" title="Reiniciar estado">
+                  🗑️
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD JC 2: OPTIMIZACIÓN DE LINKEDIN -->
+          <div id="card-jc-2" class="candy-card rounded-3xl overflow-hidden border border-purple-100 shadow-sm flex flex-col justify-between transition hover:shadow-md bg-white">
+            <div>
+              <!-- Header Image & Badges -->
+              <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=800&q=80" alt="LinkedIn Networking" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
+                
+                <!-- Badges Top -->
+                <div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-white border border-white/20 flex items-center gap-1 shadow-xs">
+                    <span>💼</span>
+                    <span>LINKEDIN & NETWORKING</span>
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-500/90 text-white backdrop-blur-md flex items-center gap-1 shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    <span>Acceso Libre • En Vivo</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Bar on Image -->
+                <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 flex items-center justify-between text-[11px] font-bold text-white border-t border-white/10">
+                  <span class="flex items-center gap-1 text-purple-200">
+                    <span>📅</span>
+                    <span>Mié 28 Oct • 09:30 AM</span>
+                  </span>
+                  <span class="flex items-center gap-1 text-amber-200">
+                    <span>⏱️</span>
+                    <span>45 minutos</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Content Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h4 class="text-base font-extrabold text-slate-900 font-cute leading-snug">
+                    Job Coaching Grupal II: Optimización de LinkedIn
+                  </h4>
+                </div>
+
+                <!-- Instructor Row -->
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-extrabold text-xs flex items-center justify-center font-cute shadow-xs">
+                    MA
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900 leading-tight">Melanie Almeyda</h5>
+                    <p class="text-[10px] font-semibold text-slate-400">CEO & Coach</p>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Optimización estratégica de perfiles en LinkedIn: titular profesional de alto impacto, extracto bilingüe con palabras clave (keywords) de marketing y contenido, sección de destacados y networking estratégico.
+                </p>
+
+                <!-- Resource Chips -->
+                <div class="flex flex-wrap items-center gap-2 text-xs font-bold pt-1">
+                  <span class="px-2.5 py-1 rounded-xl bg-purple-50 text-purple-800 border border-purple-200 text-[11px] flex items-center gap-1">
+                    <span>📖</span>
+                    <span>3 Módulos Teóricos</span>
+                  </span>
+                  <button type="button" onclick="abrirModalRecurso('linkedin')" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] flex items-center gap-1 transition shadow-2xs font-extrabold">
+                    <span>+</span>
+                    <span>Guía de Keywords</span>
+                  </button>
+                </div>
+
+                <!-- Convocadas Avatar Stack -->
+                <div class="flex items-center justify-between py-2 border-y border-purple-100/80">
+                  <div class="flex items-center gap-2">
+                    <div class="flex -space-x-2 overflow-hidden py-1 cursor-pointer" onclick="abrirModalConvocadas()" title="Ver lista de practicantes convocadas">
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-purple-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Adriana Chávez (Perú 🇵🇪)">AC</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-emerald-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Alison (Perú 🇵🇪)">AR</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-sky-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Daniela (Costa Rica 🇨🇷)">DB</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-amber-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Scarlet (España 🇪🇸)">SV</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-pink-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Britani (Perú 🇵🇪)">BM</div>
+                    </div>
+                    <button type="button" onclick="abrirModalConvocadas()" class="text-[11px] font-bold text-purple-700 hover:text-purple-900 transition flex items-center gap-1 font-cute">
+                      <span>5 Practicantes Convocadas</span>
+                      <span class="text-[10px]">▾</span>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-400">Equipo Oficial</span>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-500">
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#LinkedIn</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Keywords</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Networking</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#MarcaPersonal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action & Footer -->
+            <div class="p-5 pt-0 space-y-3">
+              <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold text-xs shadow-sm hover:shadow-md transition flex items-center justify-center gap-2">
+                <span>🎥</span>
+                <span>Ingresar a la Sala Meet</span>
+              </a>
+
+              <div class="flex items-center justify-between pt-1">
+                <button type="button" onclick="toggleJobCoachingRealizada(2)" id="btn-jc-state-2" class="text-xs font-bold text-slate-600 hover:text-emerald-700 flex items-center gap-1.5 transition">
+                  <span id="jc-icon-2">☑️</span>
+                  <span id="jc-label-2">Marcar Realizada</span>
+                </button>
+                <button type="button" onclick="resetJobCoachingSession(2)" class="text-slate-400 hover:text-slate-600 text-xs" title="Reiniciar estado">
+                  🗑️
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD JC 3: PORTAFOLIO + IA -->
+          <div id="card-jc-3" class="candy-card rounded-3xl overflow-hidden border border-purple-100 shadow-sm flex flex-col justify-between transition hover:shadow-md bg-white">
+            <div>
+              <!-- Header Image & Badges -->
+              <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=800&q=80" alt="Portafolio Profesional con IA" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
+                
+                <!-- Badges Top -->
+                <div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-white border border-white/20 flex items-center gap-1 shadow-xs">
+                    <span>🤖</span>
+                    <span>PORTAFOLIO + IA</span>
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-500/90 text-white backdrop-blur-md flex items-center gap-1 shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    <span>Acceso Libre • En Vivo</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Bar on Image -->
+                <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 flex items-center justify-between text-[11px] font-bold text-white border-t border-white/10">
+                  <span class="flex items-center gap-1 text-purple-200">
+                    <span>📅</span>
+                    <span>Mié 25 Nov • 09:30 AM</span>
+                  </span>
+                  <span class="flex items-center gap-1 text-amber-200">
+                    <span>⏱️</span>
+                    <span>45 minutos</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Content Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h4 class="text-base font-extrabold text-slate-900 font-cute leading-snug">
+                    Job Coaching Grupal III: Portafolio Profesional + IA
+                  </h4>
+                </div>
+
+                <!-- Instructor Row -->
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-extrabold text-xs flex items-center justify-center font-cute shadow-xs">
+                    MA
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900 leading-tight">Melanie Almeyda</h5>
+                    <p class="text-[10px] font-semibold text-slate-400">CEO & Coach</p>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Creación y estructuración del Portafolio Profesional para creadoras con integración de Inteligencia Artificial (IA), prompts especializados, post-edición, curaduría de casos y metric tracking.
+                </p>
+
+                <!-- Resource Chips -->
+                <div class="flex flex-wrap items-center gap-2 text-xs font-bold pt-1">
+                  <span class="px-2.5 py-1 rounded-xl bg-purple-50 text-purple-800 border border-purple-200 text-[11px] flex items-center gap-1">
+                    <span>📖</span>
+                    <span>3 Módulos Teóricos</span>
+                  </span>
+                  <button type="button" onclick="abrirModalRecurso('portafolio')" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] flex items-center gap-1 transition shadow-2xs font-extrabold">
+                    <span>+</span>
+                    <span>Plantilla de Portafolio</span>
+                  </button>
+                </div>
+
+                <!-- Convocadas Avatar Stack -->
+                <div class="flex items-center justify-between py-2 border-y border-purple-100/80">
+                  <div class="flex items-center gap-2">
+                    <div class="flex -space-x-2 overflow-hidden py-1 cursor-pointer" onclick="abrirModalConvocadas()" title="Ver lista de practicantes convocadas">
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-purple-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Adriana Chávez (Perú 🇵🇪)">AC</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-emerald-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Alison (Perú 🇵🇪)">AR</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-sky-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Daniela (Costa Rica 🇨🇷)">DB</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-amber-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Scarlet (España 🇪🇸)">SV</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-pink-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Britani (Perú 🇵🇪)">BM</div>
+                    </div>
+                    <button type="button" onclick="abrirModalConvocadas()" class="text-[11px] font-bold text-purple-700 hover:text-purple-900 transition flex items-center gap-1 font-cute">
+                      <span>5 Practicantes Convocadas</span>
+                      <span class="text-[10px]">▾</span>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-400">Equipo Oficial</span>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-500">
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Portafolio</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#IA</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#ChatGPT</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Estrategia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action & Footer -->
+            <div class="p-5 pt-0 space-y-3">
+              <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold text-xs shadow-sm hover:shadow-md transition flex items-center justify-center gap-2">
+                <span>🎥</span>
+                <span>Ingresar a la Sala Meet</span>
+              </a>
+
+              <div class="flex items-center justify-between pt-1">
+                <button type="button" onclick="toggleJobCoachingRealizada(3)" id="btn-jc-state-3" class="text-xs font-bold text-slate-600 hover:text-emerald-700 flex items-center gap-1.5 transition">
+                  <span id="jc-icon-3">☑️</span>
+                  <span id="jc-label-3">Marcar Realizada</span>
+                </button>
+                <button type="button" onclick="resetJobCoachingSession(3)" class="text-slate-400 hover:text-slate-600 text-xs" title="Reiniciar estado">
+                  🗑️
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- MODULO 2: CLASES DE IDIOMAS (PROFESOR JHONATAN)                         -->
+      <!-- ======================================================================= -->
+      <section class="space-y-4 pt-4 border-t border-purple-100">
+        <!-- Section Title Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-purple-100">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3 h-3 rounded-full bg-teal-500 shadow-sm animate-pulse"></span>
+            <div>
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 font-cute flex items-center gap-2">
+                <span>Clases de Idiomas: Inglés Conversacional & Portugués desde Cero</span>
+              </h3>
+              <p class="text-xs text-slate-500 font-medium">Formación lingüística en vivo dirigida por el profesor Jhonatan para el equipo de 5 practicantes.</p>
+            </div>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-teal-100 text-teal-800 border border-teal-200 self-start sm:self-auto">
+            <span>🧑‍🏫</span>
+            <span>Profesor Jhonatan · Docente de Idiomas</span>
+          </div>
+        </div>
+
+        <!-- Cards Grid: 2 Columnas Clases de Idiomas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- CARD IDIOMAS 1: INGLÉS CONVERSACIONAL -->
+          <div class="candy-card rounded-3xl overflow-hidden border border-teal-100 shadow-sm flex flex-col justify-between transition hover:shadow-md bg-white">
+            <div>
+              <!-- Header Image & Badges -->
+              <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80" alt="Inglés Conversacional" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
+                
+                <!-- Badges Top -->
+                <div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-white border border-white/20 flex items-center gap-1 shadow-xs">
+                    <span>🇬🇧</span>
+                    <span>INGLÉS / CONVERSACIONAL</span>
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-500/90 text-white backdrop-blur-md flex items-center gap-1 shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    <span>Acceso Libre • En Vivo</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Bar on Image -->
+                <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 flex items-center justify-between text-[11px] font-bold text-white border-t border-white/10">
+                  <span class="flex items-center gap-1 text-teal-200">
+                    <span>📅</span>
+                    <span>Clases en Vivo • Semanal</span>
+                  </span>
+                  <span class="flex items-center gap-1 text-amber-200">
+                    <span>⏱️</span>
+                    <span>60 minutos</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Content Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h4 class="text-base font-extrabold text-slate-900 font-cute leading-snug">
+                    INGLÉS / Conversacional
+                  </h4>
+                </div>
+
+                <!-- Instructor Row -->
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-teal-600 text-white font-extrabold text-xs flex items-center justify-center font-cute shadow-xs">
+                    JH
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900 leading-tight">Profesor Jhonatan</h5>
+                    <p class="text-[10px] font-semibold text-slate-400">Docente de Idiomas</p>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Sesiones interactivas de práctica oral intensiva, fluidez comunicativa, debates y dinámicas de conversación guiada en inglés para el equipo de practicantes.
+                </p>
+
+                <!-- Resource Chips -->
+                <div class="flex flex-wrap items-center gap-2 text-xs font-bold pt-1">
+                  <span class="px-2.5 py-1 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 text-[11px] flex items-center gap-1">
+                    <span>📖</span>
+                    <span>Práctica Oral & Fluidez</span>
+                  </span>
+                  <button type="button" onclick="abrirModalRecurso('ingles')" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] flex items-center gap-1 transition shadow-2xs font-extrabold">
+                    <span>+</span>
+                    <span>Guía de Expresiones & Audio</span>
+                  </button>
+                </div>
+
+                <!-- Convocadas Avatar Stack (Base de Datos Oficial: 5 Practicantes) -->
+                <div class="flex items-center justify-between py-2 border-y border-teal-100/80">
+                  <div class="flex items-center gap-2">
+                    <div class="flex -space-x-2 overflow-hidden py-1 cursor-pointer" onclick="abrirModalConvocadas()" title="Ver lista de practicantes convocadas">
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-purple-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Adriana Chávez (Perú 🇵🇪)">AC</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-emerald-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Alison (Perú 🇵🇪)">AR</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-sky-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Daniela (Costa Rica 🇨🇷)">DB</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-amber-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Scarlet (España 🇪🇸)">SV</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-pink-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Britani (Perú 🇵🇪)">BM</div>
+                    </div>
+                    <button type="button" onclick="abrirModalConvocadas()" class="text-[11px] font-bold text-teal-700 hover:text-teal-900 transition flex items-center gap-1 font-cute">
+                      <span>5 Practicantes Convocadas</span>
+                      <span class="text-[10px]">▾</span>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-400">Equipo Oficial</span>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-500">
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Inglés</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Conversacional</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Fluidez</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Speaking</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action & Footer -->
+            <div class="p-5 pt-0 space-y-2.5">
+              <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white font-extrabold text-xs shadow-sm hover:shadow-md transition flex items-center justify-center gap-2">
+                <span>🎥</span>
+                <span>Ingresar a la Sala Meet</span>
+              </a>
+
+              <div class="flex items-center justify-between text-[11px] text-slate-400 font-medium px-1">
+                <span>Modalidad: Virtual Asistida</span>
+                <span class="font-mono text-teal-600">meet.google.com/zfa-arcz-gzc</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD IDIOMAS 2: PORTUGUÉS DESDE CERO -->
+          <div class="candy-card rounded-3xl overflow-hidden border border-teal-100 shadow-sm flex flex-col justify-between transition hover:shadow-md bg-white">
+            <div>
+              <!-- Header Image & Badges -->
+              <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&q=80" alt="Portugués desde Cero" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
+                
+                <!-- Badges Top -->
+                <div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-white border border-white/20 flex items-center gap-1 shadow-xs">
+                    <span>🇧🇷</span>
+                    <span>PORTUGUÉS DESDE CERO</span>
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-500/90 text-white backdrop-blur-md flex items-center gap-1 shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    <span>Acceso Libre • En Vivo</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Bar on Image -->
+                <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 flex items-center justify-between text-[11px] font-bold text-white border-t border-white/10">
+                  <span class="flex items-center gap-1 text-teal-200">
+                    <span>📅</span>
+                    <span>Clases en Vivo • Semanal</span>
+                  </span>
+                  <span class="flex items-center gap-1 text-amber-200">
+                    <span>⏱️</span>
+                    <span>60 minutos</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Content Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h4 class="text-base font-extrabold text-slate-900 font-cute leading-snug">
+                    PORTUGUÉS desde Cero
+                  </h4>
+                </div>
+
+                <!-- Instructor Row -->
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-teal-600 text-white font-extrabold text-xs flex items-center justify-center font-cute shadow-xs">
+                    JH
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900 leading-tight">Profesor Jhonatan</h5>
+                    <p class="text-[10px] font-semibold text-slate-400">Docente de Idiomas</p>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Curso inicial de portugués estructurado desde cero: fonética, reglas gramaticales básicas, vocabulario cotidiano, conjugaciones y conversación para principiantes.
+                </p>
+
+                <!-- Resource Chips -->
+                <div class="flex flex-wrap items-center gap-2 text-xs font-bold pt-1">
+                  <span class="px-2.5 py-1 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 text-[11px] flex items-center gap-1">
+                    <span>📖</span>
+                    <span>Nivel Inicial (A1)</span>
+                  </span>
+                  <button type="button" onclick="abrirModalRecurso('portugues')" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] flex items-center gap-1 transition shadow-2xs font-extrabold">
+                    <span>+</span>
+                    <span>Cuaderno de Ejercicios & Fonética</span>
+                  </button>
+                </div>
+
+                <!-- Convocadas Avatar Stack (Base de Datos Oficial: 5 Practicantes) -->
+                <div class="flex items-center justify-between py-2 border-y border-teal-100/80">
+                  <div class="flex items-center gap-2">
+                    <div class="flex -space-x-2 overflow-hidden py-1 cursor-pointer" onclick="abrirModalConvocadas()" title="Ver lista de practicantes convocadas">
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-purple-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Adriana Chávez (Perú 🇵🇪)">AC</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-emerald-600 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Alison (Perú 🇵🇪)">AR</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-sky-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Daniela (Costa Rica 🇨🇷)">DB</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-amber-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Scarlet (España 🇪🇸)">SV</div>
+                      <div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-pink-500 text-white font-extrabold text-[9px] flex items-center justify-center font-cute" title="Britani (Perú 🇵🇪)">BM</div>
+                    </div>
+                    <button type="button" onclick="abrirModalConvocadas()" class="text-[11px] font-bold text-teal-700 hover:text-teal-900 transition flex items-center gap-1 font-cute">
+                      <span>5 Practicantes Convocadas</span>
+                      <span class="text-[10px]">▾</span>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-400">Equipo Oficial</span>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-500">
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Portugués</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#DesdeCero</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#Fonética</span>
+                  <span class="px-2 py-0.5 rounded-md bg-slate-100">#GramáticaBásica</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action & Footer -->
+            <div class="p-5 pt-0 space-y-2.5">
+              <a href="https://meet.google.com/zfa-arcz-gzc?authuser=0" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white font-extrabold text-xs shadow-sm hover:shadow-md transition flex items-center justify-center gap-2">
+                <span>🎥</span>
+                <span>Ingresar a la Sala Meet</span>
+              </a>
+
+              <div class="flex items-center justify-between text-[11px] text-slate-400 font-medium px-1">
+                <span>Modalidad: Virtual Asistida</span>
+                <span class="font-mono text-teal-600">meet.google.com/zfa-arcz-gzc</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
   </main>
 
   <!-- ========================================== -->
@@ -2047,6 +2715,133 @@
         <a id="lightboxDownloadBtn" href="" target="_blank" class="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-[11px] flex items-center gap-1">
           <span>Abrir original</span> ↗
         </a>
+      </div>
+    </div>
+  <!-- ========================================== -->
+  <!-- MODAL: PRACTICANTES CONVOCADAS (OFICIAL)   -->
+  <!-- ========================================== -->
+  <div id="modalConvocadas" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="candy-card bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+      
+      <div class="flex items-start justify-between pb-3 border-b border-purple-100">
+        <div>
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Convocatoria Oficial · Base de Datos</span>
+          <h3 class="font-extrabold text-slate-900 font-cute text-lg mt-1 flex items-center gap-1.5">
+            <span>👥 5 Practicantes Convocadas</span>
+          </h3>
+          <p class="text-xs text-slate-500">Equipo oficial de creadoras asignadas a las sesiones de Job Coaching y Clases de Idiomas.</p>
+        </div>
+        <button onclick="cerrarModalConvocadas()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
+      </div>
+
+      <div class="mt-4 space-y-3">
+        <!-- 1. Adriana -->
+        <div class="p-3 rounded-2xl bg-purple-50/70 border border-purple-200 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-2xl bg-purple-600 text-white font-cute text-xs flex items-center justify-center font-extrabold">AC</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-xs font-bold text-slate-900">Adriana Chávez</h4>
+                <span class="text-[10px] px-2 py-0.5 rounded-md bg-purple-100 text-purple-800 font-extrabold">Perú 🇵🇪</span>
+              </div>
+              <p class="text-[11px] text-purple-700 font-medium">Coordinadora Creativa (Lead)</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">✅ Convocada</span>
+        </div>
+
+        <!-- 2. Alison -->
+        <div class="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-2xl bg-emerald-600 text-white font-cute text-xs flex items-center justify-center font-extrabold">AR</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-xs font-bold text-slate-900">Alison</h4>
+                <span class="text-[10px] px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-extrabold">Perú 🇵🇪</span>
+              </div>
+              <p class="text-[11px] text-emerald-700 font-medium">Content Strategist</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">✅ Convocada</span>
+        </div>
+
+        <!-- 3. Daniela -->
+        <div class="p-3 rounded-2xl bg-sky-50/70 border border-sky-200 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-2xl bg-sky-500 text-white font-cute text-xs flex items-center justify-center font-extrabold">DB</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-xs font-bold text-slate-900">Daniela</h4>
+                <span class="text-[10px] px-2 py-0.5 rounded-md bg-sky-100 text-sky-800 font-extrabold">Costa Rica 🇨🇷</span>
+              </div>
+              <p class="text-[11px] text-sky-700 font-medium">Content Creators & Analytic en Ventas</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">✅ Convocada</span>
+        </div>
+
+        <!-- 4. Scarlet -->
+        <div class="p-3 rounded-2xl bg-amber-50/70 border border-amber-200 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-2xl bg-amber-500 text-white font-cute text-xs flex items-center justify-center font-extrabold">SV</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-xs font-bold text-slate-900">Scarlet</h4>
+                <span class="text-[10px] px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 font-extrabold">España 🇪🇸</span>
+              </div>
+              <p class="text-[11px] text-amber-700 font-medium">Video Producer / Copywriter & Identidad Visual</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">✅ Convocada</span>
+        </div>
+
+        <!-- 5. Britani -->
+        <div class="p-3 rounded-2xl bg-pink-50/70 border border-pink-200 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-2xl bg-pink-500 text-white font-cute text-xs flex items-center justify-center font-extrabold">BM</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-xs font-bold text-slate-900">Britani</h4>
+                <span class="text-[10px] px-2 py-0.5 rounded-md bg-pink-100 text-pink-800 font-extrabold">Perú 🇵🇪</span>
+              </div>
+              <p class="text-[11px] text-pink-700 font-medium">Content Creator</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">✅ Convocada</span>
+        </div>
+      </div>
+
+      <div class="mt-5 pt-3 border-t border-purple-100 flex items-center justify-between">
+        <span class="text-xs text-slate-400 font-medium">Asistencia registrada en la sala virtual</span>
+        <button onclick="cerrarModalConvocadas()" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-extrabold">Entendido</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: RECURSO DESCARGABLE O GUÍA         -->
+  <!-- ========================================== -->
+  <div id="modalRecurso" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="candy-card bg-white rounded-3xl max-w-md w-full border border-purple-200 shadow-2xl p-6 relative animate-in fade-in zoom-in-95 duration-200">
+      <div class="flex items-start justify-between pb-3 border-b border-purple-100">
+        <div>
+          <span id="recursoModalBadge" class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Recurso Oficial</span>
+          <h3 id="recursoModalTitle" class="font-extrabold text-slate-900 font-cute text-lg mt-1">Material Descargable</h3>
+        </div>
+        <button onclick="cerrarModalRecurso()" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100">✕</button>
+      </div>
+
+      <div id="recursoModalContent" class="mt-4 space-y-3 text-xs text-slate-600 leading-relaxed">
+        <!-- Dynamic content inserted by JS -->
+      </div>
+
+      <div class="mt-5 pt-3 border-t border-purple-100 flex items-center justify-between">
+        <a id="recursoModalLink" href="https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-extrabold flex items-center gap-1.5">
+          <span>📁 Abrir en Drive</span>
+          <span>↗</span>
+        </a>
+        <button onclick="cerrarModalRecurso()" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold">Cerrar</button>
       </div>
     </div>
   </div>
@@ -2257,6 +3052,115 @@
 
     // Immediately run gate check
     initSecurityGate();
+
+    // ==========================================
+    // MICRO-LEARNING & JOB COACHING ENGINE
+    // ==========================================
+    function initJobCoachingStates() {
+      [1, 2, 3].forEach(id => {
+        const isDone = localStorage.getItem('pm_jc_done_' + id) === 'true';
+        updateJobCoachingUI(id, isDone);
+      });
+    }
+
+    function toggleJobCoachingRealizada(id) {
+      const current = localStorage.getItem('pm_jc_done_' + id) === 'true';
+      const newState = !current;
+      localStorage.setItem('pm_jc_done_' + id, newState ? 'true' : 'false');
+      updateJobCoachingUI(id, newState);
+      if (newState) {
+        showToast(`🎉 ¡Sesión ${id} de Job Coaching completada! Excelente avance del equipo.`, "🎉");
+      } else {
+        showToast(`Sesión ${id} de Job Coaching desmarcada.`, "ℹ️");
+      }
+    }
+
+    function resetJobCoachingSession(id) {
+      localStorage.removeItem('pm_jc_done_' + id);
+      updateJobCoachingUI(id, false);
+      showToast(`Estado de la sesión ${id} reiniciado.`, "🔄");
+    }
+
+    function updateJobCoachingUI(id, isDone) {
+      const icon = document.getElementById('jc-icon-' + id);
+      const label = document.getElementById('jc-label-' + id);
+      const btn = document.getElementById('btn-jc-state-' + id);
+      if (!icon || !label || !btn) return;
+
+      if (isDone) {
+        icon.innerText = '✅';
+        label.innerText = 'Sesión Realizada';
+        btn.className = "text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-xl border border-emerald-200 flex items-center gap-1.5 transition";
+      } else {
+        icon.innerText = '☑️';
+        label.innerText = 'Marcar Realizada';
+        btn.className = "text-xs font-bold text-slate-600 hover:text-emerald-700 flex items-center gap-1.5 transition";
+      }
+    }
+
+    function abrirModalConvocadas() {
+      const m = document.getElementById('modalConvocadas');
+      if (m) m.classList.remove('hidden');
+    }
+
+    function cerrarModalConvocadas() {
+      const m = document.getElementById('modalConvocadas');
+      if (m) m.classList.add('hidden');
+    }
+
+    const recursosCursosData = {
+      ats: {
+        badge: "Plantilla Oficial ATS",
+        title: "Plantilla CV Formato ATS (Word)",
+        desc: "Estructura optimizada de 1 página con tipografía estándar, orden cronológico inverso, verbos de acción para creadoras de contenido y sin tablas complejas para superar los filtros ATS de agencias internacionales.",
+        link: "https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing"
+      },
+      linkedin: {
+        badge: "Guía Estratégica",
+        title: "Guía de Keywords & LinkedIn High-Ticket",
+        desc: "Lista de 45+ palabras clave de alta demanda (Content Marketing, Video Production, AI Prompts, Bilingual Storytelling), fórmulas para el titular estelar y estructura del 'Acerca de' persuasivo.",
+        link: "https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing"
+      },
+      portafolio: {
+        badge: "Plantilla de Casos",
+        title: "Plantilla de Portafolio Profesional + IA",
+        desc: "Framework para presentar 4 casos de éxito con métricas (visualizaciones, CTR, engagement), enlaces a videos 9:16 y flujo de trabajo con IA (ChatGPT, Midjourney, CapCut).",
+        link: "https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing"
+      },
+      ingles: {
+        badge: "Guía Conversacional",
+        title: "Guía de Expresiones & Audio (Inglés)",
+        desc: "Compilado de modismos, ganchos de conversación en reuniones de trabajo en inglés, pronunciación conectada (linking sounds) y prompts de roleplay oral para el equipo.",
+        link: "https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing"
+      },
+      portugues: {
+        badge: "Cuaderno Fonético",
+        title: "Cuaderno de Ejercicios & Fonética (Portugués)",
+        desc: "Guía práctica de sonidos nasales, contracciones comunes en Brasil, vocabulario para redes sociales y ejercicios de fijación para arrancar desde cero.",
+        link: "https://drive.google.com/drive/folders/1reGaNbKCbWotSeZmS8GByGd8yr9qdD2A?usp=sharing"
+      }
+    };
+
+    function abrirModalRecurso(key) {
+      const data = recursosCursosData[key];
+      if (!data) return;
+      document.getElementById('recursoModalBadge').innerText = data.badge;
+      document.getElementById('recursoModalTitle').innerText = data.title;
+      document.getElementById('recursoModalContent').innerHTML = `
+        <p>${data.desc}</p>
+        <div class="p-3 bg-purple-50 rounded-2xl border border-purple-200 mt-2">
+          <strong class="text-purple-900 block font-cute mb-1">💡 Consejo del Coach / Docente:</strong>
+          <span>Revisa este material antes de la sesión virtual para hacer preguntas específicas y aprovechar al máximo la dinámica en vivo.</span>
+        </div>
+      `;
+      document.getElementById('recursoModalLink').href = data.link;
+      document.getElementById('modalRecurso').classList.remove('hidden');
+    }
+
+    function cerrarModalRecurso() {
+      const m = document.getElementById('modalRecurso');
+      if (m) m.classList.add('hidden');
+    }
 
     // Lightbox modal for reference images
     function openImageModal(src, title) {
@@ -3205,6 +4109,8 @@ Requisitos:
     // Modal click out listeners
     window.addEventListener('click', e => {
       if (e.target === document.getElementById('cvModal')) closeCvModal();
+      if (e.target === document.getElementById('modalConvocadas')) cerrarModalConvocadas();
+      if (e.target === document.getElementById('modalRecurso')) cerrarModalRecurso();
       if (e.target === document.getElementById('matrizTaskModal') || e.target === document.getElementById('airtableTaskModal')) {
         cerrarModalNuevaTareaMatriz();
       }
@@ -3212,6 +4118,7 @@ Requisitos:
 
     window.addEventListener('DOMContentLoaded', () => {
       initSecurityGate();
+      initJobCoachingStates();
       generarContenidoAleatorio();
       generarGanchosRapidos();
       renderMatrizTable();
