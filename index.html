@@ -1959,9 +1959,43 @@
       </div>
 
       <!-- ======================================================================= -->
-      <!-- MODULO 1: JOB COACHING GRUPAL (MELANIE ALMEYDA)                         -->
+      <!-- SELECTOR DE SUB-PESTAÑAS: JOB COACHING VS CLASES DE IDIOMAS             -->
       <!-- ======================================================================= -->
-      <section class="space-y-4">
+      <div class="candy-card p-3 sm:p-4 rounded-3xl bg-white/95 border-2 border-purple-200/90 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div class="flex items-center gap-2 overflow-x-auto py-1" id="cursosSubtabsNav">
+          
+          <!-- Botón Sub-pestaña 1: Job Coaching -->
+          <button type="button" onclick="switchCursosSubtab('coaching')" id="btn-subtab-coaching" class="subtab-curso-btn px-4 py-2.5 rounded-2xl text-xs font-black transition flex items-center gap-2 bg-purple-600 text-white shadow-xs">
+            <span>💼</span>
+            <span>Job Coaching Grupal</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-white/20 text-white">3 Sesiones</span>
+          </button>
+
+          <!-- Botón Sub-pestaña 2: Clases de Idiomas -->
+          <button type="button" onclick="switchCursosSubtab('idiomas')" id="btn-subtab-idiomas" class="subtab-curso-btn px-4 py-2.5 rounded-2xl text-xs font-black text-slate-600 hover:text-teal-800 hover:bg-teal-50 transition flex items-center gap-2">
+            <span>🌐</span>
+            <span>Clases de Idiomas</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-teal-100 text-teal-800">Inglés & Portugués</span>
+          </button>
+
+          <!-- Botón Sub-pestaña 3: Ver Ambos -->
+          <button type="button" onclick="switchCursosSubtab('todos')" id="btn-subtab-todos" class="subtab-curso-btn px-3.5 py-2.5 rounded-2xl text-xs font-bold text-slate-500 hover:text-purple-700 hover:bg-purple-50 transition flex items-center gap-1.5">
+            <span>🍱</span>
+            <span>Ver Ambos</span>
+          </button>
+        </div>
+
+        <div class="text-[11px] font-bold text-slate-600 px-2 flex items-center gap-1.5 self-end sm:self-auto bg-purple-50/70 py-1.5 px-3 rounded-full border border-purple-100">
+          <span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+          <span id="subtab-indicator-text">Sub-pestaña: Job Coaching Grupal</span>
+        </div>
+      </div>
+
+      <!-- ======================================================================= -->
+      <!-- SUB-PESTAÑA 1: JOB COACHING GRUPAL (MELANIE ALMEYDA)                    -->
+      <!-- ======================================================================= -->
+      <div id="subtab-content-coaching" class="subtab-curso-content space-y-4">
+        <section class="space-y-4">
         <!-- Section Title Bar -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-purple-100">
           <div class="flex items-center gap-2.5">
@@ -2231,7 +2265,7 @@
             <div>
               <!-- Header Image & Badges -->
               <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
-                <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=800&q=80" alt="Portafolio Profesional con IA" class="w-full h-full object-cover opacity-85 hover:scale-105 transition duration-500">
+                <img src="assets/img/portafolio_ia.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&q=80'" alt="Portafolio Profesional con IA" class="w-full h-full object-cover opacity-90 hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-900/40"></div>
                 
                 <!-- Badges Top -->
@@ -2350,11 +2384,13 @@
 
         </div>
       </section>
+    </div>
 
-      <!-- ======================================================================= -->
-      <!-- MODULO 2: CLASES DE IDIOMAS (PROFESOR JHONATAN)                         -->
-      <!-- ======================================================================= -->
-      <section class="space-y-4 pt-4 border-t border-purple-100">
+    <!-- ======================================================================= -->
+    <!-- SUB-PESTAÑA 2: CLASES DE IDIOMAS (PROFESOR JHONATAN)                    -->
+    <!-- ======================================================================= -->
+    <div id="subtab-content-idiomas" class="subtab-curso-content space-y-4 hidden">
+      <section class="space-y-4 pt-1">
         <!-- Section Title Bar -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-purple-100">
           <div class="flex items-center gap-2.5">
@@ -2619,8 +2655,9 @@
 
         </div>
       </section>
-
     </div>
+
+  </div>
 
     <!-- ======================================================================= -->
     <!-- TAB 6: KIT DEL COLABORADOR (ARCHIVOS & SUBIDA DE DOCUMENTOS OFICIALES)  -->
@@ -3628,6 +3665,51 @@
       if (tabId === 'tab-excel' || tabId === 'tab-airtable') renderMatrizTable();
     }
 
+    // Sub-pestañas de Micro-learning (Job Coaching vs Idiomas)
+    function switchCursosSubtab(subtab) {
+      const coachingBox = document.getElementById('subtab-content-coaching');
+      const idiomasBox = document.getElementById('subtab-content-idiomas');
+      const btnCoaching = document.getElementById('btn-subtab-coaching');
+      const btnIdiomas = document.getElementById('btn-subtab-idiomas');
+      const btnTodos = document.getElementById('btn-subtab-todos');
+      const indicator = document.getElementById('subtab-indicator-text');
+
+      const allBtns = [btnCoaching, btnIdiomas, btnTodos];
+      allBtns.forEach(btn => {
+        if (btn) {
+          btn.classList.remove('bg-purple-600', 'text-white', 'shadow-xs');
+          btn.classList.add('text-slate-600');
+        }
+      });
+
+      if (subtab === 'coaching') {
+        if (coachingBox) coachingBox.classList.remove('hidden');
+        if (idiomasBox) idiomasBox.classList.add('hidden');
+        if (btnCoaching) {
+          btnCoaching.classList.add('bg-purple-600', 'text-white', 'shadow-xs');
+          btnCoaching.classList.remove('text-slate-600');
+        }
+        if (indicator) indicator.textContent = 'Sub-pestaña: Job Coaching Grupal';
+      } else if (subtab === 'idiomas') {
+        if (coachingBox) coachingBox.classList.add('hidden');
+        if (idiomasBox) idiomasBox.classList.remove('hidden');
+        if (btnIdiomas) {
+          btnIdiomas.classList.add('bg-purple-600', 'text-white', 'shadow-xs');
+          btnIdiomas.classList.remove('text-slate-600');
+        }
+        if (indicator) indicator.textContent = 'Sub-pestaña: Clases de Idiomas (Inglés & Portugués)';
+      } else {
+        if (coachingBox) coachingBox.classList.remove('hidden');
+        if (idiomasBox) idiomasBox.classList.remove('hidden');
+        if (btnTodos) {
+          btnTodos.classList.add('bg-purple-600', 'text-white', 'shadow-xs');
+          btnTodos.classList.remove('text-slate-600');
+        }
+        if (indicator) indicator.textContent = 'Sub-pestaña: Mostrando Ambos Módulos';
+      }
+      localStorage.setItem('polyglot_subtab_curso', subtab);
+    }
+
     // Role View Switcher (Sin Repetición)
     function setRolesView(view) {
       const cardsBox = document.getElementById('rolesCardsView');
@@ -4594,6 +4676,8 @@ Requisitos:
       initSecurityGate();
       initJobCoachingStates();
       updateDocProgress();
+      const savedSubtab = localStorage.getItem('polyglot_subtab_curso') || 'coaching';
+      switchCursosSubtab(savedSubtab);
       generarContenidoAleatorio();
       generarGanchosRapidos();
       renderMatrizTable();

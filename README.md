@@ -53,12 +53,16 @@ Pestaña dedicada a la gestión de talento, inducción y entrega de expedientes 
 
 ## 🎓 Micro-learning & Cursos Especializados (Job Coaching & Clases de Idiomas)
 
-Pestaña interactiva con el programa de formación y aceleración para el equipo oficial:
+Pestaña interactiva con el programa de formación y aceleración para el equipo oficial, ahora organizada con **selector de sub-pestañas por botones** para una visualización limpia e independiente:
+- **Navegación por Sub-pestañas (Botones Interactivos):**
+  - `💼 Job Coaching Grupal`: Muestra exclusivamente las 3 sesiones estratégicas de coaching.
+  - `🌐 Clases de Idiomas`: Muestra las sesiones lingüísticas de inglés y portugués.
+  - `🍱 Ver Ambos`: Permite alternar a vista combinada unificada.
 - **Módulo 1: Job Coaching Grupal (Melanie Almeyda · CEO & Coach):**
   - **Estado:** ⏳ **Por definir honorario** (y horarios/fechas a coordinar con dirección general).
   - 1. *Job Coaching Grupal I:* Inducción Profesional, CV, Formato ATS (incluye plantilla ATS en Word).
   - 2. *Job Coaching Grupal II:* Optimización de LinkedIn (incluye guía de 45+ keywords estratégicas).
-  - 3. *Job Coaching Grupal III:* Portafolio Profesional + IA (incluye plantilla de casos y framework de métricas).
+  - 3. *Job Coaching Grupal III:* Portafolio Profesional + IA (fotografía de alta resolución en laptop + framework de casos y métricas).
   - Cada sesión incluye toggle interactivo `Marcar Realizada` con persistencia en el navegador y sala de Google Meet.
 - **Módulo 2: Clases de Idiomas (Profesor Jhonatan · Docente de Idiomas):**
   - 1. *INGLÉS / Conversacional:* 🔒 **Bloqueado Mientras Tanto** (sesiones de conversación y acceso a sala temporalmente pausados por coordinación general).
