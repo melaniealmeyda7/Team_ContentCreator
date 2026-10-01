@@ -35,6 +35,19 @@ El seguimiento, la asignación, los recursos de marca, las videollamadas y la en
   - `🎥 Sala Meet`
   - `🔒 Bloquear Sesión`
   - `🎓 Micro-learning & Cursos`
+  - `📁 KIT DEL COLABORADOR`
+
+---
+
+## 📁 Kit del Colaborador & Hub de Documentos Oficiales
+
+Pestaña dedicada a la gestión de talento, inducción y entrega de expedientes del equipo de colaboradoras y practicantes:
+- **🗂️ Kit del Colaborador (Archivos & Guías):** [Abrir Carpeta de Archivos en Google Drive](https://drive.google.com/drive/folders/1IpzCfJgPdslYH20yawBjymSTkGbt42x3?usp=sharing)
+  - Identificado con **ícono de files (🗂️)** para apertura directa de la carpeta oficial con manuales de bienvenida, brandbook, directrices de contenido viral 9:16 y protocolos de comunicación.
+- **📤 Subir Documentos (Expediente Oficial):** [Subir Documentos a Google Drive](https://drive.google.com/drive/folders/1mWadF5XrLhYm8sZvgfyn9rX3rndgns5v?usp=sharing)
+  - Identificado con **ícono de subida/upload (📤)** donde cada colaboradora sube su convenio de prácticas, documento de identidad (DNI/Cédula/Pasaporte), CV en formato ATS, constancia académica y reportes mensuales.
+- **Checklist Interactivo Personal:** Widget interactivo con barra de progreso dinámica (0% a 100%) y persistencia en `localStorage` para el control de los 5 documentos obligatorios.
+- **Directorio Oficial de Creadoras:** Enlace directo con las 5 practicantes registradas (Adriana, Alison, Daniela, Scarlet, Britani) y guía de formato de nombres de archivo (`Nombre_Apellido_Documento.pdf`).
 
 ---
 
