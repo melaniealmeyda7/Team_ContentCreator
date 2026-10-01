@@ -41,13 +41,11 @@ El seguimiento, la asignación, los recursos de marca, las videollamadas y la en
 
 ## 📁 Kit del Colaborador & Hub de Documentos Oficiales
 
-Pestaña dedicada a la gestión de talento, inducción y entrega de expedientes del equipo de colaboradoras y practicantes:
+Pestaña dedicada al acceso directo y seguro a los recursos oficiales y entrega de expedientes del equipo de colaboradoras mediante un diseño minimalista de 2 tarjetas de alto impacto:
 - **🗂️ Kit del Colaborador (Archivos & Guías):** [Abrir Carpeta de Archivos en Google Drive](https://drive.google.com/drive/folders/1IpzCfJgPdslYH20yawBjymSTkGbt42x3?usp=sharing)
-  - Identificado con **ícono de files (🗂️)** para apertura directa de la carpeta oficial con manuales de bienvenida, brandbook, directrices de contenido viral 9:16 y protocolos de comunicación.
+  - Identificado con **ícono de files (🗂️)** con botón directo para consultar y descargar manuales de bienvenida, brandbook, directrices de contenido viral 9:16 y recursos oficiales.
 - **📤 Subir Documentos (Expediente Oficial):** [Subir Documentos a Google Drive](https://drive.google.com/drive/folders/1mWadF5XrLhYm8sZvgfyn9rX3rndgns5v?usp=sharing)
-  - Identificado con **ícono de subida/upload (📤)** donde cada colaboradora sube su convenio de prácticas, documento de identidad (DNI/Cédula/Pasaporte), CV en formato ATS, constancia académica y reportes mensuales.
-- **Checklist Interactivo Personal:** Widget interactivo con barra de progreso dinámica (0% a 100%) y persistencia en `localStorage` para el control de los 5 documentos obligatorios.
-- **Directorio Oficial de Creadoras:** Enlace directo con las 5 practicantes registradas (Adriana, Alison, Daniela, Scarlet, Britani) y guía de formato de nombres de archivo (`Nombre_Apellido_Documento.pdf`).
+  - Identificado con **ícono de subida/upload (📤)** con botón directo para que las colaboradoras suban su documentación requerida en Google Drive.
 
 ---
 
