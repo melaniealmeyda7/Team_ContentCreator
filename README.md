@@ -19,7 +19,7 @@ El dashboard cuenta con un control de acceso interactivo para proteger los recur
 ## 📊 Conexión Oficial con Matriz Excel (Google Sheets) y Google Drive (Ecosistema Centralizado)
 
 El seguimiento, la asignación, los recursos de marca, las videollamadas y la entrega de contenidos se gestionan de forma centralizada:
-- **🎥 Sala Abierta Oficial de Google Meet:** [Ingresar a la Sala Meet del Grupo](https://meet.google.com/zfa-arcz-gzc?authuser=0) (Espacio virtual abierto 24/7 para dailies, pautas creativas de Adriana, revisión de videos y sincronización del equipo).
+- **🎥 Sala Oficial de Coworking & Reuniones en Google Meet:** [Ingresar a la Sala de Coworking Meet](https://meet.google.com/jyc-wjoz-aui?authuser=0) (Espacio virtual abierto 24/7 para coworking, dailies, pautas creativas de Adriana, revisión de videos y sincronización del equipo).
 - **📊 Enlace Oficial de Edición en Google Sheets:** [Matriz de Control Polyglot Map en Google Sheets](https://docs.google.com/spreadsheets/d/1kLYL-J4fEiGH3BwwPTTlDscMy-KAroHEKZyiGoiS8Mc/edit?usp=sharing)
 - **🌐 Conexión en Vivo Incrustada (HTML Embed):** Publicado vía `pubhtml` (`https://docs.google.com/spreadsheets/d/e/2PACX-1vQjO3CRSGGcHnIZHsf04k4KFtTT9ubLeYSuvc74FUpYWR77e0DnaoPoxQuHN7TJt78rFLprbHGY2iPP/pubhtml?widget=true&headers=false`) con renderizado directo en el Dashboard sin bloqueos ni requerimiento de login.
 - **🎨 Carpeta Oficial de Google Drive con Logo Oficial y Recursos de Marca:** [Descargar Logos Oficiales en Google Drive](https://drive.google.com/drive/folders/162pjppBhokav2B11wgHlDpef3B4mo14m?usp=sharing)
@@ -28,14 +28,18 @@ El seguimiento, la asignación, los recursos de marca, las videollamadas y la en
 - **Visualizador Integrado:** 
   1. **🌐 Conexión Excel en Vivo (Iframe Oficial Directo):** Visor embebido a pantalla completa en la pestaña `Matriz Excel en Vivo` y en la Sección 3 del `Marketing Studio`.
   2. **📋 Registro Auxiliar & Exportación:** Exportación a Excel (.csv), copia de datos tabulares (TSV), recarga en vivo con 1 clic y modal de asignación rápida de piezas.
-- **Acceso Rápido en Cabecera:**
-  - `📊 Matriz Excel en Vivo`
-  - `📁 Subir Contenido (Drive)`
-  - `🎨 Logo Oficial (Drive)`
-  - `🎥 Sala Meet`
+- **Barra de Navegación Anti-Saturación (Segmented Pill Control):**
+  - `🌸 Marketing Studio`
+  - `📊 Matriz en Vivo`
+  - `💡 Ideas & Feed`
+  - `👥 Roles & Equipo`
+  - `🎓 Micro-learning`
+  - `📁 Kit del Colaborador`
+- **Herramientas Rápidas en Cabecera:**
+  - `🎥 Sala Coworking (Google Meet)`
+  - `📁 Drive Contenido`
+  - `🎨 Logos Marca`
   - `🔒 Bloquear Sesión`
-  - `🎓 Micro-learning & Cursos`
-  - `📁 KIT DEL COLABORADOR`
 
 ---
 
