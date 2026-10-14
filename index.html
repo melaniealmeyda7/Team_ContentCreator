@@ -3047,11 +3047,11 @@
     // ==========================================
     // SECURITY GATE & ACCESS CONTROL (#security-gate-screen)
     // ==========================================
-    const GATE_SESSION_KEY = 'PM_STUDIO_AUTH_TOKEN';
-    const OFFICIAL_PASSWORD = 'CONTENT2026';
+    const GATE_SESSION_KEY = 'PM_STUDIO_AUTH_TOKEN_V2';
+    const OFFICIAL_PASSWORD = 'POLYGLOT2026';
 
     function isStudioAuthenticated() {
-      return sessionStorage.getItem(GATE_SESSION_KEY) === 'unlocked_pm_2026';
+      return sessionStorage.getItem(GATE_SESSION_KEY) === 'unlocked_polyglot_2026';
     }
 
     function initSecurityGate() {
@@ -3085,7 +3085,7 @@
       if (enteredPass === OFFICIAL_PASSWORD) {
         // Correct Password!
         if (errBox) errBox.classList.add('hidden');
-        sessionStorage.setItem(GATE_SESSION_KEY, 'unlocked_pm_2026');
+        sessionStorage.setItem(GATE_SESSION_KEY, 'unlocked_polyglot_2026');
         
         const gate = document.getElementById('security-gate-screen');
         const content = document.getElementById('studio-main-content');

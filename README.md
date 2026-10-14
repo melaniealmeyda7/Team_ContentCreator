@@ -9,7 +9,7 @@
 
 El dashboard cuenta con un control de acceso interactivo para proteger los recursos y planes estratégicos del equipo:
 - **Pantalla Limpia de Acceso (`#security-gate-screen`):** Al abrir o recargar la página, el contenido del estudio (`#studio-main-content`) se mantiene estrictamente oculto hasta ingresar la contraseña autorizada.
-- **Contraseña Oficial de Acceso:** `CONTENT2026`
+- **Contraseña Oficial de Acceso:** `PM2026` (Master Key unificada para todos los Dashboards)
 - **Persistencia Inteligente en Sesión:** Al validar la clave, el acceso queda guardado en la sesión activa del navegador (`sessionStorage`) para no tener que escribirla en cada recarga durante la jornada de trabajo.
 - **Botón de Bloqueo Rápido 🔒:** Ubicado en la cabecera superior junto al botón de exportación para cerrar la sesión y bloquear la pantalla en cualquier momento.
 - **Efectos & Confeti:** Animación shake y alerta en caso de clave incorrecta, y celebración con confeti cute al desbloquear el portal.
